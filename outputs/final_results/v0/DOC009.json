@@ -1,0 +1,71 @@
+{
+  "doc_id": "DOC009",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-46805",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-20273",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-20198",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploitation of Publicly Known Vulnerabilities",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1210",
+      "tactic": "Initial Access",
+      "technique": "Exploitation of Remote Services",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204",
+      "tactic": "Initial Access",
+      "technique": "User Execution of Malicious Code",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Chinese state-sponsored cyber threat actors are targeting networks globally, including telecommunications, government, transportation, lodging, and military infrastructure networks. They exploit publicly known common vulnerabilities and exposures (CVEs) to gain initial access, often modifying router configurations for lateral movement pivoting between networks and using virtualized containers on network devices to evade detection.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 6.37
+}

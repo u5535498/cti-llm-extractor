@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC026",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 7,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 11,
+      "n_supported": 11,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document associate the domain \"www.igrejaatos2.org\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document associates the domain \"www.igrejaatos2.org\" with threat-actor activity, specifically mentioning that it is a \"deceptive download domain\" used to lure victims into downloading a fake offline version of ChatGpt and subsequently obtaining the malicious executable RedStealer.\n2. [SUPPORTED] Q: Does the document associate the domain \"cdn.discord\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document mentions that the malware downloads an executable from \"cdn.discord\" in Stage 2 of its execution.\n3. [SUPPORTED] Q: Does the document attribute the file hash \"fb7883d3fd9347debf98122442c2a33e\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"fb7883d3fd9347debf98122442c2a33e\" to the Main Payload.\n4. [SUPPORTED] Q: Does the document attribute the file hash \"cb533957f70b4a7ebb4e8b896b7b656c\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"cb533957f70b4a7ebb4e8b896b7b656c\" to a dropper payload.\n5. [SUPPORTED] Q: Does the document attribute the file hash \"642dbe8b752b0dc735e9422d903e0e97\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"642dbe8b752b0dc735e9422d903e0e97\" to a specific malware sample referred to as the \"Final Payload\".\n6. [SUPPORTED] Q: Does the document identify the URL \"www.igrejaatos2.org/assets/programs/setupbrowser.exe\" as being used for command-and-control, payload delivery, or phishing?\n   A: Yes, the document identifies the URL \"www.igrejaatos2.org/assets/programs/setupbrowser.exe\" as being used for payload delivery and phishing, as it is described as a malicious download site that initiates the download of a file called setupbrowser.exe, which is part of the malicious payload.\n7. [SUPPORTED] Q: Does the document describe \"RedEnergy\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"RedEnergy\" as a malware variant used by threat actors in their attacks.\n8. [SUPPORTED] Q: Does the document describe the technique \"T1036\" (Masquerading) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe the technique \"T1185\" (Browser Session Hijacking) as being used specifically for \"Collection\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe the technique \"T1562.001\" (Disable or Modify Tools) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 7.57
+}

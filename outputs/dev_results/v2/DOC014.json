@@ -1,0 +1,42 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "DOC014"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "80d852cd199ac923205b61658a9ec5bc",
+        "evidence_snippet": "Reverse shell",
+        "source_context": null,
+        "hash_type": "MD5"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Medusa",
+        "evidence_snippet": "The RaaS Medusa variant has been used to conduct ransomware attacks from 2021 to present."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders detailing various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

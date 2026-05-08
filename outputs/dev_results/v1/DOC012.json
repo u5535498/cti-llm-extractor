@@ -1,0 +1,184 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA23-352A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Play ransomware",
+        "evidence_snippet": "The Play ransomware group is presumed to be a closed group, designed to “guarantee the secrecy of deals,” according to a statement on the group’s data leak website."
+      },
+      {
+        "name": "GRIXBA",
+        "evidence_snippet": "Below are copies of YARA and Suricata rules related to Play’s custom data gathering tool, Grixba:"
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Play ransomware actors obtain and abuse existing account credentials to gain initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public Facing Application",
+      "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "Play ransomware actors have used remote access services, such as RDP/VPN connection to gain initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Initial Access",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Play ransomware actors leveraged PowerShell commands to achieve RCE with a newly disclosed vulnerability.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "Play ransomware actors use tools like GRIXBA to identify network configurations and settings.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1518.001",
+      "tactic": "Defense Evasion",
+      "technique": "Software Discovery: Security Software Discovery",
+      "evidence_snippet": "Play ransomware actors scan for antivirus software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Play ransomware actors use tools like GMER, IOBit, and PowerTool to disable antivirus software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1070.001",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Clear Windows Event Logs",
+      "evidence_snippet": "Play ransomware actors delete logs or other indicators of compromise to hide intrusion activity.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1552",
+      "tactic": "Credential Access",
+      "technique": "Unsecured Credentials",
+      "evidence_snippet": "Play ransomware actors attempt to identify and exploit credentials stored insecurely on a compromised network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "Play ransomware actors use tools like Mimikatz to dump credentials.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1570",
+      "tactic": "Lateral Movement",
+      "technique": "Lateral Tool Transfer",
+      "evidence_snippet": "Play ransomware actors distribute executables within the compromised environment.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1484.001",
+      "tactic": "Command and Control",
+      "technique": "Domain Policy Modification: Group Policy Modification",
+      "evidence_snippet": "Play ransomware actors distribute executables via Group Policy Objects.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1560.001",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data: Archive via Utility",
+      "evidence_snippet": "Play ransomware actors use tools like WinRAR to compress files.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1048",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Alternative Protocol",
+      "evidence_snippet": "Play ransomware actors use file transfer tools like WinSCP to transfer data.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Play ransomware actors encrypt data on target systems to interrupt availability to system and network resources.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Play ransomware actors use a double-extortion model for financial gain.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

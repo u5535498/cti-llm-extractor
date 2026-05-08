@@ -1,0 +1,396 @@
+{
+  "report_metadata": {
+    "report_title": "AA23-352A StopRansomware: Play Ransomware",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "Play",
+    "aliases": [
+        "Playcrypt"
+    ],
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Critical Infrastructure",
+    "Healthcare",
+    "Financial Services",
+    "Manufacturing",
+    "Information Technology",
+    "Government",
+    "Education"
+  ],
+  "indicators_of_compromise": {
+    "file_hashes": [
+      {
+        "value": "47B7B2DD88959CD7224A5542AE8D5BCE928BFC986BF0D0321532A7515C244A1E",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SVCHost.dll Backdoor (Table 2)"
+      },
+      {
+        "value": "75B525B220169F07AECFB3B1991702FBD9A1E170CAF0040D1FCB07C3E819F54A",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Malicious file associated with Play ransomware (Table 2)"
+      },
+      {
+        "value": "453257C3494ADDAFB39CB6815862403E827947A1E7737EB8168CD10522465DEB",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Malicious file associated with Play ransomware (Table 2)"
+      },
+      {
+        "value": "C59F3C8D61D940B56436C14BC148C1FE98862921B8F7BAD97FBC96B31D71193C",
+        "hash_type": "SHA256",
+        "evidence_snippet": "GRIXBA (Gtnet.exe) - Custom data gathering tool (Table 2)"
+      },
+      {
+        "value": "1409E010675BF4A40DB0A845B60DB3AAE5B302834E80ADEEC884AEBC55ECCBF7",
+        "hash_type": "SHA256",
+        "evidence_snippet": "PSexesvc.exe - Custom Play psexesvc (Table 2)"
+      },
+      {
+        "value": "0E408AED1ACF902A9F97ABF71CF0DD354024109C5D52A79054C421BE35D93549",
+        "hash_type": "SHA256",
+        "evidence_snippet": "HRsword.exe - Disables endpoint protection (Table 2)"
+      },
+      {
+        "value": "90040340EE101CAC7831D7035230AC8AD4224D432E5636F34F13AA1C4A0C2041",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Usysdiag.exe - Associated with HRsword, changes settings of System certificates (Table 2)"
+      },
+      {
+        "value": "3D86555ACAA19AEDDB5896071D1E3711B062EDBE",
+        "hash_type": "SHA1",
+        "evidence_snippet": "fThe9C.exe (Table 2)"
+      },
+      {
+        "value": "6DE8DD5757F9A3AC5E2AC28E8A77682D7A29BE25C106F785A061DCF582A20DC6",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Hi.exe - Associated with ransomware (Table 2)"
+      },
+      {
+        "value": "75404543DE25513B376F097CEB383E8EFB9C9B95DA8945FD4AA37C7B2F226212",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SystemBC Malware EXE (Table 2)"
+      },
+      {
+        "value": "7A42F96599DF8090CF89D6E3CE4316D24C6C00E499C8557A2E09D61C00C11986",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SystemBC malware DLL (Table 2)"
+      },
+      {
+        "value": "7DEA671BE77A2CA5772B86CF8831B02BFF0567BCE6A3AE023825AA40354F8ACA",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SystemBC malware DLL (Table 2)"
+      },
+      {
+        "value": "967DAFF362E63FF45526F585B7944488ACE1BB5BB5B30FA40D56557F1C538D09",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 Hash of public ECDSA key for WinSCP (Table 2)"
+      },
+      {
+        "value": "859165041D75FBA3759C5533E324225F355C8A07B4645B984192AD6BEF06DB1A",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 Hash of public ED25519 Key for WinSCP Server (Table 2)"
+      },
+      {
+        "value": "511F63455CA4F83B0347B65DDA17585AD02591A9F23D8E234E5CE1321AA3381A",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 Hash of public ED25519 Key WinSCP Server (Table 2)"
+      },
+      {
+        "value": "372F7B45A141BB0709D578BC716CBCA03104258822C4290CCBEB600223850158",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 Hash of public ED25519 Key WinSCP Server (Table 2)"
+      }
+    ],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": "Play ransomware actors use AdFind to query and retrieve information from Active Directory"
+      },
+      {
+        "name": "Bloodhound",
+        "evidence_snippet": "Play ransomware actors use Bloodhound to query and retrieve information from Active Directory"
+      },
+      {
+        "name": "GMER",
+        "evidence_snippet": "Play ransomware actors use GMER to disable antivirus software"
+      },
+      {
+        "name": "IOBit",
+        "evidence_snippet": "Play ransomware actors use IOBit to disable antivirus software"
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": "Play ransomware actors use PsExec to assist with lateral movement and file execution"
+      },
+      {
+        "name": "PowerTool",
+        "evidence_snippet": "Play ransomware actors use PowerTool to disable antivirus software"
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "Play ransomware actors use PowerShell to target Microsoft Defender"
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "Play ransomware actors use Cobalt Strike to assist with lateral movement and file execution"
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Play ransomware actors use Mimikatz to gain domain administrator access"
+      },
+      {
+        "name": "WinPEAS",
+        "evidence_snippet": "Play ransomware actors use Windows Privilege Escalation Awesome Scripts (WinPEAS) to search for additional privilege escalation paths"
+      },
+      {
+        "name": "WinRAR",
+        "evidence_snippet": "Play ransomware actors use WinRAR to compress files into .RAR format for exfiltration"
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": "Play ransomware actors use WinSCP to transfer data from a compromised network to actor-controlled accounts"
+      },
+      {
+        "name": "Microsoft Nltest",
+        "evidence_snippet": "Play ransomware actors use Microsoft Nltest for network discovery"
+      },
+      {
+        "name": "Nekto PriviCMD",
+        "evidence_snippet": "Play ransomware actors use Nekto PriviCMD for privilege escalation"
+      },
+      {
+        "name": "Process Hacker",
+        "evidence_snippet": "Play ransomware actors use Process Hacker to enumerate running processes on a system"
+      },
+      {
+        "name": "Plink",
+        "evidence_snippet": "Play ransomware actors use Plink to establish persistent SSH tunnels"
+      },
+      {
+        "name": "SystemBC",
+        "evidence_snippet": "Play ransomware actors use SystemBC for command and control"
+      },
+      {
+        "name": "GRIXBA",
+        "evidence_snippet": "Play ransomware actors use GRIXBA, an information-stealer, to enumerate network information and scan for anti-virus software"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2018-13379",
+        "evidence_snippet": "Play ransomware actors exploit FortiOS vulnerability CVE-2018-13379 for initial access"
+      },
+      {
+        "value": "CVE-2020-12812",
+        "evidence_snippet": "Play ransomware actors exploit FortiOS vulnerability CVE-2020-12812 for initial access"
+      },
+      {
+        "value": "CVE-2022-41040",
+        "evidence_snippet": "Play ransomware actors exploit Microsoft Exchange ProxyNotShell vulnerability CVE-2022-41040 for initial access"
+      },
+      {
+        "value": "CVE-2022-41082",
+        "evidence_snippet": "Play ransomware actors exploit Microsoft Exchange ProxyNotShell vulnerability CVE-2022-41082 for initial access"
+      },
+      {
+        "value": "CVE-2024-57727",
+        "evidence_snippet": "Multiple ransomware groups including initial access brokers with ties to Play exploited CVE-2024-57727 in SimpleHelp RMM tool to conduct remote code execution (January 2025)"
+      }
+    ],
+    "detection_signatures": {
+        "yara_rules": [
+                {
+                "name": "PlayForESXi",
+                "description": "Detects PLAY ransomware targeting ESXi Hypervisors",
+                "evidence_snippet": "YARA rule for ESXi variant - meta: description='Detects PLAY ransomware targeting ESXi Hypervisors'; date='2025-01'; filetype='elf'; maltype='ransomware'"
+                },
+                {
+                "name": "GRXBA",
+                "description": "Detects the infostealer GRXBA version 1.1.3.0",
+                "evidence_snippet": "YARA rule for Grixba - meta: description='Detects the infostealer GRXBA version 1.1.3.0'; date='2025-01'; filetype='pe'; maltype='infostealer'"
+                }
+        ],
+        "sigma_rules": []
+        }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Play ransomware actors obtain and abuse existing account credentials, likely purchased on the dark web, to gain initial access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Play ransomware actors exploit FortiOS (CVE-2018-13379, CVE-2020-12812), Microsoft Exchange ProxyNotShell (CVE-2022-41040, CVE-2022-41082), and SimpleHelp RMM (CVE-2024-57727) vulnerabilities",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "Play ransomware actors use external-facing services such as RDP and VPN for initial access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Play ransomware actors leveraged PowerShell commands to achieve RCE with CVE-2024-57727",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "Play ransomware actors use GRIXBA to enumerate network information and identify network configurations",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1518.001",
+      "tactic": "Discovery",
+      "technique": "Software Discovery: Security Software Discovery",
+      "evidence_snippet": "Play ransomware actors use GRIXBA to scan for antivirus software",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Play ransomware actors use GMER, IOBit, and PowerTool to disable antivirus software; PowerShell scripts target Microsoft Defender",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.001",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Clear Windows Event Logs",
+      "evidence_snippet": "Play ransomware actors remove log files and delete logs to hide intrusion activity",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "The Play ransomware binary is recompiled for every attack, resulting in unique hashes for each deployment, complicating detection",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1552",
+      "tactic": "Credential Access",
+      "technique": "Unsecured Credentials",
+      "evidence_snippet": "Play ransomware actors search for unsecured credentials stored insecurely on a compromised network",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "Play ransomware actors use Mimikatz credential dumper to gain domain administrator access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "Play ransomware actors use WinPEAS to search for privilege escalation paths",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1570",
+      "tactic": "Lateral Movement",
+      "technique": "Lateral Tool Transfer",
+      "evidence_snippet": "Play ransomware actors distribute executables within the compromised environment",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1484.001",
+      "tactic": "Command and Control",
+      "technique": "Domain Policy Modification: Group Policy Modification",
+      "evidence_snippet": "Play ransomware actors distribute executables via Group Policy Objects",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1560.001",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data: Archive via Utility",
+      "evidence_snippet": "Play ransomware actors split compromised data into segments and use WinRAR to compress files into .RAR format",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1048",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Alternative Protocol",
+      "evidence_snippet": "Play ransomware actors use WinSCP to transfer data from a compromised network to actor-controlled accounts",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Files are encrypted with AES-RSA hybrid encryption using intermittent encryption (every other 0x100000 bytes); .PLAY extension added",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Play ransomware group uses a double extortion model, encrypting systems after exfiltrating data, for financial gain",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "FBI, CISA, and ACSC advisory AA23-352A (updated June 4, 2025) on Play (Playcrypt) ransomware group, one of the most active ransomware groups in 2024. As of May 2025, approximately 900 entities affected globally across North America, South America, and Europe since June 2022. Initial access via valid accounts purchased on dark web (T1078), exploitation of FortiOS (CVE-2018-13379, CVE-2020-12812), Microsoft Exchange ProxyNotShell (CVE-2022-41040/41082), and SimpleHelp RMM (CVE-2024-57727 exploited January 2025), plus RDP/VPN external remote services. Custom tools include GRIXBA information-stealer for network enumeration and AV detection. Defense evasion via GMER, IOBit, PowerTool to disable AV; log deletion; per-attack binary recompilation (unique hashes per deployment). Lateral movement via Cobalt Strike, SystemBC, PsExec; credential dumping via Mimikatz; privilege escalation via WinPEAS. Exfiltration via WinRAR compression + WinSCP transfer. AES-RSA hybrid intermittent encryption (.PLAY extension), ransom notes (ReadMe.txt) direct victims to gmx.de/web.de emails; double-extortion model with TOR leak site. ESXi variant targets VMs with specific file extensions. IOCs include 16 file hashes (SHA256/SHA1), 2 YARA rules (PlayForESXi, GRXBA), Suricata rules for GRIXBA web history scanning detection.",
+  "timeline": [
+    {
+      "date": "2022-06-01",
+      "date_precision": "month",
+      "event": "Play ransomware group first observed impacting businesses and critical infrastructure",
+      "evidence_snippet": "Since June 2022, the Play (also known as Playcrypt) ransomware group has impacted a wide range of businesses and critical infrastructure"
+    },
+    {
+      "date": "2023-04-01",
+      "date_precision": "month",
+      "event": "First Play ransomware incident observed in Australia",
+      "evidence_snippet": "In Australia, the first Play ransomware incident was observed in April 2023"
+    },
+    {
+      "date": "2023-11-01",
+      "date_precision": "month",
+      "event": "Most recent Play ransomware incident observed in Australia (as of original December 2023 advisory publication)",
+      "evidence_snippet": "In Australia, most recently in November 2023"
+    },
+    {
+      "date": "2023-12-18",
+      "date_precision": "day",
+      "event": "Initial version of AA23-352A advisory published",
+      "evidence_snippet": "This advisory, originally published December 18, 2023"
+    },
+    {
+      "date": "2025-01-16",
+      "date_precision": "day",
+      "event": "Multiple ransomware groups including Play-tied initial access brokers exploit CVE-2024-57727 in SimpleHelp RMM tool following vulnerability disclosure",
+      "evidence_snippet": "Multiple ransomware groups exploited CVE-2024-57727 in remote monitoring and management (RMM) tool SimpleHelp following the vulnerability's disclosure on 16 January 2025"
+    },
+    {
+      "date": "2025-01-01",
+      "date_precision": "month",
+      "event": "FBI investigations of Play ransomware continue through January 2025 (most recent investigation timeframe cited in advisory)",
+      "evidence_snippet": "FBI, CISA, and ACSC are releasing this joint advisory to disseminate Play ransomware group's IOCs and TTPs identified through FBI investigations as recently as January 2025"
+    },
+    {
+      "date": "2025-05-01",
+      "date_precision": "month",
+      "event": "As of May 2025, FBI aware of approximately 900 affected entities allegedly exploited by Play ransomware actors",
+      "evidence_snippet": "As of May 2025, FBI was aware of approximately 900 affected entities allegedly exploited by the ransomware actors"
+    },
+    {
+      "date": "2025-06-04",
+      "date_precision": "day",
+      "event": "Updated version of AA23-352A advisory published with new TTPs, current IOCs, ESXi variant details, YARA/Suricata rules",
+      "evidence_snippet": "Update June 4, 2025: The advisory was updated to reflect new TTPs employed by Play ransomware group, as well as provide current IOCs/remove outdated IOCs"
+    }
+  ]
+}

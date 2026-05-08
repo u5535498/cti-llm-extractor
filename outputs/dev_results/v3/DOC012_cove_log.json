@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC012",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 13,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 13,
+      "n_supported": 13,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"CVE-2018-13379\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"CVE-2020-12812\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"CVE-2022-41040\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe \"CVE-2022-41082\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"CVE-2024-57727\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"AdFind\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"AdFind\" as a tool used by Play ransomware actors to query and retrieve information from Active Directory.\n7. [SUPPORTED] Q: Does the document describe \"Bloodhound\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Bloodhound\" as a tool used by the threat actor(s) to query and retrieve information from Active Directory.\n8. [SUPPORTED] Q: Does the document describe \"GMER\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"GMER\" as a tool used by Play ransomware actors to disable antivirus software.\n9. [SUPPORTED] Q: Does the document describe \"IOBit\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"IOBit\" as a tool used by the threat actor(s) to disable antivirus software.\n10. [SUPPORTED] Q: Does the document describe \"PsExec\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"PsExec\" as a tool used by the Play ransomware actors to assist with lateral movement and file execution.\n11. [SUPPORTED] Q: Does the document describe \"PowerTool\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"PowerTool\" as a Windows utility designed to improve speed, remove bloatware, protect privacy, and eliminate data collection, among other things.\n12. [SUPPORTED] Q: Does the document describe \"PowerShell\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"PowerShell\" as a tool used by the threat actor(s), specifically stating that they leveraged PowerShell commands to achieve RCE with a newly disclosed vulnerability.\n13. [SUPPORTED] Q: Does the document describe \"Cobalt Strike\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Cobalt Strike\" as a penetration testing tool used by security professionals to test the security of networks and systems, but also notes that Play ransomware actors have used it to assist with lateral movement and file execution."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 13.3
+}

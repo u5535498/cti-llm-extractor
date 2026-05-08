@@ -1,0 +1,77 @@
+{
+  "doc_id": "DOC024",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "0x1234567890abcdef (no specific hash value provided)",
+        "hash_type": "MD5",
+        "evidence_snippet": ""
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Impacket, PowerShell script, Drokbk.exe (.NET implant), Soldier (custom malware variant)",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2022-47966",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2022-47986",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Exploitation of Remote Services",
+      "technique": "Use of publicly disclosed POCs for initial access and persistence",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1055",
+      "tactic": "- Network Scanning",
+      "technique": "Use of Impacket to move laterally through a compromised organization",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071",
+      "tactic": "- Application Layer Protocol",
+      "technique": "Use of PowerShell scripts to enumerate admin accounts and enable RDP connections",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "- Impair Defenses",
+      "technique": "Use of webhook.site for C2",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "A subgroup of the Iranian nation-state actor Mint Sandstorm has refined its tactics, techniques, and procedures (TTPs) to attack high-value targets in various sectors. This subgroup rapidly weaponizes N-day vulnerabilities and conducts highly-targeted phishing campaigns to access environments of interest. Microsoft is publishing details on known tradecraft alongside corresponding detections and mitigations to help organizations protect against this threat.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 6.32
+}

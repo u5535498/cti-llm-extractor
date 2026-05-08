@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC009",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 8,
+      "n_ttps": 3,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 11,
+      "n_supported": 11,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe the IP address \"1.222.84[.]29\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes, the document lists \"1.222.84[.]29\" as an IP address associated with the APT actors' activity from August 2021 to June 2025.\n2. [SUPPORTED] Q: Does the document describe the IP address \"167.88.173[.]252\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes, the document lists \"167.88.173[.]252\" as an IP address associated with the APT actors' activity from August 2021 to June 2025.\n3. [SUPPORTED] Q: Does the document describe the IP address \"23.227.202[.]253\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes, the document lists \"23.227.202[.]253\" as an IP address associated with the APT actors' activity from August 2021 to June 2025 in Table 3: APT-associated IP-based Indicators, August 2021-June 2025.\n4. [SUPPORTED] Q: Does the document describe \"CVE-2024-21887\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"CVE-2024-3400\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"CVE-2023-20273\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"STOWAWAY\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"STOWAWAY\" as a tool used by the threat actor(s) for building chained relays for command and control (C2) and operator access.\n8. [SUPPORTED] Q: Does the document describe \"cmd3 SFTP client\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"cmd3 SFTP client\" as a tool used BY the threat actor(s) in this report.\n9. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe the technique \"T1059.008\" (Command and Control: Standard Command and Control (C2) Tool) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 10.2
+}

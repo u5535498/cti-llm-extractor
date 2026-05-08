@@ -1,0 +1,39 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Exposing RDStealer — Deep Dive Into A Targeted Cyber-attack Against East-asia Infrastructure"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Technology/IT Services"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AsyncRat",
+        "evidence_snippet": "AsyncRat was also used at the earlier stages of infection."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Bitdefender researchers investigated a targeted cyber-attack against East-Asia infrastructure, exposing RDStealer and its capabilities. The attackers used legitimate components to achieve their goals, including DLL hijacking and abusing scheduled tasks.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

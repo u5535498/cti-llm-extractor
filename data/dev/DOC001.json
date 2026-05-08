@@ -1,0 +1,162 @@
+{
+  "report_metadata": {
+    "report_title": "Unit 42 Global Incident Response Report 2025",
+    "report_type": "strategic"
+  },
+  "target_sectors": [
+    "High Technology",
+    "Professional and Legal Services",
+    "Manufacturing",
+    "Wholesale and Retail",
+    "Financial Services",
+    "Healthcare",
+    "Government",
+    "Media",
+    "Retail",
+    "Logistics",
+    "Entertainment",
+    "Telecommunications",
+    "IT Services"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "T1078 - Valid Accounts: This was one of the top techniques observed as an Initial Access vector, which represents more than 40% of the kinds of grouped techniques observed in association with this tactic.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "In 2024, phishing reclaimed its spot as the most common initial access vector in Unit 42 cases, accounting for about a quarter of our incidents (23%).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "T1190 - Exploit Public-Facing Application: Even well-resourced actors often take the path of least resistance, exploiting known (and even old) vulnerabilities.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "T1133 - External Remote Services: threat actors simply abusing legitimate remote access features.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "T1059 - Command and Scripting Interpreter: This was the top Execution technique (more than 61% of cases associated with the Execution tactic abuse PowerShell in this way, for example).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1053",
+      "tactic": "Persistence",
+      "technique": "Scheduled Task/Job",
+      "evidence_snippet": "T1053 - Scheduled Task/Job: 19% of Persistence tactic cases. Also the most prevalent Privilege Escalation technique at 22% of cases.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses",
+      "evidence_snippet": "Nearly 30% of the kinds of grouped techniques observed associated with Defense Evasion involved T1562 - Impair Defenses. This includes sub-techniques such as Disable or Modify Tools, Disable or Modify System Firewall, Disable Windows Event Logging.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "T1003 - OS Credential Dumping: 44% of Credential Access tactic cases — the most prevalent credential access technique observed.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1110",
+      "tactic": "Credential Access",
+      "technique": "Brute Force",
+      "evidence_snippet": "T1110 - Brute Force: 25% of Credential Access cases. In a different matter worked by Unit 42, threat actors spent months brute-forcing a VPN. Their eventual success allowed them to gain access to and maintain persistence in the organisation's environment.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services",
+      "evidence_snippet": "T1021 - Remote Services: Abuse of these services was overwhelmingly the most observed technique for Lateral Movement (over 86% of grouped techniques). This further extends the trend highlighting reuse of legitimate credentials, used to authenticate through RDP (over 48% of cases), SMB (over 27%), and SSH (over 9%).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1567",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service",
+      "evidence_snippet": "T1567 - Exfiltration Over Web Service: 73% of Exfiltration tactic cases. In 45% of cases where we observed exfiltration, attackers sent data to cloud storage (T1567.002).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "T1486 - Data Encrypted for Impact: 63% of Impact tactic cases. Encryption remains the most common tactic used in extortion cases, holding relatively steady over the past four years.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Impact",
+      "technique": "Inhibit System Recovery",
+      "evidence_snippet": "T1490 - Inhibit System Recovery: 14% of Impact tactic cases.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.004",
+      "tactic": "Defense Evasion",
+      "technique": "Valid Accounts: Cloud Accounts",
+      "evidence_snippet": "The use of valid cloud accounts (T1078.004) appears repeatedly in our case data in relation to Initial Access (13% of cases), Privilege Escalation (8%), Persistence (7%), and Defense Evasion (7%).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1584",
+      "tactic": "Resource Development",
+      "technique": "Compromise Infrastructure",
+      "evidence_snippet": "Insidious Taurus, aka Volt Typhoon, has been known to abuse opportunistically compromised devices (often internet-facing network routers and IoT assets) to create botnets that proxy command and control network traffic. (T1584 - Compromise Infrastructure)",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Palo Alto Networks Unit 42 Global Incident Response Report 2025 (February 2025) analyses over 500 major cyberattacks responded to between October 2023 and December 2024, spanning 38 countries. Five key trends are identified: (1) a third wave of extortion prioritising intentional operational disruption (86% of incidents involved business disruption); (2) growing software supply chain and cloud attacks, including one campaign scanning 230 million unique targets; (3) accelerating attack speed (median time to exfiltration two days; 19% of cases under one hour); (4) North Korean insider threat activity tripling year-on-year via the Wagemole/IT Workers scheme; and (5) early-stage AI-assisted attacks. Dominant TTPs include Valid Accounts (T1078), Phishing (T1566), Command and Scripting Interpreter (T1059), Remote Services for lateral movement (T1021, 86% of LM cases), OS Credential Dumping (T1003), Impair Defenses (T1562), and Data Encrypted for Impact (T1486). No atomic IoCs are provided. Median ransom demand rose 80% to $1.25 million in 2024; median dwell time fell 46% to seven days.",
+  "timeline": [
+    {
+      "date": "2023-10-01",
+      "date_precision": "month",
+      "event": "Start of Unit 42 case data collection period for this report",
+      "evidence_snippet": "We sourced data for this report from more than 500 cases Unit 42 responded to between October 2023–December 2024."
+    },
+    {
+      "date": "2024-12-31",
+      "date_precision": "month",
+      "event": "End of primary Unit 42 case data collection period",
+      "evidence_snippet": "We sourced data for this report from more than 500 cases Unit 42 responded to between October 2023–December 2024."
+    },
+    {
+      "date": "2025-02-01",
+      "date_precision": "month",
+      "event": "Publication of Unit 42 Global Incident Response Report 2025",
+      "evidence_snippet": "2025 Unit 42 Incident Response Report | February 2025"
+    }
+  ]
+}

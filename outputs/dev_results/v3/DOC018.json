@@ -1,0 +1,62 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government",
+    "Communications",
+    "Manufacturing",
+    "Utility",
+    "Transportation",
+    "Construction",
+    "Maritime",
+    "Information Technology",
+    "Education"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267",
+        "source_context": null,
+        "hash_type": "SHA256"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Impacket toolkit",
+        "evidence_snippet": "In rare cases, they also use custom versions of open-source tools Impacket and Fast Reverse Proxy (FRP) to establish a C2 channel over proxy."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

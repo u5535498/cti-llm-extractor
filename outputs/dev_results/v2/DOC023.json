@@ -1,0 +1,30 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Unpacking BellaCiao: A Closer Look at Iran’s Latest Malware"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This report provides a closer look at the BellaCiao malware, a new implant discovered by Bitdefender Labs. The malware is tailored to suit individual targets and exhibits a higher level of complexity.",
+  "timeline": []
+}

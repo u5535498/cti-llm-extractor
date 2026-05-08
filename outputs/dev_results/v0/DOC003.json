@@ -1,0 +1,41 @@
+{
+  "doc_id": "DOC003",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2024-36401",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1595.002",
+      "tactic": "unknown",
+      "technique": "Reconnaisance -",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "CISA shares lessons learned from an incident response engagement at a U.S. federal civilian executive branch (FCEB) agency that was compromised by cyber threat actors exploiting CVE-2024-36401 in a GeoServer. The agency's vulnerabilities were not promptly remediated, their incident response plan was not tested or exercised, and EDR alerts were not continuously reviewed. CISA encourages all organizations to consider these lessons learned and apply the associated recommendations to improve their security posture.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 5.14
+}

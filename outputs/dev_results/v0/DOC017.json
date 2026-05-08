@@ -1,0 +1,152 @@
+{
+  "doc_id": "DOC017",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [
+      {
+        "value": "https://www.premiumize[.]com",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "https://anonfiles[.]com",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "https://www.sendspace[.]com",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "https://fex[.]net",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "https://transfer[.]sh",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "https://send.exploit[.]in",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1480.001",
+      "tactic": "unknown",
+      "technique": "Execution with",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1614.001",
+      "tactic": "unknown",
+      "technique": "Language",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "unknown",
+      "technique": "External",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1189",
+      "tactic": "unknown",
+      "technique": "Drive-by",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "unknown",
+      "technique": "Phishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "unknown",
+      "technique": "Valid",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "unknown",
+      "technique": "Publicly",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "unknown",
+      "technique": "System",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1489",
+      "tactic": "unknown",
+      "technique": "Execution with",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1547",
+      "tactic": "unknown",
+      "technique": "Automated",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1485",
+      "tactic": "unknown",
+      "technique": "Clear",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "unknown",
+      "technique": "Shadow",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "unknown",
+      "technique": "Remote",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "unknown",
+      "technique": "System",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The LockBit 3.0 ransomware operations function as a Ransomware-as-a-Service (RaaS) model, with affiliates deploying the ransomware using various tactics and techniques to gain initial access to victim networks. The ransomware is more modular and evasive than its previous versions and shares similarities with Blackmatter and Blackcat ransomware. LockBit 3.0 attempts to spread across a victim network by using preconfigured credentials or compromised local accounts, and affiliates use custom exfiltration tools and publicly available file sharing services to exfiltrate sensitive company data files prior to encryption.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 9.98
+}

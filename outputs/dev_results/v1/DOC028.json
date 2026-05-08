@@ -1,0 +1,161 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Exposing RDStealer — Deep Dive Into A Targeted Cyber-attack Against East-asia Infrastructure"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Technology/IT Services"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "a-ad-tml[.]ntp-update[.]com",
+        "evidence_snippet": "Domain a-ad-tml[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "rps-a[.]ntp-update[.]com",
+        "evidence_snippet": "Domain rps-a[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "a-rps[.]ntp-update[.]com",
+        "evidence_snippet": "Domain a-rps[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "dns-a[.]ntp-update[.]com",
+        "evidence_snippet": "Domain dns-a[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "a-tb[.]ntp-update[.]com",
+        "evidence_snippet": "Domain a-tb[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "alast[.]sun-java[.]com",
+        "evidence_snippet": "Domain alast[.]sun-java[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "alast[.]ntp-update[.]com",
+        "evidence_snippet": "Domain alast[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "dell-a[.]ntp-update[.]com",
+        "evidence_snippet": "Domain dell-a[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "a-sp-rps[.]0g6666[.]com",
+        "evidence_snippet": "Domain a-sp-rps[.]0g6666[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "og8888[.]0g6666[.]com",
+        "evidence_snippet": "Domain og8888[.]0g6666[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "windows[.]javaupdate-cdn[.]com",
+        "evidence_snippet": "Domain windows[.]javaupdate-cdn[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "adobe[.]javaupdate-cdn[.]com",
+        "evidence_snippet": "Domain adobe[.]javaupdate-cdn[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "flash[.]javaupdate-cdn[.]com",
+        "evidence_snippet": "Domain flash[.]javaupdate-cdn[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "linux[.]0g6666[.]com",
+        "evidence_snippet": "Domain linux[.]0g6666[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "ad[.]ntp-update[.]com",
+        "evidence_snippet": "Domain ad[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "linux[.]ntp-update[.]com",
+        "evidence_snippet": "Domain linux[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "windows[.]0g6666[.]com",
+        "evidence_snippet": "Domain windows[.]0g6666[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "www[.]0g6666[.]com",
+        "evidence_snippet": "Domain www[.]0g6666[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "wt[.]ntp-update[.]com",
+        "evidence_snippet": "Domain wt[.]ntp-update[.]com was used by attackers.",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

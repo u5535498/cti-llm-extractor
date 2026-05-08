@@ -1,0 +1,101 @@
+{
+  "report_metadata": {
+    "report_title": "2025 Cyber Threat Intelligence Report",
+    "report_type": "strategic"
+  },
+  "target_sectors": [
+    "Education",
+    "Business Services",
+    "Manufacturing",
+    "Government",
+    "Healthcare",
+    "Technology",
+    "Financial Services",
+    "Energy",
+    "Transportation Logistics",
+    "Critical National Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "tools": [
+        {
+            "name": "Cobalt Strike",
+            "evidence_snippet": "Cobalt Strike, a commercial framework initially designed for adversary simulation and penetration testing"
+        },
+        {
+            "name": "Sliver",
+            "evidence_snippet": "Sliver was developed as an open-source red team adversary emulation tool"
+        },
+        {
+            "name": "Brute Ratel",
+            "evidence_snippet": "Brute Ratel, also known as BRC4, is a commercial framework intended for red-teaming"
+        },
+        {
+            "name": "Lumma Stealer",
+            "evidence_snippet": "Lumma Stealer rising in prevalence as the most dominant stealer on the market today"
+        },
+        {
+            "name": "Redline Stealer",
+            "evidence_snippet": "Redline Stealer, despite being one of the longest standing information stealers"
+        },
+        {
+            "name": "Meduza Stealer",
+            "evidence_snippet": "The Meduza Stealer first appeared on dark web forums in June 2023"
+        },
+        {
+            "name": "StealC",
+            "evidence_snippet": "StealC 23.61% remains a significant player within the UK information stealer landscape"
+        },
+        {
+            "name": "Raccoon Stealer",
+            "evidence_snippet": "Raccoon Stealer was dominant in the first half of 2024"
+        },
+        {
+            "name": "Gh0stRAT",
+            "evidence_snippet": "Gh0stRAT, a well-established malicious tool first identified in 2008"
+        },
+        {
+            "name": "QuasarRAT",
+            "evidence_snippet": "QuasarRAT maintained its position as a leading RAT throughout 2024"
+        },
+        {
+            "name": "AsyncRAT",
+            "evidence_snippet": "AsyncRAT maintained its position as a leading RAT throughout 2024"
+        },
+        {
+            "name": "Metasploit",
+            "evidence_snippet": "Metasploit and Burp Suite are likely to remain in the top 10 in upcoming years"
+        },
+        {
+            "name": "PlugX",
+            "evidence_snippet": "PlugX and ShadowPad, two well-known malware families linked to Chinese-nexus groups"
+        },
+        {
+            "name": "ShadowPad",
+            "evidence_snippet": "malware and tools closely linked to Chinese-nexus groups, such as ShadowPad, PlugX, Supershell"
+        },
+        {
+            "name": "Supershell",
+            "evidence_snippet": "Supershell C2 utilises web services for its operations"
+        },
+        {
+            "name": "EDRKillShifter",
+            "evidence_snippet": "EDRKillShifter fuelling Ransomhub's rise as a market leader"
+        }
+    ],
+    "cves": [
+        {
+            "value": "CVE-2024-4577",
+            "evidence_snippet": "exploitation of a severe PHP vulnerability, identified as CVE-2024-4577, to deploy QuasarRAT"
+        }
+    ]
+  },
+  "ttps": [
+        {
+        "mitre_id": "T1555.003",
+        "tactic": "Credential Access",
+        "technique": "Credentials from Password Stores: Credentials from Web Browsers",
+        "evidence_snippet": "In Fog Ransomware intrusions, operators were observed using the legitimate Microsoft utility, Esentutl.exe, to collect and back-up copies of sensitive login data"
+        }
+  ],
+  "summary": "Bridewell 2025 annual CTI report covering malicious infrastructure tracking (28,000+ servers), information stealer ecosystem analysis (Lumma/Redline/StealC dominance), and emerging threats. Key findings: 40% malicious infrastructure in US/China (down 8% from 2023), notable increase in Sliver/Brute Ratel C2 (decrease in Cobalt Strike), Chinese-nexus tools (ShadowPad/PlugX/Supershell) dominate top 10. Information stealers remain primary initial access for ransomware (Akira/RansomHub/Hellcat). Research highlights: ClickFix phishing technique adoption by nation-state actors (APT28/Lazarus/Kimsuky/MuddyWater), EDRKillers surge (EDRKillShifter/RansomHub), Fog ransomware emergence with Akira TTP overlap. 2025 outlook covers edge device exploitation, ORB networks, RaaS ecosystem evolution, cryptocurrency theft, GenAI threats, geopolitical impacts, cloud-native attacks, RMM tool abuse."
+}

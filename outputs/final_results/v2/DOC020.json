@@ -1,0 +1,64 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "PRC State-Sponsored Cyber Actor Living off the Land to Evade Detection"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "ShellJSP",
+          "evidence_snippet": "rule ShellJSP { strings: $s1 = \"decrypt(fpath)\" ... }"
+        },
+        {
+          "name": "EncryptJSP",
+          "evidence_snippet": "rule EncryptJSP { strings: $s1 = \"AEScrypt\" ... }"
+        },
+        {
+          "name": "CustomFRPClient",
+          "evidence_snippet": "rule CustomFRPClient { meta: description=\\\"Identify instances of the actor's custom FRP tool...\\\" "
+        },
+        {
+          "name": "HACKTOOL_FRPClient",
+          "evidence_snippet": "rule HACKTOOL_FRPClient { meta: description=\\\"Identify instances of FRP tool (Note: This tool is known to be used by multiple actors, so hits would not necessarily imply activity by the specific actor described in this report)\\\" "
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1070.001",
+      "tactic": "Command and Control",
+      "technique": "Clear Windows Logs",
+      "evidence_snippet": "The actor takes measures to hide their tracks, such as clearing logs [T1070.001].",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This advisory provides an overview of hunting guidance and associated best practices to detect activity associated with a People’s Republic of China (PRC) state-sponsored cyber actor, also known as Volt Typhoon.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2021-40539 (ManageEngine ADSelfService Plus)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2021-40539 occurred on May 27, 2023, when threat actors began targeting ManageEngine ADSelfService Plus installations."
+    }
+  ]
+}

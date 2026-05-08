@@ -1,0 +1,39 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Zscaler Blog"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy Utilities",
+    "Oil and Gas",
+    "Telecom",
+    "Machinery",
+    "Brazilian Telecom Company",
+    "Brazilian Cosmetics Company"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Zscaler ThreatLabz has discovered a new malware variant, RedEnergy stealer, that fits into the hybrid Stealer-as-a-Ransomware threat category. The malware uses a fake update campaign to target multiple industry verticals and possesses the ability to steal information from various browsers.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of RedEnergy stealer",
+      "evidence_snippet": "Earliest evidence of exploitation of RedEnergy stealer occurred on May 27, 2023."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "DOC019"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "A penetration testing tool used by security professionals to test the security of networks and systems."
+      },
+      {
+        "name": "SystemBC",
+        "evidence_snippet": "Enables Interlock actors to compromise systems, run commands, download malicious payloads, and act as a proxy tool to the actors’ C2 servers."
+      }
+    ],
+    "cves": [
+      {
+        "value": "T1189",
+        "evidence_snippet": "Interlock actors obtain initial access by compromising a legitimate website that network users visit, or by disguising malicious payloads as fake browser updates or common security software.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1189",
+      "tactic": "Initial Access",
+      "technique": "Drive-By Compromise",
+      "evidence_snippet": "Interlock actors obtain initial access by compromising a legitimate website that network users visit, or by disguising malicious payloads as fake browser updates or common security software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Interlock actors implement PowerShell scripts to drop a malicious file into the Windows Startup folder.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1547.001",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution: Registry Run Keys/Startup Folder",
+      "evidence_snippet": "Interlock actors establish persistence by adding a file into a Windows StartUp folder that executes a RAT every time a user logs in.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1078.002",
+      "tactic": "Privilege Escalation",
+      "technique": "Valid Accounts: Domain Accounts",
+      "evidence_snippet": "Interlock actors compromise domain administrator accounts to gain additional privileges.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

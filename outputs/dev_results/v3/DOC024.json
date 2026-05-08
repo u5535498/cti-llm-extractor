@@ -1,0 +1,47 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": {
+    "name": "Mint Sandstorm",
+    "aliases": [
+      "PHOSPHORUS"
+    ],
+    "confidence": "high"
+  },
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy",
+    "Transportation"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Drokbk",
+        "evidence_snippet": "Drobkbk and Soldier both use Mint Sandstorm-controlled GitHub repositories to host a domain rotator containing the operators’ C2 domains."
+      },
+      {
+        "name": "Soldier",
+        "evidence_snippet": "Microsoft Defender Antivirus detects the Soldier implant as the following malware: Trojan:MSIL/SoldierAudio.A!dha"
+      },
+      {
+        "name": "CharmPower",
+        "evidence_snippet": "In these attacks, Microsoft has observed the Mint Sandstorm subgroup using CharmPower, a custom implant, in attacks that began with targeted phishing campaigns."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Mint Sandstorm is a nation-state threat actor refining its tradecraft to attack high-value targets. The subgroup has demonstrated agility in its operational focus and has rapidly weaponized N-day vulnerabilities.",
+  "timeline": []
+}

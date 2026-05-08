@@ -1,0 +1,142 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Malicious Listener for Ivanti Endpoint Mobile Management Systems"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Loader 1",
+        "evidence_snippet": "Loader 1 is a Java Archive (JAR) file that contains [T1027.009] and loads the compiled Java class file ReflectUtil.class at runtime."
+      },
+      {
+        "name": "ReflectUtil.class",
+        "evidence_snippet": "ReflectUtil.class injects and manages SecurityHandlerWanListener in Apache Tomcat."
+      },
+      {
+        "name": "SecurityHandlerWanListener.class",
+        "evidence_snippet": "This compiled Java class file is a malicious listener that intercepts specific HTTP requests and processes them to decode and decrypt payloads, which dynamically create and execute a new class."
+      },
+      {
+        "name": "Loader 2",
+        "evidence_snippet": "Loader 2 contains and loads the compiled Java class file WebAndroidAppInstaller.class at runtime."
+      },
+      {
+        "name": "WebAndroidAppInstaller.class",
+        "evidence_snippet": "This compiled Java class file is a malicious listener that intercepts and processes specific HTTP requests, retrieves and decrypts password parameters from the request, defines and loads a new malicious class, encrypts and encodes the new class output, and generates a response with the encrypted output."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2025-4427",
+        "evidence_snippet": "The cyber threat actors exploited CVE-2025-4427 [CWE-288: Authentication Bypass Using an Alternate Path or Channel] and CVE-2025-4428 in Ivanti Endpoint Manager Mobile (Ivanti EPMM) deployments for initial access.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2025-4428",
+        "evidence_snippet": "The cyber threat actors exploited CVE-2025-4427 [CWE-288: Authentication Bypass Using an Alternate Path or Channel] and CVE-2025-4428 in Ivanti Endpoint Manager Mobile (Ivanti EPMM) deployments for initial access.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1027.004",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Compile After Delivery",
+      "evidence_snippet": "The cyber threat actors delivered malware in segments, splitting it into multiple Base64-encoded segments.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027.009",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Embedded Payloads",
+      "evidence_snippet": "Loader 1 contains ReflectUtil.class.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027.013",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+      "evidence_snippet": "WebAndroidAppInstaller.class AES encrypts and Base64 encodes a class output with a hard-coded key.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Loader 1 masquerades ReflectUtil.class as part of the org.apache.http package.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1620",
+      "tactic": "Command and Control",
+      "technique": "Reflective Code Loading",
+      "evidence_snippet": "ReflectUtil.class reflectively loads code into Java processes to add a malicious listener to Apache Tomcat servers.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "evidence_snippet": "ReflectUtil.class decodes and decompresses a class bytecode.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "evidence_snippet": "SecurityHandlerWanListener.class intercepts HTTP requests.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1573.001",
+      "tactic": "Command and Control",
+      "technique": "Encrypted Channel: Symmetric Cryptography",
+      "evidence_snippet": "WebAndroidAppInstaller.class decodes a Base64 password parameter value using an AES algorithm and hard-coded key.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This report details the malicious listener for Ivanti Endpoint Mobile Management Systems, which was used by cyber threat actors to gain initial access to compromised systems. The malware was delivered in segments, split into multiple Base64-encoded chunks, and used Java EL injection to write each chunk and append them together using the append mode.",
+  "timeline": [
+    {
+      "date": "2025-05-15",
+      "date_precision": "day",
+      "event": "Cyber threat actors gained access to the server running EPMM by chaining CVE-2025-4427 and CVE-2025-4428 vulnerabilities.",
+      "evidence_snippet": "Around May 15, 2025, following publication of a proof of concept, the cyber threat actors gained access to the server running EPMM by chaining these vulnerabilities."
+    }
+  ]
+}

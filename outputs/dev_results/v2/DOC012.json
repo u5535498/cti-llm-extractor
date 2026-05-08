@@ -1,0 +1,105 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA23-352A: Play Ransomware"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": "Used to query and retrieve information from Active Directory."
+      },
+      {
+        "name": "Bloodhound",
+        "evidence_snippet": "Used to query and retrieve information from Active Directory."
+      },
+      {
+        "name": "GMER",
+        "evidence_snippet": "A software tool intended to be used for detecting and removing rootkits."
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": "A tool designed to run programs and execute commands on remote systems."
+      },
+      {
+        "name": "WinPEAS",
+        "evidence_snippet": "Used to search for additional privilege escalation paths."
+      },
+      {
+        "name": "Microsoft Nltest",
+        "evidence_snippet": "Used by Play ransomware actors for network discovery."
+      },
+      {
+        "name": "Nekto / PriviCMD",
+        "evidence_snippet": "Used by Play ransomware actors for privilege escalation."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public Facing Application",
+      "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "Play ransomware actors use tools like GRIXBA to identify network configurations and settings.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1518.001",
+      "tactic": "Defense Evasion",
+      "technique": "Software Discovery: Security Software Discovery",
+      "evidence_snippet": "Play ransomware actors scan for antivirus software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "Play ransomware actors use tools like Mimikatz to dump credentials.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1560.001",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data: Archive via Utility",
+      "evidence_snippet": "Play ransomware actors use tools like WinRAR to compress files.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

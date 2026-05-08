@@ -1,0 +1,545 @@
+{
+  "report_metadata": {
+    "report_title": "#StopRansomware: Interlock",
+    "report_type": "campaign"
+  },
+  "campaign_name": "AA25-203A – Interlock ransomware operations against businesses and critical infrastructure",
+  "target_sectors": [
+    "Business",
+    "Critical infrastructure",
+    "Healthcare and Public Health"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "fba4883bf4f73aa48a957d894051d78e0085ecc3170b1ff50e61ccec6aeee2cd",
+        "hash_type": "SHA256",
+        "evidence_snippet": "1.ps1 fba4883bf4f73aa48a957d894051d78e0085ecc3170b1ff50e61ccec6aeee2cd",
+        "source_context": "observed"
+      },
+      {
+        "value": "4b036cc9930bb42454172f888b8fde1087797fc0c9d31ab546748bd2496bd3e5",
+        "hash_type": "SHA256",
+        "evidence_snippet": "advancedportscanner.exe 4b036cc9930bb42454172f888b8fde1087797fc0c9d31ab546748bd2496bd3e5",
+        "source_context": "observed"
+      },
+      {
+        "value": "18a507bf1c533aad8e6f2a2b023fbbcac02a477e8f05b095ee29b52b90d47421",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Aisa.exe 18a507bf1c533aad8e6f2a2b023fbbcac02a477e8f05b095ee29b52b90d47421",
+        "source_context": "observed"
+      },
+      {
+        "value": "1a70f4eef11fbecb721b9bab1c9ff43a8c4cd7b2cafef08c033c77070c6fe069",
+        "hash_type": "SHA256",
+        "evidence_snippet": "AnyDesk.exe 1a70f4eef11fbecb721b9bab1c9ff43a8c4cd7b2cafef08c033c77070c6fe069",
+        "source_context": "observed"
+      },
+      {
+        "value": "a4069aa29628e64ea63b4fb3e29d16dcc368c5add304358a47097eedafbbb565",
+        "hash_type": "SHA256",
+        "evidence_snippet": "autoservice.dll a4069aa29628e64ea63b4fb3e29d16dcc368c5add304358a47097eedafbbb565",
+        "source_context": "observed"
+      },
+      {
+        "value": "d535bdc9970a3c6f7ebf0b229c695082a73eaeaf35a63cd8a0e7e6e3ceb22795",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Autostart.exe d535bdc9970a3c6f7ebf0b229c695082a73eaeaf35a63cd8a0e7e6e3ceb22795",
+        "source_context": "observed"
+      },
+      {
+        "value": "fafcd5404a992850ffcffee46221f9b2ff716006aecb637b80e5cd5aa112d79c",
+        "hash_type": "SHA256",
+        "evidence_snippet": "cht FAFCD5404A992850FFCFFEE46221F9B2FF716006AECB637B80E5CD5AA112D79C",
+        "source_context": "observed"
+      },
+      {
+        "value": "c20baba26ebb596de14b403b9f78ddc3c13ce9870eea332476ac2c1dd582aa07",
+        "hash_type": "SHA256",
+        "evidence_snippet": "cht.exe C20BABA26EBB596DE14B403B9F78DDC3C13CE9870EEA332476AC2C1DD582AA07",
+        "source_context": "observed"
+      },
+      {
+        "value": "1845a910dcde8c6e45ad2e0c48439e5ab8bbbeb731f2af11a1b7bbab3bfe0127",
+        "hash_type": "SHA256",
+        "evidence_snippet": "cleanup.dll SystemBC 1845a910dcde8c6e45ad2e0c48439e5ab8bbbeb731f2af11a1b7bbab3bfe0127",
+        "source_context": "observed"
+      },
+      {
+        "value": "44887125aa2df864226421ee694d51e5535d8c6f70e327e9bcb366e43fd892c1",
+        "hash_type": "SHA256",
+        "evidence_snippet": "conhost 44887125aa2df864226421ee694d51e5535d8c6f70e327e9bcb366e43fd892c1",
+        "source_context": "observed"
+      },
+      {
+        "value": "a70af759e38219ca3a7f7645f3e103b13c9fb1db6d13b68f3d468b7987540ddf",
+        "hash_type": "SHA256",
+        "evidence_snippet": "conhost.dll a70af759e38219ca3a7f7645f3e103b13c9fb1db6d13b68f3d468b7987540ddf",
+        "source_context": "observed"
+      },
+      {
+        "value": "96babe53d6569ee3b4d8fc09c2a6557e49ebc2ed1b965abda0f7f51378557eb1",
+        "hash_type": "SHA256",
+        "evidence_snippet": "conhost.dll 96babe53d6569ee3b4d8fc09c2a6557e49ebc2ed1b965abda0f7f51378557eb1",
+        "source_context": "observed"
+      },
+      {
+        "value": "d0c1662ce239e4d288048c0e3324ec52962f6ddda77da0cb7af9c1d9c2f1e2eb",
+        "hash_type": "SHA256",
+        "evidence_snippet": "iexplore.exe d0c1662ce239e4d288048c0e3324ec52962f6ddda77da0cb7af9c1d9c2f1e2eb",
+        "source_context": "observed"
+      },
+      {
+        "value": "a4f0b68052e8da9a80b70407a92400c6a5def19717e0240ac608612476e1137e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "klg.dll A4F0B68052E8DA9A80B70407A92400C6A5DEF19717E0240AC608612476E1137E",
+        "source_context": "observed"
+      },
+      {
+        "value": "68a49d5a097e3850f3bb572baf2b75a8e158dadb70baddc205c2628a9b660e7a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "!!!OPENME!!!.txt 68A49D5A097E3850F3BB572BAF2B75A8E158DADB70BADDC205C2628A9B660E7A",
+        "source_context": "observed"
+      },
+      {
+        "value": "88f26f3721076f74996f8518469d98bf9be0eaee5b9eccc72867ebfc25ea4e83",
+        "hash_type": "SHA256",
+        "evidence_snippet": "processhacker-2.39-bin.zip 88f26f3721076f74996f8518469d98bf9be0eaee5b9eccc72867ebfc25ea4e83",
+        "source_context": "observed"
+      },
+      {
+        "value": "078163d5c16f64caa5a14784323fd51451b8c831c73396b967b4e35e6879937b",
+        "hash_type": "SHA256",
+        "evidence_snippet": "PsExec.exe 078163d5c16f64caa5a14784323fd51451b8c831c73396b967b4e35e6879937b",
+        "source_context": "observed"
+      },
+      {
+        "value": "7a43789216ce242524e321d2222fa50820a532e29175e0a2e685459a19e09069",
+        "hash_type": "SHA256",
+        "evidence_snippet": "putty.exe 7a43789216ce242524e321d2222fa50820a532e29175e0a2e685459a19e09069",
+        "source_context": "observed"
+      },
+      {
+        "value": "97931d2e2e449ac3691eb526f6f60e2f828de89074bdac07bd7dbdfd51af9fa0",
+        "hash_type": "SHA256",
+        "evidence_snippet": "puttyportable.exe 97931d2e2e449ac3691eb526f6f60e2f828de89074bdac07bd7dbdfd51af9fa0",
+        "source_context": "observed"
+      },
+      {
+        "value": "ff7ad2376ae01e4b3f1e1d7ae630f87b8262b5c11bc5d953e1ac34ffe81401b5",
+        "hash_type": "SHA256",
+        "evidence_snippet": "PuTTYPortable.zip ff7ad2376ae01e4b3f1e1d7ae630f87b8262b5c11bc5d953e1ac34ffe81401b5",
+        "source_context": "observed"
+      },
+      {
+        "value": "64a0ab00d90682b1807c5d7da1a4ae67cde4c5757fc7d995d8f126f0ec8ae983",
+        "hash_type": "SHA256",
+        "evidence_snippet": "qrpce91.exe.asd 64a0ab00d90682b1807c5d7da1a4ae67cde4c5757fc7d995d8f126f0ec8ae983",
+        "source_context": "observed"
+      },
+      {
+        "value": "2814b33ce81d2d2e528bb1ed4290d665569f112c9be54e65abca50c41314d462",
+        "hash_type": "SHA256",
+        "evidence_snippet": "ScreenConnect.ClientService.exe 2814b33ce81d2d2e528bb1ed4290d665569f112c9be54e65abca50c41314d462",
+        "source_context": "observed"
+      },
+      {
+        "value": "f51b3d054995803d04a754ea3ff7d31823fab654393e8054b227092580be43db",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SophosendpointAgent.exe f51b3d054995803d04a754ea3ff7d31823fab654393e8054b227092580be43db",
+        "source_context": "observed"
+      },
+      {
+        "value": "dfb5ba578b81f05593c047f2c822eeb03785aecffb1504dcb7f8357e898b5024",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SophosScaner.exe dfb5ba578b81f05593c047f2c822eeb03785aecffb1504dcb7f8357e898b5024",
+        "source_context": "observed"
+      },
+      {
+        "value": "94bf0aba5f9f32b9c35e8dfc70afd8a35621ed6ef084453dc1b10719ae72f8e2",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Starship.exe 94bf0aba5f9f32b9c35e8dfc70afd8a35621ed6ef084453dc1b10719ae72f8e2",
+        "source_context": "observed"
+      },
+      {
+        "value": "28c3c50d115d2b8ffc7ba0a8de9572fbe307907aaae3a486aabd8c0266e9426f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "start 28c3c50d115d2b8ffc7ba0a8de9572fbe307907aaae3a486aabd8c0266e9426f",
+        "source_context": "observed"
+      },
+      {
+        "value": "70bb799557da5ac4f18093decc60c96c13359e30f246683815a512d7f9824c8f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "start.exe 70bb799557da5ac4f18093decc60c96c13359e30f246683815a512d7f9824c8f",
+        "source_context": "observed"
+      },
+      {
+        "value": "73a9a1e38ff40908bcc15df2954246883dadfb991f3c74f6c514b4cffdabde66",
+        "hash_type": "SHA256",
+        "evidence_snippet": "StorageExplorer.exe 73a9a1e38ff40908bcc15df2954246883dadfb991f3c74f6c514b4cffdabde66",
+        "source_context": "observed"
+      },
+      {
+        "value": "1d04e33009bcd017898b9e1387e40b5c04279c02ebc110f12e4a724ccdb9e4fb",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Sysmon.sys 1d04e33009bcd017898b9e1387e40b5c04279c02ebc110f12e4a724ccdb9e4fb",
+        "source_context": "observed"
+      },
+      {
+        "value": "7b9e12e3561285181634ab32015eb653ab5e5cfa157dd16cdd327104b258c332",
+        "hash_type": "SHA256",
+        "evidence_snippet": "upd2327991.exe 7b9e12e3561285181634ab32015eb653ab5e5cfa157dd16cdd327104b258c332",
+        "source_context": "observed"
+      },
+      {
+        "value": "70ee22d394e107fbb807d86d187c216ad66b8537edc67931559a8aef18f6b5b3",
+        "hash_type": "SHA256",
+        "evidence_snippet": "webujgd.lnk 70EE22D394E107FBB807D86D187C216AD66B8537EDC67931559A8AEF18F6B5B3",
+        "source_context": "observed"
+      },
+      {
+        "value": "8eb7e3e8f3ee31d382359a8a232c984bdaa130584cad11683749026e5df1fdc3",
+        "hash_type": "SHA256",
+        "evidence_snippet": "WinSCP-6.3.5-Setup.exe 8eb7e3e8f3ee31d382359a8a232c984bdaa130584cad11683749026e5df1fdc3",
+        "source_context": "observed"
+      },
+      {
+        "value": "e4d6fe517cdf3790dfa51c62457f5acd8cb961ab1f083de37b15fd2fddeb9b8f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Proxy Tool e4d6fe517cdf3790dfa51c62457f5acd8cb961ab1f083de37b15fd2fddeb9b8f",
+        "source_context": "observed"
+      },
+      {
+        "value": "e86bb8361c436be94b0901e5b39db9b6666134f23cce1e5581421c2981405cb1",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Encryptor e86bb8361c436be94b0901e5b39db9b6666134f23cce1e5581421c2981405cb1",
+        "source_context": "observed"
+      },
+      {
+        "value": "c733d85f445004c9d6918f7c09a1e0d38a8f3b37ad825cd544b865dba36a1ba6",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Encryptor c733d85f445004c9d6918f7c09a1e0d38a8f3b37ad825cd544b865dba36a1ba6",
+        "source_context": "observed"
+      },
+      {
+        "value": "514946a8fc248de1ccf0dbeee2108a3b4d75b5f6",
+        "hash_type": "SHA1",
+        "evidence_snippet": "autorun.log 514946a8fc248de1ccf0dbeee2108a3b4d75b5f6",
+        "source_context": "observed"
+      },
+      {
+        "value": "b625cc9e4024d09084e80a4a42ab7ccaa6afb61d",
+        "hash_type": "SHA1",
+        "evidence_snippet": "jar.jar b625cc9e4024d09084e80a4a42ab7ccaa6afb61d",
+        "source_context": "observed"
+      },
+      {
+        "value": "3703374c9622f74edc9c8e3a47a5d53007f7721e",
+        "hash_type": "SHA1",
+        "evidence_snippet": "pack.jar 3703374c9622f74edc9c8e3a47a5d53007f7721e",
+        "source_context": "observed"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "AnyDesk: A common legitimate remote monitoring and management (RMM) tool maliciously used by Interlock actors to obtain remote access and maintain persistence."
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "FBI observed Interlock actors using command and control (C2) applications like Cobalt Strike and SystemBC."
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "PowerShell: A cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework."
+      },
+      {
+        "name": "PSExec",
+        "evidence_snippet": "PSExec: A tool designed to run programs and execute commands on remote systems."
+      },
+      {
+        "name": "PuTTY",
+        "evidence_snippet": "Interlock actors also use tools like AnyDesk to enable remote connectivity and PuTTY to assist with lateral movement [T1219]."
+      },
+      {
+        "name": "ScreenConnect",
+        "evidence_snippet": "ScreenConnect: A remote support, access, and meeting software that allows users to control devices remotely over the internet. CISA observed Interlock actors using a cracked version of this software in at least one incident."
+      },
+      {
+        "name": "SystemBC",
+        "evidence_snippet": "SystemBC: Enables Interlock actors to compromise systems, run commands, download malicious payloads, and act as a proxy tool to the actors' C2 servers."
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": "Interlock actors also exfiltrate data over file transfer tools, including WinSCP [T1048]."
+      },
+      {
+        "name": "Azure Storage Explorer",
+        "evidence_snippet": "Interlock actors leverage Azure Storage Explorer (StorageExplorer.exe) to navigate victims' Microsoft Azure Storage accounts [T1530]."
+      },
+      {
+        "name": "AzCopy",
+        "evidence_snippet": "Interlock actors execute AzCopy to exfiltrate data by uploading it to the Azure storage blob [T1567.002]."
+      },
+      {
+        "name": "Interlock RAT",
+        "evidence_snippet": "Interlock actors also used Interlock RAT and NodeSnake RAT (as of March 2025) for C2 and executing commands."
+      },
+      {
+        "name": "NodeSnake RAT",
+        "evidence_snippet": "Interlock actors also used Interlock RAT and NodeSnake RAT (as of March 2025) for C2 and executing commands."
+      },
+      {
+        "name": "Lumma Stealer",
+        "evidence_snippet": "private cybersecurity analysts also observed Interlock ransomware infections executing different versions of information stealers, including Lumma Stealer and Berserk Stealer, to harvest credentials for lateral movement and privilege escalation."
+      },
+      {
+        "name": "Berserk Stealer",
+        "evidence_snippet": "private cybersecurity analysts also observed Interlock ransomware infections executing different versions of information stealers, including Lumma Stealer and Berserk Stealer, to harvest credentials for lateral movement and privilege escalation."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1189",
+      "tactic": "Initial Access",
+      "technique": "Drive-By Compromise",
+      "evidence_snippet": "Drive-By Compromise T1189 Interlock actors obtain initial access by compromising a legitimate website that network users visit, or by disguising malicious payloads as fake browser updates or common security software, including the following: FortiClient.exe Ivanti-Secure-Access-Client.exe GlobalProtect.exe Webex.exe AnyConnectVPN.exe Cisco-Secure-Client.exe zyzoom_antimalware.exe Interlock actors also gain access via the ClickFix social engineering technique, in which users are tricked into executing a malicious payload by clicking on a fake CAPTCHA that prompts users to execute a malicious PowerShell script.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Command and Scripting Interpreter: PowerShell T1059.001 Interlock actors implement PowerShell scripts to drop a malicious file into the Windows Startup folder. Interlock actors execute a PowerShell command for registry key modification. Interlock actors use a PowerShell script to execute a series of commands to facilitate reconnaissance.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204.004",
+      "tactic": "Execution",
+      "technique": "User Execution: Malicious Copy and Paste",
+      "evidence_snippet": "User Execution: Malicious Copy and Paste T1204.004 Via the ClickFix social engineering technique, users are tricked into clicking a fake CAPTCHA and prompted into executing a malicious Base64-encoded PowerShell process by following instructions to open a Windows Run window (Windows Button + R), pasting clipboard contents (CTRL + V), and then executing the malicious script (Enter).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1547.001",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution: Registry Run Keys/Startup Folder",
+      "evidence_snippet": "Boot or Logon Autostart Execution: Registry Run Keys/Startup Folder T1547.001 Interlock actors establish persistence by adding a file into a Windows StartUp folder that executes a RAT every time a user logs in. Interlock actors also implement registry key modification by using a PowerShell command to add a run key value (named \"Chrome Updater\") that uses a log file as an argument every time a user logs in.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.002",
+      "tactic": "Privilege Escalation",
+      "technique": "Valid Accounts: Domain Accounts",
+      "evidence_snippet": "Valid Accounts: Domain Accounts T1078.002 Interlock actors compromise domain administrator accounts to gain additional privileges.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1036.005",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading: Match Legitimate Resource Name or Location",
+      "evidence_snippet": "Masquerading: Match Legitimate Resource Name or Location T1036.005 Interlock actors disguise a malicious run key value by naming it \"Chrome Updater\"; the run key value uses a specific log file as an argument upon user login. Interlock actors disguise files of keystrokes logged by one of their credential stealers with a legitimate Windows filename: conhost.txt. Interlock actors disguise an encryption binary, a 64-bit executable, by giving it the same name as the legitimate Console Windows Host executable: conhost.exe",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1218.011",
+      "tactic": "Defense Evasion",
+      "technique": "System Binary Proxy Execution: Rundll32",
+      "evidence_snippet": "System Binary Proxy Execution: Rundll32 T1218.011 Interlock actors use rundll32.exe to proxy execution of a malicious DLL binary tmp41.wasd.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: File Deletion",
+      "evidence_snippet": "Indicator Removal: File Deletion T1070.004 Interlock actors execute a DLL binary tmp41.wasd that uses the remove() function to delete their encryption binary for defense evasion.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1555.003",
+      "tactic": "Credential Access",
+      "technique": "Credentials from Password Stores: Credentials from Web Browsers",
+      "evidence_snippet": "Credentials from Password Stores: Credentials from Web Browsers T1555.003 Interlock actors download a credential stealer that collects login information and associated URLs for victims' online accounts.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1056",
+      "tactic": "Credential Access",
+      "technique": "Input Capture",
+      "evidence_snippet": "Input Capture T1056 Interlock actors execute Lumma Stealer and Berserk Stealer information stealers on victim systems.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1056.001",
+      "tactic": "Credential Access",
+      "technique": "Input Capture: Keylogging",
+      "evidence_snippet": "Input Capture: Keylogging T1056.001 Interlock actors download klg.dll, a keylogger binary, onto compromised systems, where it logs users' keystrokes in a file named conhost.txt.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1558.003",
+      "tactic": "Credential Access",
+      "technique": "Steal or Forge Kerberos Tickets: Kerberoasting",
+      "evidence_snippet": "Steal or Forge Kerberos Tickets: Kerberoasting T1558.003 Interlock actors possibly use a Kerberoasting attack to compromise domain administrator accounts.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1033",
+      "tactic": "Discovery",
+      "technique": "System Owner/User Discovery",
+      "evidence_snippet": "System Owner/User Discovery T1033 Interlock actors execute a PowerShell command WindowsIdentity.GetCurrent() on victim systems to retrieve a WindowsIdentity object that represents the current Windows user.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "System Information Discovery T1082 Interlock actors execute a PowerShell command systeminfo on victim systems to access detailed configuration information about the system, including OS configuration, security information, product ID, and hardware properties. Interlock actors execute a PowerShell command Get-PSDrive on victim systems to discover the drives in the current session.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1007",
+      "tactic": "Discovery",
+      "technique": "System Service Discovery",
+      "evidence_snippet": "System Service Discovery T1007 Interlock actors execute a PowerShell command tasklist /svc on victim systems that lists service information for each process currently running on the system. Actors also execute a PowerShell command Get-Service on victim systems that retrieves objects that represent the services (including running and stopped services) on the system.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "System Network Configuration Discovery T1016 Interlock actors execute a PowerShell command arp -a on victim systems that displays and modifies entries in the Address Resolution Protocol (ARP) cache table (which contains entries on the IPv4 and IPv6 addresses on host endpoints).",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Lateral Movement",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Valid Accounts T1078 Interlock actors harvest and abuse valid credentials for lateral movement and privilege escalation.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "Remote Services: Remote Desktop Protocol T1021.001 Interlock actors use RDP and valid credentials to move laterally between systems.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1530",
+      "tactic": "Collection",
+      "technique": "Data from Cloud Storage",
+      "evidence_snippet": "Data from Cloud Storage T1530 Interlock actors use StorageExplorer.exe, the cloud storage solution Azure Storage Explorer, to explore Microsoft Azure Storage accounts.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1105",
+      "tactic": "Command and Control",
+      "technique": "Ingress Tool Transfer",
+      "evidence_snippet": "Ingress Tool Transfer T1105 Interlock actors use a fake Google Chrome or Microsoft Edge browser update to cause users to execute a RAT on the victimized system. Interlock actors download credential stealers (cht.exe) and keylogger binaries (klg.dll) once actors establish remote control of a compromised system.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Tools",
+      "evidence_snippet": "Remote Access Tools T1219 Interlock actors use legitimate remote access tools such as AnyDesk to enable remote connectivity and PuTTY to assist with lateral movement.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1567.002",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "evidence_snippet": "Exfiltration Over Web Service: Exfiltration to Cloud Storage T1567.002 Interlock actors exfiltrate data to cloud storage by executing AzCopy to upload data to the Azure storage blob.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1048",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Alternative Protocol",
+      "evidence_snippet": "Exfiltration Over Alternative Protocol T1048 Interlock actors use file transfer tools like WinSCP to exfiltrate data.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Data Encrypted for Impact T1486 Interlock actors encrypt victim data using a combined AES and RSA algorithm on compromised systems to interrupt availability to system and network resources. Actors code encryptors using C/C++. Interlock actors use encryptors for both Windows and Linux operating systems. Interlock actors also use a FreeBSD ELF encryptor to encrypt victim data.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Financial Theft T1657 Interlock actors deliver a ransom note titled !__README__!.txt via a GPO which provides victims with instructions to use a .onion URL to contact the actors over the Tor network. Actors use a double-extortion model, both encrypting victim data and threatening release of victim data on their Tor network leak site if the ransom is not paid.",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Interlock ransomware (first observed late September 2024) targets businesses and critical infrastructure organisations in North America and Europe on an opportunistic, financially motivated basis. Initial access is obtained via drive-by download from compromised legitimate websites, with malicious payloads disguised as browser or security software updates, or via the ClickFix social engineering technique using fake CAPTCHA prompts. A RAT (delivered as a fake browser update) establishes persistence via the Windows Startup folder and registry run keys. Actors use PowerShell reconnaissance, credential stealers (cht.exe, Lumma Stealer, Berserk Stealer), a keylogger (klg.dll), Kerberoasting, and RDP/AnyDesk/PuTTY for lateral movement. Data is collected from Azure Storage Explorer and exfiltrated via AzCopy and WinSCP. A double-extortion model is employed: files are encrypted using AES/RSA (appended with .interlock or .1nt3rlock), and victims are threatened with data publication on a Tor leak site. The advisory contains 40 file hashes (SHA-256 and SHA-1) obtained from FBI investigations as recently as June 2025.",
+  "timeline": [
+    {
+      "date": "2024-09-01",
+      "date_precision": "month",
+      "event": "Interlock ransomware variant first observed targeting businesses and critical infrastructure in North America and Europe",
+      "evidence_snippet": "The Interlock ransomware variant was first observed in late September 2024, targeting various business, critical infrastructure, and other organizations in North America and Europe."
+    },
+    {
+      "date": "2024-11-03",
+      "date_precision": "day",
+      "event": "Bleeping Computer reports Interlock ransomware targeting FreeBSD servers with novel ELF encryptor",
+      "evidence_snippet": "Lawrence Abrams, Meet Interlock: The New Ransomware Targeting FreeBSD Servers, Bleeping Computer, November 3, 2024."
+    },
+    {
+      "date": "2024-11-07",
+      "date_precision": "day",
+      "event": "Cisco Talos publishes analysis of emerging Interlock ransomware attack, including credential stealer and keylogger details",
+      "evidence_snippet": "Elio Biasiotto, et. al., Unwrapping the Emerging Interlock Ransomware Attack, Talos Intelligence blog, Cisco Talos, last modified November 7, 2024."
+    },
+    {
+      "date": "2025-02-01",
+      "date_precision": "month",
+      "event": "Interlock actors observed deploying Lumma Stealer and Berserk Stealer information stealers for credential harvesting",
+      "evidence_snippet": "As of February 2025, private cybersecurity analysts also observed Interlock ransomware infections executing different versions of information stealers TA0006, including Lumma Stealer and Berserk Stealer, to harvest credentials for lateral movement and privilege escalation T1078."
+    },
+    {
+      "date": "2025-03-01",
+      "date_precision": "month",
+      "event": "NodeSnake RAT first observed deployed by Interlock actors for C2",
+      "evidence_snippet": "Interlock actors also used Interlock RAT and NodeSnake RAT as of March 2025 for C2 and executing commands."
+    },
+    {
+      "date": "2025-04-16",
+      "date_precision": "day",
+      "event": "Sekoia reports Interlock ransomware evolving with shift to payloads masquerading as security software updates",
+      "evidence_snippet": "Sekoia Threat Detection and Research team, Interlock Ransomware Evolving Under the Radar, Sekoia blog, last modified April 16, 2025."
+    },
+    {
+      "date": "2025-05-28",
+      "date_precision": "day",
+      "event": "Bleeping Computer reports Interlock ransomware gang deploys NodeSnake RAT targeting universities",
+      "evidence_snippet": "Bill Toulas, Interlock Ransomware Gang Deploys New NodeSnake RAT on Universities, Bleeping Computer, May 28, 2025."
+    },
+    {
+      "date": "2025-06-30",
+      "date_precision": "month",
+      "event": "Most recent FBI investigation activity referenced for Interlock IOCs and TTPs",
+      "evidence_snippet": "These were obtained from FBI investigations as recently as June 2025."
+    },
+    {
+      "date": "2025-07-22",
+      "date_precision": "day",
+      "event": "Advisory AA25-203A initial version published by FBI, CISA, HHS, and MS-ISAC",
+      "evidence_snippet": "Version History July 22, 2025 Initial version."
+    }
+  ]
+}

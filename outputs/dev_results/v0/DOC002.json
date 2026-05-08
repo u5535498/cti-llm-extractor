@@ -1,0 +1,182 @@
+{
+  "doc_id": "DOC002",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "targetsname-sso[.]com",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "targetsname-servicedesk[.]com",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "targetsname-okta[.]com",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [],
+    "urls": [
+      {
+        "value": "MEGA[.]NZ",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "Amazon S3 [T1567.002]",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Fleetdeck.io - Enables remote monitoring and management of systems.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Level.io - Enables remote monitoring and management of systems.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Mimikatz - Extracts credentials from a system.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Ngrok - Enables remote access to a local web server by tunneling over the internet.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Pulseway - Enables remote monitoring and management of systems.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Screenconnect - Enables remote connections to network devices for management.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Splashtop - Enables remote connections to network devices for management.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Tactical.RMM - Enables remote monitoring and management of systems.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Tailscale - Provides virtual private networks (VPNs) to secure network communications.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "TeamViewer - Enables remote connections to network devices for management.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Teleport.sh - Enables remote access to a local system by tunneling over the internet.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AnyDesk - Enables remote access to network devices for management, bypassing security alerts due to being a legitimate application.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AveMaria (also known as WarZone) - Enables remote access to a targeted organization\u2019s systems.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Raccoon Stealer - Steals information including login credentials, browser history, cookies, and other data.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "VIDAR Stealer - Steals information including login credentials, browser history, cookies, and other data.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "RattyRAT - Java-based remote access trojan, used for persistent, stealth access and internal reconnaissance.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "DragonForce Ransomware - Infiltrates networks, encrypts data, and demands ransom.",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1598",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors posed as company IT and/or helpdesk staff using phone calls or SMS messages to obtain credentials from employees and gain access to the network.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1656",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors posed as company IT and/or helpdesk staff to direct employees to run commercial remote access tools enabling initial access.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors posed as IT staff to convince employees to share their one-time password (OTP), an MFA authentication code.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors posed as company IT and/or helpdesk staff to direct employees to run commercial remote access tools enabling initial access.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider intrusions historically began with broad phishing attempts against a target using organization-specific crafted domains.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1660",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors used smishing attempts against a target using organization-specific crafted domains.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1583.001",
+      "tactic": "Initial Access",
+      "technique": "Scattered Spider threat actors used organization-specific crafted domains, such as the domains listed in Table 3.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Command and Control",
+      "technique": "After exfiltrating and/or encrypting data, Scattered Spider threat actors communicate with targeted organizations via TOR, Tox, email, or encrypted applications.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The Scattered Spider cybercriminal group targets large companies and their contracted information technology (IT) help desks using sophisticated social engineering techniques, including push bombing and subscriber identity module (SIM) swap attacks. They use legitimate remote access tools and malware to gain access to networks, exfiltrate data, and encrypt targeted organizations' systems for ransom.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 14.37
+}

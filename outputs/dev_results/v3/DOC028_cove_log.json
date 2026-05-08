@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC028",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 8,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 8,
+      "n_supported": 8,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe the IP address \"34.96.222[.]22\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes, the document describes \"34.96.222[.]22\" as a resolved IP address of the domain \"a-ad-tml[.]ntp-update[.]com\", which is listed in the C2 information obtained from the config strings of identified samples and appears to be used by attackers for communication with their infrastructure.\n2. [SUPPORTED] Q: Does the document describe the IP address \"35.220.144[.]179\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes, the document describes \"35.220.144[.]179\" as a malicious IP address associated with the attackers' infrastructure and used by multiple domains related to their operations.\n3. [SUPPORTED] Q: Does the document associate the domain \"a-ad-tml[.]ntp-update[.]com\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document associates the domain \"a-ad-tml[.]ntp-update[.]com\" with threat-actor activity as a C2 (Command and Control) server address.\n4. [SUPPORTED] Q: Does the document associate the domain \"rps-a[.]ntp-update[.]com\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document associates the domain \"rps-a[.]ntp-update[.]com\" with threat-actor activity as a C2 (Command and Control) server address.\n5. [SUPPORTED] Q: Does the document attribute the file hash \"e89cb63e1352a1c9f86e03e4c744b5cd\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"e89cb63e1352a1c9f86e03e4c744b5cd\" to a malicious loader located at \"%SYSTEM32%\\wbem\\ncobjapi.dll\".\n6. [SUPPORTED] Q: Does the document attribute the file hash \"61ac19b0f812b10e7690109430cba4a5\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"61ac19b0f812b10e7690109430cba4a5\" to a legitimate file \"vcruntime140.dll\".\n7. [SUPPORTED] Q: Does the document describe \"Logutil backdoor\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Logutil backdoor\" as a tool used BY the threat actor(s) in this report.\n8. [SUPPORTED] Q: Does the document describe \"AsyncRat\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"AsyncRat\" as a tool used by the threat actor(s) in this report."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 11.59
+}

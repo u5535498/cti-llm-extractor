@@ -1,0 +1,36 @@
+{
+  "doc_id": "DOC027",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The BRICKSTORM Backdoor malware is a sophisticated custom backdoor used by People's Republic of China (PRC) state-sponsored cyber actors for long-term persistence on victim systems, primarily targeting Government Services and Facilities and Information Technology Sectors. The malware uses multiple layers of encryption to hide its communications with the C2 server and provides capabilities for initiation, persistence, and secure command and control.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 6.01
+}

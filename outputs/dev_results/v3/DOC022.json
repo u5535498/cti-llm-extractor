@@ -1,0 +1,165 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "1H 2024"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Manufacturing & Industrial",
+    "Technology/IT services",
+    "Healthcare",
+    "Financial",
+    "Automotive",
+    "Logistics",
+    "Educational",
+    "Food"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Lockbit",
+        "evidence_snippet": "Lockbit continues to dominate as the most active ransomware in 2024. Clop and AlphV have fallen from the top spots, replaced with Akira and newcomers Hunters International."
+      },
+      {
+        "name": "Hunters International",
+        "evidence_snippet": "Hunters International, a Ransomware-as-a-Service (RaaS) operation, emerged in late 2023 following the disruption of the HIVE ransomware group by law enforcement."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2023-36025",
+        "evidence_snippet": "Of the top 10 trending vulnerabilities, 5 originated in 2023, even though patches were available at the time of their disclosure.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "At the start of 2024, we witnessed a surge in zero-day vulnerabilities affecting Ivanti products, with 3 of them still actively exploited today.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "The most widely published vulnerabilities aren’t always the ones most exploited.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-6295",
+        "evidence_snippet": "Threat actors continue to target these vulnerabilities because they know many organizations are not consistently applying patches.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-51281",
+        "evidence_snippet": "Patching once a month or quarter is no longer sufficient to maintain adequate security.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-31036",
+        "evidence_snippet": "The Manufacturing & Industrial sector has emerged as the most targeted industry, with its share of attacks rising from 20% in 2023 to 41% this year.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-21412",
+        "evidence_snippet": "This decrease is likely due to IT organizations adopting more proactive approaches to patch management and cybersecurity defenses, resulting in a higher level of cyber maturity compared to other industries",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-7024",
+        "evidence_snippet": "The Technology/IT services sector has experienced a decline in attack volume.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "Chinese state-sponsored cyber operations are intensifying, with a focus on information control and the use of zero-day exploits.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-1708",
+        "evidence_snippet": "The multi-layered approach also complicates uncovering adversary-controlled operational servers beyond exit nodes, staging nodes, and relays.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1589",
+      "tactic": "Reconnaissance",
+      "technique": "Gather Victim Identity Information",
+      "evidence_snippet": "Honeytoken Authentication Activity Detection Type: Triggered when a honeytoken, a decoy item placed in the system to detect unauthorized access, is accessed.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "Initial Access",
+      "technique": "Spearphishing Link",
+      "evidence_snippet": "User Accessed Link in ZAP-Quarantined Email Detection Type: Raised when a user interacts with a link in an email that has been quarantined by the Zero-hour Auto Purge (ZAP) system.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1203",
+      "tactic": "Execution",
+      "technique": "Exploitation for Client Execution",
+      "evidence_snippet": "A Suspicious File Was Observed Detection Type: Identified when a file is suspicious based on unusual characteristics or behavior.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Possible PlugX Activity Detection Type: Triggered by potential PlugX malware activity, used for data exfiltration and remote control.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1557.002",
+      "tactic": "Initial Access",
+      "technique": "Adversary-in-the-Middle",
+      "evidence_snippet": "Connection to Adversary-in-the-Middle (AiTM) Phishing Site Detection Type: Indicates a connection to a phishing site designed to intercept communications.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Unfamiliar Sign-in Properties Detection Type: Generated when sign-in attempts have properties not matching the user’s typical behavior.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "Initial Access",
+      "technique": "Spearphishing Link",
+      "evidence_snippet": "Suspicious URL Clicked Detection Type: Raised when a user clicks on a suspicious URL, indicating a potential phishing or malicious site visit.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The 1H 2024 Threat Intelligence Report highlights the evolving cyber threat landscape, emphasizing proactive threat identification, analysis, and mitigation strategies. The report found that older vulnerabilities remain heavily exploited, with 50% of the top 10 trending vulnerabilities in early 2024 originating in 2023.",
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "date_precision": "day",
+      "event": "Start of Q1 2024",
+      "evidence_snippet": "At the start of 2024, we witnessed a surge in zero-day vulnerabilities affecting Ivanti products, with 3 of them still actively exploited today."
+    }
+  ]
+}

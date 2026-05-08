@@ -1,0 +1,112 @@
+{
+  "doc_id": "DOC022",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2023-36025",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-6295",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-51281",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-31036",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-21412",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-7024",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-1708",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1589",
+      "tactic": "unknown",
+      "technique": "Gather",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "unknown",
+      "technique": "Spearphishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1203",
+      "tactic": "unknown",
+      "technique": "Exploitation for",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "unknown",
+      "technique": "Remote",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1557.002",
+      "tactic": "unknown",
+      "technique": "Adversary-in-the-",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "unknown",
+      "technique": "Valid",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The 1H 2024 Threat Intelligence Report highlights the ongoing threat of ransomware, with Lockbit remaining the most active group and Hunters International emerging as a new player. The report also notes the rise of sophisticated phishing techniques using Microsoft-owned domains and the persistent danger of the PlugX RAT, particularly in government agencies. Additionally, Chinese state-sponsored cyber operations are intensifying, with a focus on information control and the use of zero-day exploits.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 8.49
+}

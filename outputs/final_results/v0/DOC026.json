@@ -1,0 +1,50 @@
+{
+  "doc_id": "DOC026",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204",
+      "tactic": "- User Execution",
+      "technique": "Social Engineering",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059",
+      "tactic": "- Command and Control",
+      "technique": "Server Software",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Zscaler ThreatLabz has discovered a new malware variant, RedEnergy stealer, which combines silent data theft with encryption to inflict maximum harm and gain control over its victims. The malware targets multiple industries, including energy utilities, oil and gas, telecom, and machinery manufacturing, using a deceptive FAKEUPDATES campaign to lure in its targets. It employs multi-stage techniques, disguise the malware as browser updates, and utilizes HTTPS for command and control communication, making detection and analysis challenging.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 8.66
+}

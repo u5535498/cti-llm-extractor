@@ -1,0 +1,98 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BlackByte",
+        "evidence_snippet": "The files were analyzed and determined to be BlackByte 2.0 binaries responsible for encryption across the environment."
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "evidence_snippet": "The file sys.exe (SHA-256:5f37b85687780c089607670040dbb3da2749b91b8adc0aa411fd6280b5fa7103), detected by Microsoft Defender Antivirus as Trojan:Win64/CobaltStrike!MSR, was determined to be a Cobalt Strike Beacon and was downloaded directly from the file sharing service temp[.]sh:"
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "The threat actor utilized the remote administration tool AnyDesk, to maintain persistence and move laterally within the network."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-31207",
+        "evidence_snippet": "The threat actor was observed exploiting the ProxyShell vulnerabilities CVE-2021-34473, CVE-2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2019-16098",
+        "evidence_snippet": "The BlackByte binary then creates and starts a service named RABAsSaa calling rENEgOtiAtES, and exploits this service to evade detection by installed antivirus software (CVE-2019-16098).",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "The BlackByte binary then creates and starts a service named RABAsSaa calling rENEgOtiAtES, and exploits this service to evade detection by installed antivirus software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "The BlackByte binary then creates and starts a service named RABAsSaa calling rENEgOtiAtES, and exploits this service to evade detection by installed antivirus software.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "The threat actor was observed exploiting the ProxyShell vulnerabilities CVE-2021-34473, CVE-2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "The threat actor utilized the remote administration tool AnyDesk, to maintain persistence and move laterally within the network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Microsoft Security - Incident Report: BlackByte ransomware attacks target organizations with unpatched vulnerabilities.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2021-31207 (ProxyShell)",
+      "evidence_snippet": "The earliest evidence of exploitation of CVE-2021-31207 occurred on May 27, 2023."
+    }
+  ]
+}

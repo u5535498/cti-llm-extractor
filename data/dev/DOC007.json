@@ -1,0 +1,392 @@
+{
+  "report_metadata": {
+    "report_title": "M-Trends 2024",
+    "report_type": "strategic"
+  },
+  "target_sectors": [
+    "Financial Services",
+    "Business and Professional Services",
+    "High Tech",
+    "Retail and Hospitality",
+    "Healthcare",
+    "Government",
+    "Entertainment and Media",
+    "Transportation and Logistics",
+    "Education",
+    "Utilities",
+    "Construction and Engineering",
+    "Energy",
+    "Telecommunications",
+    "Nonprofits",
+    "Agricultural and Forestry",
+    "Aerospace and Defense"
+  ],
+  "indicators_of_compromise": {
+    "tools": [
+      {
+        "name": "BEACON",
+        "evidence_snippet": "BEACON remains the most frequently observed malware family in Mandiant investigations globally and was identified in 10% of all intrusions"
+      },
+      {
+        "name": "ALPHV",
+        "evidence_snippet": "ALPHV ransomware in 5% of Mandiant led investigations in 2023 compared to 2% in 2022"
+      },
+      {
+        "name": "LEMURLOOT",
+        "evidence_snippet": "LEMURLOOT is a web shell written in C# tailored to interact with the MOVEit Transfer platform"
+      },
+      {
+        "name": "SYSTEMBC",
+        "evidence_snippet": "SYSTEMBC is a tunneler written in C that retrieves proxy-related commands from a C2 server"
+      },
+      {
+        "name": "LOCKBIT",
+        "evidence_snippet": "LOCKBIT ransomware appeared in 4% of investigations compared to 2% in 2022"
+      },
+      {
+        "name": "SEASPY",
+        "evidence_snippet": "SEASPY is a backdoor that establishes a PCAP filter on port 25 (SMTP) and is activated when a magic packet is received"
+      },
+      {
+        "name": "METASPLOIT",
+        "evidence_snippet": "METASPLOIT is a penetration testing framework whose features include vulnerability testing"
+      },
+      {
+        "name": "REGEORG",
+        "evidence_snippet": "REGEORG is an open-source utility used to tunnel webshell traffic"
+      },
+      {
+        "name": "SLIVER",
+        "evidence_snippet": "Sliver was developed as an open-source red team adversary emulation tool"
+      },
+      {
+        "name": "FAKEUPDATES",
+        "evidence_snippet": "Financially Motivated Group Gains Access via Drive-By Downloads of FAKEUPDATES"
+      },
+      {
+        "name": "QAKBOT",
+        "evidence_snippet": "UNC2633 Resurfaces to Distribute QAKBOT via OneNote phishing attachments"
+      },
+      {
+        "name": "SMOKELOADER",
+        "evidence_snippet": "Suspected Russian Group Targets Ukraine with SMOKELOADER"
+      },
+      {
+        "name": "PAPERDROP",
+        "evidence_snippet": "Financially Motivated Group Uses Social Media and SEO Poisoning to Deliver PAPERDROP and DANABOT"
+      },
+      {
+        "name": "DANABOT",
+        "evidence_snippet": "Financially Motivated Group Uses Social Media and SEO Poisoning to Deliver PAPERDROP and DANABOT"
+      },
+      {
+        "name": "DARKGATE",
+        "evidence_snippet": "Financially Motivated Group Distributes DARKGATE via Microsoft Teams"
+      },
+      {
+        "name": "BASTA",
+        "evidence_snippet": "Financially Motivated Group Uses DARKGATE Access to Deploy BASTA Ransomware"
+      },
+      {
+        "name": "Brute Ratel",
+        "evidence_snippet": "attackers will increasingly turn to other C2 avenues such as SLIVER, Brute Ratel, and Mythic, to support operations"
+      },
+      {
+        "name": "Mythic",
+        "evidence_snippet": "attackers will increasingly turn to other C2 avenues such as SLIVER, Brute Ratel, and Mythic, to support operations"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2023-34362",
+        "evidence_snippet": "The most prevalent vulnerability Mandiant investigators observed in 2023 was CVE-2023-34362, an SQL injection vulnerability in MOVEit Transfer"
+      },
+      {
+        "value": "CVE-2022-21587",
+        "evidence_snippet": "The second most prevalent vulnerability was CVE-2022-21587, a critical unauthenticated file upload vulnerability in Oracle E-Business Suite"
+      },
+      {
+        "value": "CVE-2023-2868",
+        "evidence_snippet": "The third most prevalent vulnerability in 2023 was CVE-2023-2868, a critical command injection vulnerability in Barracuda Email Security Gateways"
+      },
+      {
+        "value": "CVE-2008-2463",
+        "evidence_snippet": "Mandiant continues to observe a handful of vulnerabilities related to older technologies, such as Microsoft Access 2003 (CVE-2008-2463), Microsoft Windows Server 2016 (CVE2017-0144), and Telerik (CVE-2019-18935)."
+      },
+      {
+        "value": "CVE-2017-0144",
+        "evidence_snippet": "Mandiant continues to observe a handful of vulnerabilities related to older technologies, such as Microsoft Access 2003 (CVE-2008-2463), Microsoft Windows Server 2016 (CVE2017-0144), and Telerik (CVE-2019-18935)."
+      },
+      {
+        "value": "CVE-2019-18935",
+        "evidence_snippet": "Mandiant continues to observe a handful of vulnerabilities related to older technologies, such as Microsoft Access 2003 (CVE-2008-2463), Microsoft Windows Server 2016 (CVE2017-0144), and Telerik (CVE-2019-18935)."
+      },
+      {
+        "value": "CVE-2023-3519",
+        "evidence_snippet": "Suspected Chinese Group Exploits Citrix Zero-Day CVE-2023-3519"
+      },
+      {
+        "value": "CVE-2023-4966",
+        "evidence_snippet": "Exploitation of CVE-2023-4966 in Citrix Netscaler ADC Appliances"
+      },
+      {
+        "value": "CVE-2023-42793",
+        "evidence_snippet": "Exploitation of CVE-2023-42793 in JetBrains TeamCity Products"
+      },
+      {
+        "value": "CVE-2023-20198",
+        "evidence_snippet": "Unknown Threat Group Exploits CVE-2023-20198"
+      },
+      {
+        "value": "CVE-2023-0669",
+        "evidence_snippet": "Mandiant also investigated intrusions in which FIN11 exploited CVE-2023-0669 in GoAnywhere MFT"
+      },
+      {
+        "value": "CVE-2023-46805",
+        "evidence_snippet": "Exploitation of CVE-2023-46805 and CVE-2024-21887 in Ivanti Products"
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "Exploitation of CVE-2023-46805 and CVE-2024-21887 in Ivanti Products"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "In more than half of investigations, Mandiant investigators noted the use of a command or scripting interpreter (T1059) by attackers",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "T1027 Obfuscated Files or Information 46.5%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1083",
+      "tactic": "Discovery",
+      "technique": "File and Directory Discovery",
+      "evidence_snippet": "T1083 File and Directory Discovery 38.6%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services",
+      "evidence_snippet": "T1021 Remote Services 37.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "T1082 System Information Discovery 37.1%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal",
+      "evidence_snippet": "T1070 Indicator Removal 35.1%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol",
+      "evidence_snippet": "T1071 Application Layer Protocol 34.0%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1033",
+      "tactic": "Discovery",
+      "technique": "System Owner/User Discovery",
+      "evidence_snippet": "T1033 System Owner/User Discovery 31.7%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "evidence_snippet": "T1140 Deobfuscate/Decode Files or Information 31.5%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "T1190 Exploit Public-Facing Application 28.7%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "T1059.001 PowerShell 32.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "evidence_snippet": "T1071.001 Web Protocols 29.6%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "T1021.001 Remote Desktop Protocol 28.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1569.002",
+      "tactic": "Execution",
+      "technique": "System Services: Service Execution",
+      "evidence_snippet": "T1569.002 Service Execution 26.8%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: File Deletion",
+      "evidence_snippet": "T1070.004 File Deletion 26.6%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1608",
+      "tactic": "Resource Development",
+      "technique": "Stage Capabilities",
+      "evidence_snippet": "T1608: Stage Capabilities 12.8%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "T1133: External Remote Services 20.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "T1566: Phishing 16.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "T1078: Valid Accounts 11.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1543",
+      "tactic": "Persistence",
+      "technique": "Create or Modify System Process",
+      "evidence_snippet": "T1543: Create or Modify System Process 28.3%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1055",
+      "tactic": "Privilege Escalation",
+      "technique": "Process Injection",
+      "evidence_snippet": "T1055: Process Injection 25.1%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1087",
+      "tactic": "Discovery",
+      "technique": "Account Discovery",
+      "evidence_snippet": "T1087: Account Discovery 28.1%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1012",
+      "tactic": "Discovery",
+      "technique": "Query Registry",
+      "evidence_snippet": "T1012: Query Registry 24.8%",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "T1016: System Network Configuration Discovery 23.5% ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1112",
+      "tactic": "Defense Evasion",
+      "technique": "Modify Registry",
+      "evidence_snippet": "T1112: Modify Registry 26.5%",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Mandiant M-Trends 2024 annual report analyzing 2023 global threat landscape. Key findings: global median dwell time decreased to 10 days (from 16 in 2022), 54% external notifications, 46% internal detections. Ransomware investigations increased to 23% (up from 18% in 2022). Initial access: exploits 38% (CVE-2023-34362 MOVEit, CVE-2022-21587 Oracle, CVE-2023-2868 Barracuda), phishing 17%, prior compromise 15%. FIN11 MOVEit campaign (CVE-2023-34362) impacted 2,600+ organizations via LEMURLOOT web shell. UNC4841 Chinese espionage exploited Barracuda ESG (CVE-2023-2868) targeting ASEAN ministries. 97 zero-days exploited in 2023 (56% increase), PRC groups most prolific. BEACON usage declined to 10% despite remaining top malware. 626 new malware families tracked, backdoors 33%, ALPHV/LOCKBIT prominent ransomware. MITRE ATT&CK: 74% techniques, 44% sub-techniques observed; top 5 sub-techniques PowerShell (32.3%), Web Protocols (29.6%), RDP (28.3%), Service Execution (26.8%), File Deletion (26.6%). Regional: Americas 10-day dwell, JAPAC 9-day (fastest), EMEA 22-day. Threat groups: 316 observed (220 newly tracked), APT43 graduated.",
+  "timeline": [
+    {
+      "date": "2023-01-01",
+      "date_precision": "month",
+      "event": "M-Trends 2024 reporting period start",
+      "evidence_snippet": "The metrics reported in M-Trends 2024 are based on Mandiant Consulting investigations of targeted attack activity conducted between January 1, 2023 and December 31, 2023"
+    },
+    {
+      "date": "2023-05-15",
+      "date_precision": "day",
+      "event": "FIN11 begins scanning for MOVEit vulnerability",
+      "evidence_snippet": "Mandiant investigators observed FIN11 scanning the internet beginning on May 15, 2023"
+    },
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "the earliest evidence of exploitation of CVE-2023-34362 occurred twelve days later, on May 27, 2023"
+    },
+    {
+      "date": "2023-05-31",
+      "date_precision": "day",
+      "event": "Progress Software disclosed CVE-2023-34362 and released patch",
+      "evidence_snippet": "On May 31, 2023, Progress disclosed the vulnerability, patched its cloud-based service, and released a patch for on-premises implementations"
+    },
+    {
+      "date": "2023-06-02",
+      "date_precision": "day",
+      "event": "CVE-2023-34362 added to CISA KEV Catalog",
+      "evidence_snippet": "06-02 CVE-2023-34362 Added to CISA's Known Exploited Vulnerabilities Catalog"
+    },
+    {
+      "date": "2023-06-06",
+      "date_precision": "day",
+      "event": "FIN11 claimed responsibility on CL0P-LEAKS DLS",
+      "evidence_snippet": "on June 6, 2023, that FIN11 claimed responsibility for the campaign on the CL0P-LEAKS DLS"
+    },
+    {
+      "date": "2023-06-09",
+      "date_precision": "day",
+      "event": "First public PoC for CVE-2023-34362 released",
+      "evidence_snippet": "The first PoC was made publicly available three days later, on June 9, 2023"
+    },
+    {
+      "date": "2023-12-01",
+      "date_precision": "month",
+      "event": "FBI announced ALPHV disruption campaign",
+      "evidence_snippet": "In a December 2023 press release, the United States Federal Bureau of Investigation (FBI) reported that ALPHV, also known as BlackCat, had targeted more than 1,000 organizations"
+    },
+    {
+      "date": "2024-02-01",
+      "date_precision": "month",
+      "event": "Operation Cronos: LOCKBIT infrastructure seizure",
+      "evidence_snippet": "International law enforcement continued to pursue LOCKBIT activity, announcing seizure of the LOCKBIT data leak site and back-end infrastructure in Operation Cronos in February 2024"
+    }
+  ]
+}

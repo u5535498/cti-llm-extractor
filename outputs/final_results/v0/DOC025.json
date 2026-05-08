@@ -1,0 +1,37 @@
+{
+  "doc_id": "DOC025",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "PIEHOP - a disruption tool written in Python.",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "LIGHTWORK - a disruption tool written in C++ that implements the IEC-104 protocol.",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Mandiant identified a novel operational technology (OT) malware, COSMICENERGY, which is designed to cause electric power disruption by interacting with IEC 60870-5-104 devices. The malware was possibly developed as a red teaming tool for simulated power disruption exercises hosted by Rostelecom-Solar or an associated party. Its capabilities are comparable to those employed in previous incidents and malware, such as INDUSTROYER and INDUSTROYER.V2.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 5.23
+}

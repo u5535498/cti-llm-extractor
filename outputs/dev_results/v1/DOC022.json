@@ -1,0 +1,157 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "1H 2024 Threat Intelligence Report"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Manufacturing & Industrial",
+    "Technology/IT services",
+    "Healthcare",
+    "Financial",
+    "Educational",
+    "Food",
+    "Logistics",
+    "Automotive"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Lockbit",
+        "evidence_snippet": "Lockbit continues to dominate as the most active ransomware in 2024."
+      },
+      {
+        "name": "Clop",
+        "evidence_snippet": "Clop and AlphV have fallen from the top spots, replaced with Akira and newcomers Hunters International."
+      },
+      {
+        "name": "AlphV",
+        "evidence_snippet": "ALPHV ransomware was identified in 5% of Mandiant led investigations in 2023."
+      },
+      {
+        "name": "Hunters International",
+        "evidence_snippet": "Hunters International, a Ransomware-as-a-Service (RaaS) operation, emerged in late 2023 following the disruption of the HIVE ransomware group by law enforcement."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2023-36025",
+        "evidence_snippet": "Windows SmartScreen Security Feature Bypass Vulnerability CVE-2023-36025",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "Command injection vulnerability in Ivanti Connect Secure and Policy Secure CVE-2024-21887",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "Command injection vulnerability in Palo Alto Networks PAN-OS software CVE-2024-3400",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-6295",
+        "evidence_snippet": "Exploited vulnerability with unknown parties in real-world attacks CVE-2023-6295",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-51281",
+        "evidence_snippet": "Cross-Site Scripting vulnerability in Customer Support System 1.0 CVE-2023-51281",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-31036",
+        "evidence_snippet": "Directory Traversal vulnerability in NVIDIA Triton Inference Server CVE-2023-31036",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-21412",
+        "evidence_snippet": "Security feature bypass vulnerability in Microsoft Defender SmartScreen CVE-2024-21412",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-7024",
+        "evidence_snippet": "Zero-day vulnerability actively exploited in the wild CVE-2023-7024",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "Vulnerability being actively exploited in Ivanti Connect Secure CVE-2024-1709",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-1708",
+        "evidence_snippet": "Vulnerability being actively exploited in Ivanti Connect Secure CVE-2024-1708",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1589",
+      "tactic": "Reconnaissance",
+      "technique": "Gather Victim Identity Information",
+      "evidence_snippet": "Honeytoken Authentication Activity Detection Type: Triggered when a honeytoken, a decoy item placed in the system to detect unauthorized access, is accessed.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "Initial Access",
+      "technique": "Spearphishing Link",
+      "evidence_snippet": "User Accessed Link in ZAP-Quarantined Email Detection Type: Raised when a user interacts with a link in an email that has been quarantined by the Zero-hour Auto Purge (ZAP) system.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1203",
+      "tactic": "Execution",
+      "technique": "Exploitation for Client Execution",
+      "evidence_snippet": "A Suspicious File Was Observed Detection Type: Identified when a file is suspicious based on unusual characteristics or behavior.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Possible PlugX Activity Detection Type: Triggered by potential PlugX malware activity, used for data exfiltration and remote control.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1557.002",
+      "tactic": "Initial Access",
+      "technique": "Adversary-in-the-Middle",
+      "evidence_snippet": "Connection to Adversary-in-the-Middle (AiTM) Phishing Site Detection Type: Indicates a connection to a phishing site designed to intercept communications.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Unfamiliar Sign-in Properties Detection Type: Generated when sign-in attempts have properties not matching the user’s typical behavior.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The 1H 2024 Threat Intelligence Report highlights emerging threats, including the rise of Hunters International ransomware group and Chinese state-sponsored cyber operations. The report emphasizes the importance of proactive measures, such as staying informed through advisories and enhancing cybersecurity maturity through best practices.",
+  "timeline": []
+}

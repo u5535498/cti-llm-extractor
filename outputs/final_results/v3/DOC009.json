@@ -1,0 +1,99 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "CYBERSECURITY ADVISORY Countering Chinese State-Sponsored Actors Compromise of Networks to Feed Global Espionage System"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Telecommunications",
+    "Government",
+    "Transportation",
+    "Lodging"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "1.222.84[.]29",
+        "evidence_snippet": "The following IP indicators were associated with the APT actors’ activity from August 2021 to June 2025.",
+        "source_context": null
+      },
+      {
+        "value": "167.88.173[.]252",
+        "evidence_snippet": "The following IP indicators were associated with the APT actors’ activity from August 2021 to June 2025.",
+        "source_context": null
+      },
+      {
+        "value": "23.227.202[.]253",
+        "evidence_snippet": "The following IP indicators were associated with the APT actors’ activity from August 2021 to June 2025.",
+        "source_context": null
+      }
+    ],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "STOWAWAY",
+        "evidence_snippet": "Leveraging open source multi-hop pivoting tools, such as STOWAWAY, to build chained relays for command and control (C2) and operator access"
+      },
+      {
+        "name": "cmd3 SFTP client",
+        "evidence_snippet": "The APT actors also use a custom SFTP client, which is a Linux binary written in Golang, to transfer encrypted archives from one location to another."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "Exploiting CVE-2024-21887 - Ivanti Connect Secure and Ivanti Policy Secure web-component command injection vulnerability",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "Exploiting CVE-2024-3400 - Palo Alto Networks PAN-OS GlobalProtect arbitrary file creation leading to OS command injection",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-20273",
+        "evidence_snippet": "Exploiting CVE-2023-20273 - Cisco Internetworking Operating System (IOS) XE software web management user interface post-authentication command injection/privilege escalation",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "The APT actors are having considerable success exploiting publicly known common vulnerabilities and exposures (CVEs) and other avoidable weaknesses within compromised infrastructure.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "The APT actors often modify router configurations for lateral movement pivoting between networks and using virtualized containers on network devices to evade detection.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.008",
+      "tactic": "Execution",
+      "technique": "Command and Control: Standard Command and Control (C2) Tool",
+      "evidence_snippet": "Executing commands via SNMP [T1569 <https://attack.mitre.org/versions/v17/techniques/t1569/>].",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The APT actors are targeting networks globally, including telecommunications, government, transportation, and lodging infrastructure. They exploit publicly known CVEs and other weaknesses to gain initial access.",
+  "timeline": []
+}

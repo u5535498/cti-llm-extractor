@@ -1,0 +1,57 @@
+{
+  "doc_id": "DOC018",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Exploitation of Remote Services",
+      "technique": "Volt Typhoon achieves initial access to targeted organizations through internet-facing Fortinet FortiGuard devices.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1053",
+      "tactic": "- Command and Control",
+      "technique": "Volt Typhoon proxies all its network traffic to its targets through compromised SOHO network edge devices.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "- System Information Discovery",
+      "technique": "Microsoft has observed Volt Typhoon discovering system information, including file system types; drive names, size, and free space; running processes; and open networks.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1041",
+      "tactic": "- Network Sniffing",
+      "technique": "Volt Typhoon dumps information from local web browser applications.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Microsoft has uncovered a stealthy and targeted malicious activity focused on post-compromise credential access and network system discovery aimed at critical infrastructure organizations in the United States by the state-sponsored actor Volt Typhoon, which relies almost exclusively on living-off-the-land techniques and hands-on-keyboard activity to achieve its objective of espionage and maintaining unauthorized access to target networks.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 6.34
+}

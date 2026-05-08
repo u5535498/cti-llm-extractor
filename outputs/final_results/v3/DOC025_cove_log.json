@@ -1,0 +1,39 @@
+{
+  "doc_id": "DOC025",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 3,
+      "n_ttps": 2,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 5,
+      "n_supported": 4,
+      "n_not_supported": 1,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"COSMICENERGY\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"COSMICENERGY\" as a novel operational technology (OT) malware.\n2. [SUPPORTED] Q: Does the document describe \"PIEHOP\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"PIEHOP\" as a disruption tool written in Python and packaged with PyInstaller that is capable of connecting to a user-supplied remote MSSQL server for uploading files and issuing remote commands to an RTU.\n3. [SUPPORTED] Q: Does the document describe \"LIGHTWORK\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"LIGHTWORK\" as a disruption tool written in C++ that implements the IEC-104 protocol to modify the state of RTUs over TCP.\n4. [SUPPORTED] Q: Does the document describe the technique \"Command and Scripting Interpreter\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes, the document describes the technique \"Command-Line Interface\" (T0807) as being used for interacting with systems and executing commands, which is related to the tactic of Execution.\n5. [NOT SUPPORTED] Q: Does the document describe the technique \"Obfuscated Files or Information\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: No."
+    },
+    "step3_deletion": {
+      "changed": true,
+      "n_iocs_before": 3,
+      "n_iocs_after": 3,
+      "n_ttps_before": 2,
+      "n_ttps_after": 1,
+      "deleted_items": [
+        {
+          "list": "ttps",
+          "item_index": 1,
+          "item": {
+            "mitre_id": null,
+            "tactic": "Defense Evasion",
+            "technique": "Obfuscated Files or Information",
+            "evidence_snippet": "Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis.",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        }
+      ]
+    }
+  },
+  "total_time_s": 4.99
+}

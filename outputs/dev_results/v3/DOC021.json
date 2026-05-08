@@ -1,0 +1,99 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "Cloud Threat Report, Volume 7"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "PurpleUrchin",
+        "evidence_snippet": "PurpleUrchin is a South African-based threat actor group that primarily abuses cloud-based CI/CD services such as GitHub, Heroku, and Togglebox to perform their cryptomining operations."
+      },
+      {
+        "name": "Kinsing",
+        "evidence_snippet": "Kinsing was observed to exploit weakly configured PostgreSQL containers and vulnerable images to compromise Kubernetes clusters."
+      },
+      {
+        "name": "WatchDog",
+        "evidence_snippet": "WatchDog was observed to use Steganography to mask the transfer of malware that was hosted on compromised cloud storage buckets."
+      },
+      {
+        "name": "8220",
+        "evidence_snippet": "8220 was observed to deploy Tsunami IRC Botnet and remove syslog on compromised hosts."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-40438",
+        "evidence_snippet": "CVE-2021-40438 is one of the top 10 Common Vulnerabilities and Exposures (CVEs) identified in exposed cloud hosts.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1070.002",
+      "tactic": "Defense Evasion",
+      "technique": "Clear Linux or Mac System Logs",
+      "evidence_snippet": "The threat actor removed syslog on compromised hosts.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "File Deletion",
+      "evidence_snippet": "The threat actor removed the syslog files on the compromised systems.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "The threat actor exploited a misconfigured security group setting during a migration process to gain access to the cloud environment.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "WatchDog was observed to use Steganography to mask the transfer of malware that was hosted on compromised cloud storage buckets.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1525",
+      "tactic": "Execution",
+      "technique": "Internal Image: Implant",
+      "evidence_snippet": "Kinsing also removed the syslog files on the compromised systems.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The Cloud Threat Report, Volume 7 highlights common security issues observed across cloud environments. Hard-coded credentials, weak authentication, and disabled logging are among the top concerns.",
+  "timeline": []
+}

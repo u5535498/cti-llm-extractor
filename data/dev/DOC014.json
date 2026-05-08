@@ -1,0 +1,306 @@
+{
+  "report_metadata": {
+    "report_title": "AA25-071A StopRansomware: Medusa Ransomware",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "Medusa",
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Healthcare",
+    "Education",
+    "Legal",
+    "Insurance",
+    "Technology",
+    "Manufacturing",
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "44370f5c977e415981febf7dbb87a85c",
+        "hash_type": "MD5",
+        "evidence_snippet": "openrdp.bat 44370f5c977e415981febf7dbb87a85c Allows incoming RDP and remote WMI connections (Table 1)"
+      },
+      {
+        "value": "80d852cd199ac923205b61658a9ec5bc",
+        "hash_type": "MD5",
+        "evidence_snippet": "pu.exe 80d852cd199ac923205b61658a9ec5bc Reverse shell (Table 1)"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Advanced IP Scanner",
+        "evidence_snippet": "Medusa actors use for initial user, system, and network enumeration"
+      },
+      {
+        "name": "SoftPerfect Network Scanner",
+        "evidence_snippet": "Medusa actors use for initial user, system, and network enumeration"
+      },
+      {
+        "name": "Certutil",
+        "evidence_snippet": "Medusa actors use certutil.exe to avoid detection when performing file ingress"
+      },
+      {
+        "name": "PowerFun.ps1",
+        "evidence_snippet": "Publicly available stager script for reverse/bind shell over TLS port 443"
+      },
+      {
+        "name": "Ligolo",
+        "evidence_snippet": "Reverse tunneling tool used for C2"
+      },
+      {
+        "name": "Cloudflared (ArgoTunnel)",
+        "evidence_snippet": "Used to securely expose services via Cloudflare Tunnel"
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "Atera",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "ConnectWise",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "eHorus",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "N-able",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "PDQ Deploy",
+        "evidence_snippet": "Used to deploy encryptor gaze.exe across network"
+      },
+      {
+        "name": "PDQ Inventory",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "SimpleHelp",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": "Remote access software used for lateral movement"
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": "Used to deploy encryptor and batch scripts across network"
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Used for LSASS dumping to harvest credentials"
+      },
+      {
+        "name": "Rclone",
+        "evidence_snippet": "Used to exfiltrate data to Medusa C2 servers"
+      },
+      {
+        "name": "gaze.exe",
+        "evidence_snippet": "Medusa encryptor (AES-256); adds .medusa extension; terminates services, deletes shadow copies"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "ScreenConnect vulnerability (CWE-288 Authentication Bypass) exploited by Medusa IABs"
+      },
+      {
+        "value": "CVE-2023-48788",
+        "evidence_snippet": "Fortinet EMS SQL injection vulnerability (CWE-89) exploited by Medusa IABs"
+      }
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Phishing T1566 ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploit Public-Facing Application T1190",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1046",
+      "tactic": "Discovery",
+      "technique": "Network Service Discovery",
+      "evidence_snippet": "Network Service Discovery T1046",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1083",
+      "tactic": "Discovery",
+      "technique": "File and Directory Discovery",
+      "evidence_snippet": "File and Directory Discovery T1083",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1069.002",
+      "tactic": "Discovery",
+      "technique": "Permission Groups Discovery: Domain Groups",
+      "evidence_snippet": "Permission Groups Discovery: Domain Groups T1069.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "System Information Discovery T1082",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027.013",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+      "evidence_snippet": "Obfuscated Files or Information: Encrypted/Encoded File T1027.013",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Obfuscated Files or Information T1027",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Impair Defenses: Disable or Modify Tools T1562.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Lateral Movement",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Command and Scripting Interpreter: PowerShell T1059.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.003",
+      "tactic": "Lateral Movement",
+      "technique": "Command and Scripting Interpreter: Windows Command Shell",
+      "evidence_snippet": "Command and Scripting Interpreter: Windows Command Shell T1059.003",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003.001",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: LSASS Memory",
+      "evidence_snippet": "OS Credential Dumping: LSASS Memory T1003.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "Remote Services: Remote Desktop Protocol T1021.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1569.002",
+      "tactic": "Execution",
+      "technique": "System Services: Service Execution",
+      "evidence_snippet": "System Services: Service Execution T1569.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1567.002",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "evidence_snippet": "Exfiltration Over Web Service: Exfiltration to Cloud Storage T1567.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Data Encrypted for Impact T1486",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Impact",
+      "technique": "Inhibit System Recovery",
+      "evidence_snippet": "Inhibit System Recovery T1490",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1135",
+      "tactic": "Discovery",
+      "technique": "Network Share Discovery",
+      "evidence_snippet": "Network Share Discovery T1135",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System network Configuration Discovery",
+      "evidence_snippet": "System network Configuration Discovery T1016",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1072",
+      "tactic": "Execution",
+      "technique": "Software Deployment Tools",
+      "evidence_snippet": "Software Deployment Tools T1072",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Financial Theft T1657",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.003",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Clear Command History",
+      "evidence_snippet": "Indicator Removal: Clear Command History T1070.003 Medusa actors attempt to cover their tracks by deleting the PowerShell command line history.",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "FBI/CISA/MS-ISAC AA25-071A (March 12, 2025) StopRansomware advisory on Medusa RaaS (first identified June 2021; >300 victims as of Feb 2025 across healthcare, education, legal, insurance, tech, manufacturing). Evolved from closed to affiliate model; double/triple extortion (.medusa extension, AES-256 via gaze.exe, TOR chat/Tox negotiation, .onion leak site). Initial access via IABs (phishing T1566, CVEs like ScreenConnect CVE-2024-1709, Fortinet EMS CVE-2023-48788). LOTL discovery (Advanced IP Scanner, SoftPerfect, PowerShell/cmd/WMI). Evasion: base64/gzip PowerShell obfuscation (powerfun.ps1 stager), certutil download, EDR kill drivers. Lateral: 9+ RMM tools (AnyDesk/Atera/ConnectWise/etc) + PsExec/openrdp.bat + Mimikatz LSASS dump. Exfil: Rclone. Impact: gaze.exe terminates services/backups, deletes shadows, encrypts VMs. IOCs: 2 MD5 hashes (openrdp.bat, pu.exe), 5 emails (protonmail/cock.li), 50+ detection commands (Appendix A).",
+  "timeline": [
+    {
+      "date": "2021-06-01",
+      "date_precision": "month",
+      "event": "Medusa RaaS first identified (initially closed operations)",
+      "evidence_snippet": "Medusa is a ransomware-as-a-service (RaaS) variant first identified in June 2021"
+    },
+    {
+      "date": "2021-01-01",
+      "date_precision": "year",
+      "event": "Medusa RaaS used in ransomware attacks from 2021 to present",
+      "evidence_snippet": "The RaaS Medusa variant has been used to conduct ransomware attacks from 2021 to present"
+    },
+    {
+      "date": "2025-02-01",
+      "date_precision": "month",
+      "event": "FBI investigations through February 2025; >300 victims identified across critical infrastructure sectors",
+      "evidence_snippet": "As of February 2025, Medusa developers and affiliates have impacted over 300 victims"
+    },
+    {
+      "date": "2025-03-12",
+      "date_precision": "day",
+      "event": "AA25-071A advisory published (initial version)",
+      "evidence_snippet": "March 12, 2025: Initial version"
+    }
+  ]
+}

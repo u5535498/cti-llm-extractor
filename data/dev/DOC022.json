@@ -1,0 +1,214 @@
+{
+  "report_metadata": {
+    "report_title": "1H 2024 Threat Intelligence Report - JANUARY - JUNE 2024",
+    "report_type": "strategic",
+    "authors": ["Ontinue Advanced Threat Operations (ATO) team"]
+  },
+  "target_sectors": [
+    "Manufacturing",
+    "Industrial",
+    "Real Estate",
+    "Technology",
+    "Healthcare",
+    "IT Services",
+    "Construction",
+    "Manufacturing",
+    "Retail",
+    "Healthcare"
+  ],
+  "indicators_of_compromise": {
+    "tools": [
+      {
+        "name": "PlugX RAT",
+        "evidence_snippet": "USB worm variants hide malicious files on infected USB devices in RECYCLER BIN directory; exfiltrates via C2; scans for more USBs; targets government agencies"
+      },
+      {
+        "name": "Hunters International Encryptor",
+        "evidence_snippet": "Shares 60% code with HIVE version 6 ransomware strain"
+      },
+      {
+        "name": "Raccoon Stealer",
+        "evidence_snippet": "Infostealer MaaS; steals browser autofill passwords/history/cookies, usernames/passwords, credit cards, crypto wallets; rented for ~$75/week"
+      },
+      {
+        "name": "IcedID",
+        "evidence_snippet": "Microsoft Defender Antivirus detects multiple variants"
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "BehaviorWin32CobaltStrike / BackdoorWin64CobaltStrike / HackToolWin64CobaltStrike detections"
+      },
+      {
+        "name": "AadInternals",
+        "evidence_snippet": "BackdoorWin32SuspAadInternalsUsage detection"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2023-36025",
+        "evidence_snippet": "CVE-2023-36025 Windows SmartScreen Security Feature Bypass Vulnerability"
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "CVE-2024-21887 Command injection vulnerability in Ivanti Connect Secure and Policy Secure "
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "CVE-2024-3400 Command injection vulnerability in Palo Alto Networks PAN-OS software"
+      },
+      {
+        "value": "CVE-2023-6295",
+        "evidence_snippet": "CVE-2023-6295 Exploited vulnerability with unknown parties in real-world attacks"
+      },
+      {
+        "value": "CVE-2023-51281",
+        "evidence_snippet": "CVE-2023-51281 Cross-Site Scripting vulnerability in Customer Support System 1.0 "
+      },
+      {
+        "value": "CVE-2023-31036",
+        "evidence_snippet": "CVE-2023-31036 Directory Traversal vulnerability in NVIDIA Triton Inference Server"
+      },
+      {
+        "value": "CVE-2024-21412",
+        "evidence_snippet": "CVE-2024-21412 Security feature bypass vulnerability in Microsoft Defender SmartScreen"
+      },
+      {
+        "value": "CVE-2023-7024",
+        "evidence_snippet": "CVE-2023-7024 Zero-day vulnerability actively exploited in the wild "
+      },
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "CVE-2024-1709 Vulnerability being actively exploited in Ivanti Connect Secure"
+      },
+      {
+        "value": "CVE-2024-1708",
+        "evidence_snippet": "CVE-2024-1708 Vulnerability being actively exploited in Ivanti Connect Secure."
+      },
+      {
+        "value": "CVE-2024-37085",
+        "evidence_snippet": "VMware ESXi Hypervisor Vulnerability"
+      },
+      {
+        "value": "CVE-2024-30103",
+        "evidence_snippet": "Microsoft Outlook SessionLifeTimePolicy expiry"
+      },
+      {
+        "value": "CVE-2024-27198",
+        "evidence_snippet": "JetBrains TeamCity vulnerability"
+      },
+      {
+        "value": "CVE-2024-27199",
+        "evidence_snippet": "JetBrains TeamCity vulnerability"
+      },
+      {
+        "value": "CVE-2023-46805",
+        "evidence_snippet": "AnyDesk Cyber Attack Authentication Bypass"
+      },
+      {
+        "value": "CVE-2024-23897",
+        "evidence_snippet": "Laravel actively exploited"
+      }
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1589",
+      "tactic": "Reconnaissance",
+      "technique": "Gather Victim Identity Information",
+      "evidence_snippet": "Honeytoken Authentication Activity Detection MITRE ATT&CK Technique T1589 - Gather Victim Identity Information"
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "Initial Access",
+      "technique": "Phishing: Spearphishing Link",
+      "evidence_snippet": "User Accessed Link in ZAP-Quarantined Email Suspicious URL Clicked; AO-INA-MDO-AADIP-01 Correlate Potentially Malicious URL Click and AADIP Alerts"
+    },
+    {
+      "mitre_id": "T1203",
+      "tactic": "Execution",
+      "technique": "Exploitation for Client Execution",
+      "evidence_snippet": "A Suspicious File Was Observed MITRE ATT&CK Technique T1203 - Exploitation for Client Execution"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Possible PlugX Activity MITRE ATT&CK Technique T1219 - Remote Access Software"
+    },
+    {
+      "mitre_id": "T1557.002",
+      "tactic": "Defense Evasion",
+      "technique": "Adversary-in-the-Middle",
+      "evidence_snippet": "Connection to Adversary-in-the-Middle AiTM Phishing Site EX-INA-AAD-02 Possible AiTM Phishing Attempt Against Microsoft Entra ID"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access / Defense Evasion",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Unfamiliar Sign-in Properties AO-INA-AADIP-03 Correlate Unfamiliar Sign-in Properties and Atypical Travel Alerts"
+    },
+    {
+      "mitre_id": "T1106",
+      "tactic": "Execution",
+      "technique": "Native API",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Execution Native API T1106"
+    },
+    {
+      "mitre_id": "T1129",
+      "tactic": "Execution",
+      "technique": "Shared Modules",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Execution Shared Modules T1129"
+    },
+    {
+      "mitre_id": "T1547.001",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Persistence Boot or Logon Autostart Execution T1547.001"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Defence Evasion Obfuscated Files or Information T1027"
+    },
+    {
+      "mitre_id": "T1057",
+      "tactic": "Discovery",
+      "technique": "Process Discovery",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Discovery Process Discovery T1057"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Discovery System Information Discovery T1082"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Hunters International Detected Activity Tactic Technique Impact Data Encrypted for Impact T1486"
+    }
+  ],
+  "summary": "Ontinue 1H 2024 Threat Intelligence Report (Jan-Jun 2024): LockBit most active ransomware; Hunters International (likely HIVE rebrand, 60% code overlap) targets healthcare/manufacturing/logistics; Manufacturing/Industrial attacks up to 41% (from 20% 2023); Top 10 trending CVEs (50% from 2023): CVE-2023-36025 (#1 SmartScreen bypass), CVE-2024-21887 (#2 Ivanti), CVE-2024-3400 (#3 PAN-OS), 3x Ivanti zero-days still exploited. Threat spotlights: LOLSites AiTM via powerappsportals.com (Microsoft domains); SharePoint phishing (compromised user creates fake file-share redirecting to harvester); Infostealers (Raccoon Stealer MaaS $75/wk); PlugX RAT USB worm (RECYCLER.BIN hiding, gov targets). Top ION detections: Honeytoken auth, ZAP-quarantined links, suspicious files, PlugX, AiTM sites. Chinese state-sponsored: info control focus, zero-day proliferation, contractor ops (i-Soon leak: 32 state customers, APT ops-for-hire). LockBit disrupted (Operation Cronos: 34 servers seized, decryptor released).",
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "date_precision": "month",
+      "event": "Data collection period begins; top 10 trending CVEs tracked from January 2024",
+      "evidence_snippet": "Top 10 Trending Vulnerabilities Since January 2024"
+    },
+    {
+      "date": "2024-02-20",
+      "date_precision": "day",
+      "event": "Operation Cronos disrupts LockBit: servers seized, arrests in Poland/Ukraine, decryptor released",
+      "evidence_snippet": "Recent operations by international law enforcement agencies have successfully disrupted the notorious LockBit ransomware group"
+    },
+    {
+      "date": "2024-06-30",
+      "date_precision": "day",
+      "event": "Data collection period ends for 1H 2024 report",
+      "evidence_snippet": "1H 2024 Threat Intelligence Report - JANUARY - JUNE 2024"
+    }
+  ]
+}

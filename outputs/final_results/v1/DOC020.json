@@ -1,0 +1,109 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "PRC State-Sponsored Cyber Actor Living off the Land to Evade Detection"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "certutil",
+        "evidence_snippet": "The actor has used the following commands to identify additional opportunities for obtaining credentials in the environment [T1555], [T1003]: dir C:\\Users\\{REDACTED}\\.ssh\\known_hosts"
+      },
+      {
+        "name": "dnscmd",
+        "evidence_snippet": "The actor has used the following commands to identify additional opportunities for obtaining credentials in the environment [T1555], [T1003]: dnscmd . /enumrecords /zone {REDACTED}"
+      },
+      {
+        "name": "ldifde",
+        "evidence_snippet": "The actor also used the following commands to identify additional opportunities for obtaining credentials in the environment [T1555], [T1003]: ldifde.exe -f c:\\windows\\temp\\cisco_up.txt -p subtree"
+      },
+      {
+        "name": "makecab",
+        "evidence_snippet": "The actor also used the following commands to identify additional opportunities for obtaining credentials in the environment [T1555], [T1003]: makecab ..\\backup\\210829-020000.zip"
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "ShellJSP",
+          "evidence_snippet": "rule ShellJSP { strings: $s1 = \"decrypt(fpath)\"; ... }"
+        },
+        {
+          "name": "EncryptJSP",
+          "evidence_snippet": "rule EncryptJSP { strings: $s1 = \"AEScrypt\"; ... }"
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "The actor has exploited vulnerabilities [T1190] in widely used software including, but not limited to: CVE-2021-40539—ManageEngine ADSelfService Plus.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1505.003",
+      "tactic": "Persistence",
+      "technique": "Web Shell",
+      "evidence_snippet": "The actor has used webshells for persistence and exfiltration [T1505.003], with at least some of the webshells derived from the Awen webshell.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1090.002",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "The actor has used compromised Small-Office Home-Office (SOHO) devices (e.g. routers) to obfuscate the source of the activity [T1090.002].",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Reconnaissance",
+      "technique": "Network Scanning",
+      "evidence_snippet": "The actor has used the following commands to enumerate the network topology [T1016], the active directory structure [T1069.002], and other information about the target environment [T1069.001]: arp -a",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "The actor has used the following commands to identify additional opportunities for obtaining credentials in the environment [T1555], [T1003]: wmic volume list brief",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory (CSA) highlights a recently discovered cluster of activity associated with a People’s Republic of China (PRC) state-sponsored cyber actor, also known as Volt Typhoon. The advisory provides an overview of hunting guidance and associated best practices to detect this activity.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2021-40539 (ManageEngine ADSelfService Plus)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2021-40539 occurred on May 27, 2023, when threat actors began targeting ManageEngine ADSelfService Plus installations."
+    }
+  ]
+}

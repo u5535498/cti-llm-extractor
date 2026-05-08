@@ -1,0 +1,27 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Threat Intelligence"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy and Utilities"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Mandiant identified novel operational technology (OT) / industrial control system (ICS)-oriented malware, which we track as COSMICENERGY. The malware is designed to cause electric power disruption by interacting with IEC 60870-5-104 devices.",
+  "timeline": []
+}

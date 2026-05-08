@@ -1,0 +1,45 @@
+{
+  "doc_id": "DOC004",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2025-4427",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2025-4428",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1027.004",
+      "tactic": "Command and Control",
+      "technique": "Exfiltration Over Alternative Protocol - Exfiltration over C2 channel using Base64 encoding.",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Cyber threat actors exploited CVE-2025-4427 and CVE-2025-4428 in Ivanti Endpoint Manager Mobile (Ivanti EPMM) deployments to gain initial access, then used malicious listeners to inject and run arbitrary code on the compromised server. The malware was delivered in segments via HTTP GET requests and Base64-encoded chunks. Organizations are encouraged to use indicators of compromise (IOCs) and detection signatures to identify malware samples and ensure they are running the latest version of Ivanti EPMM as soon as possible.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 5.47
+}

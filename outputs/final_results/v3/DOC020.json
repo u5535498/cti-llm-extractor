@@ -1,0 +1,145 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "PRC State-Sponsored Cyber Actor Living off the Land to Evade Detection"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "certutil",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: certutil"
+      },
+      {
+        "name": "dnscmd",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: dnscmd"
+      },
+      {
+        "name": "ldifde",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: ldifde"
+      },
+      {
+        "name": "makecab",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: makecab"
+      },
+      {
+        "name": "net user/group/use",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: net user/group/use"
+      },
+      {
+        "name": "netsh",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: netsh"
+      },
+      {
+        "name": "nltest",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: nltest"
+      },
+      {
+        "name": "ntdsutil",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: ntdsutil"
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: PowerShell"
+      },
+      {
+        "name": "req query/save",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: req query/save"
+      },
+      {
+        "name": "systeminfo",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: systeminfo"
+      },
+      {
+        "name": "tasklist",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: tasklist"
+      },
+      {
+        "name": "wevtutil",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: wevtutil"
+      },
+      {
+        "name": "wmic",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: wmic"
+      },
+      {
+        "name": "xcopy",
+        "evidence_snippet": "Using living off the land tools for discovery, lateral movement, and collection activities, to include: xcopy"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-40539",
+        "evidence_snippet": "Exploiting vulnerabilities [T1190] in widely used software including, but not limited to: CVE-2021-40539—ManageEngine ADSelfService Plus.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2021-27860",
+        "evidence_snippet": "Exploiting vulnerabilities [T1190] in widely used software including, but not limited to: CVE-2021-27860—FatPipe WARP, IPVPN, MPVPN.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "ShellJSP",
+          "evidence_snippet": "rule ShellJSP { strings: $s1 = \"decrypt(fpath)\" ... }"
+        },
+        {
+          "name": "EncryptJSP",
+          "evidence_snippet": "rule EncryptJSP { strings: $s1 = \"AEScrypt\" ... }"
+        },
+        {
+          "name": "CustomFRPClient",
+          "evidence_snippet": "rule CustomFRPClient { meta: description=\\\"Identify instances of the actor's custom FRP tool based on unique strings chosen by the actor and included in the tool\\\" ... }"
+        },
+        {
+          "name": "HACKTOOL_FRPClient",
+          "evidence_snippet": "rule HACKTOOL_FRPClient { meta: description=\\\"Identify instances of FRP tool (Note: This tool is known to be used by multiple actors, so hits would not necessarily imply activity by the specific actor described in this report)\\\" ... }"
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "The actor has used the following PowerShell [T1059.001] command to identify successful logons to the host [T1033]: Get-EventLog security -instanceid 4624",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "The actor has used the following commands to enable port forwarding [T1090] on the host: \"cmd.exe /c \\\"netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9999 connectaddress=<rfc1918 internal ip address> connectport=8443 protocol=tcp\\\"",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory (CSA) highlights a recently discovered cluster of activity associated with a People’s Republic of China (PRC) state-sponsored cyber actor, also known as Volt Typhoon. The advisory provides an overview of hunting guidance and associated best practices to detect this activity.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2021-40539 (ManageEngine ADSelfService Plus)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2021-40539 occurred on May 27, 2023, when threat actors began targeting ManageEngine ADSelfService Plus installations."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "doc_id": "DOC020",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 17,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 21,
+      "n_supported": 19,
+      "n_not_supported": 2,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"CVE-2021-40539\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"CVE-2021-27860\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"certutil\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe \"dnscmd\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"ldifde\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"makecab\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"net user/group/use\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n8. [SUPPORTED] Q: Does the document describe \"netsh\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe \"nltest\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe \"ntdsutil\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe \"PowerShell\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n12. [SUPPORTED] Q: Does the document describe \"req query/save\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n13. [SUPPORTED] Q: Does the document describe \"systeminfo\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n14. [SUPPORTED] Q: Does the document describe \"tasklist\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n15. [SUPPORTED] Q: Does the document describe \"wevtutil\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n16. [SUPPORTED] Q: Does the document describe \"wmic\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n17. [SUPPORTED] Q: Does the document describe \"xcopy\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n18. [SUPPORTED] Q: Does the document describe the technique \"T1059\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n19. [NOT SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: No.\n20. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n21. [NOT SUPPORTED] Q: Does the document describe the technique \"T1566\" (Phishing) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: No."
+    },
+    "step3_deletion": {
+      "changed": true,
+      "n_iocs_before": 17,
+      "n_iocs_after": 17,
+      "n_ttps_before": 4,
+      "n_ttps_after": 2,
+      "deleted_items": [
+        {
+          "list": "ttps",
+          "item_index": 1,
+          "item": {
+            "mitre_id": "T1027",
+            "tactic": "Defense Evasion",
+            "technique": "Obfuscated Files or Information",
+            "evidence_snippet": "The actor has used the following commands to enable port forwarding [T1090] on the host: \"cmd.exe /c \\\"netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9999 connectaddress=<rfc1918 internal ip address> connectport=8443 protocol=tcp\\\"",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        },
+        {
+          "list": "ttps",
+          "item_index": 3,
+          "item": {
+            "mitre_id": "T1566",
+            "tactic": "Initial Access",
+            "technique": "Phishing",
+            "evidence_snippet": "The actor has used the following commands to enable port forwarding [T1090] on the host: \"cmd.exe /c \\\"netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=9999 connectaddress=<rfc1918 internal ip address> connectport=8443 protocol=tcp\\\"",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        }
+      ]
+    }
+  },
+  "total_time_s": 8.69
+}

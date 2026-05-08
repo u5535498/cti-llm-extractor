@@ -1,0 +1,38 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "ENISA Threat Landscape 2025"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Public Administration",
+    "Transport",
+    "Digital Infrastructure and Services",
+    "Finance",
+    "Manufacturing"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "ENISA Threat Landscape 2025 introduces a revised and concise format designed to deliver insights through a threat-centric approach and enhanced contextualisation. This edition integrates additional analysis of adversary behaviours, vulnerabilities and geopolitical drivers.",
+  "timeline": [
+    {
+      "date": "2024-07-01",
+      "date_precision": "day",
+      "event": "Reporting period begins",
+      "evidence_snippet": "The reporting period referred to spans from 1 July 2024 to 30 June 2025"
+    }
+  ]
+}

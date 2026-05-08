@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC004",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 7,
+      "n_ttps": 8,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 15,
+      "n_supported": 15,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"CVE-2025-4427\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"CVE-2025-4428\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"Loader 1\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe \"ReflectUtil.class\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"SecurityHandlerWanListener.class\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"Loader 2\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"WebAndroidAppInstaller.class\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n8. [SUPPORTED] Q: Does the document describe the technique \"T1027.004\" (Obfuscated Files or Information: Compile After Delivery) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe the technique \"T1027.009\" (Obfuscated Files or Information: Embedded Payloads) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe the technique \"T1027.013\" (Obfuscated Files or Information: Encrypted/Encoded File) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe the technique \"T1036\" (Masquerading) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n12. [SUPPORTED] Q: Does the document describe the technique \"T1620\" (Reflective Code Loading) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n13. [SUPPORTED] Q: Does the document describe the technique \"T1140\" (Deobfuscate/Decode Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n14. [SUPPORTED] Q: Does the document describe the technique \"T1071.001\" (Application Layer Protocol: Web Protocols) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n15. [SUPPORTED] Q: Does the document describe the technique \"T1573.001\" (Encrypted Channel: Symmetric Cryptography) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 8.58
+}

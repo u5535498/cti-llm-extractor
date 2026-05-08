@@ -1,0 +1,37 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Microsoft Security incident report covering a BlackByte ransomware attack.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2021-31207 (ProxyShell)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2021-31207 occurred on May 27, 2023, when threat actors began targeting Microsoft Exchange Servers."
+    }
+  ]
+}

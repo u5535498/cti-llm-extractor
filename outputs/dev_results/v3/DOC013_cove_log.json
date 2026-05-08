@@ -1,0 +1,103 @@
+{
+  "doc_id": "DOC013",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 6,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 10,
+      "n_supported": 2,
+      "n_not_supported": 8,
+      "qa_pairs": "1. [NOT SUPPORTED] Q: Does the document describe \"CVE-2023-34362\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: No.\n2. [NOT SUPPORTED] Q: Does the document describe \"CVE-2022-21587\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: No.\n3. [NOT SUPPORTED] Q: Does the document describe \"CVE-2023-2868\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: No.\n4. [NOT SUPPORTED] Q: Does the document describe \"BEACON\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: No, the document does not mention \"BEACON\" as a tool used by the threat actor(s).\n5. [NOT SUPPORTED] Q: Does the document describe \"ALPHV\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: No.\n6. [NOT SUPPORTED] Q: Does the document describe \"LEMURLOOT\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: No.\n7. [SUPPORTED] Q: Does the document describe the technique \"T1059\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes, the document describes \"T1059\" (Command and Scripting Interpreter) as being used specifically for \"Execution\", such as in the context of a malicious Python script downloader.\n8. [NOT SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: No.\n9. [NOT SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: No, the document does not describe \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\".\n10. [SUPPORTED] Q: Does the document describe the technique \"T1566\" (Phishing) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes, the document describes \"T1566.002\" and \"T1566.003\" as being used specifically for social engineering tactics in the initial phase of attack lifecycle."
+    },
+    "step3_deletion": {
+      "changed": true,
+      "n_iocs_before": 6,
+      "n_iocs_after": 0,
+      "n_ttps_before": 4,
+      "n_ttps_after": 2,
+      "deleted_items": [
+        {
+          "list": "cves",
+          "item_index": 0,
+          "item": {
+            "value": "CVE-2023-34362",
+            "evidence_snippet": "The most prevalent vulnerability Mandiant investigators observed in 2023 was CVE-2023-34362, an SQL injection flaw in MOVEit Transfer exploited by FIN11.",
+            "source_context": null
+          }
+        },
+        {
+          "list": "cves",
+          "item_index": 1,
+          "item": {
+            "value": "CVE-2022-21587",
+            "evidence_snippet": "The second most exploited was CVE-2022-21587, a critical unauthenticated file upload vulnerability in Oracle E-Business Suite.",
+            "source_context": null
+          }
+        },
+        {
+          "list": "cves",
+          "item_index": 2,
+          "item": {
+            "value": "CVE-2023-2868",
+            "evidence_snippet": "The third was CVE-2023-2868, a critical command injection vulnerability in Barracuda Email Security Gateways.",
+            "source_context": null
+          }
+        },
+        {
+          "list": "tools",
+          "item_index": 0,
+          "item": {
+            "name": "BEACON",
+            "evidence_snippet": "BEACON remains the most frequently observed malware family in Mandiant investigations globally, appearing in 10 percent of cases."
+          }
+        },
+        {
+          "list": "tools",
+          "item_index": 1,
+          "item": {
+            "name": "ALPHV",
+            "evidence_snippet": "ALPHV ransomware was identified in 5% of Mandiant led investigations in 2023."
+          }
+        },
+        {
+          "list": "tools",
+          "item_index": 2,
+          "item": {
+            "name": "LEMURLOOT",
+            "evidence_snippet": "LEMURLOOT is a web shell written in C# tailored to interact with the MOVEit Transfer platform and was deployed following MOVEit exploitation."
+          }
+        },
+        {
+          "list": "ttps",
+          "item_index": 1,
+          "item": {
+            "mitre_id": "T1027",
+            "tactic": "Defense Evasion",
+            "technique": "Obfuscated Files or Information",
+            "evidence_snippet": "T1027 Obfuscated Files or Information 46.5% was among the top ATT&CK techniques observed in Mandiant investigations.",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        },
+        {
+          "list": "ttps",
+          "item_index": 2,
+          "item": {
+            "mitre_id": "T1190",
+            "tactic": "Initial Access",
+            "technique": "Exploit Public-Facing Application",
+            "evidence_snippet": "T1190 Exploit Public-Facing Application 28.7% was observed as a top initial access technique in Mandiant investigations.",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        }
+      ]
+    }
+  },
+  "total_time_s": 8.36
+}

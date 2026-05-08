@@ -1,0 +1,276 @@
+{
+  "report_metadata": {
+    "report_title": "Exposing RDStealer: Deep Dive into a Targeted Cyber-Attack Against East-Asia Infrastructure",
+    "report_type": "campaign",
+    "publication_date": "2023-05-01",
+    "authors": ["Bitdefender Labs"]
+  },
+  "target_sectors": [
+    "Technology / IT Services"
+  ],
+  "target_countries": [
+    "East Asia"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "34.96.222.22",
+        "evidence_snippet": "34.96.222[.]22"
+      },
+      {
+        "value": "35.220.144.179",
+        "evidence_snippet": "35.220.144[.]179"
+      },
+      {
+        "value": "35.220.202.191",
+        "evidence_snippet": "35.220.202[.]191"
+      },
+      {
+        "value": "34.96.235.162",
+        "evidence_snippet": "34.96.235[.]162"
+      },
+      {
+        "value": "35.220.190.145",
+        "evidence_snippet": "35.220.190[.]145"
+      },
+      {
+        "value": "35.220.183.209",
+        "evidence_snippet": "35.220.183[.]209"
+      },
+      {
+        "value": "35.208.179.162",
+        "evidence_snippet": "35.208.179[.]162"
+      },
+      {
+        "value": "34.92.13.119",
+        "evidence_snippet": "34.92.13[.]119"
+      }
+    ],
+    "domains": [
+        {"value": "a-ad-tml.ntp-update.com", "evidence_snippet": "a-ad-tml[.]ntp-update[.]com"},
+        {"value": "rps-a.ntp-update.com", "evidence_snippet": "rps-a[.]ntp-update[.]com"},
+        {"value": "a-rps.ntp-update.com", "evidence_snippet": "a-rps[.]ntp-update[.]com"},
+        {"value": "dns-a.ntp-update.com", "evidence_snippet": "dns-a[.]ntp-update[.]com"},
+        {"value": "a-tb.ntp-update.com", "evidence_snippet": "a-tb[.]ntp-update[.]com"},
+        {"value": "alast.sun-java.com", "evidence_snippet": "alast[.]sun-java[.]com"},
+        {"value": "alast.ntp-update.com", "evidence_snippet": "alast[.]ntp-update[.]com"},
+        {"value": "dell-a.ntp-update.com", "evidence_snippet": "dell-a[.]ntp-update[.]com"},
+        {"value": "a-sp-rps.0g6666.com", "evidence_snippet": "a-sp-rps[.]0g6666[.]com"},
+        {"value": "og8888.0g6666.com", "evidence_snippet": "og8888[.]0g6666[.]com"},
+        {"value": "windows.javaupdate-cdn.com", "evidence_snippet": "windows[.]javaupdate-cdn[.]com"},
+        {"value": "adobe.javaupdate-cdn.com", "evidence_snippet": "adobe[.]javaupdate-cdn[.]com"},
+        {"value": "flash.javaupdate-cdn.com", "evidence_snippet": "flash[.]javaupdate-cdn[.]com"},
+        {"value": "linux.0g6666.com", "evidence_snippet": "linux[.]0g6666[.]com"},
+        {"value": "ad.ntp-update.com", "evidence_snippet": "ad[.]ntp-update[.]com"},
+        {"value": "linux.ntp-update.com", "evidence_snippet": "linux[.]ntp-update[.]com"},
+        {"value": "windows.0g6666.com", "evidence_snippet": "windows[.]0g6666[.]com"},
+        {"value": "www.0g6666.com", "evidence_snippet": "www[.]0g6666[.]com"},
+        {"value": "wt.ntp-update.com", "evidence_snippet": "wt[.]ntp-update[.]com"},
+        {"value": "aliyun.ntp-update.com", "evidence_snippet": "aliyun[.]ntp-update[.]com"},
+        {"value": "cloud.ntp-update.com", "evidence_snippet": "cloud[.]ntp-update[.]com"},
+        {"value": "fe.ntp-update.com", "evidence_snippet": "fe[.]ntp-update[.]com"},
+        {"value": "wtech.ntp-update.com", "evidence_snippet": "wtech[.]ntp-update[.]com"},
+        {"value": "imp.ntp-update.com", "evidence_snippet": "imp[.]ntp-update[.]com"},
+        {"value": "ogplus.ntp-update.com", "evidence_snippet": "ogplus[.]ntp-update[.]com"},
+        {"value": "organization.0g6666.com", "evidence_snippet": "organization[.]0g6666[.]com"},
+        {"value": "global.ntp-update.com", "evidence_snippet": "global[.]ntp-update[.]com"},
+        {"value": "kaiy.0g6666.com", "evidence_snippet": "kaiy[.]0g6666[.]com"},
+        {"value": "kaiy.ntp-update.com", "evidence_snippet": "kaiy[.]ntp-update[.]com"},
+        {"value": "ky.0g6666.com", "evidence_snippet": "ky[.]0g6666[.]com"},
+        {"value": "oriental.ntp-update.com", "evidence_snippet": "oriental[.]ntp-update[.]com"},
+        {"value": "guard.ntp-update.com", "evidence_snippet": "guard[.]ntp-update[.]com"},
+        {"value": "oglive.ntp-update.com", "evidence_snippet": "oglive[.]ntp-update[.]com"},
+        {"value": "guard.0g6666.com", "evidence_snippet": "guard[.]0g6666[.]com"},
+        {"value": "plus.ntp-update.com", "evidence_snippet": "plus[.]ntp-update[.]com"},
+        {"value": "oglty.0g6666.com", "evidence_snippet": "oglty[.]0g6666[.]com"},
+        {"value": "oglty.ntp-update.com", "evidence_snippet": "oglty[.]ntp-update[.]com"},
+        {"value": "oglty-ml.ntp-update.com", "evidence_snippet": "oglty-ml[.]ntp-update[.]com"},
+        {"value": "esxi-lty.ntp-update.com", "evidence_snippet": "esxi-lty[.]ntp-update[.]com"},
+        {"value": "ml-lty.ntp-update.com", "evidence_snippet": "ml-lty[.]ntp-update[.]com"},
+        {"value": "telegram.ntp-update.com", "evidence_snippet": "telegram[.]ntp-update[.]com"},
+        {"value": "easyh.ntp-update.com", "evidence_snippet": "easyh[.]ntp-update[.]com"},
+        {"value": "weblog.ntp-update.com", "evidence_snippet": "weblog[.]ntp-update[.]com"},
+        {"value": "weblog-ml.ntp-update.com", "evidence_snippet": "weblog-ml[.]ntp-update[.]com"},
+        {"value": "o-fsh.ntp-update.com", "evidence_snippet": "o-fsh[.]ntp-update[.]com"},
+        {"value": "idn-tb.ntp-update.com", "evidence_snippet": "idn-tb[.]ntp-update[.]com"},
+        {"value": "tb-ndi2.ntp-update.com", "evidence_snippet": "tb-ndi2[.]ntp-update[.]com"},
+        {"value": "ml-ndi.ntp-update.com", "evidence_snippet": "ml-ndi[.]ntp-update[.]com"},
+        {"value": "vct.0g6666.com", "evidence_snippet": "vct[.]0g6666[.]com"},
+        {"value": "windows-i-tb.ntp-update.com", "evidence_snippet": "windows-i-tb[.]ntp-update[.]com"},
+        {"value": "ubuntu-ndi.ntp-update.com", "evidence_snippet": "ubuntu-ndi[.]ntp-update[.]com"},
+        {"value": "windows-qc-tb-i.ntp-update.com", "evidence_snippet": "windows-qc-tb-i[.]ntp-update[.]com"},
+        {"value": "windows-tb-i.ntp-update.com", "evidence_snippet": "windows-tb-i[.]ntp-update[.]com"},
+        {"value": "a-fms.ntp-update.com", "evidence_snippet": "a-fms[.]ntp-update[.]com"},
+        {"value": "plus.0g6666.com", "evidence_snippet": "plus[.]0g6666[.]com"},
+        {"value": "aprotect.sun-java.com", "evidence_snippet": "aprotect[.]sun-java[.]com"}
+      
+    ],
+    "file_hashes": [
+      {"value": "e89cb63e1352a1c9f86e03e4c744b5cd", "hash_type": "MD5", "evidence_snippet": "e89cb63e1352a1c9f86e03e4c744b5cd SYSTEM32\\ncobjapi.dll (DLL hijack loader); also WINDOWStobedeleted.dat"},
+      {"value": "f51e88b159b5661f0b83c3947f3e0b24", "hash_type": "MD5", "evidence_snippet": "f51e88b159b5661f0b83c3947f3e0b24 SYSTEM32\\ncobjapi.dll"},
+      {"value": "61ac19b0f812b10e7690109430cba4a5", "hash_type": "MD5", "evidence_snippet": "61ac19b0f812b10e7690109430cba4a5 vcruntime140.dll"},
+      {"value": "d80827879b2e15b18a9c0feaf5a3c859", "hash_type": "MD5", "evidence_snippet": "d80827879b2e15b18a9c0feaf5a3c859 PROGRAMFILES\\storage software\\configuration utility\\disk service daemon.exe (File collector / RDStealer)"},
+      {"value": "1d6b37bd2dfc9d6b4a811f90f6f48dce", "hash_type": "MD5", "evidence_snippet": "1d6b37bd2dfc9d6b4a811f90f6f48dce SYSTEM32\\ncobjapi64.dll / SYSTEM32\\ncobjapi.dll"},
+      {"value": "2af313bdd3c54d95303c14786a3ad58d", "hash_type": "MD5", "evidence_snippet": "2af313bdd3c54d95303c14786a3ad58d SYSTEM32\\ncobjapi32.dll"},
+      {"value": "d5cdeba19d1a31b5be424a82210e3417", "hash_type": "MD5", "evidence_snippet": "d5cdeba19d1a31b5be424a82210e3417"},
+      {"value": "de9233ed6689f84286fe0b7da8bc89e9", "hash_type": "MD5", "evidence_snippet": "de9233ed6689f84286fe0b7da8bc89e9"},
+      {"value": "e7121980263c08d2a759df827f97ecae", "hash_type": "MD5", "evidence_snippet": "e7121980263c08d2a759df827f97ecae"},
+      {"value": "78a7df158236edd372946347a156e5bc", "hash_type": "MD5", "evidence_snippet": "78a7df158236edd372946347a156e5bc %SYSTEM32%\bithostw.dll"},
+      {"value": "2b1130775c44be96990b2916ba071f40", "hash_type": "MD5", "evidence_snippet": "2b1130775c44be96990b2916ba071f40"},
+      {"value": "211ffebfbf679b713148c6dad94ec1df", "hash_type": "MD5", "evidence_snippet": "211ffebfbf679b713148c6dad94ec1df"},
+      {"value": "3b8424499183af6f886f722d85353abf", "hash_type": "MD5", "evidence_snippet": "3b8424499183af6f886f722d85353abf"},
+      {"value": "5a5e02256c0a8b65b2db8a0f88887744", "hash_type": "MD5", "evidence_snippet": "5a5e02256c0a8b65b2db8a0f88887744"},
+      {"value": "1325ad15712a875ff61de3bbb0eccebd", "hash_type": "MD5", "evidence_snippet": "1325ad15712a875ff61de3bbb0eccebd"},
+      {"value": "dec5b1c097b8d547666f76b55c5d0fdc", "hash_type": "MD5", "evidence_snippet": "dec5b1c097b8d547666f76b55c5d0fdc"},
+      {"value": "b7538226437cea21297b94f37d2c2813", "hash_type": "MD5", "evidence_snippet": "b7538226437cea21297b94f37d2c2813"},
+      {"value": "6cf0007b0d487f899fbd05ffc3401211", "hash_type": "MD5", "evidence_snippet": "6cf0007b0d487f899fbd05ffc3401211"},
+      {"value": "003d6351a2a2a2835f2b64a999963ec1", "hash_type": "MD5", "evidence_snippet": "003d6351a2a2a2835f2b64a999963ec1"},
+      {"value": "20ef20fd88dc7a5e90908f1667c08d11", "hash_type": "MD5", "evidence_snippet": "20ef20fd88dc7a5e90908f1667c08d11"},
+      {"value": "f18eb7a820f75e51b619b14967c83bb2", "hash_type": "MD5", "evidence_snippet": "f18eb7a820f75e51b619b14967c83bb2"},
+      {"value": "b7538226437cea21297b94f37d2c2813", "hash_type": "MD5", "evidence_snippet": "b7538226437cea21297b94f37d2c2813"},
+      {"value": "43b238bf6829e6f1056749bebdc01dbe", "hash_type": "MD5", "evidence_snippet": "43b238bf6829e6f1056749bebdc01dbe"},
+      {"value": "a83cdb7efbe7bbc4dafa1c11578e6372", "hash_type": "MD5", "evidence_snippet": "a83cdb7efbe7bbc4dafa1c11578e6372"},
+      {"value": "2a421eec6784f1675585e9b428c1b68c", "hash_type": "MD5", "evidence_snippet": "2a421eec6784f1675585e9b428c1b68c"},
+      {"value": "5c613c1f1f426d7b4630673966a125ba", "hash_type": "MD5", "evidence_snippet": "5c613c1f1f426d7b4630673966a125ba"},
+      {"value": "ea4cee8027df495c0da7b22e5a9d8457", "hash_type": "MD5", "evidence_snippet": "ea4cee8027df495c0da7b22e5a9d8457"},
+      {"value": "32efbf302aaa2845d3a2b76a50840dc2", "hash_type": "MD5", "evidence_snippet": "32efbf302aaa2845d3a2b76a50840dc2"},
+      {"value": "47a02b5f59bbc62b7f4be0f4ce7574cd", "hash_type": "MD5", "evidence_snippet": "47a02b5f59bbc62b7f4be0f4ce7574cd"},
+      {"value": "13f5490acf5f5fab2f43f71999563bb9", "hash_type": "MD5", "evidence_snippet": "13f5490acf5f5fab2f43f71999563bb9"},
+      {"value": "9fc12edb2e5f193ed4ae365a57c47ffb", "hash_type": "MD5", "evidence_snippet": "9fc12edb2e5f193ed4ae365a57c47ffb"},
+      {"value": "3294710063ee0dc7d6dfffc4de337b68", "hash_type": "MD5", "evidence_snippet": "(md5:dec5b1c097b8d547666f76b55c5d0fdc)"}
+    ],
+    "tools": [
+      {
+        "name": "Logutil Backdoor",
+        "evidence_snippet": "their tools through multiple means, the Logutil being their main tool of choice"
+      },
+      {
+        "name": "AsyncRat",
+        "evidence_snippet": "AsyncRat was also used at the earlier stages of infection."
+      },
+      {
+        "name": "CobaltStrike",
+        "evidence_snippet": "it was established that CobaltStrike is another tool"
+      }
+    ],
+    "cves": [],
+    "tls_certificates": [
+      {"fingerprint": "7d5ea2769d07326c4f7418ff422bc30c0f6d7135", "evidence_snippet": "cert dns: cugaa.com; noticed to be used starting with 2023.03.30 as a replacement for the cert corresponding to op888kai.com"},
+      {"fingerprint": "3dc9116e3bce0f5e8afbcc69928ee473b0ff0eb4", "evidence_snippet": "cert dns: op888kai.com; extensively used during the operation"},
+      {"fingerprint": "82abe94672dc3498be7ea57c2de19affdb9e98f5", "evidence_snippet": "Self-signed"}
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1574.001",
+      "tactic": "Persistence / Defense Evasion",
+      "technique": "Hijack Execution Flow: DLL Search Order Hijacking",
+      "evidence_snippet": "DLL search order hijacking involving the Microsoft WMI Provider Subsystem DCOM and SYSTEM32\\ncobjapi.dll loader"
+    },
+    {
+      "mitre_id": "T1574.002",
+      "tactic": "Defense Evasion",
+      "technique": "Hijack Execution Flow: DLL Side-Loading",
+      "evidence_snippet": "Extensive use of side-loading the F-Secure User Interface Launcher version 6.12.9; rdpclip.exe used to side-load malicious Logutil DLL"
+    },
+    {
+      "mitre_id": "T1480",
+      "tactic": "Defense Evasion",
+      "technique": "Execution Guardrails",
+      "evidence_snippet": "Use of the infected computers name to derive the file name where the obfuscated and UPX-packed Logutil backdoor resides"
+    },
+    {
+      "mitre_id": "T1036.004",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading: Masquerade Task or Service",
+      "evidence_snippet": "Scheduled task name used to mimic legitimate scheduled task Microsoft"
+    },
+    {
+      "mitre_id": "T1036.005",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading: Match Legitimate Name or Location",
+      "evidence_snippet": "Locations within PROGRAMFILES and PROGRAMFILESx86 most likely help attackers blend the malware into legitimate software"
+    },
+    {
+      "mitre_id": "T1036.001",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading: Invalid Code Signature",
+      "evidence_snippet": "Almost all files related to the incident have corresponding digital signatures with the same serial number - the purpose of that being evading detection"
+    },
+    {
+      "mitre_id": "T1027.002",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Software Packing",
+      "evidence_snippet": "UPX-packed Logutil backdoor"
+    },
+    {
+      "mitre_id": "T1003.001",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: LSASS Memory",
+      "evidence_snippet": "Attempts of exfiltrating mysql data by accessing the server process memory and attempts of dumping LSASS memory"
+    },
+    {
+      "mitre_id": "T1056.001",
+      "tactic": "Credential Access",
+      "technique": "Input Capture: Keylogging",
+      "evidence_snippet": "Keystroke capture alongside with window name"
+    },
+    {
+      "mitre_id": "T1555.003",
+      "tactic": "Credential Access",
+      "technique": "Credentials from Password Stores: Credentials from Web Browsers",
+      "evidence_snippet": "Tools capable of collecting credential material from various applications such as MobaXterm, mRemoteNG, KeePass, Chrome passwords and history"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "Capabilities to infect other systems in case a RDP session was established to the already infected system by placing malicious components to the subfolders if tsclient share was enabled"
+    },
+    {
+      "mitre_id": "T1070.006",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Timestomp",
+      "evidence_snippet": "Indicator Removal Timestomp T1070.006"
+    },
+    {
+      "mitre_id": "T1620",
+      "tactic": "Defense Evasion",
+      "technique": "Reflective Code Loading",
+      "evidence_snippet": "The given DLL will be reflectively loaded into the memory"
+    }
+  ],
+  "summary": "Bitdefender Labs report (May 2023) by Victor Vrabie on RDStealer campaign (active from at least early 2022): targeted Tech/IT services company in East Asia. Threat actor deploys two custom Go tools: (1) File Collector (RDStealer) — monitors tsclient RDP shares, collects clipboard/keystrokes, steals KeePass/.rdp/SSH keys/MobaXterm/Xshell/mRemoteNG configs, archives to IDtimestamp.dat, notifies C2 at https://[local IP]:7443/pdr.php; (2) Logutil backdoor — Go DLL (logutil32/64.dll), XOR config, HTTPS C2 (/info, /update), QUIC proxy support, reflective DLL load, multi-platform. Persistence via SYSTEM32\\ncobjapi.dll DLL hijack (Winmgmt/DCOM); F-Secure side-loading; execution guardrails using hostname. C2 infra: 8 GCP IPs (all HK except 35.208.179.162 US); 40+ domains (ntp-update.com, 0g6666.com, sun-java.com, javaupdate-cdn.com); 3 TLS certs (op888kai.com, cugaa.com). Earlier-stage tools: AsyncRat + CobaltStrike Beacon (flash.javaupdate-cdn.com). Infrastructure active since at least 2020-03-29.",
+  "timeline": [
+    {
+      "date": "2020-03-29",
+      "date_precision": "day",
+      "event": "Earliest known use of attacker infrastructure (pDNS data)",
+      "evidence_snippet": "subdomains of the already known malicious domains are used by attackers at least from 2020-03-29"
+    },
+    {
+      "date": "2022-01-01",
+      "date_precision": "quarter",
+      "event": "Operation started; AsyncRat used at earliest infection stages",
+      "evidence_snippet": "Our investigation revealed that the operation started at least since early 2022"
+    },
+    {
+      "date": "2023-03-30",
+      "date_precision": "day",
+      "event": "TLS cert cugaa.com begins replacing op888kai.com",
+      "evidence_snippet": "noticed to be used starting with 2023.03.30 as a replacement for the cert corresponding to op888kai.com"
+    },
+    {
+      "date": "2023-04-04",
+      "date_precision": "day",
+      "event": "DNS resolution of C2 domains recorded for IOC table",
+      "evidence_snippet": "Domain Resolved IP resolved on 2023.04.04"
+    },
+    {
+      "date": "2023-05-01",
+      "date_precision": "month",
+      "event": "Bitdefender Labs publishes RDStealer report",
+      "evidence_snippet": "LABS May 2023 English Version only"
+    }
+  ]
+}

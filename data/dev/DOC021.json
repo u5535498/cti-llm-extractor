@@ -1,0 +1,150 @@
+{
+  "report_metadata": {
+    "report_title": "Unit 42 Cloud Threat Report, Volume 7",
+    "report_type": "strategic",
+    "publication_date": "2023-03-01",
+    "authors": [
+      "Palo Alto Networks Unit 42"
+    ]
+  },
+  "target_sectors": [
+    "Financial Services",
+    "E-commerce"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Tsunami IRC Botnet",
+        "evidence_snippet": "8220 threat actor deployed Tsunami IRC Botnet on compromised cloud hosts"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-40438",
+        "evidence_snippet": "found the exposed host and confirmed the web server was vulnerable to CVE-2021-40438"
+      },
+      {
+        "value": "CVE-2021-44228",
+        "evidence_snippet": "Log4Shell (CVE-2021-44228) and Spring4Shell (CVE-2022-22965) were the most notable web application vulnerabilities"
+      },
+      {
+        "value": "CVE-2022-22965",
+        "evidence_snippet": "Log4Shell (CVE-2021-44228) and Spring4Shell (CVE-2022-22965) were the most notable web application vulnerabilities"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": ": File Deletion, T1190 - Exploit Public-Facing Application",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access / Persistence",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "T1078 - Valid Accounts",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1552.001",
+      "tactic": "Credential Access",
+      "technique": "Unsecured Credentials: Credentials in Files",
+      "evidence_snippet": "T1552.001 - Unsecured Credentials: Credentials in Files",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1136.003",
+      "tactic": "Persistence",
+      "technique": "Create Account: Cloud Account",
+      "evidence_snippet": "T1136.003 - Create Account ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1610",
+      "tactic": "Execution",
+      "technique": "Deploy Container",
+      "evidence_snippet": "T1610 - Deply Container",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1525",
+      "tactic": "Persistence",
+      "technique": "Implant Internal Image",
+      "evidence_snippet": "T1525 - Implant Internal Image.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information (Steganography)",
+      "evidence_snippet": "T1027 - Obfuscated Files or Information: Steganography",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1584.004",
+      "tactic": "Resource Development",
+      "technique": "Compromise Infrastructure: Server",
+      "evidence_snippet": " T1584.004, Compromise infrastructure: Servers,",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: File Deletion",
+      "evidence_snippet": "T1070.004 - Indicator Removal: File Deletion",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.008",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable Cloud Logs",
+      "evidence_snippet": "T1562.008 - Impair Defenses: Disable Cloud Logs",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Palo Alto Networks Unit 42 Cloud Threat Report Volume 7 (published ~March 2023; data Jan 2022-Jan 2023). Analysed 210,000 cloud accounts across 1,300+ organisations on all major CSPs. Key findings: 83% orgs have hard-coded SCM creds; 85% in VM user data; 76% don't enforce MFA for console users; 145hr avg alert resolution (60% >4 days); 66% storage buckets contain sensitive data (63% publicly exposed). Two anonymised IR scenarios: (1) SIM-swap → IAM key theft from cloned SCM repos → extortion without encryption (data leaked on dark web); (2) CVE-2021-40438 SSRF + IMDSv1 → cloud creds → CloudFormation cryptojacking botnet ($12,000/day GPU costs). Cloud threat actors updated: PurpleUrchin (130,000 accounts, CAPTCHA bypass, GitHub/Heroku/Togglebox abuse), Kinsing (PostgreSQL/K8s; syslog deletion; T1525 added), WatchDog (steganography-masked malware; T1584.004/T1027 added), 8220 (30,000-host botnet; Tsunami IRC). OSS risks: Log4Shell (CVE-2021-44228) still rising; Spring4Shell (CVE-2022-22965); 7,300+ malicious OSS packages; 51% codebases >100 dependencies; 77% vulns from non-root packages. CNCF: DoS/auth-bypass = 57% of vulns.",
+  "timeline": [
+    {
+      "date": "2022-01-01",
+      "date_precision": "year",
+      "event": "Data collection period begins; Log4Shell exploitation trends tracked from January 2022",
+      "evidence_snippet": "Data collected between January 2022 and January 2023"
+    },
+    {
+      "date": "2022-11-01",
+      "date_precision": "month",
+      "event": "PurpleUrchin peak activity: 3-5 GitHub accounts created per minute",
+      "evidence_snippet": "During the peak of the operations in November 2022, three-to-five GitHub accounts were created every minute"
+    },
+    {
+      "date": "2022-12-01",
+      "date_precision": "month",
+      "event": "8220 Gang expands botnet to 30,000 compromised hosts",
+      "evidence_snippet": "8220 massively expanded its botnet operations to as many as 30,000 compromised hosts in 2022"
+    },
+    {
+      "date": "2023-01-01",
+      "date_precision": "month",
+      "event": "Data collection period ends",
+      "evidence_snippet": "Data collected between January 2022 and January 2023"
+    },
+    {
+      "date": "2023-03-01",
+      "date_precision": "month",
+      "event": "Unit 42 Cloud Threat Report Volume 7 published",
+      "evidence_snippet": "Published approximately March 2023 (based on foreword references to March 2023 citations)"
+    }
+  ]
+}

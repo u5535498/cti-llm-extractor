@@ -1,0 +1,279 @@
+{
+  "report_metadata": {
+    "report_title": "Volt Typhoon targets US critical infrastructure with living-off-the-land techniques",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "Volt Typhoon",
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Communications",
+    "Manufacturing",
+    "Utility",
+    "Transportation",
+    "Construction",
+    "Maritime",
+    "Government",
+    "Information Technology",
+    "Education"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "7939f67375e6b14dfa45ec70356e91823d12f28bbd84278992b99e0d2c12ace5",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "389a497f27e1dd7484325e8e02bbdf656d53d5cf2601514e9b8d8974befddf61",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "c4b185dbca490a7f93bc96eefb9a597684fdf532d5a04aa4d9b4d4b1552c283b",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "e453e6efc5a002709057d8648dbe9998a49b9a12291dee390bb61c98a58b6e95",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "6036390a2c81301a23c9452288e39cb34e577483d121711b6ba6230b29a3c9ff",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "cd69e8a25a07318b153e01bba74a1ae60f8fc28eb3d56078f448461400baa984",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "17506c2246551d401c43726bdaec800f8d41595d01311cf38a19140ad32da2f4",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "8fa3e8fdbaa6ab5a9c44720de4514f19182adc0c9c6001c19cf159b79c0ae9c2",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "d17317e1d5716b09cee904b8463a203dc6900d78ee2053276cc948e4f41c8295",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "472ccfb865c81704562ea95870f60c08ef00bcd2ca1d7f09352398c05be5d05d",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      },
+      {
+        "value": "3e9fc13fab3f8d8120bd01604ee50ff65a40121955a4150a6d2c007d34807642",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Volt Typhoon custom FRP executable"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "ntdsutil.exe",
+        "evidence_snippet": "frequently attempts to use the command-line tool Ntdsutil.exe to create installation media from domain controllers, either remotely or locally"
+      },
+      {
+        "name": "Impacket",
+        "evidence_snippet": "tools Impacket and Fast Reverse Proxy (FRP) to establish a C2 channel over proxy"
+      },
+      {
+        "name": "Fast Reverse Proxy (FRP)",
+        "evidence_snippet": "tools Impacket and Fast Reverse Proxy (FRP) to establish a C2 channel over proxy"
+      },
+      {
+        "name": "netsh portproxy",
+        "evidence_snippet": "They accomplish this with the built-in netsh portproxy command"
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "attempt to discover other systems on the compromised network using PowerShell, Windows Management Instrumentation Command-line (WMIC), and the ping command."
+      },
+      {
+        "name": "WMIC",
+        "evidence_snippet": "attempt to discover other systems on the compromised network using PowerShell, Windows Management Instrumentation Command-line (WMIC), and the ping command."
+      },
+      {
+        "name": "ping",
+        "evidence_snippet": "attempt to discover other systems on the compromised network using PowerShell, Windows Management Instrumentation Command-line (WMIC), and the ping command."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": [],
+      "defender_detections": [
+        "Behavior:Win32/SuspNtdsUtilUsage.A",
+        "Behavior:Win32/SuspPowershellExec.E",
+        "Behavior:Win32/SuspRemoteCmdCommandParent.A",
+        "Behavior:Win32/UNCFilePathOperation",
+        "Behavior:Win32/VSSAmsiCaller.A",
+        "Behavior:Win32/WinrsCommand.A",
+        "Behavior:Win32/WmiSuspProcExec.J!se",
+        "Behavior:Win32/WmicRemote.A",
+        "Behavior:Win32/WmiprvseRemoteProc.B"
+      ],
+      "mde_alerts": [
+        "Volt Typhoon threat actor detected",
+        "A machine was configured to forward traffic to a non-local address",
+        "Ntdsutil collecting Active Directory information",
+        "Password hashes dumped from LSASS memory",
+        "Suspicious use of wmic.exe to execute code",
+        "Impacket toolkit"
+      ]
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Initial access via internet-facing Fortinet FortiGuard devices",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Persistence",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Uses stolen valid credentials to maintain persistence and access compromised systems",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "LSASS memory dump (Base64-encoded command observed)",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1003.003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: NTDS",
+      "evidence_snippet": "ntdsutil.exe used to create domain controller installation media locally and remotely to extract NTDS password hashes",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "PowerShell used for network discovery",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "Enumerating file system types, drive names/size/free space, running processes, open networks",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "Discover other systems on compromised network via PowerShell/WMIC/ping",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1217",
+      "tactic": "Collection",
+      "technique": "Browser Information Discovery",
+      "evidence_snippet": "Dumps information from local web browser applications",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1560",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data",
+      "evidence_snippet": "Staging collected data in password-protected archives for exfiltration",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1090",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "Routes traffic through compromised SOHO devices (ASUS, Cisco, D-Link, NETGEAR, Zyxel); netsh portproxy on compromised systems",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1572",
+      "tactic": "Command and Control",
+      "technique": "Protocol Tunneling",
+      "evidence_snippet": "Custom FRP used to establish C2 channel over proxy",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Blends into normal network activity by routing through SOHO devices; uses valid accounts to access systems like legitimate users",
+      "mapping_type": "inferred"
+    }
+  ],
+  "summary": "Microsoft Threat Intelligence blog post (May 24, 2023) on Volt Typhoon, a Chinese state-sponsored APT active since mid-2021 targeting US critical infrastructure (communications, manufacturing, utilities, transport, construction, maritime, government, IT, education). Assessed with moderate confidence to be pre-positioning to disrupt US-Asia communications during future crises. Almost exclusively LOTL techniques: initial access via Fortinet FortiGuard devices → credential extraction from AD accounts → LSASS dumps + ntdsutil DC installation media (offline hash cracking). Discovery via PowerShell/WMIC/ping. Data staged in password-protected archives. C2 via compromised SOHO edge devices (ASUS/Cisco/D-Link/NETGEAR/Zyxel) + netsh portproxy + custom Impacket/FRP. 19 SHA-256 hashes for custom FRP binaries. Microsoft Defender detections and Microsoft Sentinel hunting queries provided.",
+  "timeline": [
+    {
+      "date": "2021-06-01",
+      "date_precision": "quarter",
+      "event": "Volt Typhoon active since mid-2021 targeting critical infrastructure in Guam and across the US",
+      "evidence_snippet": "Volt Typhoon has been active since mid-2021 and has targeted critical infrastructure organizations in Guam and elsewhere in the United States"
+    },
+    {
+      "date": "2023-05-24",
+      "date_precision": "day",
+      "event": "Microsoft publishes Volt Typhoon blog post; NSA publishes companion Cybersecurity Advisory PDF",
+      "evidence_snippet": "May 24, 2023 | By Microsoft Threat Intelligence"
+    }
+  ]
+}

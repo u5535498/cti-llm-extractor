@@ -1,0 +1,74 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Malicious Listener for Ivanti Endpoint Mobile Management Systems"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "e33103767524879293d1b576a8b6257d",
+        "evidence_snippet": "Table 1. Loader 1 Filename web-install.jar Size 30996 bytes Type JAR",
+        "source_context": null,
+        "hash_type": "MD5"
+      },
+      {
+        "value": "6ec2169312feb9fde0b17e244b32c37d",
+        "evidence_snippet": "Table 2. ReflectUtil.class Injector Malware Filename ReflectUtil.class Size 11886 bytes Type compiled Java class data, version 49.0 (Java 1.5)",
+        "source_context": null,
+        "hash_type": "MD5"
+      },
+      {
+        "value": "5e9d283b483b8d5c637baf7cfdda0e08",
+        "evidence_snippet": "Table 3. SecurityHandlerWanListener.class Malicious Listener Filename SecurityHandlerWanListener.class Size 4690 bytes Type compiled Java class data, version 49.0 (Java 1.5)",
+        "source_context": null,
+        "hash_type": "MD5"
+      },
+      {
+        "value": "32f5c3c1582a77c004b1511c77454678",
+        "evidence_snippet": "Table 4. Loader 2 Filename web-install.jar Size 8728 bytes Type JAR",
+        "source_context": null,
+        "hash_type": "MD5"
+      },
+      {
+        "value": "8387a7ce9f2520d8956747fd247b19af",
+        "evidence_snippet": "Table 5. WebAndroidAppInstaller.class Malicious Listener Filename WebAndroidAppInstaller.class Size 16120 bytes Type compiled Java class data, version 52.0 (Java 1.8)",
+        "source_context": null,
+        "hash_type": "MD5"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "CISA_251126_01",
+          "evidence_snippet": "rule CISA_251126_01 : trojan hides_artifacts { meta: author = “CISA Code & Media Analysis” incident = “251126” date = “2025-07-23” last_modified = “20250724_1615” actor = “n/a” family = “n/a” capabilities = “hides-artifacts” malware_type = “trojan” tool_type = “unknown” description = “Detects malicious jar filter samples” sha256_1 = “c1f60ca5a5f7b94ab7122718a44b46de16c69d22c2eb62ce2948cab14bc78d50”"
+        },
+        {
+          "name": "CISA_251126_02",
+          "evidence_snippet": "rule CISA_251126_02 : trojan { meta: author = “CISA Code & Media Analysis” incident = “251126” date = “2025-07-23” last_modified = “20250724_1615” actor = “n/a” family = “n/a” capabilities = “n/a” malware_type = “trojan” tool_type = “unknown” description = “Detects malicious servlet filter class loader samples” sha256_1 = “065c1c2fb17ba1c3f882bead409215df612673cd455698768ed71412f9190ba3”"
+        },
+        {
+          "name": "CISA_251126_03",
+          "evidence_snippet": "rule CISA_251126_03 : trojan installs_other_components exfiltrates_data { meta: author = “CISA Code & Media Analysis” incident = “251126” date = “2025-07-23” last_modified = “20250724_1615” actor = “n/a” family = “n/a” capabilities = “installs-other-components,exfiltrates-data” malware_type = “trojan” tool_type = “unknown” description = “Detects malicious servlet filter class loader samples” sha256_1 = “065c1c2fb17ba1c3f882bead409215df612673cd455698768ed71412f9190ba3”"
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

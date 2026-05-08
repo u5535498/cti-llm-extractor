@@ -1,0 +1,172 @@
+{
+  "report_metadata": {
+    "report_title": "Nation-state threat actor Mint Sandstorm refines tradecraft to attack high-value targets",
+    "report_type": "campaign",
+    "publication_date": "2023-04-18",
+    "authors": ["Microsoft Threat Intelligence"]
+  },
+  "threat_actor": {
+    "name": "Mint Sandstorm",
+    "aliases": [
+        "APT35",
+        "Mint Sandstorm",
+        "PHOSPHOROUS",
+        "APT42"
+    ],
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Energy",
+    "Transportation",
+    "Critical National Infrastructure",
+    "Seaports",
+    "Utilities",
+    "Gas Entities",
+    "Government Agencies",
+    "Think Tanks",
+    "Universities"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "54.39.202.0",
+        "evidence_snippet": "54.39.202.0 IP Address Drokbk C2 infrastructure"
+      },
+      {
+        "value": "51.89.135.15",
+        "evidence_snippet": "51.89.135.15 IP Address Drokbk C2 infrastructure"
+      },
+      {
+        "value": "51.89.169.201",
+        "evidence_snippet": "51.89.169.201 IP Address Drokbk C2 infrastructure"
+      },
+      {
+        "value": "51.89.187.222",
+        "evidence_snippet": "51.89.187.222 IP Address Drokbk C2 infrastructure"
+      }
+    ],
+    "domains": [
+      {
+        "value": "sync-system-time.cf",
+        "evidence_snippet": "sync-system-time.cf Domain Drokbk C2 infrastructure"
+      },
+      {
+        "value": "update-windows-security.tk",
+        "evidence_snippet": "update-windows-security.tk Domain Drokbk C2 infrastructure"
+      },
+      {
+        "value": "dns-iprecords.tk",
+        "evidence_snippet": "dns-iprecords.tk Domain Drokbk C2 infrastructure"
+      },
+      {
+        "value": "universityofmhealth.biz",
+        "evidence_snippet": "universityofmhealth.biz Domain Drokbk C2 infrastructure"
+      },
+      {
+        "value": "oracle-java.cf",
+        "evidence_snippet": "oracle-java.cf Domain Drokbk C2 infrastructure"
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "ad55b4a40f9e52682d9d4f069914e09c941e8b77ca7b615e9deffccdfbc54145",
+        "hash_type": "SHA256",
+        "evidence_snippet": "ad55b4a40f9e52682d9d4f069914e09c941e8b77ca7b615e9deffccdfbc54145 SHA256 Soldier backdoor hash"
+      },
+      {
+        "value": "64f39b858c1d784df1ca8eb895ac7eaf47bf39acf008ed4ae27a796ac90f841b",
+        "hash_type": "SHA256",
+        "evidence_snippet": "64f39b858c1d784df1ca8eb895ac7eaf47bf39acf008ed4ae27a796ac90f841b SHA256 Drokbk backdoor hash"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Drokbk",
+        "evidence_snippet": "Drokbk.exe is a custom .NET implant with installer + backdoor payload; uses GitHub README domain rotator for C2; detected as Trojan:Win32/Drokbk.C!dha, Trojan:MSIL/Drokbk.[A-C]!dha"
+      },
+      {
+        "name": "Soldier",
+        "evidence_snippet": "Soldier is a multistage .NET backdoor; downloads/runs additional tools; self-uninstalls; GitHub domain rotator C2; more sophisticated Drokbk variant; detected as Trojan:MSIL/SoldierAudio.[A-C]!dha"
+      },
+      {
+        "name": "CharmPower",
+        "evidence_snippet": "using CharmPower, a custom implant, in attacks that began with targetedphishing campaigns"
+      },
+      {
+        "name": "Impacket",
+        "evidence_snippet": "using Impacket to move laterally through a compromised organization"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2022-47966",
+        "evidence_snippet": "Zoho ManageEngine affected by CVE-2022-47966: Organizations using Zoho ManageEngine products vulnerable to CVE-2022-47966 should download and apply upgrades "
+      },
+      {
+        "value": "CVE-2022-47986",
+        "evidence_snippet": "IBM Aspera Faspex affected by CVE-2022-47986: Organizations can remediate CVE-2022-47986 by upgrading to Faspex 4.4.2 Patch Level 2"
+      },
+      {
+        "value": "CVE-2021-44228",
+        "evidence_snippet": "Apache Log4j2 (aka Log4Shell) (CVE-2021-44228 and CVE-2021-45046): Microsoft’s guidance for organizations using applications vulnerable to Log4Shell exploitation can"
+      },
+      {
+        "value": "CVE-2021-45046",
+        "evidence_snippet": "Apache Log4j2 (aka Log4Shell) (CVE-2021-44228 and CVE-2021-45046): Microsoft’s guidance for organizations using applications vulnerable to Log4Shell exploitation can"
+      }
+    ]
+  },
+  "summary": "Microsoft Threat Intelligence blog (April 18, 2023): Mature Mint Sandstorm (PHOSPHORUS/APT35/Charming Kitten/IRGC) subgroup rapidly weaponizes N-day POCs (CVE-2022-47966 Zoho same-day, CVE-2022-47986 Aspera 5 days); targets energy/transportation/seaports/utilities (retaliation for 2020-2021 attacks on Iranian infra). Two attack chains: (1) Impacket lateral + PowerShell RDP enum + AD dump + SSH C2; (2) Impacket lateral + webhook.site C2 + scheduled tasks + custom Drokbk/Soldier. Custom tools: Drokbk (.NET installer/backdoor, GitHub C2 rotator), Soldier (multistage .NET backdoor), CharmPower (PowerShell modular backdoor via template injection phishing vs ME think tanks/universities). Increased IRGC aggression post-2021 Raisi election. Detections: ManageEngine/Aspera/Log4J queries; ASR rules; Defender AV (Trojan:Win32/Drokbk.C!dha, Trojan:MSIL/SoldierAudio); Phosphorus alert.",
+  "timeline": [
+    {
+      "date": "2020-05-01",
+      "date_precision": "month",
+      "event": "Iranian seaport maritime traffic halted by cyberattack (attributed by Iran to Israel/US)",
+      "evidence_snippet": "Iranian attribution of cyberattacks that halted maritime traffic at a major Iranian seaport in May 2020"
+    },
+    {
+      "date": "2021-07-01",
+      "date_precision": "month",
+      "event": "Iranian trains delayed by cyberattack",
+      "evidence_snippet": "delayed Iranian trains in July 2021"
+    },
+    {
+      "date": "2021-09-01",
+      "date_precision": "month",
+      "event": "IRGC/APT cyber ops pace/scope increase begins",
+      "evidence_snippet": "broader increase in the pace and the scope of cyberattacks attributed to Iranian threat actors... beginning in September 2021"
+    },
+    {
+      "date": "2021-11-01",
+      "date_precision": "month",
+      "event": "Iran gas station payment systems crashed",
+      "evidence_snippet": "crashed gas station payment systems throughout Iran in late 2021"
+    },
+    {
+      "date": "2021-11-01",
+      "date_precision": "quarter",
+      "event": "Mint Sandstorm shifts from recon to targeting US critical infrastructure (seaports/energy/transit/utility/gas) late 2021-mid 2022",
+      "evidence_snippet": "From late 2021 to mid-2022... direct targeting of US critical infrastructure including seaports, energy companies, transit systems, and a major US utility and gas entity"
+    },
+    {
+      "date": "2023-01-19",
+      "date_precision": "day",
+      "event": "Mint Sandstorm exploits CVE-2022-47966 Zoho ManageEngine same day POC public",
+      "evidence_snippet": "Mint Sandstorm began exploiting CVE-2022-47966 in Zoho ManageEngine on January 19, 2023, the same day the POC became public"
+    },
+    {
+      "date": "2023-02-02",
+      "date_precision": "day",
+      "event": "Mint Sandstorm exploits CVE-2022-47986 Aspera Faspex within 5 days of POC",
+      "evidence_snippet": "They later exploited CVE-2022-47986 in Aspera Faspex within five days of the POC being made public on February 2, 2023"
+    },
+    {
+      "date": "2023-04-18",
+      "date_precision": "day",
+      "event": "Microsoft publishes Mint Sandstorm analysis",
+      "evidence_snippet": "April 18, 2023 14 min read By Microsoft Threat Intelligence"
+    }
+  ]
+}

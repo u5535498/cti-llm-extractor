@@ -1,0 +1,47 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Iran-based Cyber Actors Enabling Ransomware Attacks on US Organizations"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Education",
+    "Finance",
+    "Healthcare",
+    "Defense",
+    "Local Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Install “AnyDesk” remote access program as a backup access method [T1219]."
+      },
+      {
+        "name": "Meshcentral",
+        "evidence_snippet": "Deployment of Meshcentral to connect with compromised servers for remote access [T1219]."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Iran-based cyber actors continue to exploit U.S. and foreign organizations, including those in the education, finance, healthcare, and defense sectors. The actors use various tactics, techniques, and procedures (TTPs) to gain initial access, persist on victim networks, and exfiltrate sensitive data.",
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "date_precision": "day",
+      "event": "First observed activity by Iranian cyber actors in 2024",
+      "evidence_snippet": "Disclaimer: The IP addresses and domains listed in Table 10 were observed in use by the actors in the specified timeframes in 2024."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "doc_id": "DOC014",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "none found",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "- No hash values are explicitly mentioned in the document.",
+        "hash_type": "MD5",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "- No hash values are explicitly mentioned in the document.",
+        "hash_type": "SHA1",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "- No hash values are explicitly mentioned in the document.",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "- No hash values are explicitly mentioned in the document.",
+        "hash_type": "SHA512",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "- No hash values are explicitly mentioned in the document.",
+        "hash_type": "SSDEEP",
+        "evidence_snippet": ""
+      }
+    ],
+    "urls": [
+      {
+        "value": "http://<ip>/<RAS tool>.msi (no specific URL provided)",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "PowerShell",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Windows Command Prompt (cmd.exe)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Ingress Tool Transfer capabilities",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Ligolo (reverse tunneling tool)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Cloudflared (formerly ArgoTunnel)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Atera",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "ConnectWise",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "eHorus",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "N-able",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PDQ Deploy",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PDQ Inventory",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "SimpleHelp",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-48788",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "- Phishing",
+      "technique": "Spearphishing via compromised email account",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "- Exploitation of Remote Services",
+      "technique": "Use of known vulnerabilities in remote services",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027.013",
+      "tactic": "- Command and Control",
+      "technique": "Execution through API",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.003",
+      "tactic": "- Lateral Movement",
+      "technique": "Clear Windows Event Logs",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1046",
+      "tactic": "- Network Service Scanning",
+      "technique": "Scan for open ports",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1083",
+      "tactic": "- File System Monitoring",
+      "technique": "Monitor file system activity",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1105",
+      "tactic": "- Command and Control",
+      "technique": "Use of web shells",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "- Command and Control",
+      "technique": "Execution through API",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1047",
+      "tactic": "- Network Service Discovery",
+      "technique": "Query Windows Management Instrumentation (WMI)",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "- Data Encrypted for Impact",
+      "technique": "Encrypting data to impact the organization",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The Medusa ransomware variant is a RaaS that has been used in attacks since 2021, impacting over 300 victims across various critical infrastructure sectors. The threat actors use initial access brokers, phishing campaigns, and exploitation of unpatched software vulnerabilities to gain access to potential victims. They employ a double extortion model, encrypting victim data and threatening to publicly release exfiltrated data if a ransom is not paid.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 11.15
+}

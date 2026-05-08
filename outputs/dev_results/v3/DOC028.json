@@ -1,0 +1,82 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Exposing RDStealer — Deep Dive Into A Targeted Cyber-attack Against East-asia Infrastructure"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Technology/IT Services"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "34.96.222[.]22",
+        "evidence_snippet": "The C2 information obtained from the config strings of identified samples gives us insight into the attackers’ preferences for choosing the infrastructure provider:",
+        "source_context": null
+      },
+      {
+        "value": "35.220.144[.]179",
+        "evidence_snippet": "Besides the C2 addresses from the Logutil configs, one more domain is used by attackers, which was obtained from two AsyncRat samples – one standalone executable located at %PROGRAM_FILES%\f-secure\\psb\\diagnostics\fs_ui.exe",
+        "source_context": null
+      }
+    ],
+    "domains": [
+      {
+        "value": "a-ad-tml[.]ntp-update[.]com",
+        "evidence_snippet": "The C2 information obtained from the config strings of identified samples gives us insight into the attackers’ preferences for choosing the infrastructure provider:",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "rps-a[.]ntp-update[.]com",
+        "evidence_snippet": "The C2 addresses from the Logutil configs, one more domain is used by attackers, which was obtained from two AsyncRat samples – one standalone executable located at %PROGRAM_FILES%\f-secure\\psb\\diagnostics\fs_ui.exe",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "e89cb63e1352a1c9f86e03e4c744b5cd",
+        "evidence_snippet": "%SYSTEM32%\\wbem\ncobjapi.dll",
+        "source_context": null,
+        "hash_type": "MD5"
+      },
+      {
+        "value": "61ac19b0f812b10e7690109430cba4a5",
+        "evidence_snippet": "vcruntime140.dll",
+        "source_context": null,
+        "hash_type": "MD5"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Logutil backdoor",
+        "evidence_snippet": "The Logutil backdoor implements the usual capabilities that are needed to maintain the foothold in the victim’s network - capabilities such as file download/upload and command execution."
+      },
+      {
+        "name": "AsyncRat",
+        "evidence_snippet": "AsyncRat was also used at the earlier stages of infection."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This report exposes a targeted cyber-attack against East-asia infrastructure, where attackers used the Logutil backdoor to maintain foothold in the victim’s network and collect sensitive information.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

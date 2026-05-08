@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC015",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 10,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 14,
+      "n_supported": 14,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe the IP address \"138.68.90[.]19\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe the IP address \"167.99.202[.]130\" as a malicious or threat-actor-controlled address (not benign infrastructure)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document associate the domain \"api.gupdate[.]net\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document associates the domain \"api.gupdate[.]net\" with threat-actor activity, specifically noting that it was first seen in September 2022 and most recently observed in August 2024.\n4. [SUPPORTED] Q: Does the document associate the domain \"githubapp[.]net\" with threat-actor activity (e.g. phishing, C2, or impersonation)?\n   A: Yes, the document lists \"githubapp[.]net\" as an indicator of compromise (IOC) in Table 10 under the category \"Indicators of Compromise \u2013 Recent\", with a first seen date of February 2024 and most recently observed date of August 2024.\n5. [SUPPORTED] Q: Does the document describe \"CVE-2024-3400\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"CVE-2022-1388\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"CVE-2019-19781\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n8. [SUPPORTED] Q: Does the document describe \"CVE-2023-3519\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe \"AnyDesk\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe \"Meshcentral\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n12. [SUPPORTED] Q: Does the document describe the technique \"T1059.001\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n13. [SUPPORTED] Q: Does the document describe the technique \"T1219\" (Remote Access Software) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n14. [SUPPORTED] Q: Does the document describe the technique \"T1572\" (Protocol Tunneling) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 6.98
+}

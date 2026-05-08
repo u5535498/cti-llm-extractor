@@ -1,0 +1,86 @@
+{
+  "doc_id": "DOC018",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 10,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 10,
+      "n_supported": 4,
+      "n_not_supported": 6,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document attribute the file hash \"baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c\" to a Volt Typhoon custom FRP executable.\n2. [NOT SUPPORTED] Q: Does the document attribute the file hash \"b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74\" to a specific malware sample, dropper, or malicious tool?\n   A: No, the document attributes the file hash \"b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74\" to a custom Fast Reverse Proxy (FRP) binary used by the Volt Typhoon threat actor.\n3. [NOT SUPPORTED] Q: Does the document attribute the file hash \"4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349\" to a specific malware sample, dropper, or malicious tool?\n   A: No.\n4. [NOT SUPPORTED] Q: Does the document attribute the file hash \"c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d\" to a specific malware sample, dropper, or malicious tool?\n   A: No, the document attributes the file hash \"c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d\" to a Volt Typhoon custom FRP executable.\n5. [SUPPORTED] Q: Does the document attribute the file hash \"d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af\" to a custom Fast Reverse Proxy (FRP) executable used by the Volt Typhoon threat actor.\n6. [NOT SUPPORTED] Q: Does the document attribute the file hash \"9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a\" to a specific malware sample, dropper, or malicious tool?\n   A: No, the document does not attribute the file hash \"9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a\" to a specific malware sample, dropper, or malicious tool.\n7. [SUPPORTED] Q: Does the document attribute the file hash \"450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267\" to a specific malware sample, dropper, or malicious tool?\n   A: Yes, the document attributes the file hash \"450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267\" to a custom version of the Fast Reverse Proxy (FRP) tool used by Volt Typhoon.\n8. [NOT SUPPORTED] Q: Does the document attribute the file hash \"93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066\" to a specific malware sample, dropper, or malicious tool?\n   A: No, the document does not attribute the file hash \"93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066\" to a specific malware sample, dropper, or malicious tool.\n9. [NOT SUPPORTED] Q: Does the document attribute the file hash \"5e4a7a0fbd1b3a2f1e8b0f0f1e0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f\" to a specific malware sample, dropper, or malicious tool?\n   A: No.\n10. [SUPPORTED] Q: Does the document describe \"Impacket toolkit\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Impacket toolkit\" as a tool used by the threat actor(s) to establish a command and control (C2) channel over proxy."
+    },
+    "step3_deletion": {
+      "changed": true,
+      "n_iocs_before": 10,
+      "n_iocs_after": 4,
+      "n_ttps_before": 0,
+      "n_ttps_after": 0,
+      "deleted_items": [
+        {
+          "list": "file_hashes",
+          "item_index": 1,
+          "item": {
+            "value": "b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        },
+        {
+          "list": "file_hashes",
+          "item_index": 2,
+          "item": {
+            "value": "4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        },
+        {
+          "list": "file_hashes",
+          "item_index": 3,
+          "item": {
+            "value": "c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        },
+        {
+          "list": "file_hashes",
+          "item_index": 5,
+          "item": {
+            "value": "9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        },
+        {
+          "list": "file_hashes",
+          "item_index": 7,
+          "item": {
+            "value": "93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        },
+        {
+          "list": "file_hashes",
+          "item_index": 8,
+          "item": {
+            "value": "5e4a7a0fbd1b3a2f1e8b0f0f1e0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+            "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 5e4a7a0fbd1b3a2f1e8b0f0f1e0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f",
+            "source_context": null,
+            "hash_type": "SHA256"
+          }
+        }
+      ]
+    }
+  },
+  "total_time_s": 10.84
+}

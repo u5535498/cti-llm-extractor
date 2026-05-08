@@ -1,0 +1,585 @@
+{
+  "report_metadata": {
+    "report_title": "Countering Chinese State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage System",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "PRC State-Sponsored APT",
+    "aliases": [
+      "Salt Typhoon",
+      "OPERATOR PANDA",
+      "RedMike",
+      "UNC5807",
+      "GhostEmperor"
+    ],
+    "confidence": "high"
+  },
+  "campaign_name": "AA25-239A – PRC Telecom & Network Espionage Campaign",
+  "target_sectors": [
+    "Telecommunications",
+    "Government",
+    "Transportation",
+    "Lodging",
+    "Military Infrastructure",
+    "Internet Service Providers"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      { "value": "1.222.84.29", "evidence_snippet": "1.222.84[.]29", "source_context": "observed" },
+      { "value": "167.88.173.252", "evidence_snippet": "167.88.173[.]252", "source_context": "observed" },
+      { "value": "23.227.202.253", "evidence_snippet": "23.227.202[.]253", "source_context": "observed" },
+      { "value": "45.61.151.12", "evidence_snippet": "45.61.151[.]12", "source_context": "observed" },
+      { "value": "103.169.91.231", "evidence_snippet": "103.169.91[.]231", "source_context": "observed" },
+      { "value": "167.88.173.58", "evidence_snippet": "167.88.173[.]58", "source_context": "observed" },
+      { "value": "37.120.239.52", "evidence_snippet": "37.120.239[.]52", "source_context": "observed" },
+      { "value": "45.61.154.130", "evidence_snippet": "45.61.154[.]130", "source_context": "observed" },
+      { "value": "103.199.17.238", "evidence_snippet": "103.199.17[.]238", "source_context": "observed" },
+      { "value": "167.88.175.175", "evidence_snippet": "167.88.175[.]175", "source_context": "observed" },
+      { "value": "38.71.99.145", "evidence_snippet": "38.71.99[.]145", "source_context": "observed" },
+      { "value": "45.61.159.25", "evidence_snippet": "45.61.159[.]25", "source_context": "observed" },
+      { "value": "103.253.40.199", "evidence_snippet": "103.253.40[.]199", "source_context": "observed" },
+      { "value": "167.88.175.231", "evidence_snippet": "167.88.175[.]231", "source_context": "observed" },
+      { "value": "43.254.132.118", "evidence_snippet": "43.254.132[.]118", "source_context": "observed" },
+      { "value": "45.61.165.157", "evidence_snippet": "45.61.165[.]157", "source_context": "observed" },
+      { "value": "103.7.58.162", "evidence_snippet": "103.7.58[.]162", "source_context": "observed" },
+      { "value": "172.86.101.123", "evidence_snippet": "172.86.101[.]123", "source_context": "observed" },
+      { "value": "45.125.64.195", "evidence_snippet": "45.125.64[.]195", "source_context": "observed" },
+      { "value": "5.181.132.95", "evidence_snippet": "5.181.132[.]95", "source_context": "observed" },
+      { "value": "104.194.129.137", "evidence_snippet": "104.194.129[.]137", "source_context": "observed" },
+      { "value": "172.86.102.83", "evidence_snippet": "172.86.102[.]83", "source_context": "observed" },
+      { "value": "45.125.67.144", "evidence_snippet": "45.125.67[.]144", "source_context": "observed" },
+      { "value": "59.148.233.250", "evidence_snippet": "59.148.233[.]250", "source_context": "observed" },
+      { "value": "104.194.147.15", "evidence_snippet": "104.194.147[.]15", "source_context": "observed" },
+      { "value": "172.86.106.15", "evidence_snippet": "172.86.106[.]15", "source_context": "observed" },
+      { "value": "45.146.120.210", "evidence_snippet": "45.146.120[.]210", "source_context": "observed" },
+      { "value": "63.141.234.109", "evidence_snippet": "63.141.234[.]109", "source_context": "observed" },
+      { "value": "104.194.153.181", "evidence_snippet": "104.194.153[.]181", "source_context": "observed" },
+      { "value": "172.86.106.39", "evidence_snippet": "172.86.106[.]39", "source_context": "observed" },
+      { "value": "45.146.120.213", "evidence_snippet": "45.146.120[.]213", "source_context": "observed" },
+      { "value": "63.245.1.34", "evidence_snippet": "63.245.1[.]34", "source_context": "observed" },
+      { "value": "104.194.154.150", "evidence_snippet": "104.194.154[.]150", "source_context": "observed" },
+      { "value": "172.86.108.11", "evidence_snippet": "172.86.108[.]11", "source_context": "observed" },
+      { "value": "45.59.118.136", "evidence_snippet": "45.59.118[.]136", "source_context": "observed" },
+      { "value": "74.48.78.66", "evidence_snippet": "74.48.78[.]66", "source_context": "observed" },
+      { "value": "104.194.154.222", "evidence_snippet": "104.194.154[.]222", "source_context": "observed" },
+      { "value": "172.86.124.235", "evidence_snippet": "172.86.124[.]235", "source_context": "observed" },
+      { "value": "45.59.120.171", "evidence_snippet": "45.59.120[.]171", "source_context": "observed" },
+      { "value": "74.48.78.116", "evidence_snippet": "74.48.78[.]116", "source_context": "observed" },
+      { "value": "107.189.15.206", "evidence_snippet": "107.189.15[.]206", "source_context": "observed" },
+      { "value": "172.86.65.145", "evidence_snippet": "172.86.65[.]145", "source_context": "observed" },
+      { "value": "45.61.128.29", "evidence_snippet": "45.61.128[.]29", "source_context": "observed" },
+      { "value": "74.48.84.119", "evidence_snippet": "74.48.84[.]119", "source_context": "observed" },
+      { "value": "14.143.247.202", "evidence_snippet": "14.143.247[.]202", "source_context": "observed" },
+      { "value": "172.86.70.73", "evidence_snippet": "172.86.70[.]73", "source_context": "observed" },
+      { "value": "45.61.132.125", "evidence_snippet": "45.61.132[.]125", "source_context":"observed" },
+      { "value": "45.61.133.157", "evidence_snippet": "45.61.133[.]157", "source_context": "observed" },
+      { "value": "89.117.1.147", "evidence_snippet": "89.117.1[.]147", "source_context": "observed" },
+      { "value": "144.172.76.213", "evidence_snippet": "144.172.76[.]213", "source_context": "observed" },
+      { "value": "190.131.194.90", "evidence_snippet": "190.131.194[.]90", "source_context": "observed" },
+      { "value": "45.61.133.31", "evidence_snippet": "45.61.133[.]31", "source_context": "observed" },
+      { "value": "89.117.2.39", "evidence_snippet": "89.117.2[.]39", "source_context": "observed" },
+      { "value": "144.172.79.4", "evidence_snippet": "144.172.79[.]4", "source_context": "observed" },
+      { "value": "193.239.86.132", "evidence_snippet": "193.239.86[.]132", "source_context": "observed" },
+      { "value": "45.61.133.61", "evidence_snippet": "45.61.133[.]61", "source_context": "observed" },
+      { "value": "89.41.26.142", "evidence_snippet": "89.41.26[.]142", "source_context": "observed" },
+      { "value": "146.70.24.144", "evidence_snippet": "146.70.24[.]144", "source_context": "observed" },
+      { "value": "193.239.86.146", "evidence_snippet": "193.239.86[.]146", "source_context": "observed" },
+      { "value": "45.61.133.77", "evidence_snippet": "45.61.133[.]77", "source_context": "observed" },
+      { "value": "91.231.186.227", "evidence_snippet": "91.231.186[.]227", "source_context":"observed" },
+      { "value": "45.61.133.79", "evidence_snippet": "45.61.133[.]79", "source_context": "observed" },
+      { "value": "91.245.253.99", "evidence_snippet": "91.245.253[.]99", "source_context": "observed" },
+      { "value": "146.70.79.81", "evidence_snippet": "146.70.79[.]81", "source_context": "observed" },
+      { "value": "193.56.255.210", "evidence_snippet": "193.56.255[.]210", "source_context": "observed" },
+      { "value": "45.61.134.134", "evidence_snippet": "45.61.134[.]134", "source_context": "observed" },
+      { "value": "167.88.164.166", "evidence_snippet": "167.88.164[.]166", "source_context": "observed" },
+      { "value": "212.236.17.237", "evidence_snippet": "212.236.17[.]237", "source_context": "observed" },
+      { "value": "45.61.134.223", "evidence_snippet": "45.61.134[.]223", "source_context": "observed" },
+      { "value": "167.88.172.70", "evidence_snippet": "167.88.172[.]70", "source_context": "observed" },
+      { "value": "23.227.196.22", "evidence_snippet": "23.227.196[.]22", "source_context": "observed" },
+      { "value": "23.227.199.77", "evidence_snippet": "23.227.199[.]77", "source_context": "observed" },
+      { "value": "45.61.149.62", "evidence_snippet": "45.61.149[.]62", "source_context": "observed" }
+    ],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "eba9ae70d1b22de67b0eba160a6762d8",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 Hash eba9ae70d1b22de67b0eba160a6762d8",
+        "source_context": "observed"
+      },
+      {
+        "value": "8b448f47e36909f3a921b4ff803cf3a61985d8a10f0fe594b405b92ed0fc21f1",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA 256 Hash 8b448f47e36909f3a921b4ff803cf3a61985d8a10f0fe594b405b92ed0fc21f1",
+        "source_context": "observed"
+      },
+      {
+        "value": "33e692f435d6cf3c637ba54836c63373",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 Hash 33e692f435d6cf3c637ba54836c63373",
+        "source_context": "observed"
+      },
+      {
+        "value": "f2bbba1ea0f34b262f158ff31e00d39d89bbc471d04e8fca60a034cabe18e4f4",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA 256 Hash f2bbba1ea0f34b262f158ff31e00d39d89bbc471d04e8fca60a034cabe18e4f4",
+        "source_context": "observed"
+      },
+      {
+        "value": "da692ea0b7f24e31696f8b4fe8a130dbbe3c7c15cea6bde24cccc1fb0a73ae9e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA 256 Hash da692ea0b7f24e31696f8b4fe8a130dbbe3c7c15cea6bde24cccc1fb0a73ae9e",
+        "source_context": "observed"
+      },
+      {
+        "value": "a1abc3d11c16ae83b9a7cf62ebe6d144dfc5e19b579a99bad062a9d31cf30bfe",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA 256 Hash a1abc3d11c16ae83b9a7cf62ebe6d144dfc5e19b579a99bad062a9d31cf30bfe",
+        "source_context": "observed"
+      }
+    ],
+    "urls": [],
+    "http_paths": [
+      {
+        "value": "/webui/wsma/http",
+        "evidence_snippet": "While exploiting CVE-2023-20198, the APT actors used the Web Services Management Agent WSMA endpoints webui/wsma/Http or webui/wsma/Https to bypass authentication",
+        "source_context": "observed"
+      },
+      {
+        "value": "/webui/wsma/https",
+        "evidence_snippet": "While exploiting CVE-2023-20198, the APT actors used the Web Services Management Agent WSMA endpoints webui/wsma/Http or webui/wsma/Https to bypass authentication",
+        "source_context": "observed"
+      }
+    ],
+    "tools": [
+      {
+        "name": "STOWAWAY",
+        "evidence_snippet": "Leveraging open source multi-hop pivoting tools, such as STOWAWAY, to build chained relays for command and control (C2) and operator access, including interactive remote shells, file upload and download, SOCKS5/HTTP proxying, and local/remote port mapping with support for forward and reverse connections over encrypted node-to-node links"
+      },
+      {
+        "name": "cmd3 SFTP client",
+        "evidence_snippet": "The APT actors also use a custom SFTP client, which is a Linux binary written in Golang, to transfer encrypted archives from one location to another."
+      },
+      {
+        "name": "cmd1 SFTP client",
+        "evidence_snippet": "cmd1 has the additional capability of collecting network packet captures on the compromised network."
+      },
+      {
+        "name": "new2 SFTP client",
+        "evidence_snippet": "The following SFTP client binaries in Table 4 through Table 7 are similar in that they are used to transfer files from a compromised network to staging hosts where the files are prepared for exfiltration."
+      },
+      {
+        "name": "sft SFTP client",
+        "evidence_snippet": "The following SFTP client binaries in Table 4 through Table 7 are similar in that they are used to transfer files from a compromised network to staging hosts where the files are prepared for exfiltration."
+      },
+      {
+        "name": "siet.py",
+        "evidence_snippet": "Within Guest Shell, running Python (such as siet.py to exploit Cisco Smart Install) and native Linux tooling"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "CVE-2024-21887 – Ivanti Connect Secure and Ivanti Policy Secure web-component command injection vulnerability"
+      },
+      {
+        "value": "CVE-2023-46805",
+        "evidence_snippet": "commonly chained after CVE-2023-46805 (authentication bypass)"
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "CVE-2024-3400 – Palo Alto Networks PAN-OS GlobalProtect arbitrary file creation leading to OS command injection"
+      },
+      {
+        "value": "CVE-2023-20273",
+        "evidence_snippet": "CVE-2023-20273 – Cisco IOS XE software web management user interface post-authentication command injection/privilege escalation"
+      },
+      {
+        "value": "CVE-2023-20198",
+        "evidence_snippet": "CVE-2023-20198 – Cisco IOS XE web user interface authentication bypass vulnerability"
+      },
+      {
+        "value": "CVE-2018-0171",
+        "evidence_snippet": "CVE-2018-0171 – Cisco IOS and IOS XE smart install remote code execution vulnerability"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "SALTTYPHOON_CMD1_SFTP_CLIENT",
+          "evidence_snippet": "rule SALTTYPHOON_CMD1_SFTP_CLIENT – Detects the Salt Typhoon Cmd1 SFTP client. strings: $s1 = \"monitor capture CAP\"; $s2 = \"export ftp%s%s%s%s\"; $s3 = \"main.CapExport\"; $s4 = \"main.SftpDownload\"; $s5 = \".SSHClient.CommandShell\"; $aes = \"aes.decryptBlockGo\"; $buildpath = \"C:\\work\\sync\\v1\\cmd\\cmd1\\main.go\""
+        },
+        {
+          "name": "SALTTYPHOON_NEW2_SFTP_CLIENT",
+          "evidence_snippet": "rule SALTTYPHOON_NEW2_SFTP_CLIENT – Detects the Salt Typhoon New2 SFTP client. strings: $set1_1 = \"invoke_shell\"; $set1_2 = \"execute_commands\"; $set2_1 = \"COMMANDS_FILE\"; $set2_2 = \"RUNTIME\"; $set3_1 = \"commands.log\"; $set3_2 = \"Executing command\"; $set3_4 = \"Network sniffer script\"; $set3_5 = \"tar -czvf - %s | openssl des3 -salt -k password -out %s.tar.gz\"; $setrequired = { 70 61 72 61 6D 69 6B 6F }"
+        }
+      ],
+      "sigma_rules": [
+        {
+          "name": "CVE-2023-20198 Snort Detection Rule",
+          "evidence_snippet": "alert tcp any any -> any $HTTP_PORTS (msg:\"Potential CVE-2023-20198 exploit attempt - HTTP Request to Add Privilege 15 User Detected\"; content:\"POST\"; http_method; pcre:\"/webui\\/wsma|%2577eb%2575i%2577sma/i\"; http_uri; content:\"request xmlns=\\\"urn:cisco:wsma-config-correlator\\\">\\\"exec\\\"\"; http_client_body; content:\"<configApply details=\\\"all\\\"\"; content:\"privilege 15\"; sid:1000003; rev:1;)"
+        }
+      ]
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1595",
+      "tactic": "Reconnaissance",
+      "technique": "Active Scanning",
+      "evidence_snippet": "Active Scanning T1595",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1590.004",
+      "tactic": "Reconnaissance",
+      "technique": "Gather Victim Network Information: Network Topology",
+      "evidence_snippet": "Gather Victim Network Information: Network Topology T1590.004",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1583.003",
+      "tactic": "Resource Development",
+      "technique": "Acquire Infrastructure: Virtual Private Servers T1583.003",
+      "evidence_snippet": "Leverage VPS as infrastructure.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1584.008",
+      "tactic": "Resource Development",
+      "technique": "Compromise Infrastructure: Network Devices T1584.008",
+      "evidence_snippet": "Compromise intermediate routers.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1588.005",
+      "tactic": "Resource Development",
+      "technique": "Obtain Capabilities: Exploits",
+      "evidence_snippet": "Obtain Capabilities: Exploits T1588.005",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1588.002",
+      "tactic": "Resource Development",
+      "technique": "Obtain Capabilities: Tool",
+      "evidence_snippet": "Obtain Capabilities: Tool T1588.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploit Public-Facing Application T1190",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1199",
+      "tactic": "Initial Access",
+      "technique": "Trusted Relationship",
+      "evidence_snippet": "Trusted Relationship T1199",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1569",
+      "tactic": "Execution",
+      "technique": "System Services",
+      "evidence_snippet": "System Services T1569",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1609",
+      "tactic": "Execution",
+      "technique": "Container Administration Command",
+      "evidence_snippet": "Container Administration Command T1609",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.006",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: Python",
+      "evidence_snippet": "Command and Scripting Interpreter: Python T1059.006",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.008",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: Network Device CLI",
+      "evidence_snippet": "Command and Scripting Interpreter: Network Device CLI T1059.008",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1136.001",
+      "tactic": "Persistence",
+      "technique": "Create Account: Local Account",
+      "evidence_snippet": "Create Account: Local Account T1136.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1543.005",
+      "tactic": "Persistence",
+      "technique": "Create or Modify System Process: Container Service",
+      "evidence_snippet": "Container Service T1543.005",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1098.004",
+      "tactic": "Persistence",
+      "technique": "Account Manipulation: SSH Authorized Keys",
+      "evidence_snippet": "Account Manipulation: SSH Authorized Keys T1098.004",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1068",
+      "tactic": "Privilege Escalation",
+      "technique": "Exploitation for Privilege Escalation",
+      "evidence_snippet": "Exploitation for Privilege Escalation T1068",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1110.002",
+      "tactic": "Privilege Escalation",
+      "technique": "Brute Force: Password Cracking",
+      "evidence_snippet": "Brute Force: Password Cracking T1110.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027.010",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Command Obfuscation",
+      "evidence_snippet": "Obfuscated Files or Information: Command Obfuscation T1027.010",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Obfuscated Files or Information T1027",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.004",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify System Firewall",
+      "evidence_snippet": "Impair Defenses: Disable or Modify System Firewall T1562.004",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1610",
+      "tactic": "Defense Evasion",
+      "technique": "Deploy Container",
+      "evidence_snippet": "Deploy Container T1610",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal",
+      "evidence_snippet": "Indicator Removal T1070",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.009",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Clear Persistence",
+      "evidence_snippet": "Indicator Removal: Clear Persistence T1070.009",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1599",
+      "tactic": "Defense Evasion",
+      "technique": "Network Boundary Bridging",
+      "evidence_snippet": "Network Boundary Bridging T1599",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1040",
+      "tactic": "Credential Access",
+      "technique": "Network Sniffing",
+      "evidence_snippet": "Network Sniffing T1040",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1556",
+      "tactic": "Credential Access",
+      "technique": "Modify Authentication Process",
+      "evidence_snippet": "Modify Authentication Process T1556",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "OS Credential Dumping T1003",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1110.002",
+      "tactic": "Credential Access",
+      "technique": "Brute Force: Password Cracking",
+      "evidence_snippet": "Brute Force: Password Cracking T1110.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "System Information Discovery T1082",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "System Network Configuration Discovery T1016",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services",
+      "evidence_snippet": "Remote Services T1021",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.004",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: SSH",
+      "evidence_snippet": "Remote Services: SSH T1021.004",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1560",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data",
+      "evidence_snippet": "Archive Collected Data T1560",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1602.001",
+      "tactic": "Collection",
+      "technique": "Data from Configuration Repository: SNMP (MIB Dump)",
+      "evidence_snippet": "Data from Configuration Repository: SNMP (MIB Dump) T1602.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1602.002",
+      "tactic": "Collection",
+      "technique": "Data from Configuration Repository: Network Device Configuration Dump",
+      "evidence_snippet": "Data from Configuration Repository: Network Device Configuration Dump T1602.002",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1005",
+      "tactic": "Collection",
+      "technique": "Data from Local System",
+      "evidence_snippet": "Data from Local System T1005",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1090",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "Proxy T1090",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1090.003",
+      "tactic": "Command and Control",
+      "technique": "Proxy: Multi-hop Proxy",
+      "evidence_snippet": "Proxy: Multi-hop Proxy T1090.003",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol",
+      "evidence_snippet": "Application Layer Protocol T1071",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1571",
+      "tactic": "Command and Control",
+      "technique": "Non-Standard Port",
+      "evidence_snippet": "Non-Standard Port T1571",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1572",
+      "tactic": "Command and Control",
+      "technique": "Protocol Tunneling",
+      "evidence_snippet": "Protocol Tunneling T1572",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1095",
+      "tactic": "Command and Control",
+      "technique": "Non-Application Layer Protocol",
+      "evidence_snippet": "Non-Application Layer Protocol T1095",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1048.003",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted Non-C2 Protocol",
+      "evidence_snippet": "Exfiltration over Alternative Protocol T1048.003",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "CISA Cybersecurity Advisory AA25-239A (v1.1, 3 September 2025), co-sealed by NSA, CISA, FBI, DC3, and 18 international partner agencies, details PRC state-sponsored APT activity (overlapping with Salt Typhoon, OPERATOR PANDA, RedMike, UNC5807, GhostEmperor) targeting telecommunications, government, transportation, lodging, and military infrastructure networks globally since at least 2021. Operations are linked to Sichuan Juxinhe Network Technology Co. Ltd., Beijing Huanyu Tianqiong Information Technology Co. Ltd., and Sichuan Zhixin Ruijie Network Technology Co. Ltd., which provide cyber services to the PLA and MSS. Actors exploit publicly known CVEs (CVE-2023-20198, CVE-2023-20273, CVE-2024-21887, CVE-2024-3400, CVE-2018-0171) for initial access, then persist via ACL modification, SSH key injection, non-standard ports, and on-box Linux containers (Cisco Guest Shell). Lateral movement relies on SNMP enumeration, TACACS/RADIUS credential capture via native PCAP, and routing manipulation. Custom Golang SFTP tools (cmd1, cmd3, new2, sft) and STOWAWAY multi-hop proxy are used for exfiltration over GRE/IPsec tunnels. 85 actor-associated IP addresses (August 2021–June 2025) and four custom tool hashes are provided as IOCs alongside YARA rules and a Snort detection rule for CVE-2023-20198 exploitation.",
+  "timeline": [
+    {
+      "date": "2018-01-01",
+      "date_precision": "year",
+      "event": "Earliest exploited CVE in scope: CVE-2018-0171 (Cisco IOS/IOS XE Smart Install RCE)",
+      "evidence_snippet": "CVE-2018-0171 - Cisco IOS and IOS XE smart install remote code execution vulnerability"
+    },
+    {
+      "date": "2021-08-01",
+      "date_precision": "month",
+      "event": "Earliest observed APT actor IP address activity (first IP indicators recorded)",
+      "evidence_snippet": "The following IP indicators were associated with the APT actors activity from August 2021 to June 2025. Several of these observed IP addresses were first observed as early as August 2021."
+    },
+    {
+      "date": "2021-01-01",
+      "date_precision": "year",
+      "event": "APT actors begin performing malicious operations globally (earliest known campaign activity)",
+      "evidence_snippet": "The APT actors have been performing malicious operations globally since at least 2021."
+    },
+    {
+      "date": "2023-01-01",
+      "date_precision": "year",
+      "event": "CVE-2023-20198 and CVE-2023-20273 exploited for initial access and privilege escalation on Cisco IOS XE devices",
+      "evidence_snippet": "CVE-2023-20198 - Cisco IOS XE web user interface authentication bypass vulnerability. CVE-2023-20273 - Cisco IOS XE software web management user interface post-authentication command injection/privilege escalation commonly chained with CVE-2023-20198 for initial access to achieve code execution as root."
+    },
+    {
+      "date": "2024-01-01",
+      "date_precision": "year",
+      "event": "CVE-2024-21887 and CVE-2024-3400 exploited against Ivanti and Palo Alto Networks edge devices",
+      "evidence_snippet": "CVE-2024-21887 - Ivanti Connect Secure and Ivanti Policy Secure web-component command injection vulnerability, commonly chained after CVE-2023-46805 authentication bypass. CVE-2024-3400 - Palo Alto Networks PAN-OS GlobalProtect arbitrary file creation leading to OS command injection."
+    },
+    {
+      "date": "2024-08-16",
+      "date_precision": "day",
+      "event": "cmd1 custom SFTP client binary compiled (version string V20240816)",
+      "evidence_snippet": "cmd1 SFTP client – Version String V20240816; Build Path String C:\\work\\sync\\v1\\cmd\\cmd1\\main.go"
+    },
+    {
+      "date": "2025-06-30",
+      "date_precision": "day",
+      "event": "Last date of observed APT actor IP address activity included in IOC table",
+      "evidence_snippet": "The following IP indicators were associated with the APT actors activity from August 2021 to June 2025."
+    },
+    {
+      "date": "2025-08-27",
+      "date_precision": "day",
+      "event": "Advisory AA25-239A v1.0 initially published",
+      "evidence_snippet": "Version History: 27 August 2025, v1.0 Initial publication"
+    },
+    {
+      "date": "2025-09-03",
+      "date_precision": "day",
+      "event": "Advisory AA25-239A v1.1 published with Japan NCO name correction, clarified CVE ordering, one IP correction, and two IP removals",
+      "evidence_snippet": "Version History: 3 September 2025, v1.1 Japan NCO name correction, added introduction in Technical details, update in Initial access to clarify example CVEs ordering, one IP correction and two removals."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "M-Trends 2024"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2022-21587",
+        "evidence_snippet": "The second most exploited was CVE-2022-21587, a critical unauthenticated file upload vulnerability in Oracle E-Business Suite.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-2868",
+        "evidence_snippet": "The third was CVE-2023-2868, a critical command injection vulnerability in Barracuda Email Security Gateways.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Mandiant M-Trends 2024 covers 2023 global investigations. Median dwell time fell to 10 days. Top exploited CVEs were CVE-2023-34362 (MOVEit), CVE-2022-21587 (Oracle), CVE-2023-2868 (Barracuda).",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

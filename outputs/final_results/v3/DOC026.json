@@ -1,0 +1,121 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Zscaler Blog"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy Utilities",
+    "Oil and Gas",
+    "Telecom",
+    "Machinery",
+    "Brazilian Telecom Company",
+    "Brazilian Cosmetics Company"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "www.igrejaatos2.org",
+        "evidence_snippet": "This domain serves as a disguise, presenting itself as a ChatGpt site to lure victims into downloading a fake offline version of ChatGpt.",
+        "source_context": "observed",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "cdn.discord",
+        "evidence_snippet": "During this particular analysis, the Command and Control (CnC) server was unavailable, making it impossible to obtain a sample.",
+        "source_context": "uncertain",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "fb7883d3fd9347debf98122442c2a33e",
+        "evidence_snippet": "The main payload was identified as having the MD5 hash fb7883d3fd9347debf98122442c2a33e.",
+        "source_context": "observed",
+        "hash_type": "MD5"
+      },
+      {
+        "value": "cb533957f70b4a7ebb4e8b896b7b656c",
+        "evidence_snippet": "The dropper payload was identified as having the MD5 hash cb533957f70b4a7ebb4e8b896b7b656c.",
+        "source_context": "observed",
+        "hash_type": "MD5"
+      },
+      {
+        "value": "642dbe8b752b0dc735e9422d903e0e97",
+        "evidence_snippet": "The final payload was identified as having the MD5 hash 642dbe8b752b0dc735e9422d903e0e97.",
+        "source_context": "observed",
+        "hash_type": "MD5"
+      }
+    ],
+    "urls": [
+      {
+        "value": "www.igrejaatos2.org/assets/programs/setupbrowser.exe",
+        "evidence_snippet": "This URL initiates the download of a file called setupbrowser.exe, which is part of the malicious payload.",
+        "source_context": "observed"
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "RedEnergy",
+        "evidence_snippet": "The RedEnergy malware under investigation exhibits a dual functionality, acting both as a stealer and a ransomware."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "The malware masquerades as part of a legitimate browser update, depicted in Fig. 7 below.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1185",
+      "tactic": "Collection",
+      "technique": "Browser Session Hijacking",
+      "evidence_snippet": "The malware hijacks browser sessions to steal sensitive information.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "The malware employs obfuscation techniques to evade detection and hinder analysis.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Disable or Modify Tools",
+      "evidence_snippet": "The malware disables or modifies tools to evade detection and hinder analysis.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Zscaler ThreatLabz has discovered a new malware variant, RedEnergy stealer, that fits into the hybrid Stealer-as-a-Ransomware threat category. The malware uses a fake update campaign to target multiple industry verticals and possesses the ability to steal information from various browsers.",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of RedEnergy stealer",
+      "evidence_snippet": "Earliest evidence of exploitation of RedEnergy stealer occurred on May 27, 2023."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA23-320A Scattered Spider"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Commercial Facilities"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Fleetdeck.io",
+        "evidence_snippet": "Enables remote monitoring and management of systems."
+      },
+      {
+        "name": "Level.io",
+        "evidence_snippet": "Enables remote monitoring and management of systems."
+      },
+      {
+        "name": "Mimikatz [S0002]",
+        "evidence_snippet": "Extracts credentials from a system."
+      },
+      {
+        "name": "Ngrok [S0508]",
+        "evidence_snippet": "Enables remote access to a local web server by tunneling over the internet."
+      },
+      {
+        "name": "Pulseway",
+        "evidence_snippet": "Enables remote monitoring and management of systems."
+      },
+      {
+        "name": "Screenconnect",
+        "evidence_snippet": "Enables remote connections to network devices for management."
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": "Enables remote connections to network devices for management."
+      },
+      {
+        "name": "Tactical.RMM",
+        "evidence_snippet": "Enables remote monitoring and management of systems."
+      },
+      {
+        "name": "Tailscale",
+        "evidence_snippet": "Provides virtual private networks (VPNs) to secure network communications."
+      },
+      {
+        "name": "TeamViewer",
+        "evidence_snippet": "Enables remote connections to network devices for management."
+      },
+      {
+        "name": "Teleport.sh",
+        "evidence_snippet": "Enables remote access to a local system by tunneling over the internet."
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Enables remote access to network devices for management, bypassing security alerts due to AnyDesk being a legitimate application."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1598",
+      "tactic": "Reconnaissance",
+      "technique": "Phishing for Information",
+      "evidence_snippet": "Scattered Spider threat actors use phishing to obtain login credentials, gaining access to a targeted organization’s network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1597.002",
+      "tactic": "Resource Development",
+      "technique": "Search Closed Sources: Purchase Technical Data",
+      "evidence_snippet": "Scattered Spider threat actors purchase credentials from illicit marketplaces.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Scattered Spider threat actors use broad phishing attempts against a target to obtain information used to gain initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1660",
+      "tactic": "Initial Access",
+      "technique": "Phishing (Mobile)",
+      "evidence_snippet": "Scattered Spider threat actors send SMS messages, known as smishing, when targeting an organization.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566.004",
+      "tactic": "Initial Access",
+      "technique": "Phishing: Spearphishing Voice",
+      "evidence_snippet": "Scattered Spider threat actors use voice communications to convince IT help desk personnel to reset passwords and/or MFA tokens.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1078.002",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts: Domain Accounts",
+      "evidence_snippet": "Scattered Spider threat actors obtain access to valid domain accounts to gain initial access to a targeted organization.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1204",
+      "tactic": "Execution",
+      "technique": "User Execution",
+      "evidence_snippet": "Impersonating helpdesk personnel, Scattered Spider threat actors direct employees to run commercial remote access tools thereby enabling access to, and command and control of, the targeted organization’s network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Impersonating helpdesk personnel, Scattered Spider threat actors direct employees to run commercial remote access tools thereby enabling access to, and command and control of, the targeted organization’s network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1090",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "Scattered Spider threat actors use proxy networks to disguise the source of malicious traffic.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": null,
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration",
+      "evidence_snippet": "Scattered Spider threat actors exfiltrate data from a target network for data extortion.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1567",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service",
+      "evidence_snippet": "Scattered Spider threat actors exfiltrate data using the Snowflake Data Cloud.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Scattered Spider threat actors recently began encrypting data on a target network and demanding a ransom for decryption.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1567.002",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "evidence_snippet": "Scattered Spider threat actors exfiltrate data to multiple sites including U.S.-based data centers and MEGA[.]NZ.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Scattered Spider threat actors monetized access to targeted organization’s networks in numerous ways including extortion-enabled ransomware and data theft.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory provides tactics, techniques, and procedures (TTPs) obtained through FBI investigations as recently as June 2025. Scattered Spider threat actors use multiple social engineering techniques to obtain credentials, install remote access tools, and/or bypass multi-factor authentication (MFA).",
+  "timeline": []
+}

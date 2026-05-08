@@ -1,0 +1,76 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Malicious Listener for Ivanti Endpoint Mobile Management Systems"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "ReflectUtil.class",
+        "evidence_snippet": "ReflectUtil.class injects and manages SecurityHandlerWanListener in Apache Tomcat."
+      },
+      {
+        "name": "Loader 2",
+        "evidence_snippet": "Loader 2 contains and loads the compiled Java class file WebAndroidAppInstaller.class at runtime."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1027.009",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Embedded Payloads",
+      "evidence_snippet": "Loader 1 contains ReflectUtil.class.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Loader 1 masquerades ReflectUtil.class as part of the org.apache.http package.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "evidence_snippet": "ReflectUtil.class decodes and decompresses a class bytecode.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "evidence_snippet": "SecurityHandlerWanListener.class intercepts HTTP requests.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "CISA analyzed two sets of malware from an organization compromised by cyber threat actors exploiting CVE-2025-4427 and CVE-2025-4428 in Ivanti Endpoint Manager Mobile (Ivanti EPMM) deployments for initial access.",
+  "timeline": []
+}

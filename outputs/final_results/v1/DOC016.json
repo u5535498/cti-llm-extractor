@@ -1,0 +1,68 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA24-109A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government",
+    "Critical Manufacturing",
+    "Information Technology",
+    "Food and Agriculture"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Akira threat actors use tools like Mimikatz and LaZagne to dump credentials."
+      },
+      {
+        "name": "LaZagne",
+        "evidence_snippet": "Akira threat actors use tools like Mimikatz and LaZagne to dump credentials."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2020-3259",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs) [T1190], including: CVE-2020-3259 [Common Weakness Enumeration (CWE)-200: Exposure of Sensitive Information to an Unauthorized Actor];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-20269",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs) [T1190], including: CVE-2023-20269 [CWE-288: Authentication Bypass Using an Alternate Path or Channel];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-40766",
+        "evidence_snippet": "Akira threat actors likely abused Common Vulnerabilities and Exposures (CVE)-2024-40766 (Common Weakness Enumeration [CWE]-284: Improper Access Control), a SonicWall vulnerability, for initial access.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Akira threat actors use PowerShell to execute malicious script",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

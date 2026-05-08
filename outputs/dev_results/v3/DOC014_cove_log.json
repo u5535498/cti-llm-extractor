@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC014",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 2,
+      "n_ttps": 5,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 7,
+      "n_supported": 7,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"Ligolo\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Ligolo\" as a reverse tunneling tool often used by Medusa actors to create secure connections between a compromised host and their machine.\n2. [SUPPORTED] Q: Does the document describe \"Cloudflared\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Cloudflared\" as a tool used by Medusa actors to securely expose applications, services, or servers to the internet via Cloudflare Tunnel without exposing them directly.\n3. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe the technique \"T1566\" (Phishing) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe the technique \"T1059.001\" (Command and Scripting Interpreter: PowerShell) as being used specifically for \"Lateral Movement and Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe the technique \"T1027.013\" (Obfuscated Files or Information: Encrypted/Encoded File) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 6.65
+}

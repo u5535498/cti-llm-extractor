@@ -1,0 +1,70 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA24-109A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government",
+    "Critical Manufacturing",
+    "Information Technology",
+    "Food and Agriculture"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059.003",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: Windows Command Shell",
+      "evidence_snippet": "Akira threat actors use the Windows command shell (cmd.exe) to run batch scripts and native commands for execution, persistence, lateral movement, and to disable or manipulate security controls for evasion.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1136.001",
+      "tactic": "Persistence",
+      "technique": "Create Account: Local Account",
+      "evidence_snippet": "Akira threat actors can create local user accounts by adding them to local admin groups to establish persistent backdoors.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1003.002",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: Security Account Manager",
+      "evidence_snippet": "Akira threat actors dump the Windows security account manager (SAM) database to extract local account password hashes for offline cracking or pass-the-hash techniques, enabling lateral movement and privilege escalation on compromised hosts.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1110.003",
+      "tactic": "Credential Access",
+      "technique": "Brute Force: Password Spraying",
+      "evidence_snippet": "Akira threat actors use tools like SharpDomainSpray for password spraying.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

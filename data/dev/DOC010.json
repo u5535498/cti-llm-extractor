@@ -1,0 +1,167 @@
+{
+  "report_metadata": {
+    "report_type": "campaign",
+    "report_title": "The five-day job: A BlackByte ransomware intrusion case study"
+  },
+  "threat_actor": {
+    "name": "BlackByte",
+    "confidence": "high"
+  },
+  "indicators_of_compromise": {
+    "ip_addresses": [
+        {
+            "value": "185.225.73.244",
+            "evidence_snippet": "The threat actor was observed operating from the following IP to exploit ProxyShell and access the web shell: 185.225.73[.]244"
+        },
+        {
+            "value": "109.206.243.59",
+            "evidence_snippet": "This beacon was configured to communicate with the following C2 channel: 109.206.243[.]59:443"
+        }
+    ],
+    "domains": [
+        {
+            "value": "myvisit.alteksecurity.org",
+            "evidence_snippet": "ollowing C2 channel: hxxps://myvisit[.]alteksecurity[.]org/t"
+        }, 
+        {
+            "value": "temp.sh",
+            "evidence_snippet": " sharing service temp[.]sh: hxxps://temp[.]sh/szAyn/sys.exe"
+        },
+        {
+            "value": "g.api.mega.co.nz",
+            "evidence_snippet": "popular file sharing platform Mega NZ using the platform’s API at: hxxps://g.api.mega.co[.]nz"
+        }
+    ],
+    "file_hashes": [
+        {
+            "value": "4a066569113a569a6feb8f44257ac8764ee8f2011765009fdfd82fe3f4b92d3e",
+            "hash_type": "SHA256",
+            "evidence_snippet": "api-msvc.dll (SHA-256: 4a066569113a569a6feb8f44257ac8764ee8f2011765009fdfd82fe3f4b92d3e)"
+        },
+        {
+            "value": "5f37b85687780c089607670040dbb3da2749b91b8adc0aa411fd6280b5fa7103",
+            "hash_type": "SHA256",
+            "evidence_snippet": "sys.exe (SHA-256: 5f37b85687780c089607670040dbb3da2749b91b8adc0aa411fd6280b5fa7103 )"
+        },
+        {
+            "value": "01aa278b07b58dc46c84bd0b1b5c8e9ee4e62ea0bf7a695862444af32e87f1fd",
+            "hash_type": "SHA256",
+            "evidence_snippet": "rENEgOtiAtES (Vulnerable driver RtCore64.sys created by BlackByte binary)"
+        },
+        {
+            "value": "ba3ec3f445683d0d0407157fda0c26fd669c0b8cc03f21770285a20b3133098f",
+            "hash_type": "SHA256",
+            "evidence_snippet": "C:SystemDataM8yl89s7.exe (UPX-packed PsExec with a random name; SHA-256: ba3ec3f445683d0d0407157fda0c26fd669c0b8cc03f21770285a20b3133098f)"
+        },
+        {
+            "value": "1b9badb1c646a19cdf101ac4f6fdd23bc61eaab8c9f925eb41848cea9fd0738e",
+            "hash_type": "SHA256",
+            "evidence_snippet": "“netscan.exe” , “netapp.exe (Netscan network discovery tool)"
+        },
+        {
+            "value": "f157090fd3ccd4220298c06ce8734361b724d80459592b10ac632acc624f455e",
+            "hash_type": "SHA256",
+            "evidence_snippet": "AdFind (SHA-256: f157090fd3ccd4220298c06ce8734361b724d80459592b10ac632acc624f455e)"
+        }
+    ],
+    "tools": [
+        {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "Deployment of Cobalt Strike beacons for command and control"
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "the remote administration tool AnyDesk, to maintain persistence"
+      },
+      {
+        "name": "NetScan",
+        "evidence_snippet": "the network discovery tool NetScan being used by the threat actor"
+      },
+      {
+        "name": "AdFind",
+        "evidence_snippet": "execution of AdFind, an Active Directory reconnaissance tool"
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Evidence of likely usage of the credential theft tool Mimikatz"
+      },
+      {
+        "name": "ExByte",
+        "evidence_snippet": "ExByte, a GoLang-based tool developed and commonly used in BlackByte ransomware attacks"
+      }
+    ],
+    "cves": [
+        {
+            "value": "CVE-2021-34473",
+            "evidence_snippet": "exploiting the ProxyShell vulnerabilities CVE-2021-34473, CVE2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers"
+        },
+        {
+            "value": "CVE2021-34523",
+            "evidence_snippet": "exploiting the ProxyShell vulnerabilities CVE-2021-34473, CVE2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers"
+        },
+        {
+            "value": "CVE-2021-31207",
+            "evidence_snippet": "exploiting the ProxyShell vulnerabilities CVE-2021-34473, CVE2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers"
+        },
+        {
+            "value": "CVE-2019-16098",
+            "evidence_snippet": "C:SystemDatarENEgOtiAtES (A vulnerable (CVE-2019-16098) driver RtCore64.sys used to evade detection by installed antivirus software"
+        }
+    ]
+  },
+  "ttps": [
+        {
+            "tactic": "Initial Access",
+            "technique": "Exploitation of unpatched Microsoft Exchange Servers",
+            "evidence_snippet": "CVE-2021-34473, CVE2021-34523, and CVE-2021-31207 on unpatched Microsoft Exchange Servers."
+        },
+        {
+            "tactic": "Privilege Escalation",
+            "technique": "Impersonation via ProxyShell exploitation and web shells",
+            "evidence_snippet": "Impersonate domain admin users and create a web shell by using the"
+        },
+        {
+            "tactic": "Persistence",
+            "technique": "Registry run keys",
+            "evidence_snippet": "created the following registry run keys to run a payload"
+        },
+        {
+            "tactic": "Reconnaissance",
+            "technique": "Network enumeration with NetScan and AdFind",
+            "evidence_snippet": "presence and execution of the network discovery tool NetScan"
+        },
+        {
+            "tactic": "Credential Access",
+            "technique": "Credential theft with Mimikatz",
+            "evidence_snippet": "Evidence of likely usage of the credential theft tool Mimikatz"
+        },
+        {
+            "tactic": "Lateral Movement",
+            "technique": "RDP and PowerShell remoting with compromised credentials",
+            "evidence_snippet": "used Remote Desktop Protocol (RDP) and PowerShell remoting to obtain access to other servers"
+        },
+        {
+            "tactic": "Exfiltration",
+            "technique": "Data staging and exfiltration with ExByte to Mega NZ",
+            "evidence_snippet": "Mega NZ using the platform’s API at: hxxps://g.api.mega.co[.]nz"
+        },
+        {
+            "tactic": "Defense Evasion",
+            "technique": "Process hollowing and vulnerable driver (RtCore64.sys)",
+            "evidence_snippet": "Process hollowing rENEgOtiAtES created matches RTCore64.sys, a vulnerable driver (CVE-2019-16098)"
+        },
+        {
+            "tactic": "Impact",
+            "technique": "Disable Windows Firewall and shadow copies",
+            "evidence_snippet": "netsh advfirewall set allprofiles state off vssadmin Resize ShadowStorage"
+        }
+    ],
+    "summary": "Case study of BlackByte ransomware intrusion exploiting ProxyShell on Exchange servers, deploying web shells, backdoors (api-msvc.dll), Cobalt Strike, AnyDesk, NetScan, AdFind, Mimikatz, ExByte exfiltration tool, and BlackByte 2.0 ransomware within five days. Includes IOCs like IPs, hashes, C2 domains.",
+    "timeline": [
+        {
+            "date": "2023-07-06",
+            "event": "Publication of BlackByte ransomware case study",
+            "evidence_snippet": "The five-day job: A BlackByte ransomware intrusion case study July 6, 2023"
+        }
+    ]
+}

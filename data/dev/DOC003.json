@@ -1,0 +1,303 @@
+{
+  "report_metadata": {
+    "report_title": "AA25-266A CISA Shares Lessons Learned from an Incident Response Engagement",
+    "report_type": "incident"
+  },
+  "indicators_of_compromise": {
+    "ip_addresses": [
+        {
+            "value": "45.32.22.62",
+            "evidence_snippet": "45.32.22.62 IPv4 Mid-July to early August 2024 C2 Server IP Address",
+            "source_context": "observed"
+        },
+        {
+            "value": "45.17.43.250",
+            "evidence_snippet": "45.17.43.250 IPv4 Mid-July to early August 2024 C2 Server IP Address",
+            "source_context": "observed"
+        }
+    ],
+    "file_hashes": [
+        {
+            "value": "0777EA1D01DAD6DC261A6B602205E2C8",
+            "hash_type": "MD5",
+            "evidence_snippet": "0777EA1D01DAD6DC261A6B602205E2C8 MD5 Mid-July to early August 2024 China Chopper Web Shell"
+        },
+        {
+            "value": "feda15d3509b210cb05eacc22485a78c",
+            "hash_type": "MD5",
+            "evidence_snippet": "feda15d3509b210cb05eacc22485a78c MD5 Mid-July to early August 2024 Generic PHP Web Shell"
+        },
+        {
+            "value": "C9F4C41C195B25675BFA860EB9B45945",
+            "hash_type": "MD5",
+            "evidence_snippet": "C9F4C41C195B25675BFA860EB9B45945 MD5 Mid-July to early August 2024 Linux Exploit CVE-2016-5195"
+        },
+        {
+            "value": "B7B3647E06F23B9E83D0B1CCE3E71642",
+            "hash_type": "MD5",
+            "evidence_snippet": "B7B3647E06F23B9E83D0B1CCE3E71642 MD5 Mid-July to early August 2024 Dirtycow"
+        },
+        {
+            "value": "64e3a3458b3286caaac821c343d4b208",
+            "hash_type": "MD5",
+            "evidence_snippet": "64e3a3458b3286caaac821c343d4b208 MD5 Mid-July to early August 2024 Stowaway Proxy Tool"
+        },
+        {
+            "value": "20b70dac937377b6d0699a44721acd80",
+            "hash_type": "MD5",
+            "evidence_snippet": "20b70dac937377b6d0699a44721acd80 MD5 Mid-July to early August 2024 Unknown Downloaded Executable"
+        },
+        {
+            "value": "de778443619f37e2224898a9a800fa78",
+            "hash_type": "MD5",
+            "evidence_snippet": "de778443619f37e2224898a9a800fa78 MD5 Mid-July to early August 2024 Unknown Downloaded Executable"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Burp Suite",
+            "evidence_snippet": "The cyber threat actors identified CVE-2024-36401 in the organization's public-facing GeoServer using Burp Suite (Burp Scanner)"
+        },
+        {
+            "name": "China Chopper",
+            "evidence_snippet": "they uploaded or attempted to upload web shells such as China Chopper"
+        },
+        {
+            "name": "dirtycow",
+            "evidence_snippet": "The cyber threat actors attempted to escalate privileges with the publicly available dirtycow tool"
+        },
+        {
+            "name": "fscan",
+            "evidence_snippet": "they downloaded the fscan tool to scan the organization's network"
+        },
+        {
+            "name": "Stowaway",
+            "evidence_snippet": "The cyber threat actors used Stowaway, a publicly available multi-level proxy tool, to establish C2"
+        },
+        {
+            "name": "RingQ",
+            "evidence_snippet": "CISA also observed files on GeoServer 1 named RinqQ.exe and RingQ.rar, which likely refer to a publicly available defense evasion tool called RingQ"
+        }
+    ],
+    "cves": [
+        {
+            "value": "CVE-2024-36401",
+            "evidence_snippet": "cyber threat actors compromised the agency by exploiting CVE-2024-36401 in a GeoServer"
+        },
+        {
+            "value": "CVE-2016-5195",
+            "evidence_snippet": "The cyber threat actors attempted to escalate privileges with the publicly available dirtycow tool, which can be used to exploit CVE-2016-5195"
+        }
+    ]
+  },
+  "ttps": [
+    {
+        "mitre_id": "T1595.002",
+        "tactic": "Reconnaissance",
+        "technique": "Active Scanning: Vulnerability Scanning",
+        "evidence_snippet": "The cyber threat actors performed active scanning to identify vulnerabilities they could use for initial access"
+    },
+    {
+        "mitre_id": "T1583.003",
+        "tactic": "Resource Development",
+        "technique": "Acquire Infrastructure: Virtual Private Server",
+        "evidence_snippet": "everaged a commercially available virtual private server (VPS) from a cloud infrastructure provider [T1583.003]"
+    },
+    {
+        "mitre_id": "T1190",
+        "tactic": "Initial Access",
+        "technique": "Exploit Public-Facing Application",
+        "evidence_snippet": " the cyber threat actors exploited CVE 2024-36401 [T1190]"
+    },
+    {
+        "mitre_id": "T1505.003",
+        "tactic": "Persistence",
+        "technique": "Server Software Component: Web Shell",
+        "evidence_snippet": "The cyber threat actors primarily used web shells [T1505.003] on internet-facing hosts"
+    },
+    {
+        "mitre_id": "T1053.003",
+        "tactic": "Persistence",
+        "technique": "Scheduled Task/Job: Cron",
+        "evidence_snippet": "along with cron jobs (scheduled commands that run automatically at specified times) [T1053.003]"
+    },
+    {
+        "mitre_id": "T1078",
+        "tactic": "Persistence",
+        "technique": "Valid Accounts",
+        "evidence_snippet": "valid accounts [T1078] for persistence. CISA also identified"
+    },
+    {
+        "mitre_id": "T1202",
+        "tactic": "Defense Evasion",
+        "technique": "BITS Job",
+        "evidence_snippet": "employed indirect command execution via .php web shells and xp_cmdshell [T1202]"
+    },
+    {
+        "mitre_id": "T1197",
+        "tactic": "Defense Evasion",
+        "technique": "Indirect Command Execution",
+        "evidence_snippet": "abused Background Intelligence Transfer Service (BITS) jobs [T1197]."
+    },
+    {
+        "mitre_id": "T1068",
+        "tactic": "Privilege Escalation",
+        "technique": "Exploitation for Privilege Escalation",
+        "evidence_snippet": "cyber threat actors attempted to escalate privileges with the publicly available dirtycow tool,1F 2 which can be used to exploit CVE-2016-5195 [CWE-362: “Race Condition”] [T1068]s"
+    },
+    {
+        "mitre_id": "T1110",
+        "tactic": "Credential Access",
+        "technique": "Brute Force",
+        "evidence_snippet": " relied on brute force techniques [T1110] to obtain passwords for lateral movement and privilege escalation"
+    },
+    {
+        "mitre_id": "T1018",
+        "tactic": "Discovery",
+        "technique": "Remote System Discovery",
+        "evidence_snippet": "They performed ping sweeps of hosts within specific subnets [T1018] and downloaded" 
+    },
+    {
+        "mitre_id": "T1016",
+        "tactic": "Discovery",
+        "technique": "System Network Configuration Discovery",
+        "evidence_snippet": "env ps -aux ipconfig [T1016] date who -b rpm -qa polkit"
+    },
+    {
+        "mitre_id": "T1049",
+        "tactic": "Discovery",
+        "technique": "System Network Connections Discovery",
+        "evidence_snippet": "rpm -qa polkit netstat -ano [T1049] Additionally, they employed LOTL techniques for user, service, filesystem, and network discovery"
+    },
+    {
+        "mitre_id": "T1087.001",
+        "tactic": "Discovery",
+        "technique": "Account Discovery: Local Account",
+        "evidence_snippet": "cat /etc/passwd [T1087.001]"
+    },
+    {
+        "mitre_id": "T1082",
+        "tactic": "Discovery",
+        "technique": "System Information Discovery",
+        "evidence_snippet": "cat /etc/redhat-release [T1082]"
+    },
+    {
+        "mitre_id": "T1046",
+        "tactic": "Discovery",
+        "technique": "Network Service Discovery",
+        "evidence_snippet": "rpm -qa polkit netstat -ano [T1049] Additionally, they employed LOTL techniques for user, service, filesystem, and network discovery"
+    },
+    {
+        "mitre_id": "T1033",
+        "tactic": "Discovery",
+        "technique": "System Owner/User Discovery",
+        "evidence_snippet": "whoami [T1033]"
+    },
+    {
+        "mitre_id": "T1057",
+        "tactic": "Discovery",
+        "technique": "Process Discovery",
+        "evidence_snippet": "tasklist [T1057]"
+    },
+    {
+        "mitre_id": "T1083",
+        "tactic": "Discovery",
+        "technique": "File and Directory Discovery",
+        "evidence_snippet": "dir c: [T1083]"
+    },
+    {
+        "mitre_id": "T1059.001",
+        "tactic": "Command and Control",
+        "technique": "Command and Scripting Interpreter: PowerShell",
+        "evidence_snippet": "The cyber threat actors used a connection proxy to direct traffic from their C2 server"
+    },
+    {
+        "mitre_id": "T1090",
+        "tactic": "Command and Control",
+        "technique": "Proxy",
+        "evidence_snippet": "The cyber threat actors used a connection proxy to direct traffic from their C2 server"
+    },
+    {
+        "mitre_id": "T1105",
+        "tactic": "Command and Control",
+        "technique": "Ingress Tool Transfer",
+        "evidence_snippet": "The cyber threat actors used PowerShell and bitsadmin getfile to download payloads",
+        "mapping_type": "explicit"
+    }
+  ],
+  "summary": "CISA incident response at U.S. FCEB agency following EDR detection on July 31, 2024. Cyber threat actors exploited CVE-2024-36401 (GeoServer RCE) on July 11 and July 24, 2024, for initial access to two GeoServers, moved laterally to Web Server and SQL Server using China Chopper web shells, fscan network scanning, dirtycow privilege escalation, Stowaway C2 proxy tool, and LOTL techniques. Three-week undetected dwell time. No threat actor attribution. Lessons learned: patch promptly, test IRPs, review EDR alerts continuously.",
+  "timeline": [
+    {
+        "date": "2025-09-23",
+        "date_precision": "day",
+        "event": "Advisory publication date",
+        "evidence_snippet": "Product ID AA25-266A September 23, 2025"
+    },
+    {
+        "date": "2024-07-01",
+        "date_precision": "day",
+        "event": "CVE-2024-36401 published",
+        "evidence_snippet": "July 1, 2024 CVE-2024-36401 published"
+    },
+    {
+        "date": "2024-07-11",
+        "date_precision": "day",
+        "event": "Initial Access to GeoServer 1",
+        "evidence_snippet": "July 11, 2024 GeoServer 1 Initial Access to GeoServer 1"
+    },
+    {
+        "date": "2024-07-15",
+        "date_precision": "day",
+        "event": "CVE-2024-36401 added to CISA KEV Catalog",
+        "evidence_snippet": "July 15, 2024 CVE-2024-36401 added to CISA's Known Exploited Vulnerabilities Catalog"
+    },
+    {
+        "date": "2024-07-15",
+        "date_precision": "day",
+        "event": "EDR detects Stowaway tool on GeoServer 1 (alert not observed by SOC)",
+        "evidence_snippet": "July 15, 2024 GeoServer 1 EDR detects Stowaway tool on GeoServer 1"
+    },
+    {
+        "date": "2024-07-24",
+        "date_precision": "day",
+        "event": "Initial Access to GeoServer 2",
+        "evidence_snippet": "July 24, 2024 GeoServer 2 Initial Access to GeoServer 2"
+    },
+    {
+        "date": "2024-07-31",
+        "date_precision": "day",
+        "event": "Initial Access to Web Server",
+        "evidence_snippet": "July 31, 2024 Web Server Initial Access to Web Server"
+    },
+    {
+        "date": "2024-07-31",
+        "date_precision": "day",
+        "event": "Initial Access to SQL Server",
+        "evidence_snippet": "July 31, 2024 SQL Server Initial Access to SQL Server"
+    },
+    {
+        "date": "2024-08-01",
+        "date_precision": "day",
+        "event": "Organization observes SQL Alert and contains SQL Server and GeoServer 1",
+        "evidence_snippet": "Aug. 1, 2024 Organization observes SQL Alert and contains SQL Server and GeoServer 1"
+    },
+    {
+        "date": "2024-08-01",
+        "date_precision": "day",
+        "event": "Organization requested assistance from CISA",
+        "evidence_snippet": "Aug. 1, 2024 The impacted organization requested assistance from CISA"
+    },
+    {
+        "date": "2024-08-05",
+        "date_precision": "day",
+        "event": "CISA began forensic artifact analysis",
+        "evidence_snippet": "Aug. 5, 2024 CISA began forensic artifact analysis"
+    },
+    {
+        "date": "2024-08-06",
+        "date_precision": "day",
+        "event": "Last observed threat actor activity on GeoServer 2",
+        "evidence_snippet": "Aug. 6, 2024 Last observed threat actors activity—discovery commands on GeoServer 2"
+    }
+  ]
+}

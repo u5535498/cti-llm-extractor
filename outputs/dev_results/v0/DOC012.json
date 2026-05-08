@@ -1,0 +1,164 @@
+{
+  "doc_id": "DOC012",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "@gmx.de",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "@web[.]de",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "(no specific hash value provided)",
+        "hash_type": "MD5",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "(no specific hash value provided)",
+        "hash_type": "SHA1",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "(no specific hash value provided)",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "(no specific hash value provided)",
+        "hash_type": "SHA512",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "(no specific hash value provided)",
+        "hash_type": "SSDEEP",
+        "evidence_snippet": ""
+      }
+    ],
+    "urls": [
+      {
+        "value": "[.]onion URL (specific URL not provided)",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Grixba (information-stealer)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "GMER",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "IOBit",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PowerTool",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "SystemBC",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Windows Privilege Escalation Awesome Scripts (WinPEAS)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "WinRAR",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2018-13379",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2020-12812",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2022-41040",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2022-41082",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-57727",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "- Lateral Movement",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "- Exploitation of Public",
+      "technique": "Facing Applications",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1518.001",
+      "tactic": "- Anti",
+      "technique": "Virus Software",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The Play ransomware group has impacted a wide range of businesses and critical infrastructure in North America, South America, and Europe since June 2022. The group employs a double extortion model, encrypting systems after exfiltrating data, and threatens to publish stolen data if the ransom is not paid. Organizations are encouraged to implement multifactor authentication, maintain offline backups of data, and keep all operating systems, software, and firmware up to date to reduce the likelihood and impact of ransomware incidents.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 13.22
+}

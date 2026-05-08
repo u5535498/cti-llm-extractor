@@ -1,0 +1,385 @@
+{
+  "report_metadata": {
+    "report_title": "Iran-based Cyber Actors Enabling Ransomware Attacks on US Organizations",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "Pioneer Kitten",
+    "aliases": [
+      "Fox Kitten",
+      "UNC757",
+      "Parisite",
+      "RUBIDIUM",
+      "Lemon Sandstorm",
+      "Br0k3r",
+      "xplfinder"
+    ],
+    "confidence": "high"
+  },
+  "campaign_name": "AA24-241A – Iran-based ransomware-enabling operations against US and foreign organizations",
+  "target_sectors": [
+    "Education",
+    "Finance",
+    "Healthcare",
+    "Defense",
+    "Local government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "138.68.90.19",
+        "evidence_snippet": "138.68.90[.]19 January 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "167.99.202.130",
+        "evidence_snippet": "167.99.202[.]130 January 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "78.141.238.182",
+        "evidence_snippet": "78.141.238[.]182 July 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "51.16.51.81",
+        "evidence_snippet": "51.16.51[.]81 January 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "51.20.138.134",
+        "evidence_snippet": "51.20.138[.]134 February 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "134.209.30.220",
+        "evidence_snippet": "134.209.30[.]220 March 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "13.53.124.246",
+        "evidence_snippet": "13.53.124[.]246 February 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "18.134.0.66",
+        "evidence_snippet": "18.134.0[.]66 September 2023 November 2023",
+        "source_context": "observed"
+      },
+      {
+        "value": "193.149.190.248",
+        "evidence_snippet": "193.149.190[.]248 September 2023 January 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "45.76.65.42",
+        "evidence_snippet": "45.76.65[.]42 September 2023 December 2023",
+        "source_context": "observed"
+      },
+      {
+        "value": "206.71.148.78",
+        "evidence_snippet": "206.71.148[.]78 October 2023 January 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "193.149.187.41",
+        "evidence_snippet": "193.149.187[.]41 October 2023 November 2023",
+        "source_context": "observed"
+      }
+    ],
+    "domains": [
+      {
+        "value": "api.gupdate.net",
+        "evidence_snippet": "api.gupdate[.]net September 2022 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "githubapp.net",
+        "evidence_snippet": "githubapp[.]net February 2024 August 2024",
+        "source_context": "observed"
+      },
+      {
+        "value": "login.forticloud.online",
+        "evidence_snippet": "login.forticloud[.]online October 2023 November 2023",
+        "source_context": "observed"
+      },
+      {
+        "value": "fortigate.forticloud.online",
+        "evidence_snippet": "fortigate.forticloud.[]online October 2023 November 2023",
+        "source_context": "observed"
+      },
+      {
+        "value": "cloud.sophos.one",
+        "evidence_snippet": "cloud.sophos[.]one October 2023 November 2023",
+        "source_context": "observed"
+      },
+      {
+        "value": "ngrok.io",
+        "evidence_snippet": "Use NGROK (ngrok[.]io) deployment to create outbound connections to a random subdomain",
+        "source_context": "observed"
+      },
+      {
+        "value": "files.catbox.moe",
+        "evidence_snippet": "Check your systems for outbound web requests to files.catbox[.]moe and ***.ngrok[.]io",
+        "source_context": "observed"
+      }
+    ],
+    "file_hashes": [],
+    "urls": [
+      {
+        "value": "https://files.catbox.moe",
+        "evidence_snippet": "Microsoft Windows PowerShell ISE to run the command Invoke-WebRequest with a URI including files.catbox[.]moe",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://ngrok.io",
+        "evidence_snippet": "Use NGROK ngrok[.]io deployment to create outbound connections to a random subdomain",
+        "source_context": "observed"
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Install \"AnyDesk\" remote access program as a backup access method"
+      },
+      {
+        "name": "Meshcentral",
+        "evidence_snippet": "Deployment of Meshcentral to connect with compromised servers for remote access"
+      },
+      {
+        "name": "Ligolo",
+        "evidence_snippet": "Use the open source tunneling tool Ligolo (ligolo/ligolo-ng)"
+      },
+      {
+        "name": "NGROK",
+        "evidence_snippet": "Use NGROK (ngrok[.]io) deployment to create outbound connections to a random subdomain"
+      },
+      {
+        "name": "Pay2Key",
+        "evidence_snippet": "the FBI has historically observed this actor conduct hack-and-leak campaigns, such as the late 2020 campaign known as Pay2Key"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-24919",
+        "evidence_snippet": "these actors have been observed scanning IP addresses hosting Check Point Security Gateways, probing for devices potentially vulnerable to CVE-2024-24919"
+      },
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "these actors have conducted mass scanning of IP addresses hosting Palo Alto Networks PAN-OS and GlobalProtect VPN devices. The actors were likely conducting reconnaissance and probing for devices vulnerable to CVE-2024-3400"
+      },
+      {
+        "value": "CVE-2024-21887",
+        "evidence_snippet": "Pulse Secure/Ivanti VPNs (CVE-2024-21887)"
+      },
+      {
+        "value": "CVE-2023-3519",
+        "evidence_snippet": "Historically, this group has exploited organizations by leveraging CVE-2019-19781 and CVE-2023-3519 related to Citrix Netscaler"
+      },
+      {
+        "value": "CVE-2022-1388",
+        "evidence_snippet": "CVE-2022-1388 related to BIG-IP F5 devices"
+      },
+      {
+        "value": "CVE-2019-19781",
+        "evidence_snippet": "Historically, this group has exploited organizations by leveraging CVE-2019-19781 and CVE-2023-3519 related to Citrix Netscaler"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1596",
+      "tactic": "Reconnaissance",
+      "technique": "Search Open Technical Databases",
+      "evidence_snippet": "Search Open Technical Databases T1596",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploit Public-Facing Application T1190",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "External Remote Services T1133",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1505.003",
+      "tactic": "Persistence",
+      "technique": "Server Software Component: Web Shell",
+      "evidence_snippet": "Server Software Component: Web Shell T1505.003",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1136.001",
+      "tactic": "Persistence",
+      "technique": "Create Account: Local Account",
+      "evidence_snippet": "Create Account (Local Account) T1136.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1098",
+      "tactic": "Persistence",
+      "technique": "Account Manipulation",
+      "evidence_snippet": "Account Manipulation T1098",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1053",
+      "tactic": "Persistence",
+      "technique": "Scheduled Task/Job",
+      "evidence_snippet": "Scheduled Task/Job T1053",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1505",
+      "tactic": "Persistence",
+      "technique": "Server Software Component",
+      "evidence_snippet": "Server Software Component T1505",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.003",
+      "tactic": "Privilege Escalation",
+      "technique": "Valid Accounts: Local Accounts",
+      "evidence_snippet": "Valid Accounts: Local Accounts T1078.003",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.002",
+      "tactic": "Privilege Escalation",
+      "technique": "Valid Accounts: Domain Accounts",
+      "evidence_snippet": "Valid Accounts: Domain Accounts T1078.002 ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Impair Defenses: Disable or Modify Tools T1562.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.010",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Downgrade Attack",
+      "evidence_snippet": "Impair Defenses: Downgrade Attack T1562.010",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1056",
+      "tactic": "Credential Access",
+      "technique": "Input Capture",
+      "evidence_snippet": "Input Capture T1056",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Command and Scripting T1059.001",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1012",
+      "tactic": "Discovery",
+      "technique": "Query Registry",
+      "evidence_snippet": "Query Registry T1012",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1482",
+      "tactic": "Discovery",
+      "technique": "Domain Trust Discovery",
+      "evidence_snippet": "Domain Trust Discovery T1482 ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Remote Access Software T1219",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1572",
+      "tactic": "Command and Control",
+      "technique": "Protocol Tunneling",
+      "evidence_snippet": "Protocol Tunneling T1572",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Iran-based cyber actors (Pioneer Kitten / Fox Kitten / UNC757, assessed as Iranian state-sponsored) have conducted high-volume network intrusion operations against US organisations in the education, finance, healthcare, defence, and local government sectors since 2017, as recently as August 2024. Initial access is gained by exploiting public-facing devices via CVEs targeting Citrix Netscaler, F5 BIG-IP, Ivanti VPNs, Palo Alto PAN-OS, and Check Point gateways. Actors deploy webshells, create local accounts, and establish persistence via scheduled tasks and DLL side-loading. They collaborate directly with ransomware affiliates (NoEscape, Ransomhouse, ALPHV/BlackCat), providing network access in exchange for ransom proceeds. Separately, the group conducts GOI-aligned espionage targeting Israeli and Azerbaijani organisations. Key tools include AnyDesk, Meshcentral, Ligolo, and NGROK. Associated IOCs include seven recent IPs and domains (January–August 2024) and five historical IPs and domains (2023).",
+  "timeline": [
+    {
+      "date": "2017-01-01",
+      "date_precision": "year",
+      "event": "Start of observed high-volume intrusion attempts by the Iranian cyber group against U.S. organizations",
+      "evidence_snippet": "This advisory outlines activity by a specific group of Iranian cyber actors that has conducted a high volume of computer network intrusion attempts against U.S. organizations since 2017 and as recently as August 2024."
+    },
+    {
+      "date": "2020-09-15",
+      "date_precision": "day",
+      "event": "Previous FBI and CISA advisory published: Iran-Based Threat Actor Exploits VPN Vulnerabilities",
+      "evidence_snippet": "This CSA... highlights similar activity from a previous advisory Iran-Based Threat Actor Exploits VPN Vulnerabilities that the FBI and CISA published on Sept. 15, 2020."
+    },
+    {
+      "date": "2020-11-01",
+      "date_precision": "month",
+      "event": "Pay2Key hack-and-leak campaign conducted against Israel-based cyber infrastructure",
+      "evidence_snippet": "The FBI has historically observed this actor conduct hack-and-leak campaigns, such as the late 2020 campaign known as Pay2Key... the FBI assesses Pay2Key was an information operation aimed at undermining the security of Israel-based cyber infrastructure."
+    },
+    {
+      "date": "2022-09-01",
+      "date_precision": "month",
+      "event": "First observed use of api.gupdate.net infrastructure by the actors",
+      "evidence_snippet": "api.gupdate.net September 2022 August 2024."
+    },
+    {
+      "date": "2023-09-01",
+      "date_precision": "month",
+      "event": "Earliest historical IP infrastructure associated with the actors appears in Table 11",
+      "evidence_snippet": "18.134.0.66 September 2023 November 2023."
+    },
+    {
+      "date": "2024-01-01",
+      "date_precision": "month",
+      "event": "Start of recent IP activity window provided in Table 10",
+      "evidence_snippet": "138.68.90.19 January 2024 August 2024 167.99.202.130 January 2024 August 2024 51.16.51.81 January 2024 August 2024."
+    },
+    {
+      "date": "2024-04-01",
+      "date_precision": "month",
+      "event": "Mass scanning of PAN-OS and GlobalProtect VPN devices for CVE-2024-3400 begins",
+      "evidence_snippet": "As of April 2024, these actors have conducted mass scanning of IP addresses hosting Palo Alto Networks PAN-OS and GlobalProtect VPN devices. The actors were likely conducting reconnaissance and probing for devices vulnerable to CVE-2024-3400."
+    },
+    {
+      "date": "2024-07-01",
+      "date_precision": "month",
+      "event": "Scanning of Check Point Security Gateways for CVE-2024-24919 observed",
+      "evidence_snippet": "As of July 2024, these actors have been observed scanning IP addresses hosting Check Point Security Gateways, probing for devices potentially vulnerable to CVE-2024-24919."
+    },
+    {
+      "date": "2024-08-01",
+      "date_precision": "month",
+      "event": "Most recent observed IP and domain activity window closes (Table 10 indicators observed through August 2024)",
+      "evidence_snippet": "... August 2024."
+    },
+    {
+      "date": "2024-08-20",
+      "date_precision": "day",
+      "event": "Initial version of advisory AA24-241A issued",
+      "evidence_snippet": "Version History August 20, 2024 Initial version."
+    }
+  ]
+}

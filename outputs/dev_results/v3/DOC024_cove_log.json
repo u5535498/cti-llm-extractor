@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC024",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 3,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 3,
+      "n_supported": 3,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"Drokbk\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Drokbk\" as a custom .NET implant used by the Mint Sandstorm subgroup to persist in target environments and deploy additional tools.\n2. [SUPPORTED] Q: Does the document describe \"Soldier\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Soldier\" as a custom .NET backdoor used by the Mint Sandstorm subgroup to download and run additional tools and uninstall itself.\n3. [SUPPORTED] Q: Does the document describe \"CharmPower\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"CharmPower\" as a custom implant used by the Mint Sandstorm subgroup in targeted phishing campaigns."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 4.58
+}

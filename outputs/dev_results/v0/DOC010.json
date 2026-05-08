@@ -1,0 +1,176 @@
+{
+  "doc_id": "DOC010",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "myvisit[.]alteksecurity[.]org/t",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "temp[.]sh",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "g.api.mega.co[.]nz",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "4a066569113a569a6feb8f44257ac8764ee8f2011765009fdfd82fe3f4b92d3e (api-msvc.dll)",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "1b9badb1c646a19cdf101ac4f6fdd23bc61eaab8c9f925eb41848cea9fd0738e (netscan.exe and netapp.exe)",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "f157090fd3ccd4220298c06ce8734361b724d80459592b10ac632acc624f455e (AdFind)",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "5f37b85687780c089607670040dbb3da2749b91b8adc0aa411fd6280b5fa7103 (sys.exe)",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "4a066569113a569a6feb8f44257ac8764ee8f2011765009fdfd82fe3f4b92d3e",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "1b9badb1c646a19cdf101ac4f6fdd23bc61eaab8c9f925eb41848cea9fd0738e",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "f157090fd3ccd4220298c06ce8734361b724d80459592b10ac632acc624f455e",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "5f37b85687780c089607670040dbb3da2749b91b8adc0aa411fd6280b5fa7103",
+        "hash_type": "SHA256",
+        "evidence_snippet": ""
+      }
+    ],
+    "urls": [
+      {
+        "value": "hxxps://myvisit[.]alteksecurity[.]org/t",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "hxxps://temp[.]sh/szAyn/sys.exe",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "hxxps://g.api.mega.co[.]nz/cs?id=1674017543",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BlackByte ransomware",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Kovter malware",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Cobalt Strike Beacon",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AnyDesk remote administration tool",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "NetScan network discovery tool",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AdFind Active Directory reconnaissance tool",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Mimikatz credential theft tool",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "ExByte GoLang-based collection and exfiltration tool",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-34473",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2021-34523",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2021-31207",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Exploitation of Remote Services",
+      "technique": "ProxyShell vulnerabilities exploitation",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1055",
+      "tactic": "- Process Injection",
+      "technique": "process hollowing and vulnerable drivers use for defense evasion",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1210",
+      "tactic": "- Exploitation of Remote Services",
+      "technique": "Cobalt Strike beacons for command and control (C2)",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1055",
+      "tactic": "- Process Injection",
+      "technique": "use of living-off-the-land tools for persistence and reconnaissance",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "A BlackByte ransomware intrusion case study was investigated by Microsoft Incident Response, revealing a five-day attack chain that exploited ProxyShell vulnerabilities, deployed web shells, used Cobalt Strike beacons, and leveraged various tools to achieve persistence, lateral movement, and data exfiltration. The threat actor employed common security hygiene practices to evade detection and disrupt business operations for the victim organization.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 11.65
+}

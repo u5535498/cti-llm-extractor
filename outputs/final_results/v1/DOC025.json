@@ -1,0 +1,77 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Threat Intelligence"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy and Utilities"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "COSMICENERGY",
+        "evidence_snippet": "Mandiant identified novel operational technology (OT) / industrial control system (ICS)-oriented malware, which we track as COSMICENERGY,"
+      },
+      {
+        "name": "PIEHOP",
+        "evidence_snippet": "PIEHOP is a disruption tool written in Python and packaged with PyInstaller that is capable of connecting to a user-supplied remote MSSQL server for uploading files and issuing remote commands to a RTU."
+      },
+      {
+        "name": "LIGHTWORK",
+        "evidence_snippet": "LIGHTWORK is a disruption tool written in C++ that implements the IEC-104 protocol to modify the state of RTUs over TCP."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": null,
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "PIEHOP expects its main function to be called via another Python file, supplying either the argument control=True  or upload=True .",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": null,
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "PIEHOP’s entry point c018c54eff8fd0b9be50b5d419d80f21 (r3_iec104_control.py) calls PIEHOP’s main function, supplying the argument control=True .",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": null,
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "LIGHTWORK takes the following positional command line arguments: <ip_address> <port> <command> [either ON (1) or OFF (0)].",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": null,
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "An adversary could potentially instruct a control systems device to perform an action that will cause an Impact.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Mandiant identified novel operational technology (OT) / industrial control system (ICS)-oriented malware, which we track as COSMICENERGY. The malware is designed to interact with IEC-104 devices and cause electric power disruption.",
+  "timeline": []
+}

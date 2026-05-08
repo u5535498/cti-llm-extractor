@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC017",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 7,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 7,
+      "n_supported": 7,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"T1480.001\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"T1003.001\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"Stealbit\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe \"rclone\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"MEGA\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"FileZilla\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"Plink\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 6.96
+}

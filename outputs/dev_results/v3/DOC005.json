@@ -1,0 +1,56 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "2025 Cyber Threat Intelligence Report"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BEACON",
+        "evidence_snippet": "BEACON remains the most frequently observed malware family in Mandiant investigations globally, appearing in 10 percent of cases."
+      },
+      {
+        "name": "ALPHV",
+        "evidence_snippet": "ALPHV ransomware was identified in 5% of Mandiant led investigations in 2023."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "T1566 Phishing 16.3% was identified among the top ATT&CK techniques in Mandiant investigations during 2023.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This report shares insights from Bridewell CTI's malicious infrastructure tracking program and intelligence gathered by their Security Operations Centre (SOC) and Managed Detection & Response (MDR) services.",
+  "timeline": [
+    {
+      "date": "2024-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

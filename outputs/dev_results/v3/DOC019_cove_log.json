@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC019",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 3,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 7,
+      "n_supported": 7,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"T1189\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"Cobalt Strike\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"SystemBC\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe the technique \"T1189\" (Drive-By Compromise) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe the technique \"T1059.001\" (Command and Scripting Interpreter: PowerShell) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe the technique \"T1547.001\" (Boot or Logon Autostart Execution: Registry Run Keys/Startup Folder) as being used specifically for \"Persistence\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe the technique \"T1078.002\" (Valid Accounts: Domain Accounts) as being used specifically for \"Privilege Escalation\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 7.42
+}

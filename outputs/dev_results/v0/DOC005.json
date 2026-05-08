@@ -1,0 +1,64 @@
+{
+  "doc_id": "DOC005",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1212",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Exploitation of Remote Services",
+      "technique": "Cobalt Strike",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204",
+      "tactic": "User Execution",
+      "technique": "ClickFix",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1055",
+      "tactic": "Network Scanning",
+      "technique": "Brute Ratel",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071",
+      "tactic": "Application Layer Protocol",
+      "technique": "Supershell",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The 2025 Cyber Threat Intelligence Report highlights the continued innovation and improvement of threat actors in evading defenses, with notable trends including a drop in malicious infrastructure hosted within the US or China, an increase in Sliver and Brute Ratel C2 infrastructure, and the dominance of Lumma Stealer and Redline Stealer in information stealer attacks. The report also discusses emerging threats such as ClickFix, EDRKillers, and Fog Ransomware, and emphasizes the importance of proactive indicators of attack (IOAs) for hunting malicious activity on clients' networks.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 8.66
+}

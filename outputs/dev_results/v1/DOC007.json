@@ -1,0 +1,103 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "M-Trends 2024"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BEACON",
+        "evidence_snippet": "BEACON remains the most frequently observed malware family in Mandiant investigations globally, appearing in 10 percent of cases."
+      },
+      {
+        "name": "ALPHV",
+        "evidence_snippet": "ALPHV ransomware was identified in 5% of Mandiant led investigations in 2023."
+      },
+      {
+        "name": "LEMURLOOT",
+        "evidence_snippet": "LEMURLOOT is a web shell written in C# tailored to interact with the MOVEit Transfer platform and was deployed following MOVEit exploitation."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2023-34362",
+        "evidence_snippet": "The most prevalent vulnerability Mandiant investigators observed in 2023 was CVE-2023-34362, an SQL injection flaw in MOVEit Transfer exploited by FIN11.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2022-21587",
+        "evidence_snippet": "The second most exploited was CVE-2022-21587, a critical unauthenticated file upload vulnerability in Oracle E-Business Suite.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-2868",
+        "evidence_snippet": "The third was CVE-2023-2868, a critical command injection vulnerability in Barracuda Email Security Gateways.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "Top ATT&CK techniques observed: T1059 Command and Scripting Interpreter, T1027 Obfuscated Files or Information 46.5%.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "T1027 Obfuscated Files or Information 46.5% was among the top ATT&CK techniques observed in Mandiant investigations.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "T1190 Exploit Public-Facing Application 28.7% was observed as a top initial access technique in Mandiant investigations.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "T1566 Phishing 16.3% was identified among the top ATT&CK techniques in Mandiant investigations during 2023.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Mandiant M-Trends 2024 covers 2023 global investigations. Median dwell time fell to 10 days. Top exploited CVEs were CVE-2023-34362 (MOVEit), CVE-2022-21587 (Oracle), CVE-2023-2868 (Barracuda).",
+  "timeline": [
+    {
+      "date": "2023-05-27",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "doc_id": "DOC010",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 5,
+      "n_ttps": 4,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 9,
+      "n_supported": 6,
+      "n_not_supported": 3,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"CVE-2021-31207\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"CVE-2019-16098\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"BlackByte\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"BlackByte\" as a ransomware malware used by the threat actor(s) in this report.\n4. [SUPPORTED] Q: Does the document describe \"Cobalt Strike\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"Cobalt Strike\" as a tool used BY the threat actor(s) in this report.\n5. [SUPPORTED] Q: Does the document describe \"AnyDesk\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes, the document describes \"AnyDesk\" as a legitimate remote administration tool used by the threat actor to maintain persistence and move laterally within the network.\n6. [NOT SUPPORTED] Q: Does the document describe the technique \"T1059\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: No.\n7. [NOT SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: No.\n8. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes, the document describes the technique \"Exploitation of unpatched internet-exposed Microsoft Exchange Servers\" as being used for Initial Access.\n9. [NOT SUPPORTED] Q: Does the document describe the technique \"T1566\" (Phishing) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: No."
+    },
+    "step3_deletion": {
+      "changed": true,
+      "n_iocs_before": 5,
+      "n_iocs_after": 5,
+      "n_ttps_before": 4,
+      "n_ttps_after": 1,
+      "deleted_items": [
+        {
+          "list": "ttps",
+          "item_index": 0,
+          "item": {
+            "mitre_id": "T1059",
+            "tactic": "Execution",
+            "technique": "Command and Scripting Interpreter",
+            "evidence_snippet": "The threat actor was observed operating from the following IP to exploit ProxyShell and access the web shell: 185.225.73[.]244",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        },
+        {
+          "list": "ttps",
+          "item_index": 1,
+          "item": {
+            "mitre_id": "T1027",
+            "tactic": "Defense Evasion",
+            "technique": "Obfuscated Files or Information",
+            "evidence_snippet": "The BlackByte binary then creates and starts a service named RABAsSaa calling rENEgOtiAtES, and exploits this service to evade detection by installed antivirus software (CVE-2019-16098).",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        },
+        {
+          "list": "ttps",
+          "item_index": 3,
+          "item": {
+            "mitre_id": "T1566",
+            "tactic": "Initial Access",
+            "technique": "Phishing",
+            "evidence_snippet": "The threat actor utilized the remote administration tool AnyDesk, to maintain persistence and move laterally within the network.",
+            "mapping_type": "explicit",
+            "mitre_confidence": null,
+            "evidence_location": null
+          }
+        }
+      ]
+    }
+  },
+  "total_time_s": 11.43
+}

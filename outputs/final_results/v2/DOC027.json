@@ -1,0 +1,41 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "BRICKSTORM Backdoor"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Government Services and Facilities",
+    "Information Technology"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This report provides an analysis of the BRICKSTORM backdoor malware, which is used by People's Republic of China (PRC) state-sponsored cyber actors for long-term persistence on victim systems.",
+  "timeline": [
+    {
+      "date": "2024-04-11",
+      "date_precision": "day",
+      "event": "Initial access to a web server in the DMZ",
+      "evidence_snippet": "At the victim organization where CISA conducted an incident response engagement, PRC state-sponsored cyber actors accessed a web server on April 11, 2024."
+    },
+    {
+      "date": "2024-04-12",
+      "date_precision": "day",
+      "event": "Lateral movement from the web server to a domain controller in the DMZ",
+      "evidence_snippet": "On April 12, 2024, the cyber actors moved laterally from the web server to a domain controller within the internal network using RDP and credentials associated with a second service account."
+    }
+  ]
+}

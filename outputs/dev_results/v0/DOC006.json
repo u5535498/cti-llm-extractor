@@ -1,0 +1,28 @@
+{
+  "doc_id": "DOC006",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "The ENISA Threat Landscape 2025 report highlights a maturing threat environment in the EU, characterised by rapid exploitation of vulnerabilities and growing complexity in tracking adversaries. Intrusion activity remains significant, with ransomware at its core, while state-aligned threat groups intensified their long-term cyberespionage campaigns against key sectors. Hacktivist activity continues to dominate reporting, driven primarily by low-level distributed denial-of-service operations.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 5.94
+}

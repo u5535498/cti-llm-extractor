@@ -1,0 +1,111 @@
+{
+  "doc_id": "DOC008",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2020-3259",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-20269",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2020-3580",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-28252",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-37085",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2023-27532",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-40711",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-40766",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "unknown",
+      "technique": "Exploit",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566.001",
+      "tactic": "unknown",
+      "technique": "Phishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "unknown",
+      "technique": "Phishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "unknown",
+      "technique": "Valid",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "unknown",
+      "technique": "Allowed",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1110",
+      "tactic": "unknown",
+      "technique": "Brute",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1110.003",
+      "tactic": "unknown",
+      "technique": "Password",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Akira ransomware threat actors have impacted a wide range of businesses and critical infrastructure entities in North America, Europe, and Australia since March 2023. They primarily target small- and medium-sized businesses but have also impacted larger organizations across various sectors. The threat actors use various techniques to gain initial access, including exploiting known CVEs, spearphishing, abusing valid credentials, and leveraging external-facing services like RDP.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 8.98
+}

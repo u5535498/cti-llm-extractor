@@ -1,0 +1,39 @@
+# =============================================================================
+# CTI LLM Extractor — dependencies
+# Install order: CUDA toolkit first (see README), then:
+#   CMAKE_ARGS="-DGGML_CUDA=on" pip install llama-cpp-python --upgrade
+#   pip install -r requirements.txt
+# =============================================================================
+
+# Core LLM inference (llama-cpp-python with CUDA — installed separately)
+llama-cpp-python>=0.3.0
+huggingface_hub>=0.22.0        # model download via huggingface-cli
+
+# Schema validation
+pydantic>=2.5.0
+
+# Document processing
+PyMuPDF>=1.24.0                # PDF text extraction (fitz)
+beautifulsoup4>=4.12.0         # HTML parsing
+lxml>=4.9.0                    # Fast XML/HTML parser
+
+# Evaluation and metrics
+scikit-learn>=1.4.0            # precision / recall / F1
+scipy>=1.12.0                  # Wilcoxon signed-rank test
+numpy>=1.26.0
+krippendorff>=0.6.0            # intra-annotator reliability
+rouge-score>=0.1.2
+
+# Visualisation (dissertation figures)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+pandas>=2.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+rich>=13.7.0                   # console output
+
+# Development
+pytest>=8.1.0
+black>=24.4.0
+isort>=5.13.0

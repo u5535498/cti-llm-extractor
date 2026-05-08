@@ -1,0 +1,304 @@
+{
+  "report_metadata": {
+    "report_title": "ENISA Threat Landscape 2025",
+    "report_type": "strategic"
+  },
+  "target_sectors": [
+    "Public Administration",
+    "Transport",
+    "Digital Infrastructure and Services",
+    "Finance",
+    "Manufacturing",
+    "Health",
+    "Business Services"
+  ],
+  "indicators_of_compromise": {
+    "cves": [
+      {
+        "value": "CVE-2015-2051",
+        "evidence_snippet": "CVE2015- 2051 EUVD2015- 2164 10 (v2.0) D-Link D-Link DIR645 Router"
+      },
+      {
+        "value": "CVE-2017-0144",
+        "evidence_snippet": "CVE2017- 0144 EUVD2017- 0511 8.8 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2017-0147",
+        "evidence_snippet": "CVE2017- 0147 EUVD2017- 0514 7.5 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2017-0199",
+        "evidence_snippet": "CVE2017- 0199 EUVD2017- 0566 7.8 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2017-11882",
+        "evidence_snippet": "CVE2017- 11882 EUVD2017- 3478 7.8 (v3.1) CWE-119"
+      },
+      {
+        "value": "CVE-2017-18368",
+        "evidence_snippet": "CVE2017- 18368 EUVD2017- 9484 9.8 (v3.1) CWE-78"
+      },
+      {
+        "value": "CVE-2018-0802",
+        "evidence_snippet": "CVE2018- 0802 EUVD2018- 1608 7.8 (v3.1) CWE-787"
+      },
+      {
+        "value": "CVE-2018-0824",
+        "evidence_snippet": "CVE2018- 0824 EUVD2018- 1629 8.8 (v3.1) CWE-502"
+      },
+      {
+        "value": "CVE-2018-10957",
+        "evidence_snippet": "CVE2018- 10957 EUVD2018- 3009 8.8 (v3.0) CWE-352"
+      },
+      {
+        "value": "CVE-2018-13379",
+        "evidence_snippet": "CVE2018- 13379 EUVD2018- 5323 9.1 (v3.1) CWE-22"
+      },
+      {
+        "value": "CVE-2019-0604",
+        "evidence_snippet": "CVE2019- 0604 EUVD2019- 1370 9.8 (v3.1) CWE-20"
+      },
+      {
+        "value": "CVE-2020-0787",
+        "evidence_snippet": "CVE2020- 0787 EUVD2020- 2274 7.8 (v3.1) CWE-59"
+      },
+      {
+        "value": "CVE-2020-1472",
+        "evidence_snippet": "CVE2020- 1472 EUVD2020- 12346 5.5 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2020-35730",
+        "evidence_snippet": "CVE2020- 35730 EUVD2020- 23386 6.1 (v3.1) CWE-79"
+      },
+      {
+        "value": "CVE-2021-26084",
+        "evidence_snippet": "CVE2021- 26084 EUVD2021- 12905 9.8 (v3.1) CWE-917"
+      },
+      {
+        "value": "CVE-2021-26855",
+        "evidence_snippet": "CVE2021- 26855 EUVD2021- 13639 9.1 (v3.1) CWE-918"
+      },
+      {
+        "value": "CVE-2021-26857",
+        "evidence_snippet": "CVE2021- 26857 EUVD2021- 13641 7.8 (v3.1) CWE-502"
+      },
+      {
+        "value": "CVE-2021-26858",
+        "evidence_snippet": "CVE2021- 26858 EUVD2021- 13642 7.8 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2021-27065",
+        "evidence_snippet": "CVE2021- 27065 EUVD2021- 13836 7.8 (v3.1) CWE-22"
+      },
+      {
+        "value": "CVE-2021-31207",
+        "evidence_snippet": "CVE2021- 31207 EUVD2021- 18120 6.6 (v3.1) CWE-434"
+      },
+      {
+        "value": "CVE-2021-33742",
+        "evidence_snippet": "CVE2021- 33742 EUVD2021- 20419 7.5 (v3.1) CWE-787"
+      },
+      {
+        "value": "CVE-2021-34473",
+        "evidence_snippet": "CVE2021- 34473 EUVD2021- 21128 9.1 (v3.1) CWE-918"
+      },
+      {
+        "value": "CVE-2021-34523",
+        "evidence_snippet": "CVE2021- 34523 EUVD2021- 21177 9.0 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2021-4034",
+        "evidence_snippet": "CVE2021- 4034 EUVD2021- 33934 7.8 (v3.1) CWE-787"
+      },
+      {
+        "value": "CVE-2021-42278",
+        "evidence_snippet": "CVE2021- 42278 EUVD2021- 29254 7.5 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2021-44026",
+        "evidence_snippet": "CVE2021- 44026 EUVD2021- 30885 9.8 (v3.1) CWE-89"
+      },
+      {
+        "value": "CVE-2022-27924",
+        "evidence_snippet": "CVE2022- 27924 EUVD2022- 32412 7.5 (v3.1) CWE-77"
+      },
+      {
+        "value": "CVE-2022-3236",
+        "evidence_snippet": "CVE2022- 3236 EUVD2022- 42644 9.8 (v3.1) CWE-94"
+      },
+      {
+        "value": "CVE-2022-41128",
+        "evidence_snippet": "CVE2022- 41128 EUVD2022- 44371 8.8 (v3.1) CWE-787"
+      },
+      {
+        "value": "CVE-2023-20118",
+        "evidence_snippet": "CVE2023- 20118 EUVD2023- 24297 6.5 (v3.1) CWE-77"
+      },
+      {
+        "value": "CVE-2023-20198",
+        "evidence_snippet": "CVE2023- 20198 EUVD2023- 24377 10 (v3.1) CWE-420"
+      },
+      {
+        "value": "CVE-2023-22515",
+        "evidence_snippet": "CVE2023- 22515 EUVD2023- 26655 9.8 (v3.1) No info"
+      },
+      {
+        "value": "CVE-2023-22527",
+        "evidence_snippet": "CVE2023- 22527 EUVD2023- 26667 9.8 (v3.1) CWE-74"
+      },
+      {
+        "value": "CVE-2023-23397",
+        "evidence_snippet": "CVE2023- 23397 EUVD2023- 27497 9.8 (v3.1) CWE-20"
+      },
+      {
+        "value": "CVE-2023-27350",
+        "evidence_snippet": "CVE2023- 27350 EUVD2023- 31126 9.8 (v3.1) CWE-284"
+      },
+      {
+        "value": "CVE-2023-27532",
+        "evidence_snippet": "CVE2023- 27532 EUVD2023- 31287 7.5 (v3.1) CWE-306"
+      },
+      {
+        "value": "CVE-2023-28461",
+        "evidence_snippet": "CVE2023- 28461 EUVD2023- 32140 9.8 (v3.1) CWE-287"
+      },
+      {
+        "value": "CVE-2023-34048",
+        "evidence_snippet": "CVE2023- 34048 EUVD2023- 38166 9.8 (v3.1) CWE-787"
+      },
+      {
+        "value": "CVE-2023-3519",
+        "evidence_snippet": "CVE2023- 3519 EUVD2023- 44176 9.8 (v3.1) CWE-94"
+      },
+      {
+        "value": "CVE-2023-38831",
+        "evidence_snippet": "CVE2023- 38831 EUVD2023- 42604 7.8 (v3.1) CWE-345"
+      },
+      {
+        "value": "CVE-2023-42793",
+        "evidence_snippet": "CVE2023- 42793 EUVD2023- 47222 9.8 (v3.1) CWE-288"
+      },
+      {
+        "value": "CVE-2023-43770",
+        "evidence_snippet": "CVE2023- 43770 EUVD2023- 48147 6.1 (v3.1) CWE-79"
+      },
+      {
+        "value": "CVE-2023-46604",
+        "evidence_snippet": "CVE2023- 46604 EUVD2023- 2719 10.0 (v3.1) CWE-502"
+      },
+      {
+        "value": "CVE-2023-46747",
+        "evidence_snippet": "CVE2023- 46747 EUVD2023- 50916 9.8 (v3.1) CWE-288"
+      },
+      {
+        "value": "CVE-2023-48788",
+        "evidence_snippet": "CVE2023- 48788 EUVD2023- 52821 9.8 (v3.1) CWE-89"
+      },
+      {
+        "value": "CVE-2024-0012",
+        "evidence_snippet": "CVE2024- 0012 EUVD2024- 15815 9.3 (v4.0) CWE-306"
+      }
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Phishing including vishing, malspam, and malvertising accounting for about 60% of observed cases"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploitation of vulnerabilities 21.3% remains a prevalent intrusion vector; widespread campaigns rapidly weaponising them within days of their disclosure"
+    },
+    {
+      "mitre_id": "T1584",
+      "tactic": "Resource Development",
+      "technique": "Compromise Infrastructure",
+      "evidence_snippet": "Cybercriminals increasingly targeted third-party providers, such as Digital Services, as an opportunity to optimise the efficiency of their attacks"
+    },
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "ClickFix-style scams tricked users into executing PowerShell commands under the pretext of human verification, leading to the installation of information stealers and loaders"
+    },
+    {
+      "mitre_id": "T1555",
+      "tactic": "Credential Access",
+      "technique": "Credentials from Password Stores",
+      "evidence_snippet": "Info-stealers sold on cybercriminal marketplaces remained a consistent threat vector, primarily facilitating credential theft, session hijacking and access brokering"
+    },
+    {
+      "mitre_id": "T1595",
+      "tactic": "Reconnaissance",
+      "technique": "Active Scanning",
+      "evidence_snippet": "Attackers actively leveraged malicious browser extensions and npm packages, scanning public repositories to compromise developers environments"
+    },
+    {
+      "mitre_id": "T1565",
+      "tactic": "Impact",
+      "technique": "Data Manipulation / Destruction",
+      "evidence_snippet": "Ransomware incidents resulted in prolonged disruptions to business continuity including media, manufacturing, and health sectors"
+    },
+    {
+      "mitre_id": "T1499",
+      "tactic": "Impact",
+      "technique": "Endpoint Denial of Service",
+      "evidence_snippet": "DDoS attacks make up about 76.7% of recorded cases; category overwhelmingly driven by hacktivist groups"
+    },
+    {
+      "mitre_id": "T1589",
+      "tactic": "Reconnaissance",
+      "technique": "Gather Victim Identity Information",
+      "evidence_snippet": "Mobile spyware like EagleMsgSpy used by Chinese Public Security Bureaus to aggregate identity, communications, and location data"
+    }
+  ],
+  "summary": "ENISA Threat Landscape 2025 (TLPCLEAR, October 2025) covers July 2024–June 2025, analysing 4,875 curated incidents affecting EU MSs. Social engineering dominates initial access: phishing (vishing, malspam, malvertising) accounts for ~60% of cases, while vulnerability exploitation accounts for 21.3% and is far more likely to lead to malware deployment (68% of vulnerability cases vs 23% of phishing). DDoS (mainly hacktivist-led) represents 76.7% of all incidents; intrusions 17.8%, dominated by cybercrime. Mobile threats are the largest category (42.4% of threat types), followed by web (27.3%), OT (18.2%) and supply chain (10.6%). Cybercrime (13.4% of incidents) is led by ransomware (81.1% of cybercrime, 82 families) with Akira, SafePay, and Qilin most deployed; data breaches (15.2%) largely follow ransomware. LockBit3 dominance ended after compromise and leaks; LockBit4 emerged; 8Base, BlackBasta, Hunters International, RansomHub all disrupted or fragmented. Info-stealers (RedLine, META, Lumma) underpin access brokering, with Operation Magnus and later Lumma takedown disrupting but not stopping the market. State-aligned activity: Russia-, China-, DPRK-, and Iran-nexus intrusion sets intensified espionage against EU telecoms, logistics, manufacturing, finance; China-nexus groups exploited Ivanti EPMM CVE-2025-4428 and Cisco 0-days; Lazarus abused npm supply chains.",
+  "timeline": [
+    {
+      "date": "2024-07-01",
+      "date_precision": "day",
+      "event": "Start of reporting period for ENISA Threat Landscape 2025",
+      "evidence_snippet": "The ETL 2025 provides an overview of the European cyber threat ecosystem from July 2024 to June 2025"
+    },
+    {
+      "date": "2024-10-01",
+      "date_precision": "month",
+      "event": "Operation Magnus (RedLine/META takedown) disrupts infostealer market",
+      "evidence_snippet": "Operation Magnus in October 2024... led to the dismantling and seizure of the infrastructure of RedLine and META"
+    },
+    {
+      "date": "2025-03-01",
+      "date_precision": "month",
+      "event": "Plus Service breach impacts Italian transport ticketing (MoM, Busitalia Veneto, ATM Milano)",
+      "evidence_snippet": "In March 2025, Plus Service, an external provider... suffered a data breach... notably resulted in the Mobilita di Marca MoM ticketing systems being paralysed for two days"
+    },
+    {
+      "date": "2025-05-01",
+      "date_precision": "month",
+      "event": "LockBit programme compromised; LockBit3 activity ceases, LockBit4 appears",
+      "evidence_snippet": "In May 2025, the LockBit ransomware programme was reportedly compromised resulting in the leak of their internal database... absence of claims... since 27 May 2025 and the emergence of LockBit4 since April"
+    },
+    {
+      "date": "2025-05-21",
+      "date_precision": "day",
+      "event": "Lumma infrastructure takedown operation coordinated by Europol and Microsoft",
+      "evidence_snippet": "In May 2025, joint international LEA action coordinated by Europol led to the seizing, takedown, suspension and blocking of approximately 2 300 malicious domains in Lummas infrastructure"
+    },
+    {
+      "date": "2025-06-30",
+      "date_precision": "day",
+      "event": "End of ENISA TL 2025 reporting period / cut-off for incidents",
+      "evidence_snippet": "The reporting period referred to spans from 1 July 2024 to 30 June 2025, with the cut-off date being 30 June 2025"
+    },
+    {
+      "date": "2025-10-01",
+      "date_precision": "month",
+      "event": "Publication of ENISA Threat Landscape 2025",
+      "evidence_snippet": "ENISA THREAT LANDSCAPE 2025 TLPCLEAR October 2025"
+    }
+  ]
+}

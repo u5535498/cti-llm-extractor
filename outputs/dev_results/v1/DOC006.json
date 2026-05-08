@@ -1,0 +1,90 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "ENISA Threat Landscape 2025"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Public Administration",
+    "Transport",
+    "Digital Infrastructure and Services",
+    "Finance",
+    "Manufacturing"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Darcula",
+        "evidence_snippet": "This is illustrated by the Darcula platform, seen impersonating more than 200 organisations, whose services were seen leveraged to target victims in more than a hundred countries."
+      },
+      {
+        "name": "Lucid",
+        "evidence_snippet": "Another PhaaS called Lucid expanded their portfolio by supporting phishing campaigns via mobile messaging services—iMessage and RCS— enabling over 169 targets in 88 countries to be reached."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-2756",
+        "evidence_snippet": "The vulnerability has an impact on chipsets widely used by various mobile devices and was reported to have been exploited in the wild.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "ClickFix-style scams appeared during the reporting period with the technique gaining momentum in Q1 2025 for both cybercriminal and state-aligned intrusion sets.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "The ClearFake campaign saw the distribution of credential-stealing malware including Lumma and Vidar, resulting in 9 300 confirmed infections.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Phishing-as-a-Service (PhaaS) platforms, designed to automate the generation of branded phishing kits by cloning login pages and distributing links through templated infrastructure.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Enabling endpoint protections evasion and email filtering, QR code phishing (aka quishing) was also reportedly seen, as observed in the Scanception campaign.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "ENISA Threat Landscape 2025 provides an overview of the European cyber threat ecosystem from July 2024 to June 2025. The reporting period highlights a maturing threat environment characterised by rapid exploitation of vulnerabilities and growing complexity in tracking adversaries.",
+  "timeline": [
+    {
+      "date": "2024-07-01",
+      "date_precision": "day",
+      "event": "Start of the reporting period",
+      "evidence_snippet": "The ENISA Cybersecurity Threat Landscape (ENISA CTL) updated methodology published in August 2025 was used to write the ETL."
+    }
+  ]
+}

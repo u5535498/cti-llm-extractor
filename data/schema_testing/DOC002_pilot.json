@@ -1,0 +1,323 @@
+{
+  "threat_actor": {
+    "name": "Scattered Spider",
+    "aliases": [
+      "UNC3944",
+      "Scatter Swine",
+      "Oktapus",
+      "Octo Tempest",
+      "Storm-0875",
+      "Muddled Libra"
+    ],
+    "confidence": "high"
+  },
+  "target_sectors": ["Commercial Facilities"],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "targetsname-sso.com",
+        "evidence_snippet": "targetsname-sso[.]com targetsname-servicedesk[.]com targetsname-okta[.]com"
+      },
+      {
+        "value": "targetsname-servicedesk.com",
+        "evidence_snippet": "targetsname-sso[.]com targetsname-servicedesk[.]com targetsname-okta[.]com"
+      },
+      {
+        "value": "targetsname-okta.com",
+        "evidence_snippet": "targetsname-sso[.]com targetsname-servicedesk[.]com targetsname-okta[.]com"
+      },
+      {
+        "value": "targetsname-cms.com",
+        "evidence_snippet": "targetsname-cms[.]com targetsname-helpdesk[.]com oktalogin-targetcompany[.]com"
+      },
+      {
+        "value": "targetsname-helpdesk.com",
+        "evidence_snippet": "targetsname-cms[.]com targetsname-helpdesk[.]com oktalogin-targetcompany[.]com"
+      },
+      {
+        "value": "oktalogin-targetcompany.com",
+        "evidence_snippet": "targetsname-cms[.]com targetsname-helpdesk[.]com oktalogin-targetcompany[.]com"
+      },
+      {
+        "value": "MEGA.NZ",
+        "evidence_snippet": "exfiltration to multiple sites including MEGA[.]NZ"
+      }
+    ],
+    "file_hashes": [],
+    "urls": []
+  },
+  "ttps": [
+    {
+    "mitre_id": "T1589",
+    "tactic": "Reconnaissance",
+    "technique": "Gather Victim Identity Information",
+    "evidence_snippet": "Scattered Spider threat actors gather usernames, passwords, and PII for targeted organizations."
+    },
+    {
+    "mitre_id": "T1598",
+    "tactic": "Reconnaissance",
+    "technique": "Phishing for Information",
+    "evidence_snippet": "Scattered Spider threat actors use phishing to obtain login credentials, gaining access to a targeted organisation’s network."
+    },
+    {
+    "mitre_id": "T1597.002",
+    "tactic": "Reconnaissance",
+    "technique": "Search Closed Sources: Purchase Technical Data",
+    "evidence_snippet": "Scattered Spider threat actors purchase credentials from illicit marketplaces."
+    },
+    {
+    "mitre_id": "T1594",
+    "tactic": "Reconnaissance",
+    "technique": "Search Victim-Owned Websites",
+    "evidence_snippet": "Scattered Spider threat actors search targeted organisation-owned websites to gather information such as work roles and contact information."
+    },
+    {
+    "mitre_id": "T1598.004",
+    "tactic": "Reconnaissance",
+    "technique": "Phishing for Information: Spearphishing Voice",
+    "evidence_snippet": "Scattered Spider threat actors call targeted organisations to elicit sensitive and actionable information."
+    },
+    {
+    "mitre_id": "T1593.001",
+    "tactic": "Reconnaissance",
+    "technique": "Search Open Websites/Domains: Social Media",
+    "evidence_snippet": "Scattered Spider threat actors scour targeted organisations’ social media to gather further information about roles and interests of staff."
+    },
+    {
+    "mitre_id": "T1583.001",
+    "tactic": "Resource Development",
+    "technique": "Acquire Infrastructure: Domains",
+    "evidence_snippet": "Scattered Spider threat actors create domains for use in phishing and smishing attempts against targeted organisations."
+    },
+    {
+    "mitre_id": "T1585.001",
+    "tactic": "Resource Development",
+    "technique": "Establish Accounts: Social Media Accounts",
+    "evidence_snippet": "Scattered Spider threat actors create fake social media profiles to backstop newly created user accounts in a targeted organisation."
+    },
+    {
+    "mitre_id": "T1566",
+    "tactic": "Initial Access",
+    "technique": "Phishing",
+    "evidence_snippet": "Scattered Spider threat actors use broad phishing attempts against a target to obtain information used to gain initial access. Scattered Spider threat actors pose as helpdesk personnel to direct employees to install commercial remote access tools."
+    },
+    {
+    "mitre_id": "T1660",
+    "tactic": "Initial Access",
+    "technique": "Phishing (Mobile)",
+    "evidence_snippet": "Scattered Spider threat actors send SMS messages, known as smishing, when targeting an organisation."
+    },
+    {
+    "mitre_id": "T1566.004",
+    "tactic": "Initial Access",
+    "technique": "Phishing: Spearphishing Voice",
+    "evidence_snippet": "Scattered Spider threat actors use voice communications to convince IT help desk personnel to reset passwords and/or MFA tokens."
+    },
+    {
+    "mitre_id": "T1199",
+    "tactic": "Initial Access",
+    "technique": "Trusted Relationship",
+    "evidence_snippet": "Scattered Spider threat actors abuse trusted relationships of contracted IT help desks to gain access to targeted organisations."
+    },
+    {
+    "mitre_id": "T1078.002",
+    "tactic": "Initial Access",
+    "technique": "Valid Accounts: Domain Accounts",
+    "evidence_snippet": "Scattered Spider threat actors obtain access to valid domain accounts to gain initial access to a targeted organisation."
+    },
+    {
+    "mitre_id": "T1648",
+    "tactic": "Execution",
+    "technique": "Serverless Execution",
+    "evidence_snippet": "Scattered Spider threat actors use ETL tools to collect data in cloud environments."
+    },
+    {
+    "mitre_id": "T1204",
+    "tactic": "Execution",
+    "technique": "User Execution",
+    "evidence_snippet": "Scattered Spider threat actors impersonating helpdesk personnel direct employees to run commercial remote access tools thereby enabling access to the targeted organisation’s network."
+    },
+    {
+    "mitre_id": "T1136",
+    "tactic": "Persistence",
+    "technique": "Create Account",
+    "evidence_snippet": "Scattered Spider threat actors create new user identities in the targeted organisation."
+    },
+    {
+    "mitre_id": "T1556.006",
+    "tactic": "Persistence",
+    "technique": "Modify Authentication Process: Multi-Factor Authentication",
+    "evidence_snippet": "Scattered Spider threat actors may modify MFA tokens to gain access to a targeted organisation’s network."
+    },
+    {
+    "mitre_id": "T1078",
+    "tactic": "Persistence",
+    "technique": "Valid Accounts",
+    "evidence_snippet": "Scattered Spider threat actors abuse and control valid accounts to maintain network access even when passwords are changed."
+    },
+    {
+    "mitre_id": "T1484.002",
+    "tactic": "Privilege Escalation",
+    "technique": "Domain Policy Modification: Domain Trust Modification",
+    "evidence_snippet": "Scattered Spider threat actors add a federated identity provider to the targeted organisation’s SSO tenant and activate automatic account linking."
+    },
+    {
+    "mitre_id": "T1578.002",
+    "tactic": "Defense Evasion",
+    "technique": "Modify Cloud Compute Infrastructure: Create Cloud Instance",
+    "evidence_snippet": "Scattered Spider threat actors create cloud instances for use during lateral movement and data collection."
+    },
+    {
+    "mitre_id": "T1656",
+    "tactic": "Defense Evasion",
+    "technique": "Impersonation",
+    "evidence_snippet": "Scattered Spider threat actors pose as company IT and/or helpdesk staff to gain access to targeted organisation’s networks. Scattered Spider threat actors use social engineering to convince IT helpdesk personnel to reset passwords and/or MFA tokens."
+    },
+    {
+    "mitre_id": "T1606",
+    "tactic": "Credential Access",
+    "technique": "Forge Web Credentials",
+    "evidence_snippet": "Scattered Spider threat actors may forge MFA tokens to gain access to a targeted organisation’s network."
+    },
+    {
+    "mitre_id": "T1621",
+    "tactic": "Credential Access",
+    "technique": "Multi-Factor Authentication Request Generation",
+    "evidence_snippet": "Scattered Spider sends repeated MFA notification prompts to lead employees to accept the prompt and gain access to the target network."
+    },
+    {
+    "mitre_id": "T1552.001",
+    "tactic": "Credential Access",
+    "technique": "Unsecured Credentials: Credentials in Files",
+    "evidence_snippet": "Scattered Spider threat actors search for insecurely stored credentials on targeted organisation’s systems."
+    },
+    {
+    "mitre_id": "T1552.004",
+    "tactic": "Credential Access",
+    "technique": "Unsecured Credentials: Private Keys",
+    "evidence_snippet": "Scattered Spider threat actors search for insecurely stored private keys on targeted organisation’s systems."
+    },
+    {
+    "mitre_id": "T1451",
+    "tactic": "Credential Access",
+    "technique": "SIM Swap",
+    "evidence_snippet": "Scattered Spider threat actors steal OTPs, credentials, and security answers."
+    },
+    {
+    "mitre_id": "T1217",
+    "tactic": "Discovery",
+    "technique": "Browser Information Discovery",
+    "evidence_snippet": "Scattered Spider threat actors use tools (e.g., Raccoon Stealer) to obtain browser histories."
+    },
+    {
+    "mitre_id": "T1538",
+    "tactic": "Discovery",
+    "technique": "Cloud Service Dashboard",
+    "evidence_snippet": "Scattered Spider threat actors leverage AWS Systems Manager Inventory to discover targets for lateral movement."
+    },
+    {
+    "mitre_id": "T1083",
+    "tactic": "Discovery",
+    "technique": "File and Directory Discovery",
+    "evidence_snippet": "Scattered Spider threat actors search a compromised network to discover files and directories for further information or exploitation."
+    },
+    {
+    "mitre_id": "T1018",
+    "tactic": "Discovery",
+    "technique": "Remote System Discovery",
+    "evidence_snippet": "Scattered Spider threat actors search for infrastructure, such as remote systems, to exploit."
+    },
+    {
+    "mitre_id": "T1539",
+    "tactic": "Discovery",
+    "technique": "Steal Web Session Cookie",
+    "evidence_snippet": "Scattered Spider threat actors use tools, such as Raccoon Stealer, to obtain browser cookies."
+    },
+    {
+    "mitre_id": "T1021.007",
+    "tactic": "Lateral Movement",
+    "technique": "Remote Services: Cloud Services",
+    "evidence_snippet": "Scattered Spider threat actors use pre-existing cloud instances for lateral movement and data collection."
+    },
+    {
+    "mitre_id": "T1213.003",
+    "tactic": "Collection",
+    "technique": "Data from Information Repositories: Code Repositories",
+    "evidence_snippet": "Scattered Spider threat actors search code repositories for data collection and exfiltration."
+    },
+    {
+    "mitre_id": "T1213.002",
+    "tactic": "Collection",
+    "technique": "Data from Information Repositories: SharePoint",
+    "evidence_snippet": "Scattered Spider threat actors search SharePoint repositories for information."
+    },
+    {
+    "mitre_id": "T1074",
+    "tactic": "Collection",
+    "technique": "Data Staged",
+    "evidence_snippet": "Scattered Spider threat actors stage data from multiple data sources into a centralised database before exfiltration."
+    },
+    {
+    "mitre_id": "T1114",
+    "tactic": "Collection",
+    "technique": "Email Collection",
+    "evidence_snippet": "Scattered Spider threat actors search targeted organisation’s emails to determine if the organisation has detected the intrusion and initiated any security response."
+    },
+    {
+    "mitre_id": "T1530",
+    "tactic": "Collection",
+    "technique": "Data from Cloud Storage",
+    "evidence_snippet": "Scattered Spider threat actors search data in cloud storage for collection and exfiltration."
+    },
+    {
+    "mitre_id": "T1219",
+    "tactic": "Command and Control",
+    "technique": "Remote Access Software",
+    "evidence_snippet": "Impersonating helpdesk personnel, Scattered Spider threat actors direct employees to run commercial remote access tools thereby enabling access to, and command and control of, the targeted organisation’s network. Scattered Spider threat actors leverage third-party software to facilitate lateral movement and maintain persistence on a target organisation’s network."
+    },
+    {
+    "mitre_id": "T1090",
+    "tactic": "Command and Control",
+    "technique": "Proxy",
+    "evidence_snippet": "Scattered Spider threat actors use proxy networks to disguise the source of malicious traffic."
+    },
+    {
+    "mitre_id": "T1567",
+    "tactic": "Exfiltration",
+    "technique": "Exfiltration Over Web Service",
+    "evidence_snippet": "Scattered Spider threat actors exfiltrate data using the Snowflake Data Cloud."
+    },
+    {
+    "mitre_id": "T1486",
+    "tactic": "Impact",
+    "technique": "Data Encrypted for Impact",
+    "evidence_snippet": "Scattered Spider threat actors recently began encrypting data on a target network and demanding a ransom for decryption. Scattered Spider threat actors have been observed encrypting VMware ESXi servers."
+    },
+    {
+    "mitre_id": "T1567.002",
+    "tactic": "Impact",
+    "technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+    "evidence_snippet": "Scattered Spider threat actors exfiltrate data to multiple sites including U.S.-based data centres and MEGA[.]NZ."
+    },
+    {
+    "mitre_id": "T1657",
+    "tactic": "Impact",
+    "technique": "Financial Theft",
+    "evidence_snippet": "Scattered Spider threat actors monetised access to targeted organisation’s networks in numerous ways including extortion-enabled ransomware and data theft."
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory (AA23-320A) describes recent activity by the cybercriminal group Scattered Spider (aliases include UNC3944 and Octo Tempest) targeting the commercial facilities sector and other sectors. The advisory states that Scattered Spider targets large organisations and their contracted IT help desks, using social engineering (including vishing) to obtain credentials, reset passwords, and bypass multi-factor authentication (including via MFA request generation/fatigue). It documents the group’s use of crafted phishing domains, abuse of trusted relationships, and use of remote access software and other third-party tools after initial access. The advisory also describes data theft for extortion, exfiltration over web services (including to cloud storage destinations such as MEGA.nz and US-based data centres), and ransomware-related impact including data encryption for ransom, with the July 2025 update noting DragonForce ransomware alongside their usual TTPs.",
+  "timeline": [
+    {
+    "date": "2025-07-29",
+    "event": "Publication of updated advisory identifying new TTPs including DragonForce ransomware",
+    "evidence_snippet": "July 29, 2025: U.S. and international federal organizations identified new TTPs associated with the Scattered Spider cybercriminal group."
+    },
+    {
+    "date": "2025-06-01",
+    "event": "FBI investigations into Scattered Spider activity",
+    "evidence_snippet": "TTPs obtained through FBI investigations as recently as June 2025."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": "Cloud Threat Report, Volume 7"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "8220",
+        "evidence_snippet": "8220 was observed to deploy Tsunami IRC Botnet and remove syslog on compromised hosts."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: File Deletion",
+      "evidence_snippet": "8220 was observed to deploy Tsunami IRC Botnet and remove syslog on compromised hosts.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1584.005",
+      "tactic": "Command and Control",
+      "technique": "Compromise Infrastructure: Botnet",
+      "evidence_snippet": "8220 was observed to deploy Tsunami IRC Botnet and remove syslog on compromised hosts.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The Cloud Threat Report, Volume 7 highlights common security issues observed across cloud environments. Hard-coded credentials, weak authentication, and disabled logging are among the top concerns.",
+  "timeline": []
+}

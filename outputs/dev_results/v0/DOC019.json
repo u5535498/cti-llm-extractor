@@ -1,0 +1,57 @@
+{
+  "doc_id": "DOC019",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1189",
+      "tactic": "unknown",
+      "technique": "Drive-by download from compromised legiti",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1105",
+      "tactic": "unknown",
+      "technique": "Using a fake",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1033",
+      "tactic": "unknown",
+      "technique": "Executing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1056.001",
+      "tactic": "unknown",
+      "technique": "Downloading a credential stealer",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Interlock ransomware actors have been targeting various business and critical infrastructure sectors in North America and Europe since September 2024. They employ a double extortion model, encrypting systems after exfiltrating data, and use tactics like drive-by download from compromised legitimate websites and the ClickFix social engineering technique for initial access.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 7.71
+}

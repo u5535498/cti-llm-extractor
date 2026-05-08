@@ -1,0 +1,278 @@
+{
+  "report_metadata": {
+    "report_title": "Joint Cybersecurity Advisory: PRC State-Sponsored Cyber Actor Living off the Land to Evade Detection",
+    "report_type": "campaign",
+    "authors": [
+      "NSA",
+      "CISA",
+      "FBI",
+      "Australian Cyber Security Centre (ACSC)",
+      "Canadian Centre for Cyber Security (CCCS)"
+    ]
+  },
+  "threat_actor": {
+    "name": "Volt Typhoon",
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "f4dd44bc19c19056794d29151a5b1bb76afd502388622e24c863a8494af147dd",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "ef09b8ff86c276e9b475a6ae6b54f08ed77e09e169f7fc0872eb1d427ee27d31",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "d6ebde42457fe4b2a927ce53fc36f465f0000da931cfab9b79a36083e914ceca",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "472ccfb865c81704562ea95870f60c08ef00bcd2ca1d7f09352398c05be5d05d",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes (overlaps Volt Typhoon FRP)"
+      },
+      {
+        "value": "66a19f7d2547a8a85cee7a62d0b6114fd31afdee090bd43f36b89470238393d7",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "3c2fe308c0a563e06263bbacf793bbe9b2259d795fcc36b953793a7e499e7f71",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "41e5181b9553bbe33d91ee204fe1d2ca321ac123f9147bb475c0ed32f9488597",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "c7fee7a3ffaf0732f42d89c4399cbff219459ae04a81fc6eff7050d53bd69b99",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "3a9d8bb85fbcfe92bae79d5ab18e4bca9eaf36cea70086e8d1ab85336c83945f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "fe95a382b4f879830e2666473d662a24b34fccf34b6b3505ee1b62b32adafa15",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      },
+      {
+        "value": "ee8df354503a56c62719656fae71b3502acf9f87951c55ffd955feec90a11484",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA-256 file hashes"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Earthworm",
+        "evidence_snippet": "Used for C2; actor proxies traffic through compromised SOHO devices"
+      },
+      {
+        "name": "Fast Reverse Proxy (FRP)",
+        "evidence_snippet": "Custom FRP client with hardcoded C2 callbacks to ports 8080/8443/8043/8000/10443; filenames: ciscoup.exe, cl64.exe, vm3dservice.exe, watchdogd.exe, Win.exe, WmiPreSV.exe, WmiPrvSE.exe"
+      },
+      {
+        "name": "Impacket (wmiexec.py)",
+        "evidence_snippet": "Redirects output to ADMIN$ share files with epoch timestamps (e.g., 1684956600.123456)"
+      },
+      {
+        "name": "Awen webshell",
+        "evidence_snippet": "Derived webshells used for persistence and exfiltration"
+      },
+      {
+        "name": "Secretsdump.py",
+        "evidence_snippet": "Component of Impacket for NTDS extraction"
+      },
+      {
+        "name": "Invoke-NinjaCopy",
+        "evidence_snippet": "PowerShell tool for NTDS extraction"
+      },
+      {
+        "name": "DSInternals",
+        "evidence_snippet": "PowerShell for NTDS extraction"
+      },
+      {
+        "name": "FgDump",
+        "evidence_snippet": "Credential dumping tool"
+      },
+      {
+        "name": "Metasploit",
+        "evidence_snippet": "Credential dumping tool"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2021-40539",
+        "evidence_snippet": "ManageEngine ADSelfService Plus exploited"
+      },
+      {
+        "value": "CVE-2021-27860",
+        "evidence_snippet": "FatPipe WARP/IPVPN/MPVPN exploited"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "ShellJSP",
+          "description": "Detects JSP webshells used by actor",
+          "evidence_snippet": "strings: decryptfpath, decryptfcontext, decryptcommandEnc, 'upload failed!', aes.encryptallStr, newid"
+        },
+        {
+          "name": "EncryptJSP",
+          "description": "Detects JSP webshells used by actor",
+          "evidence_snippet": "strings: AEScrypt, AESCBCPKCS5Padding, SecretKeySpec, FileOutputStream, getParameter, new ProcessBuilder"
+        },
+        {
+          "name": "CustomFRPClient",
+          "description": "Identifies actor's custom FRP tool based on unique strings",
+          "evidence_snippet": "strings: !PS-Adobe-, github.com/fatedier/frpcmd/frpc, MAGA2024!!!, HTTPPROXYHost"
+        },
+        {
+          "name": "HACKTOOLFRPClient",
+          "description": "Detects FRP tool variants (used by multiple actors)",
+          "evidence_snippet": "strings: !PS-Adobe-, github.com/fatedier/frpcmd/frpc, HTTPPROXYHost"
+        }
+      ]
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploit Public-facing Application T1190 Actor used public-facing applications to gain initial access to systems; in this case, Earthworm and PortProxy.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.003",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: Windows Command Shell",
+      "evidence_snippet": "Command and Scripting Interpreter: Windows Command Shell T1059.003 The actor used this primary command prompt to execute a query",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1505.003",
+      "tactic": "Persistence",
+      "technique": "Server Software Component: Web Shell",
+      "evidence_snippet": "Server Software Component: Web Shell T1505.003 The actor used backdoor web servers with web shells to establish persistence to systems, including some of the webshells being derived from Awen webshell.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal",
+      "evidence_snippet": "Indicator Removal T1070 The actor selectively cleared Windows Event Logs, system logs, and other technical artifacts",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.001",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Clear Windows Event Logs",
+      "evidence_snippet": "Indicator Removal: Clear Windows Event Logs T1070.001 The actor cleared system event logs to hide activity of an intrusion.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "OS Credential Dumping T1003 The actor used additional commands to obtain credentials in the environment.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1555",
+      "tactic": "Credential Access",
+      "technique": "Credentials from Password Stores",
+      "evidence_snippet": "Credentials from Password Stores T1555 The actor searched for common password storage locations",
+      "mapping_type": "explicit"
+    },
+    {
+        "mitre_id": "T1033",
+        "tactic": "Discovery",
+        "technique": "System Owner/User Discovery",
+        "evidence_snippet": "System Owner/User Discovery T1033 The actor gathered information about successful logons to the host using a PowerShell command.",
+        "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003.003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: NTDS",
+      "evidence_snippet": "OS Credential Dumping: NTDS T1003.003 The actor may try to exfiltrate the ntds.dit file and the SYSTEM registry hive",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1047",
+      "tactic": "Execution",
+      "technique": "Windows Management Instrumentation",
+      "evidence_snippet": "Windows Management Instrumentation T1047 The actor executed WMIC commands to create a copy of the SYSTEM registry.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1090",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "Proxy T1090 The actor used commands to enable port forwarding on the host.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1016",
+      "tactic": "Discovery",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "System Network Configuration Discovery T1016 The actor used commands",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "System Information Discovery T1082 The actor executed commands to gather information about local drives.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1069.002",
+      "tactic": "Discovery",
+      "technique": "Permission Groups Discovery: Domain Groups",
+      "evidence_snippet": "Permission Groups Discovery: Doman Groups T1069.002 The actor used commands to enu",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1069.001",
+      "tactic": "Discovery",
+      "technique": "Permission Groups Discovery: Local Groups",
+      "evidence_snippet": "Permission Groups Discovery: Local Groups T1069.001 The actor attempt to find local sy",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Command and Scripting Interpreter: PowerShell T1059.001 The actor used a PowerShell command to identify successful logons to the host.",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Joint CSA (NSA/CISA/FBI/ACSC/CCCS/NCSC-NZ/NCSC-UK, June 2023 v1.1) on PRC state-sponsored actor (Volt Typhoon) using LOTL post-compromise: WMIC/ntdsutil for NTDS dumping (ntds.dit + SYSTEM/SECURITY hives via Shadow Copy); netsh portproxy; PowerShell EventLog queries; Impacket wmiexec.py (output to ADMIN$[epoch timestamp]); Earthworm/FRP C2 via SOHO proxies (ASUS/Cisco/Draytek/FatPipe/Fortinet/Netgear/Zyxel). Targets critical infrastructure worldwide. IOCs: 11 SHA-256 hashes, 40+ command patterns (ntdsutil variants, 7z/rar archiving, dir \\[IP].[timestamp]), 20+ filenames (ciscoup.exe, cl64.exe, etc), YARA (ShellJSP/EncryptJSP/CustomFRPClient), CVEs (2021-40539 ManageEngine, 2021-27860 FatPipe). Logging: Process creation w/cmdline (4688), WMI/PowerShell tracing, ESENT (216/325/326/327 for ntds.dit). MITIGATIONS: Harden DCs, limit portproxy, SIEM forwarding, audit admin actions.",
+  "timeline": [
+    {
+      "date": "2023-06-01",
+      "date_precision": "month",
+      "event": "Joint CSA published (PP-23-1143 Ver. 1.1); PRC actor cluster identified",
+      "evidence_snippet": "PP-23-1143 JUN 2023 Ver. 1.1"
+    }
+  ]
+}

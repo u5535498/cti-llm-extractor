@@ -1,0 +1,33 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA24-131A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Healthcare and Public Health (HPH) Sector",
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "ScreenConnect",
+        "evidence_snippet": "ScreenConnect is remote support, access, and meeting software that allows users to control devices remotely over the internet."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This joint Cybersecurity Advisory (CSA) provides information on Black Basta, a ransomware variant whose actors have encrypted and stolen data from at least 12 out of 16 critical infrastructure sectors.",
+  "timeline": []
+}

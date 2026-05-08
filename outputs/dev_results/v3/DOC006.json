@@ -1,0 +1,31 @@
+{
+  "report_metadata": {
+    "report_type": "strategic",
+    "report_title": null
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Public Administration",
+    "Transport",
+    "Digital Infrastructure and Services",
+    "Finance",
+    "Manufacturing"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "The ENISA Threat Landscape 2025 report provides an overview of the European cyber threat ecosystem from July 2024 to June 2025, highlighting a maturing threat environment characterised by rapid exploitation of vulnerabilities and growing complexity in tracking adversaries.",
+  "timeline": []
+}

@@ -1,0 +1,436 @@
+{
+  "report_metadata": {
+    "report_title": "BRICKSTORM Backdoor (AR25-338A)",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "PRC state-sponsored cyber actors",
+    "aliases": [],
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Government Services and Facilities",
+    "Information Technology"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "149.248.11.71",
+        "evidence_snippet": "Sample 12 first connects to a hard-coded IP address 149[.]248[.]11[.]71 on port 443 to blend in with normal web traffic. CISA observed the threat actors re-using this IP address.",
+        "source_context": "observed"
+      }
+    ],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "8e4c88d00b6eb46229a1ed7001451320",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 8e4c88d00b6eb46229a1ed7001451320",
+        "source_context": "observed"
+      },
+      {
+        "value": "aaf5569c8e349c15028bc3fac09eb982efb06eabac955b705a6d447263658e38",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 aaf5569c8e349c15028bc3fac09eb982efb06eabac955b705a6d447263658e38",
+        "source_context": "observed"
+      },
+      {
+        "value": "39111508bfde89ce6e0fe6abe0365552",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 39111508bfde89ce6e0fe6abe0365552",
+        "source_context": "observed"
+      },
+      {
+        "value": "013211c56caaa697914b5b5871e4998d0298902e336e373ebb27b7db30917eaf",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 013211c56caaa697914b5b5871e4998d0298902e336e373ebb27b7db30917eaf",
+        "source_context": "observed"
+      },
+      {
+        "value": "dbca28ad420408850a94d5c325183b28",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 dbca28ad420408850a94d5c325183b28",
+        "source_context": "observed"
+      },
+      {
+        "value": "57bd98dbb5a00e54f07ffacda1fea91451a0c0b532cd7d570e98ce2ff741c21d",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 57bd98dbb5a00e54f07ffacda1fea91451a0c0b532cd7d570e98ce2ff741c21d",
+        "source_context": "observed"
+      },
+      {
+        "value": "0a4fa52803a389311a9ddc49b7b19138",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 0a4fa52803a389311a9ddc49b7b19138",
+        "source_context": "observed"
+      },
+      {
+        "value": "b3b6a992540da96375e4781afd3052118ad97cfe60ccf004d732f76678f6820a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 b3b6a992540da96375e4781afd3052118ad97cfe60ccf004d732f76678f6820a",
+        "source_context": "observed"
+      },
+      {
+        "value": "82bf31e7d768e6d4d3bc7c8c8ef2b358",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 82bf31e7d768e6d4d3bc7c8c8ef2b358",
+        "source_context": "observed"
+      },
+      {
+        "value": "22c15a32b69116a46eb5d0f2b228cc37cd1b5915a91ec8f38df79d3eed1da26b",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 22c15a32b69116a46eb5d0f2b228cc37cd1b5915a91ec8f38df79d3eed1da26b",
+        "source_context": "observed"
+      },
+      {
+        "value": "18f895e24fe1181bb559215ff9cf6ce3",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 18f895e24fe1181bb559215ff9cf6ce3",
+        "source_context": "observed"
+      },
+      {
+        "value": "f7cda90174b806a34381d5043e89b23ba826abcc89f7abd520060a64475ed506",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 f7cda90174b806a34381d5043e89b23ba826abcc89f7abd520060a64475ed506",
+        "source_context": "observed"
+      },
+      {
+        "value": "a52e36a70b5e0307cbcaa5fd7c97882c",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 a52e36a70b5e0307cbcaa5fd7c97882c",
+        "source_context": "observed"
+      },
+      {
+        "value": "39b3d8a8aedffc1b40820f205f6a4dc041cd37262880e5030b008175c45b0c46",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 39b3d8a8aedffc1b40820f205f6a4dc041cd37262880e5030b008175c45b0c46",
+        "source_context": "observed"
+      },
+      {
+        "value": "a02469742f7b0bc9a8ab5e26822b3fa8",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 a02469742f7b0bc9a8ab5e26822b3fa8",
+        "source_context": "observed"
+      },
+      {
+        "value": "73fe8b8fb4bd7776362fd356fdc189c93cf5d9f6724f6237d829024c10263fe5",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 73fe8b8fb4bd7776362fd356fdc189c93cf5d9f6724f6237d829024c10263fe5",
+        "source_context": "observed"
+      },
+      {
+        "value": "34d6af5ae2ab7a08fa474358a0b95539",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 34d6af5ae2ab7a08fa474358a0b95539",
+        "source_context": "observed"
+      },
+      {
+        "value": "77b49c854afd6746fee393711b48979376fb910b34105c0e18a3fdc24ea31d5c",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 77b49c854afd6746fee393711b48979376fb910b34105c0e18a3fdc24ea31d5c",
+        "source_context": "observed"
+      },
+      {
+        "value": "d1f608cfb395d9274aa52b6a524d9fb5",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 d1f608cfb395d9274aa52b6a524d9fb5",
+        "source_context": "observed"
+      },
+      {
+        "value": "6a67a9769a55ec889a5dd4199b2fc08965d39d737838836853bc13c81c56a800",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 6a67a9769a55ec889a5dd4199b2fc08965d39d737838836853bc13c81c56a800",
+        "source_context": "observed"
+      },
+      {
+        "value": "6c20a810134025a9f05cf312d4b34967",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 6c20a810134025a9f05cf312d4b34967",
+        "source_context": "observed"
+      },
+      {
+        "value": "ed907d39efd5750236b075ca9fbb1f090d7bf578578c38faab24210d298a60ae",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 ed907d39efd5750236b075ca9fbb1f090d7bf578578c38faab24210d298a60ae",
+        "source_context": "observed"
+      },
+      {
+        "value": "2654c08491a0f7c4a3dfc6282de5638b",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 2654c08491a0f7c4a3dfc6282de5638b",
+        "source_context": "observed"
+      },
+      {
+        "value": "24a11a26a2586f4fba7bfe89df2e21a0809ad85069e442da98c37c4add369a0c",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 24a11a26a2586f4fba7bfe89df2e21a0809ad85069e442da98c37c4add369a0c",
+        "source_context": "observed"
+      }
+    ],
+    "urls": [
+      {
+        "value": "https://1.0.0.1/dns-query",
+        "evidence_snippet": "'The sample uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001]: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]9/dns-query (Quad9) If the C2 domain is not found in the public DoH resolver cache'",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://1.1.1.1/dns-query",
+        "evidence_snippet": "'The sample uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001]: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]9/dns-query (Quad9) If the C2 domain is not found in the public DoH resolver cache'",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://8.8.4.4/dns-query",
+        "evidence_snippet": "'The sample uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001]: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]9/dns-query (Quad9) If the C2 domain is not found in the public DoH resolver cache'",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://8.8.8.8/dns-query",
+        "evidence_snippet": "'The sample uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001]: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]9/dns-query (Quad9) If the C2 domain is not found in the public DoH resolver cache'",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://9.9.9.9/dns-query",
+        "evidence_snippet": "'The sample uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001]: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]9/dns-query (Quad9) If the C2 domain is not found in the public DoH resolver cache'",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://149.112.112.11/dns-query",
+        "evidence_snippet": "their C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//149.112.112[.]11/dns-query (Quad9) https[:]//45.90.28.160/dns-query (NextDNS) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]11/dns-query (Quad9) https[:]//9.9.9[.]9/dns-query (Quad9) Note: Some of these samples use XOR encryption",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://45.90.28.160/dns-query",
+        "evidence_snippet": "their C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//149.112.112[.]11/dns-query (Quad9) https[:]//45.90.28.160/dns-query (NextDNS) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]11/dns-query (Quad9) https[:]//9.9.9[.]9/dns-query (Quad9) Note: Some of these samples use XOR encryption",
+        "source_context": "observed"
+      },
+      {
+        "value": "https://9.9.9.11/dns-query",
+        "evidence_snippet": "their C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers: https[:]//1.0.0[.]1/dns-query (Cloudflare) https[:]//1.1.1[.]1/dns-query (Cloudflare) https[:]//149.112.112[.]11/dns-query (Quad9) https[:]//45.90.28.160/dns-query (NextDNS) https[:]//8.8.4[.]4/dns-query (Google) https[:]//8.8.8[.]8/dns-query (Google) https[:]//9.9.9[.]11/dns-query (Quad9) https[:]//9.9.9[.]9/dns-query (Quad9) Note: Some of these samples use XOR encryption",
+        "source_context": "observed"
+      }
+    ],
+    "http_paths": [
+      {
+        "value": "/rest/apisession",
+        "evidence_snippet": "Sample 12 first sends an HTTP upgrade request to convert the initial encrypted HTTPS connection into a persistent WebSocket connection via the endpoint /rest/apisession.",
+        "source_context": "observed"
+      },
+      {
+        "value": "/api/file/get-file",
+        "evidence_snippet": "Sigma rule keywords_33: '/api/file/get-file'",
+        "source_context": "observed"
+      },
+      {
+        "value": "/api/file/list-dir",
+        "evidence_snippet": "Sigma rule keywords_33: '/api/file/list-dir'",
+        "source_context": "observed"
+      },
+      {
+        "value": "/api/file/put-file",
+        "evidence_snippet": "Sigma rule keywords_33: '/api/file/put-file'",
+        "source_context": "observed"
+      },
+      {
+        "value": "/rest/com/vmware/cis/session",
+        "evidence_snippet": "Sigma rule keywords_7: '/rest/com/vmware/cis/session'",
+        "source_context": "observed"
+      },
+      {
+        "value": "/rest/appliance/access/ssh",
+        "evidence_snippet": "Sigma rule keywords_7: '/rest/appliance/access/ssh'",
+        "source_context": "observed"
+      }
+    ],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "CISA_251165_02",
+          "evidence_snippet": "rule CISA_251165_02 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Go-Based BRICKSTORM backdoor samples. Table 12, BRICKSTORM Rule 1."
+        },
+        {
+          "name": "CISA_251155_02",
+          "evidence_snippet": "rule CISA_251155_02 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Go-Based BRICKSTORM backdoor samples. Table 12, BRICKSTORM Rule 2."
+        },
+        {
+          "name": "CISA_251155_01",
+          "evidence_snippet": "rule CISA_251155_01 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Go-Based BRICKSTORM backdoor samples. Added Dec. 19, 2025. Table 12, BRICKSTORM Rule 3."
+        },
+        {
+          "name": "CISA_251217_03",
+          "evidence_snippet": "rule CISA_251217_03 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Rust BRICKSTORM backdoor samples. Added Dec. 19, 2025. Table 12, Rule 4."
+        },
+        {
+          "name": "CISA_251155_03",
+          "evidence_snippet": "rule CISA_251155_03 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Go-Based BRICKSTORM backdoor samples. Added Jan. 20, 2026. Table 12, Rule 5."
+        },
+        {
+          "name": "CISA_251186_02",
+          "evidence_snippet": "rule CISA_251186_02 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects Go-Based BRICKSTORM backdoor samples. Added Jan. 20, 2026. Table 12, Rule 6."
+        },
+        {
+          "name": "CISA_261234_01",
+          "evidence_snippet": "rule CISA_261234_01 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data — Detects AOT BRICKSTORM backdoor samples. Added Feb. 11, 2026. Table 12, Rule 7."
+        }
+      ],
+      "sigma_rules": [
+        {
+          "name": "BRICKSTORM Backdoor Activity r2",
+          "evidence_snippet": "title: BRICKSTORM Backdoor Activity r2. incident: 251157.r2. description: BRICKSTORM malware is a backdoor with multiple capabilities that threat actors use to set up persistence on exploited systems. Table 13."
+        }
+      ]
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1505.003",
+      "tactic": "Persistence",
+      "technique": "Server Software Component: Web Shell",
+      "evidence_snippet": "The cyber actors accessed a web server inside a victim organisation's DMZ using a web shell [T1505.003] present on the server.",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 14"
+    },
+    {
+      "mitre_id": "T1037",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Initialization Scripts",
+      "evidence_snippet": "The modified init file controls the bootup process [T1037] on VMware vSphere systems and executes BRICKSTORM.",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 14"
+    },
+    {
+      "mitre_id": "T1574.007",
+      "tactic": "Persistence",
+      "technique": "Hijack Execution Flow: Path Interception by PATH Environment Variable",
+      "evidence_snippet": "The parent BRICKSTORM instance modifies the PATH environment variable by appending the copied location's path [T1574.007]. This ensures the newly copied version of BRICKSTORM will be executed first.",
+      "mapping_type": "explicit",
+      "evidence_location": "Initiation Capabilities; Table 14"
+    },
+    {
+      "mitre_id": "T1548.003",
+      "tactic": "Privilege Escalation",
+      "technique": "Abuse Elevation Control Mechanism: Sudo and Sudo Caching",
+      "evidence_snippet": "the cyber actors elevated privileges using the sudo command [T1548.003]",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 15"
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Some BRICKSTORM samples mimic legitimate names. For example, Sample 1, which was obtained from a VMware vSphere platform, is named vmsrc or vmware-sphere. [T1036]",
+      "mapping_type": "explicit",
+      "evidence_location": "Table 9; Table 16"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Defense Evasion",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "The cyber actors used service account credentials [T1078] to move laterally using Remote Desktop Protocol (RDP) [T1021.001] from the web server to a domain controller.",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 16"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "the cyber actors used service account credentials [T1078] to move laterally using Remote Desktop Protocol (RDP) [T1021.001] from the web server to a domain controller in the DMZ.",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery"
+    },
+    {
+      "mitre_id": "T1003.003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: NTDS",
+      "evidence_snippet": "the cyber actors used service account credentials to move laterally using RDP from the web server to a domain controller in the DMZ, from which they copied the Active Directory (AD) database (ntds.dit) [T1003.003].",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 18"
+    },
+    {
+      "mitre_id": "T1083",
+      "tactic": "Discovery",
+      "technique": "File and Directory Discovery",
+      "evidence_snippet": "BRICKSTORM can list directory contents on the compromised system. [T1083]",
+      "mapping_type": "explicit",
+      "evidence_location": "Table 11; Table 17"
+    },
+    {
+      "mitre_id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "evidence_snippet": "BRICKSTORM uses DoH to resolve the address of its C2 servers by sending an encrypted HTTPS request to one of the following legitimate public DoH resolvers [T1071.001].",
+      "mapping_type": "explicit",
+      "evidence_location": "Secure Command and Control; Table 19"
+    },
+    {
+      "mitre_id": "T1090.001",
+      "tactic": "Command and Control",
+      "technique": "Proxy: Internal Proxy",
+      "evidence_snippet": "The SOCKS Handler sets up a SOCKS proxy [T1090.001] to route C2 traffic and facilitate lateral movement within the victim network.",
+      "mapping_type": "explicit",
+      "evidence_location": "Secure Command and Control; Table 19"
+    },
+    {
+      "mitre_id": "T1105",
+      "tactic": "Command and Control",
+      "technique": "Ingress Tool Transfer",
+      "evidence_snippet": "the cyber actors dropped BRICKSTORM malware in the server's /etc/sysconfig/ directory [T1105]",
+      "mapping_type": "explicit",
+      "evidence_location": "Malware Delivery; Table 19"
+    },
+    {
+      "mitre_id": "T1041",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over C2 Channel",
+      "evidence_snippet": "BRICKSTORM can upload files from the victim system to the cyber actors' C2 server. get-file: Downloads a file from the compromised system to the C2 server [T1041].",
+      "mapping_type": "explicit",
+      "evidence_location": "Table 11; Table 20"
+    }
+  ],
+  "summary": "Joint CISA/NSA/Canadian Centre for Cyber Security Malware Analysis Report (AR25-338A, initially published 4 December 2025, last updated 11 February 2026) on BRICKSTORM, a custom ELF backdoor (Go-, Rust-, and .NET AOT-based variants) attributed with high confidence to PRC state-sponsored cyber actors. Targets government services, facilities, and IT sectors. 12 samples analysed, primarily targeting VMware vSphere (vCenter, ESXi, Aria Automation Orchestrator) and Windows environments. At a victim organisation, actors gained persistent access from April 2024 through at least September 2025, using a web shell for initial access, RDP and SMB for lateral movement, sudo privilege escalation, ntds.dit credential dumping, and ADFS cryptographic key exfiltration. BRICKSTORM provides persistence via init script modification, PATH hijacking, and self-watching functions; C2 via DoH over public resolvers, HTTPS/WebSockets with nested TLS, and SOCKS proxy. One confirmed reused C2 IP: 149.248.11.71 (Sample 12). Seven YARA rules and one Sigma rule are provided for detection.",
+  "timeline": [
+    {
+      "date": "2024-04-11",
+      "date_precision": "day",
+      "event": "PRC cyber actors access victim organisation's DMZ web server via web shell",
+      "evidence_snippet": "PRC state-sponsored cyber actors accessed a web server on April 11, 2024. The web server was inside the organization's demilitarized zone (DMZ), and cyber actors accessed it through a web shell [T1505.003] present on the server."
+    },
+    {
+      "date": "2024-04-12",
+      "date_precision": "day",
+      "event": "Lateral movement to internal domain controller; ntds.dit copied; BRICKSTORM deployed to VMware vCenter",
+      "evidence_snippet": "On April 12, 2024, the cyber actors moved laterally from the web server to a domain controller within the internal network using RDP and credentials associated with a second service account."
+    },
+    {
+      "date": "2025-09-03",
+      "date_precision": "day",
+      "event": "Last observed BRICKSTORM persistent access at victim organisation",
+      "evidence_snippet": "The cyber actors used BRICKSTORM for persistent access from at least April 2024 through at least Sep. 3, 2025."
+    },
+    {
+      "date": "2025-12-04",
+      "date_precision": "day",
+      "event": "Initial publication of BRICKSTORM Malware Analysis Report (AR25-338A)",
+      "evidence_snippet": "Initial Publication: December 4, 2025"
+    },
+    {
+      "date": "2025-12-19",
+      "date_precision": "day",
+      "event": "MAR updated with analysis of Samples 9–11 (including two Rust-based samples)",
+      "evidence_snippet": "Dec. 19, 2025, with IOCs and detection signatures for three additional BRICKSTORM samples. See Appendix C: Dec. 19, 2025, Updates and Table 12."
+    },
+    {
+      "date": "2026-01-20",
+      "date_precision": "day",
+      "event": "MAR updated with additional YARA detection signatures",
+      "evidence_snippet": "Jan. 20, 2026, with detection signatures. See Table 12."
+    },
+    {
+      "date": "2026-02-11",
+      "date_precision": "day",
+      "event": "MAR updated with analysis of Sample 12 (.NET AOT variant) and reused C2 IP 149.248.11.71",
+      "evidence_snippet": "Feb. 11, 2026, with analysis, IOCs, and detection signatures for an additional sample of BRICKSTORM. This sample is a different variant than the other samples. See Appendix D: Feb. 11, 2026, Updates."
+    }
+  ]
+}

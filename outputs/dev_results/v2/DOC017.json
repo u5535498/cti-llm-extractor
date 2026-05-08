@@ -1,0 +1,93 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "#StopRansomware: LockBit 3.0"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Stealbit",
+        "evidence_snippet": "LockBit 3.0 affiliates use Stealbit, a custom exfiltration tool used previously with LockBit 2.0 [TA0010];"
+      },
+      {
+        "name": "rclone",
+        "evidence_snippet": "LockBit 3.0 actors use (1) rclone, an open source command line cloud storage manager to exfiltrate and (2) MEGA, a publicly available file sharing service for data exfiltration."
+      },
+      {
+        "name": "MEGA",
+        "evidence_snippet": "LockBit 3.0 actors use (1) rclone, an open source command line cloud storage manager to exfiltrate and (2) MEGA, a publicly available file sharing service for data exfiltration."
+      },
+      {
+        "name": "FileZilla",
+        "evidence_snippet": "LockBit 3.0 uses FileZilla for C2."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "LockBit 3.0 actors obtain and abuse credentials of existing accounts as a means of gaining initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "Exploit External Remote Services",
+      "evidence_snippet": "LockBit 3.0 actors exploit RDP to gain access to victim networks.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1189",
+      "tactic": "Initial Access",
+      "technique": "Drive-by Compromise",
+      "evidence_snippet": "LockBit 3.0 actors gain access to a system through a user visiting a website over the normal course of browsing.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "LockBit 3.0 actors exploit vulnerabilities in internet-facing systems to gain access to victims’ systems.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "LockBit 3.0 actors use phishing and spearphishing to gain access to victims' networks.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

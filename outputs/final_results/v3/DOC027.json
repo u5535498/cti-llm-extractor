@@ -1,0 +1,150 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "BRICKSTORM Backdoor"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Government Services and Facilities",
+    "Information Technology"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BRICKSTORM",
+        "evidence_snippet": "BRICKSTORM is a custom Executable and Linkable Format (ELF) Go- or Rust-based backdoor."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "CISA_251165_02",
+          "evidence_snippet": "rule CISA_251165_02 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data"
+        },
+        {
+          "name": "CISA_251155_02",
+          "evidence_snippet": "rule CISA_251155_02 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data"
+        },
+        {
+          "name": "CISA_251155_01",
+          "evidence_snippet": "rule CISA_251155_01 : BRICKSTORM backdoor installs_other_components communicates_with_c2 exfiltrates_data"
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1505.003",
+      "tactic": "Initial Access",
+      "technique": "Web Shell",
+      "evidence_snippet": "The web server was inside the organization’s demilitarized zone (DMZ), and cyber actors accessed it through a web shell [T1505.003] present on the server.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "The cyber actors used service account credentials [T1078] to move laterally using Remote Desktop Protocol (RDP) [T1021.001]",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Execution",
+      "technique": "Remote Services",
+      "evidence_snippet": "The cyber actors used service account credentials [T1078] to move laterally using Remote Desktop Protocol (RDP) [T1021.001]",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1003.003",
+      "tactic": "Persistence",
+      "technique": "System Network Configuration Discovery",
+      "evidence_snippet": "The cyber actors copied the Active Directory (AD) database (ntds.dit) [T1003.003]",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Execution",
+      "technique": "Windows Service Discovery",
+      "evidence_snippet": "BRICKSTORM initiates by running checks and maintains persistence by using a self-watching function and automatically reinstalls or restarts if disrupted.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1037",
+      "tactic": "Persistence",
+      "technique": "Boot or Logon Autostart Execution",
+      "evidence_snippet": "The modified init file controls the bootup process [T1037] on VMware vSphere systems and executes BRICKSTORM.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1090.001",
+      "tactic": "Command and Control",
+      "technique": "Proxy",
+      "evidence_snippet": "The SOCKS Handler sets up a SOCKS proxy [T1090.001] to route C2 traffic and facilitate lateral movement within the victim network.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1041",
+      "tactic": "Command and Control",
+      "technique": "Exfiltration Over Command and Control Channel",
+      "evidence_snippet": "BRICKSTORM provides a SOCKS proxy to facilitate tunneling and lateral movement.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1083",
+      "tactic": "Command and Control",
+      "technique": "File and Directory Discovery",
+      "evidence_snippet": "The Web Service Handler establishes covert C2 communication by creating a legitimate-appearing web server on the compromised system.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1574.007",
+      "tactic": "Persistence",
+      "technique": "System Environment Variable/Property Modification",
+      "evidence_snippet": "The parent instance modifies the PATH environment variable by appending the copied location’s path [T1574.007].",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "BRICKSTORM is a custom Executable and Linkable Format (ELF) Go- or Rust-based backdoor used for long-term persistence on victim systems.",
+  "timeline": [
+    {
+      "date": "2024-04-11",
+      "date_precision": "day",
+      "event": "Initial access to the web server",
+      "evidence_snippet": "The cyber actors accessed a web server on April 11, 2024."
+    },
+    {
+      "date": "2024-04-12",
+      "date_precision": "day",
+      "event": "Lateral movement from the web server to a domain controller",
+      "evidence_snippet": "On April 12, 2024, the cyber actors moved laterally from the web server to a domain controller within the internal network using RDP and credentials associated with a second service account."
+    }
+  ]
+}

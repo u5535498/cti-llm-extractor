@@ -1,0 +1,552 @@
+{
+  "variants": {
+    "v0": {
+      "variant": "v0",
+      "n_docs_evaluated": 8,
+      "n_context_overflow": 0,
+      "macro_ioc_precision": 0.5,
+      "macro_ioc_recall": 0.0397,
+      "macro_ioc_f1": 0.0702,
+      "std_ioc_f1": 0.1108,
+      "macro_ttp_precision": 0.4167,
+      "macro_ttp_recall": 0.0698,
+      "macro_ttp_f1": 0.1182,
+      "std_ttp_f1": 0.1565,
+      "macro_rouge_l": 0.1992,
+      "rouge_l_n_evaluated": 8,
+      "rouge_l_n_skipped": 0,
+      "unsupported_rate": 1.0,
+      "fabrication_rate": 0.25,
+      "attribution_error_rate": 0.3333,
+      "schema_compliance": 0.0,
+      "ioc_f1_per_doc": [
+        0.1212,
+        0.102,
+        0.3158,
+        0.0227,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttp_f1_per_doc": [
+        0.2222,
+        0.0444,
+        0.3636,
+        0.0,
+        0.3158,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_doc": {
+        "DOC004": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.0645,
+          "ioc_f1": 0.1212,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.125,
+          "ttp_f1": 0.2222,
+          "rouge_l": 0.2323
+        },
+        "DOC009": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.0538,
+          "ioc_f1": 0.102,
+          "ttp_precision": 0.3333,
+          "ttp_recall": 0.0238,
+          "ttp_f1": 0.0444,
+          "rouge_l": 0.1781
+        },
+        "DOC015": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.1875,
+          "ioc_f1": 0.3158,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.2222,
+          "ttp_f1": 0.3636,
+          "rouge_l": 0.1953
+        },
+        "DOC016": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.0115,
+          "ioc_f1": 0.0227,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.2096
+        },
+        "DOC020": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.1875,
+          "ttp_f1": 0.3158,
+          "rouge_l": 0.0896
+        },
+        "DOC025": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.2581
+        },
+        "DOC026": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.2415
+        },
+        "DOC027": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1892
+        }
+      }
+    },
+    "v1": {
+      "variant": "v1",
+      "n_docs_evaluated": 8,
+      "n_context_overflow": 0,
+      "macro_ioc_precision": 0.4849,
+      "macro_ioc_recall": 0.125,
+      "macro_ioc_f1": 0.1858,
+      "std_ioc_f1": 0.1804,
+      "macro_ttp_precision": 0.475,
+      "macro_ttp_recall": 0.1378,
+      "macro_ttp_f1": 0.188,
+      "std_ttp_f1": 0.2892,
+      "macro_rouge_l": 0.0972,
+      "rouge_l_n_evaluated": 8,
+      "rouge_l_n_skipped": 0,
+      "unsupported_rate": 0.0,
+      "fabrication_rate": 0.5152,
+      "attribution_error_rate": 0.15,
+      "schema_compliance": 1.0,
+      "ioc_f1_per_doc": [
+        0.2778,
+        0.0,
+        0.2791,
+        0.1087,
+        0.0,
+        0.4,
+        0.4211,
+        0.0
+      ],
+      "ttp_f1_per_doc": [
+        0.0,
+        0.0,
+        0.2857,
+        0.037,
+        0.381,
+        0.0,
+        0.8,
+        0.0
+      ],
+      "per_doc": {
+        "DOC004": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.1613,
+          "ioc_f1": 0.2778,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.0
+        },
+        "DOC009": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.0969
+        },
+        "DOC015": {
+          "ioc_precision": 0.5455,
+          "ioc_recall": 0.1875,
+          "ioc_f1": 0.2791,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.1667,
+          "ttp_f1": 0.2857,
+          "rouge_l": 0.0698
+        },
+        "DOC016": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.0575,
+          "ioc_f1": 0.1087,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.0189,
+          "ttp_f1": 0.037,
+          "rouge_l": 0.0112
+        },
+        "DOC020": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.8,
+          "ttp_recall": 0.25,
+          "ttp_f1": 0.381,
+          "rouge_l": 0.1023
+        },
+        "DOC025": {
+          "ioc_precision": 0.6667,
+          "ioc_recall": 0.2857,
+          "ioc_f1": 0.4,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1469
+        },
+        "DOC026": {
+          "ioc_precision": 0.6667,
+          "ioc_recall": 0.3077,
+          "ioc_f1": 0.4211,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.6667,
+          "ttp_f1": 0.8,
+          "rouge_l": 0.2
+        },
+        "DOC027": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1505
+        }
+      }
+    },
+    "v2": {
+      "variant": "v2",
+      "n_docs_evaluated": 8,
+      "n_context_overflow": 0,
+      "macro_ioc_precision": 0.125,
+      "macro_ioc_recall": 0.0078,
+      "macro_ioc_f1": 0.0147,
+      "std_ioc_f1": 0.0416,
+      "macro_ttp_precision": 0.375,
+      "macro_ttp_recall": 0.0798,
+      "macro_ttp_f1": 0.1156,
+      "std_ttp_f1": 0.2303,
+      "macro_rouge_l": 0.1265,
+      "rouge_l_n_evaluated": 8,
+      "rouge_l_n_skipped": 0,
+      "unsupported_rate": 0.0,
+      "fabrication_rate": 0.125,
+      "attribution_error_rate": 0.0,
+      "schema_compliance": 1.0,
+      "ioc_f1_per_doc": [
+        0.0,
+        0.0,
+        0.1176,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttp_f1_per_doc": [
+        0.6667,
+        0.0,
+        0.0,
+        0.1404,
+        0.1176,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "per_doc": {
+        "DOC004": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.5,
+          "ttp_f1": 0.6667,
+          "rouge_l": 0.2453
+        },
+        "DOC009": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.01
+        },
+        "DOC015": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.0625,
+          "ioc_f1": 0.1176,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1749
+        },
+        "DOC016": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.0755,
+          "ttp_f1": 0.1404,
+          "rouge_l": 0.0402
+        },
+        "DOC020": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.0625,
+          "ttp_f1": 0.1176,
+          "rouge_l": 0.0736
+        },
+        "DOC025": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1781
+        },
+        "DOC026": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1839
+        },
+        "DOC027": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1058
+        }
+      }
+    },
+    "v3": {
+      "variant": "v3",
+      "n_docs_evaluated": 8,
+      "n_context_overflow": 0,
+      "macro_ioc_precision": 0.4833,
+      "macro_ioc_recall": 0.141,
+      "macro_ioc_f1": 0.2044,
+      "std_ioc_f1": 0.1501,
+      "macro_ttp_precision": 0.7708,
+      "macro_ttp_recall": 0.3537,
+      "macro_ttp_f1": 0.4186,
+      "std_ttp_f1": 0.4074,
+      "macro_rouge_l": 0.1207,
+      "rouge_l_n_evaluated": 8,
+      "rouge_l_n_skipped": 0,
+      "unsupported_rate": 0.0,
+      "fabrication_rate": 0.5167,
+      "attribution_error_rate": 0.2292,
+      "schema_compliance": 1.0,
+      "ioc_f1_per_doc": [
+        0.1053,
+        0.099,
+        0.2857,
+        0.2424,
+        0.1026,
+        0.4,
+        0.4,
+        0.0
+      ],
+      "ttp_f1_per_doc": [
+        1.0,
+        0.1333,
+        0.3636,
+        0.0714,
+        0.1111,
+        0.0,
+        0.8,
+        0.8696
+      ],
+      "per_doc": {
+        "DOC004": {
+          "ioc_precision": 0.2857,
+          "ioc_recall": 0.0645,
+          "ioc_f1": 0.1053,
+          "ttp_precision": 1.0,
+          "ttp_recall": 1.0,
+          "ttp_f1": 1.0,
+          "rouge_l": 0.125
+        },
+        "DOC009": {
+          "ioc_precision": 0.625,
+          "ioc_recall": 0.0538,
+          "ioc_f1": 0.099,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.0714,
+          "ttp_f1": 0.1333,
+          "rouge_l": 0.1176
+        },
+        "DOC015": {
+          "ioc_precision": 0.6,
+          "ioc_recall": 0.1875,
+          "ioc_f1": 0.2857,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.2222,
+          "ttp_f1": 0.3636,
+          "rouge_l": 0.1078
+        },
+        "DOC016": {
+          "ioc_precision": 1.0,
+          "ioc_recall": 0.1379,
+          "ioc_f1": 0.2424,
+          "ttp_precision": 0.6667,
+          "ttp_recall": 0.0377,
+          "ttp_f1": 0.0714,
+          "rouge_l": 0.0402
+        },
+        "DOC020": {
+          "ioc_precision": 0.1176,
+          "ioc_recall": 0.0909,
+          "ioc_f1": 0.1026,
+          "ttp_precision": 0.5,
+          "ttp_recall": 0.0625,
+          "ttp_f1": 0.1111,
+          "rouge_l": 0.1023
+        },
+        "DOC025": {
+          "ioc_precision": 0.6667,
+          "ioc_recall": 0.2857,
+          "ioc_f1": 0.4,
+          "ttp_precision": 0.0,
+          "ttp_recall": 0.0,
+          "ttp_f1": 0.0,
+          "rouge_l": 0.1781
+        },
+        "DOC026": {
+          "ioc_precision": 0.5714,
+          "ioc_recall": 0.3077,
+          "ioc_f1": 0.4,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.6667,
+          "ttp_f1": 0.8,
+          "rouge_l": 0.1839
+        },
+        "DOC027": {
+          "ioc_precision": 0.0,
+          "ioc_recall": 0.0,
+          "ioc_f1": 0.0,
+          "ttp_precision": 1.0,
+          "ttp_recall": 0.7692,
+          "ttp_f1": 0.8696,
+          "rouge_l": 0.1111
+        }
+      }
+    }
+  },
+  "wilcoxon_ioc_f1": [
+    {
+      "comparison": "V0 vs V1",
+      "n": 8,
+      "statistic": 4.0,
+      "p_value": 0.21875,
+      "significant": false,
+      "effect_size_r": 0.7778,
+      "effect_label": "large",
+      "direction": "V1 > V0",
+      "interpretation": "Wilcoxon signed-rank test (V0 vs V1, N=8): W=4.0, p=0.2188 (not significant at \u03b1=0.05). Effect size r=0.778 (large). Direction: V1 > V0."
+    },
+    {
+      "comparison": "V1 vs V2",
+      "n": 8,
+      "statistic": 0.0,
+      "p_value": 0.0625,
+      "significant": false,
+      "effect_size_r": 1.0,
+      "effect_label": "large",
+      "direction": "V1 > V2",
+      "interpretation": "Wilcoxon signed-rank test (V1 vs V2, N=8): W=0.0, p=0.0625 (not significant at \u03b1=0.05). Effect size r=1.000 (large). Direction: V1 > V2."
+    },
+    {
+      "comparison": "V2 vs V3",
+      "n": 8,
+      "statistic": 0.0,
+      "p_value": 0.015625,
+      "significant": true,
+      "effect_size_r": 1.0,
+      "effect_label": "large",
+      "direction": "V3 > V2",
+      "interpretation": "Wilcoxon signed-rank test (V2 vs V3, N=8): W=0.0, p=0.0156 (significant at \u03b1=0.05). Effect size r=1.000 (large). Direction: V3 > V2."
+    },
+    {
+      "comparison": "V0 vs V3",
+      "n": 8,
+      "statistic": 6.0,
+      "p_value": 0.203125,
+      "significant": false,
+      "effect_size_r": 0.6667,
+      "effect_label": "large",
+      "direction": "V3 > V0",
+      "interpretation": "Wilcoxon signed-rank test (V0 vs V3, N=8): W=6.0, p=0.2031 (not significant at \u03b1=0.05). Effect size r=0.667 (large). Direction: V3 > V0."
+    }
+  ],
+  "wilcoxon_ttp_f1": [
+    {
+      "comparison": "V0 vs V1",
+      "n": 8,
+      "statistic": 10.0,
+      "p_value": 1.0,
+      "significant": false,
+      "effect_size_r": 0.4444,
+      "effect_label": "medium",
+      "direction": "V1 > V0",
+      "interpretation": "Wilcoxon signed-rank test (V0 vs V1, N=8): W=10.0, p=1.0000 (not significant at \u03b1=0.05). Effect size r=0.444 (medium). Direction: V1 > V0."
+    },
+    {
+      "comparison": "V1 vs V2",
+      "n": 8,
+      "statistic": 5.0,
+      "p_value": 0.625,
+      "significant": false,
+      "effect_size_r": 0.7222,
+      "effect_label": "large",
+      "direction": "V1 > V2",
+      "interpretation": "Wilcoxon signed-rank test (V1 vs V2, N=8): W=5.0, p=0.6250 (not significant at \u03b1=0.05). Effect size r=0.722 (large). Direction: V1 > V2."
+    },
+    {
+      "comparison": "V2 vs V3",
+      "n": 8,
+      "statistic": 3.0,
+      "p_value": 0.078125,
+      "significant": false,
+      "effect_size_r": 0.8333,
+      "effect_label": "large",
+      "direction": "V3 > V2",
+      "interpretation": "Wilcoxon signed-rank test (V2 vs V3, N=8): W=3.0, p=0.0781 (not significant at \u03b1=0.05). Effect size r=0.833 (large). Direction: V3 > V2."
+    },
+    {
+      "comparison": "V0 vs V3",
+      "n": 8,
+      "statistic": 3.0,
+      "p_value": 0.15625,
+      "significant": false,
+      "effect_size_r": 0.8333,
+      "effect_label": "large",
+      "direction": "V3 > V0",
+      "interpretation": "Wilcoxon signed-rank test (V0 vs V3, N=8): W=3.0, p=0.1562 (not significant at \u03b1=0.05). Effect size r=0.833 (large). Direction: V3 > V0."
+    }
+  ]
+}

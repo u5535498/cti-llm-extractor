@@ -1,0 +1,28 @@
+{
+  "doc_id": "DOC013",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "The report highlights the evolving threat landscape in cloud environments, with threat actors refining their tactics for evasion, persistence, and supply chain compromise. Threat actors are targeting recovery mechanisms, developer ecosystems, and high-value compromises. Google Cloud security experts recommend a defense-in-depth strategy focusing on identity security, robust recovery mechanisms, continuous vigilance against sophisticated social engineering and deception tactics, and supply chain integrity.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 5.4
+}

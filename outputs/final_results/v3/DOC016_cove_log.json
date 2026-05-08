@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC016",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 12,
+      "n_ttps": 3,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 15,
+      "n_supported": 15,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"CVE-2020-3259\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe \"CVE-2023-20269\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe \"CVE-2020-3580\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe \"CVE-2023-28252\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe \"CVE-2024-37085\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe \"CVE-2023-27532\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe \"CVE-2024-40711\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n8. [SUPPORTED] Q: Does the document describe \"CVE-2024-40766\" as being actively exploited by the threat actor(s) covered in this report (not merely mentioned as background context)?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe \"AdFind\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe \"AnyDesk\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe \"LaZagne\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n12. [SUPPORTED] Q: Does the document describe \"Mimikatz\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n13. [SUPPORTED] Q: Does the document describe the technique \"T1059\" (Command and Scripting Interpreter) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n14. [SUPPORTED] Q: Does the document describe the technique \"T1027\" (Obfuscated Files or Information) as being used specifically for \"Defense Evasion\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n15. [SUPPORTED] Q: Does the document describe the technique \"T1190\" (Exploit Public-Facing Application) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 8.21
+}

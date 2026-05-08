@@ -1,0 +1,92 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "CYBERSECURITY ADVISORY"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": "A command-line tool used to query and retrieve information from Active Directory [T1087.002 <https://attack.mitre.org/versions/v18/techniques/t1087/002/>]."
+      },
+      {
+        "name": "Advanced IP Scanner",
+        "evidence_snippet": "A network scanning tool used for reconnaissance that locates all computers on a network and conducts a scan of their ports."
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Legitimate desktop support software used to obtain remote access to victim systems and for lateral movement, and support remote file transfer."
+      },
+      {
+        "name": "LaZagne",
+        "evidence_snippet": "An open source tool that enables users to recover stored passwords on Windows, Linux, and Mac OS X systems [T1555 <https://attack.mitre.org/versions/v18/techniques/t1555/>]."
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "A credential dumper that enables users to view and save authentication credentials, such as passwords, Kerberos tickets, and other sensitive information. It is often used in conjunction with other tools, such as PowerShell Empire, to gain unauthorized access to systems."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2020-3259",
+        "evidence_snippet": "CVE-2020-3259 [Common Weakness Enumeration (CWE)-200: Exposure of Sensitive Information to an Unauthorized Actor <https://cwe.mitre.org/data/definitions/200.html>];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-20269",
+        "evidence_snippet": "CVE-2023-20269 [CWE-288: Authentication Bypass Using an Alternate Path or Channel <https://cwe.mitre.org/data/definitions/288.html>];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2020-3580",
+        "evidence_snippet": "CVE-2020-3580 [CWE-79: Improper Neutralization of Input During Web Page Generation (‘Cross-site Scripting’) <https://cwe.mitre.org/data/definitions/79.html>] ",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-28252",
+        "evidence_snippet": "CVE-2023-28252 [CWE-122: Heap-based Buffer Overflow <https://cwe.mitre.org/data/definitions/122.html>];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-37085",
+        "evidence_snippet": "CVE-2024-37085 [CWE-305: Authentication Bypass by Primary Weakness <https://cwe.mitre.org/data/definitions/305.html>]. ",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-27532",
+        "evidence_snippet": "CVE-2023-27532 [CWE-306: Missing Authentication for Critical Function <https://cwe.mitre.org/data/definitions/306.html>];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-40711",
+        "evidence_snippet": "CVE-2024-40711 [CWE-502: Deserialization of Untrusted Data <https://cwe.mitre.org/data/definitions/502>];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-40766",
+        "evidence_snippet": "CVE-2024-40766 [CWE-284: Improper Access Control <https://cwe.mitre.org/data/definitions/284.html>]",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

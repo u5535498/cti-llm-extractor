@@ -1,0 +1,157 @@
+{
+  "report_metadata": {
+    "report_title": "Ransomware Redefined: RedEnergy Stealer-as-a-Ransomware attacks",
+    "report_type": "campaign"
+  },
+  "target_sectors": [
+    "Energy utilities",
+    "Oil and gas",
+    "Telecom",
+    "Machinery"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "51.68.11.192",
+        "evidence_snippet": "By combining the extracted data, the IP address 51.68.11[.]192 was obtained.",
+        "source_context": "observed"
+      }
+    ],
+    "domains": [
+      {
+        "value": "www.igrejaatos2.org",
+        "evidence_snippet": "What makes this threat campaign even more insidious is the use of a deceptive download domain called www[.]igrejaatos2[.]org.",
+        "source_context": "observed",
+        "masked": true
+      },
+      {
+        "value": "2no.co",
+        "evidence_snippet": "the malicious tmp.exe file established communication with the DNS server 2no.co",
+        "source_context": "observed"
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "fb7883d3fd9347debf98122442c2a33e",
+        "hash_type": "MD5",
+        "evidence_snippet": "Main Payload fb7883d3fd9347debf98122442c2a33e",
+        "source_context": "observed"
+      },
+      {
+        "value": "cb533957f70b4a7ebb4e8b896b7b656c",
+        "hash_type": "MD5",
+        "evidence_snippet": "the malware executes another background process, identified by the MD5 hash cb533957f70b4a7ebb4e8b896b7b656c, which represents the true malicious payload.",
+        "source_context": "observed"
+      },
+      {
+        "value": "642dbe8b752b0dc735e9422d903e0e97",
+        "hash_type": "MD5",
+        "evidence_snippet": "Final Payload 642dbe8b752b0dc735e9422d903e0e97",
+        "source_context": "observed"
+      },
+      {
+        "value": "8911b376a5cd494b1ac5b84545ed2eb2",
+        "hash_type": "MD5",
+        "evidence_snippet": "The benign executable possesses the hash value 8911b376a5cd494b1ac5b84545ed2eb2 and is responsible for performing the actual update of Google Chrome, thereby further deceiving the victim.",
+        "source_context": "observed"
+      }
+    ],
+    "urls": [
+      {
+        "value": "www[.]igrejaatos2[.]org/assets/programs/setupbrowser.exe",
+        "evidence_snippet": "they are redirected to the same URL: www[.]igrejaatos2[.]org/assets/programs/setupbrowser.exe. This URL initiates the download of a file called setupbrowser.exe, which is part of the malicious payload.",
+        "source_context": "observed"
+      }
+    ],
+    "http_paths": [
+      {
+        "value": "/assets/programs/setupbrowser.exe",
+        "evidence_snippet": "www[.]igrejaatos2[.]org/assets/programs/setupbrowser.exe",
+        "source_context": "observed"
+      },
+      {
+        "value": "/assets/bootstrap/css",
+        "evidence_snippet": "Within the FTP session, the user navigated to the \"/assets/bootstrap/css\" directory",
+        "source_context": "observed"
+      }
+    ],
+    "tools": [
+      {
+        "name": "WMIC",
+        "evidence_snippet": "the payload is programmed to delete all volume shadow copies (VSS), the backup catalog, and shadow copies using the Windows Management Instrumentation Command-line (WMIC)."
+      },
+      {
+        "name": "vssadmin",
+        "evidence_snippet": "C:\\Windows\\System32\\cmd.exe /C vssadmin delete shadows /all /quiet & wmic shadowcopy delete"
+      },
+      {
+        "name": "wbadmin",
+        "evidence_snippet": "C:\\Windows\\System32\\cmd.exe /C wbadmin delete catalog -quiet"
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "T1036 Defense Evasion Masquerading",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1185",
+      "tactic": "Collection",
+      "technique": "Browser Session Hijacking",
+      "evidence_snippet": "T1185 Collection Browser Session Hijacking",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.006",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: Timestomp",
+      "evidence_snippet": "T1070.006 Defense Evasion Timestomp",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1560",
+      "tactic": "Collection",
+      "technique": "Archive Collected Data",
+      "evidence_snippet": "T1560 Collection Archive Collected Data",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "T1027 Defense Evasion Obfuscated Files or Information",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "TT1562.001 Defense Evasion Disable or Modify Tools",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Zscaler ThreatLabz report (21 June 2023) on RedEnergy, a .NET stealer-as-a-ransomware hybrid targeting energy utilities, oil and gas, telecom, and machinery sectors. Multiple campaigns use the FAKEUPDATES technique: victims visiting targeted company LinkedIn pages are redirected to www.igrejaatos2.org and prompted to download a fake browser update (setupbrowser.exe). Campaigns targeted Philippines Industrial Machinery Manufacturing Company and Brazilian telecom and cosmetics companies. Three-stage execution: masquerades as browser update, drops malicious and decoy executables in %TEMP%, establishes startup persistence, communicates with C2 via 2no.co DNS and HTTPS, conducts FTP activity on OVH server (51.68.11.192). Final payload encrypts files with .FACKOFF! extension (RijndaelManaged), deletes VSS and backup catalogues, drops ransom note read_it.txt, and exfiltrates data. Three MD5 hashes provided in IOC table.",
+  "timeline": [
+    {
+      "date": "2023-04-01",
+      "date_precision": "month",
+      "event": "Zscaler ThreatLabz unveils RAT-as-a-Ransomware category at Botconf 2023",
+      "evidence_snippet": "During the cybersecurity event Botconf 2023, ThreatLabz unveiled a novel threat category called RAT-as-a-Ransomware in April this year."
+    },
+    {
+      "date": "2023-06-21",
+      "date_precision": "day",
+      "event": "Zscaler ThreatLabz publishes RedEnergy Stealer-as-a-Ransomware research blog",
+      "evidence_snippet": "JUNE 21, 2023 - 15 MIN READ"
+    }
+  ]
+}

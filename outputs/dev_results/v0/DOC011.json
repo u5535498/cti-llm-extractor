@@ -1,0 +1,163 @@
+{
+  "doc_id": "DOC011",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [
+      {
+        "value": "basta news (tor site)",
+        "evidence_snippet": "",
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [],
+    "urls": [
+      {
+        "value": ".onion URL (reachable through the Tor browser)",
+        "evidence_snippet": ""
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "BITSAdmin",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PSExec",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "RClone",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "SoftPerfect network scanner (netscan.exe)",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "ScreenConnect",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "Backstab",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2020-1472",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2021-34527",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2021-42278",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2021-42287",
+        "evidence_snippet": ""
+      },
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": ""
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Discovery and Execution",
+      "technique": "Reconnaissance using utilities with innocuous file names",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Privilege Escalation and Lateral Movement",
+      "technique": "Valid credentials abuse",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1068",
+      "tactic": "Privilege Escalation and Lateral Movement",
+      "technique": "Local and Windows Active Domain privilege escalation",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Exfiltration and Encryption",
+      "technique": "PowerShell used to disable antivirus products",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Exfiltration and Encryption",
+      "technique": "ChaCha20 algorithm with an RSA-4096 public key fully encrypts files",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Exfiltration and Encryption",
+      "technique": "vssadmin.exe program used to delete volume shadow copies",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Black Basta is a ransomware-as-a-service (RaaS) variant that has impacted over 500 organizations globally, primarily targeting critical infrastructure sectors. The group uses common initial access techniques such as spearphishing and exploiting known vulnerabilities, followed by a double-extortion model of both encrypting systems and exfiltrating data.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 8.98
+}

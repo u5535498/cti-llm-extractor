@@ -1,0 +1,39 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": {
+    "name": "Mint Sandstorm",
+    "aliases": [
+      "PHOSPHORUS"
+    ],
+    "confidence": "high"
+  },
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy",
+    "Transportation"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Soldier",
+        "evidence_snippet": "Microsoft Defender Antivirus detects the Soldier implant as the following malware: Trojan:MSIL/SoldierAudio.A!dha"
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "Mint Sandstorm is a nation-state threat actor that has refined its tactics, techniques, and procedures (TTPs) to attack high-value targets. The subgroup has demonstrated its ability to rapidly adopt new vulnerabilities into its playbooks and use custom tools to evade detection.",
+  "timeline": []
+}

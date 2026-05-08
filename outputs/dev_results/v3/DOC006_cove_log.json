@@ -1,0 +1,18 @@
+{
+  "doc_id": "DOC006",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 0,
+      "n_ttps": 0,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 0
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 0.0
+}

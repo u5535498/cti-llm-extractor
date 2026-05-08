@@ -1,0 +1,96 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Microsoft Security"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Communications",
+    "Manufacturing",
+    "Utility",
+    "Transportation",
+    "Construction",
+    "Maritime",
+    "Government",
+    "Information Technology",
+    "Education"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): baeffeb5fdef2f42a752c65c2d2a52e84fb57efc906d981f89dd518c314e231c",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): b4f7c5e3f14fb57be8b5f020377b993618b6e3532a4e1eb1eae9976d4130cc74",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 4b0c4170601d6e922cf23b1caf096bba2fade3dfcf92f0ab895a5f0b9a310349",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): c0fc29a52ec3202f71f6378d9f7f9a8a3a10eb19acb8765152d758aded98c76d",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): d6ab36cb58c6c8c3527e788fc9239d8dcc97468b6999cf9ccd8a815c8b4a80af",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 9dd101caee49c692e5df193b236f8d52a07a2030eed9bd858ed3aaccb406401a",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 450437d49a7e5530c6fb04df2e56c3ab1553ada3712fab02bd1eeb1f1adbc267",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 93ce3b6d2a18829c0212542751b309dacbdc8c1d950611efe2319aa715f3a066",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "7939f67375e6b14dfa45ec70356e91823d12f28bbd84278992b99e0d2c12ace5",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): 7939f67375e6b14dfa45ec70356e91823d12f28bbd84278992b99e0d2c12ace5",
+        "source_context": null,
+        "hash_type": "SHA256"
+      },
+      {
+        "value": "a4d1b7c8f3d1f6a5e0b5c9a7d8c6b5a4",
+        "evidence_snippet": "Volt Typhoon custom FRP executable (SHA-256): a4d1b7c8f3d1f6a5e0b5c9a7d8c6b5a4",
+        "source_context": null,
+        "hash_type": "SHA256"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

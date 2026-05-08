@@ -1,0 +1,28 @@
+{
+  "doc_id": "DOC021",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "The report highlights the current state of cloud security threats and vulnerabilities, including repeated mistakes made by organizations in their cloud environments, such as unrestricted firewall policies and exposed databases. It also discusses the importance of prioritizing remediation of these issues to maximize return on security investments. Additionally, the report notes that sensitive data in the cloud poses hidden risks, and leaked credentials are central to every cloud breach analyzed.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 7.82
+}

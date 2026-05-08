@@ -1,0 +1,127 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Iran-based Cyber Actors Enabling Ransomware Attacks on US Organizations"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Education",
+    "Finance",
+    "Healthcare",
+    "Defense",
+    "Local Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "138.68.90[.]19",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date 138.68.90[.]19 January 2024 August 2024",
+        "source_context": null
+      },
+      {
+        "value": "167.99.202[.]130",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date 167.99.202[.]130 January 2024 August 2024",
+        "source_context": null
+      },
+      {
+        "value": "78.141.238[.]182",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date 78.141.238[.]182 July 2024 August 2024",
+        "source_context": null
+      }
+    ],
+    "domains": [
+      {
+        "value": "api.gupdate[.]net",
+        "evidence_snippet": "Table 11. Indicators of Compromise – Historical Indicator First Seen Most Recently Observed Date api.gupdate[.]net September 2022 August 2024",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "githubapp[.]net",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date githubapp[.]net February 2024 August 2024",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Iranian cyber actors install “AnyDesk” remote access program as a backup access method [T1219]."
+      },
+      {
+        "name": "Meshcentral",
+        "evidence_snippet": "Iranian cyber actors deploy Meshcentral to connect with compromised servers for remote access."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "The actors were likely conducting reconnaissance and probing for devices vulnerable to CVE-2024-3400.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2022-1388",
+        "evidence_snippet": "Historically, this group has exploited organizations by leveraging CVE-2019-19781 and CVE-2023-3519 related to Citrix Netscaler, and CVE-2022-1388 related to BIG-IP F5 devices.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2019-19781",
+        "evidence_snippet": "Historically, this group has exploited organizations by leveraging CVE-2019-19781 and CVE-2023-3519 related to Citrix Netscaler, and CVE-2022-1388 related to BIG-IP F5 devices.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-3519",
+        "evidence_snippet": "Historically, this group has exploited organizations by leveraging CVE-2019-19781 and CVE-2023-3519 related to Citrix Netscaler, and CVE-2022-1388 related to BIG-IP F5 devices.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1596",
+      "tactic": "Reconnaissance",
+      "technique": "Search Open Technical Databases",
+      "evidence_snippet": "Iranian cyber actors use Shodan (Shodan[.]io) to identify internet infrastructure hosting devices vulnerable to particular CVEs.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519)",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "Iranian cyber actors create /xui/common/images/ directory on targeted IP addresses.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "The FBI, CISA, and DC3 are releasing this joint Cybersecurity Advisory (CSA) to warn network defenders that a group of Iran-based cyber actors continues to exploit U.S. and foreign organizations.",
+  "timeline": [
+    {
+      "date": "2024-01-01",
+      "date_precision": "day",
+      "event": "First known exploitation of CVE-2023-34362 (MOVEit)",
+      "evidence_snippet": "Earliest evidence of exploitation of CVE-2023-34362 occurred on May 27, 2023, when threat actors began targeting MOVEit Transfer installations."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "report_metadata": {
+    "report_title": "COSMICENERGY: New OT Malware Possibly Related To Russian Emergency Response Exercises",
+    "report_type": "campaign"
+  },
+  "campaign_name": "COSMICENERGY OT malware targeting IEC-104 electric grid assets",
+  "target_sectors": [
+    "Electric Power Transmission and Distribution",
+    "Energy",
+    "Operational Technology",
+    "Industrial Control Systems"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [
+      {
+        "value": "cd8f394652db3d0376ba24a990403d20",
+        "hash_type": "MD5",
+        "evidence_snippet": "PIEHOP (filename: r3iec104control.exe) (MD5: cd8f394652db3d0376ba24a990403d20)",
+        "source_context": "observed"
+      },
+      {
+        "value": "c018c54eff8fd0b9be50b5d419d80f21",
+        "hash_type": "MD5",
+        "evidence_snippet": "PIEHOPs entry point c018c54eff8fd0b9be50b5d419d80f21 (r3iec104control.py)",
+        "source_context": "observed"
+      },
+      {
+        "value": "adfa40d44a58e1bc909abca444f7f616",
+        "hash_type": "MD5",
+        "evidence_snippet": "The file r3iec104control.py imports the iec104mssqllib module, which is contained within the extracted contents as adfa40d44a58e1bc909abca444f7f616",
+        "source_context": "observed"
+      },
+      {
+        "value": "2b86adb6afdfa9216ef8ec2ff4fd2558",
+        "hash_type": "MD5",
+        "evidence_snippet": "2b86adb6afdfa9216ef8ec2ff4fd2558 (iec104mssqllib.py) implements PIEHOPs primary capabilities",
+        "source_context": "observed"
+      },
+      {
+        "value": "7b6678a1c0000344f4faf975c0cfc43d",
+        "hash_type": "MD5",
+        "evidence_snippet": "LIGHTWORK (filename: OTT855IEC104GR.exe) (MD5: 7b6678a1c0000344f4faf975c0cfc43d) is a disruption tool written in C",
+        "source_context": "observed"
+      }
+    ],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "PIEHOP",
+        "evidence_snippet": "PIEHOP is a disruption tool written in Python and packaged with PyInstaller that is capable of connecting to a user-supplied remote MSSQL server for uploading files and issuing remote commands to a RTU. PIEHOP utilizes LIGHTWORK to issue the IEC-104 commands ON or OFF to the remote system and then immediately deletes the executable after issuing the command."
+      },
+      {
+        "name": "LIGHTWORK",
+        "evidence_snippet": "LIGHTWORK is a disruption tool written in C that implements the IEC-104 protocol to modify the state of RTUs over TCP. It crafts configurable IEC-104 Application Service Data Unit ASDU messages, to change the state of RTU Information Object Addresses IOAs to ON or OFF."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "MHunting_PyInstaller_PIEHOP_ModuleS",
+          "evidence_snippet": "rule MHuntingPyInstallerPIEHOPModuleS meta author Mandiant date 2023-04-11 description Searching for PyI strings lib iec104mssqllib ascii condition uint160 0x5A4D and uint32u lib"
+        },
+        {
+          "name": "MHunting_Disrupt_LIGHTWORK_Strings",
+          "evidence_snippet": "rule MHuntingDisruptLIGHTWORKStrings meta author Mandiant description Searching for str date 2023-04-19 strings s1 Connecting to si a s2 Connected! ascii wide no s3 Send control command CSC s4 Connect failed! ascii wi s5 Send time sync command a s6 Wait ... ascii wide noca s7 exit 0 ascii wide nocase condition filesize 5MB and uint160 0x5A4D and uint32u all of them"
+        }
+      ],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "evidence_snippet": "T1140: Deobfuscate/Decode Files or Information — Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware or by using utilities present on the system.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T0807",
+      "tactic": "Execution",
+      "technique": "Command-Line Interface",
+      "evidence_snippet": "T0807: Command-Line Interface — Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands. LIGHTWORK utilizes positional command line arguments for target device, port, and IEC-104 command.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T0809",
+      "tactic": "Defense Evasion",
+      "technique": "Data Destruction",
+      "evidence_snippet": "T0809: Data Destruction — PIEHOP utilizes LIGHTWORK to issue the IEC-104 commands \"ON\" or \"OFF\" to the remote system and then immediately deletes the executable after issuing the command.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T0831",
+      "tactic": "Impact",
+      "technique": "Manipulation of Control",
+      "evidence_snippet": "T0831: Manipulation of Control — Adversaries may manipulate physical process control within the industrial environment. COSMICENERGY accomplishes this via its two derivative components PIEHOP and LIGHTWORK, which send IEC-104 ON/OFF commands to RTUs to affect the actuation of power line switches and circuit breakers.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T0855",
+      "tactic": "Impact",
+      "technique": "Unauthorized Command Message",
+      "evidence_snippet": "T0855: Unauthorized Command Message — LIGHTWORK sends unauthorized IEC-104 commands to instruct RTU control system assets to perform actions outside of their intended functionality.",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Published May 25, 2023 by Mandiant, this report details COSMICENERGY, a novel OT/ICS-oriented malware uploaded to a public malware scanning utility in December 2021 by a submitter in Russia. COSMICENERGY is designed to cause electric power disruption by interacting with IEC 60870-5-104 (IEC-104) devices such as remote terminal units (RTUs) used in electric transmission and distribution across Europe, the Middle East, and Asia. The malware comprises two components: PIEHOP, a Python/PyInstaller disruption tool that connects to a remote MSSQL server to upload files and issue commands to RTUs, and LIGHTWORK, a C-based tool that implements IEC-104 to send ON/OFF commands to RTU Information Object Addresses. A code comment referencing 'Solar Polygon' links the malware to Rostelecom-Solar, a Russian cybersecurity company that conducted power disruption and emergency response exercises in collaboration with the Russian Ministry of Energy in 2021 and at SPIEF in 2022. Mandiant assesses the malware was possibly developed as a red team tool, but notes that threat actors regularly adapt such tools for real-world attacks. COSMICENERGY shares capability similarities with INDUSTROYER, INDUSTROYER.V2, IRONGATE, TRITON, and INCONTROLLER. Five MD5 file hashes and two YARA rules are provided, along with ATT&CK for ICS mappings covering T0807, T0809, T0831, and T0855.",
+  "timeline": [
+    {
+      "date": "2019-01-01",
+      "date_precision": "year",
+      "event": "Rostelecom-Solar receives Russian government subsidy to begin training cybersecurity experts and conducting electric power disruption and emergency response exercises",
+      "evidence_snippet": "Rostelecom-Solar, a Russian cyber security company that received a government subsidy in 2019 to begin training cyber security experts and conducting electric power disruption and emergency response exercises."
+    },
+    {
+      "date": "2021-01-01",
+      "date_precision": "year",
+      "event": "Rostelecom-Solar hosts power disruption and emergency response exercises in collaboration with the Russian Ministry of Energy",
+      "evidence_snippet": "It is possible that the malware was used to support exercises such as the ones hosted by Rostelecom-Solar in 2021 in collaboration with the Russian Ministry of Energy."
+    },
+    {
+      "date": "2021-12-01",
+      "date_precision": "month",
+      "event": "COSMICENERGY uploaded to a public malware scanning utility by a submitter in Russia",
+      "evidence_snippet": "Mandiant identified novel operational technology OT industrial control system ICS-oriented malware, which we track as COSMICENERGY, uploaded to a public malware scanning utility in December 2021 by a submitter in Russia."
+    },
+    {
+      "date": "2022-01-01",
+      "date_precision": "year",
+      "event": "Rostelecom-Solar hosts exercises at St. Petersburg's International Economic Forum (SPIEF)",
+      "evidence_snippet": "It is possible that the malware was used to support exercises such as the ones hosted by Rostelecom-Solar ... in 2022 for the St. Petersburg's International Economic Forum SPIEF."
+    },
+    {
+      "date": "2023-04-11",
+      "date_precision": "day",
+      "event": "Mandiant authors YARA rule MHunting_PyInstaller_PIEHOP_ModuleS for PIEHOP detection",
+      "evidence_snippet": "rule MHuntingPyInstallerPIEHOPModuleS meta author Mandiant date 2023-04-11 description Searching for PyI strings lib iec104mssqllib."
+    },
+    {
+      "date": "2023-04-19",
+      "date_precision": "day",
+      "event": "Mandiant authors YARA rule MHunting_Disrupt_LIGHTWORK_Strings for LIGHTWORK detection",
+      "evidence_snippet": "rule MHuntingDisruptLIGHTWORKStrings meta author Mandiant description Searching for str date 2023-04-19."
+    },
+    {
+      "date": "2023-05-25",
+      "date_precision": "day",
+      "event": "Mandiant publishes public report on COSMICENERGY",
+      "evidence_snippet": "COSMICENERGY New OT Malware Possibly Related To Russian Emergency Response Exercises May 25, 2023 Mandiant Written by Ken Proska, Daniel Kapellmann Zafra, Keith Lunden, Corey Hildebrandt, Rushikesh Nandedkar, Nathan Brubaker."
+    }
+  ]
+}

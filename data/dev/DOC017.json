@@ -1,0 +1,313 @@
+{
+  "report_metadata": {
+    "report_title": "AA23-075A StopRansomware: LockBit 3.0",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "LockBit",
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [
+      {
+        "value": "https://www.premiumize.com",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      },
+      {
+        "value": "https://anonfiles.com",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      },
+      {
+        "value": "https://www.sendspace.com",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      },
+      {
+        "value": "https://fex.net",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      },
+      {
+        "value": "https://transfer.sh",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      },
+      {
+        "value": "https://send.exploit.in",
+        "evidence_snippet": "Anonymous file sharing site used for data exfiltration before encryption (Table 1)"
+      }
+    ],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Stealbit",
+        "evidence_snippet": "Custom exfiltration tool used with LockBit 3.0 (previously LockBit 2.0)"
+      },
+      {
+        "name": "rclone",
+        "evidence_snippet": "Open-source command line cloud storage manager for exfiltration (S1040)"
+      },
+      {
+        "name": "Chocolatey",
+        "evidence_snippet": "Command-line package manager for Windows (T1072)"
+      },
+      {
+        "name": "FileZilla",
+        "evidence_snippet": "Cross-platform FTP application for C2 (T1071.002)"
+      },
+      {
+        "name": "Impacket",
+        "evidence_snippet": "Python classes for network protocols (S0357)"
+      },
+      {
+        "name": "MEGA Ltd MegaSync",
+        "evidence_snippet": "Cloud-based synchronization tool for exfiltration (T1567.002)"
+      },
+      {
+        "name": "Microsoft Sysinternals ProcDump",
+        "evidence_snippet": "Generates LSASS dumps (T1003.001)"
+      },
+      {
+        "name": "Microsoft Sysinternals PsExec",
+        "evidence_snippet": "Remote command execution (S0029)"
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Credential extraction (S0002)"
+      },
+      {
+        "name": "Ngrok",
+        "evidence_snippet": "Remote-access tool abused for bypassing network protections (S0508)"
+      },
+      {
+        "name": "PuTTY Link Plink",
+        "evidence_snippet": "Automates SSH actions on Windows (T1572)"
+      },
+      {
+        "name": "SoftPerfect Network Scanner",
+        "evidence_snippet": "Network scanning (T1046)"
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": "Remote-desktop software for lateral movement (T1021.001)"
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": "SSH FTP client for Windows (T1048)"
+      },
+      {
+        "name": "Metasploit",
+        "evidence_snippet": "Professional penetration-testing tool artifacts observed"
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "Professional penetration-testing tool artifacts observed"
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "Valid Accounts T1078 LockBit 3.0 actors obtain and abuse credentials of existing accounts as a means of gaining initial access.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Initial Access",
+      "technique": "External Remote Services",
+      "evidence_snippet": "Exploit External Remote Services T1133 LockBit 3.0 actors exploit RDP to gain access to victim networks.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1189",
+      "tactic": "Initial Access",
+      "technique": "Drive-by Compromise",
+      "evidence_snippet": "Drive-by Compromise T1189 LockBit 3.0 actors gain access to a system through a user visiting a website over the normal course of browsing.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Exploit Public-Facing Application T1190 LockBit 3.0 actors exploit vulnerabilities in internet-facing systems to gain access to victims’ systems.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Phishing T1566 LockBit 3.0 actors use phishing and spearphishing to gain access to victims' networks.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1072",
+      "tactic": "Execution",
+      "technique": "Software Deployment Tools",
+      "evidence_snippet": "Software Deployment Tools T1072 LockBit 3.0 uses Chocolatey, a commandline package manager for Windows.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1547",
+      "tactic": "Persistence",
+      "technique": "Boot or Logo Autostart Execution",
+      "evidence_snippet": "Boot or Logo Autostart Execution T1547 LockBit 3.0 enables automatic logon for persistence.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Obfuscated Files or Information T1027 LockBit 3.0 will send encrypted host and bot information to its C2 servers.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1070.004",
+      "tactic": "Defense Evasion",
+      "technique": "Indicator Removal: File Deletion",
+      "evidence_snippet": "Indicator Removal: File Deletion T1070.004 LockBit 3.0 will delete itself from the disk.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1480.001",
+      "tactic": "Defense Evasion",
+      "technique": "Execution Guardrails: Environmental Keying",
+      "evidence_snippet": "Execution Guardrails: Environmental Keying T1480.001 LockBit 3.0 will only decrypt the main component or continue to decrypt and/or decompress data if the correct password is entered. Credential Access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1614.001",
+      "tactic": "Discovery",
+      "technique": "System Location Discovery: System Language Discovery",
+      "evidence_snippet": "Skips infection if system language matches exclusion list (e.g., Romanian, Arabic Syria)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003.001",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping: LSASS Memory",
+      "evidence_snippet": "OS Credential Dumping: LSASS Memory T1003.001 LockBit 3.0 uses Microsoft Sysinternals ProDump to dump the contents of LSASS.exe.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1046",
+      "tactic": "Discovery",
+      "technique": "Network Service Discovery",
+      "evidence_snippet": "Network Service Discovery T1046 LockBit 3.0 uses SoftPerfect Network Scanner to scan target networks.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "System Information Discovery T1082 LockBit 3.0 will enumerate system information to include hostname, host configuration, domain information, local drive configuration, remote shares, and mounted external storage devices.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1614.001",
+      "tactic": "Discovery",
+      "technique": "System Location Discovery: System Language Discovery",
+      "evidence_snippet": "System Location Discovery: System Language Discovery T1614.001 LockBit 3.0 will not infect machines with language settings that match a defined exclusion list.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "Remote Services: Remote Desktop Protocol T1021.001 LockBit 3.0 uses Splashtop remotedesktop software to facilitate lateral movement.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1071.002",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: File Transfer Protocols",
+      "evidence_snippet": "Application Layer Protocol: File Transfer Protocols T1071.002 LockBit 3.0 uses FileZilla for C2.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1572",
+      "tactic": "Command and Control",
+      "technique": "Protocol Tunneling",
+      "evidence_snippet": "Protocol Tunnel T1572 LockBit 3.0 uses Plink to automate SSH actions on Windows.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1567.002",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service: Exfiltration to Cloud Storage",
+      "evidence_snippet": "Exfiltration Over Web Service: Exfiltration to Cloud Storage T1567.002 LockBit 3.0 actors use (1) rclone, an open source command line cloud storage manager to exfiltrate and (2) MEGA, a publicly available file sharing service for data exfiltration.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1485",
+      "tactic": "Impact",
+      "technique": "Data Destruction",
+      "evidence_snippet": "EData Destruction T1485 LockBit 3.0 deletes log files and empties the recycle bin.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Data Encrypted for Impact T1486 LockBit 3.0 encrypts data on target systems to interrupt availability to system and network resources.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1489",
+      "tactic": "Impact",
+      "technique": "Service Stop",
+      "evidence_snippet": "Service Stop T1489 LockBit 3.0 terminates processes and services",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Impact",
+      "technique": "Inhibit System Recovery",
+      "evidence_snippet": "Inhibit System Recovery T1490 LockBit 3.0 deletes volume shadow copies residing on disk.",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1491.001",
+      "tactic": "Impact",
+      "technique": "Defacement: Internal Defacement",
+      "evidence_snippet": "Defacement: Internal Defacement T1491.001 LockBit 3.0 changes the host system’s wallpaper and icons to the LockBit 3.0 wallpaper and icons, respectively. ",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "FBI/CISA/MS-ISAC AA23-075A (March 16, 2023) on LockBit 3.0 (Black) RaaS - modular/evasive successor to LockBit 2.0/Blackmatter/Blackcat; affiliate model since Jan 2020. Password-protected executable (decrypts on correct 32-char key); language exclusions (e.g., Romanian); Safe Mode reboot option; spreads via GPO/PsExec/SMB. Initial access: RDP (T1133), drive-by (T1189), phishing (T1566), valid accounts (T1078), public app exploits (T1190). Capabilities: system enum (T1082), process/service termination (T1489), shadow copy deletion (T1490), log deletion (T1485), auto-logon persistence (T1547), UAC bypass via COM, wallpaper defacement (T1491.001). Exfil pre-encrypt: Stealbit, rclone, MEGA + 6 anon file sites. 17 tools (Chocolatey, FileZilla, Impacket, ProcDump, PsExec, Mimikatz, Ngrok, etc). IOCs: command params (-del/-gdel/-gspd/-pass/-path/-psex/-safe/-wall), mutex (Global+MD4(machine GUID)), registry artifacts, GPO XML (NetworkShares.xml/Services.xml disabling SQL/backup services), ransom note text. MITIGATIONS: CPG-aligned (patching, MFA, segmentation, backups).",
+  "timeline": [
+    {
+      "date": "2019-01-01",
+      "date_precision": "year",
+      "event": "LockBit operations begin (self-proclaimed 'world's fastest/most stable ransomware')",
+      "evidence_snippet": "LockBit 3.0 from 2019"
+    },
+    {
+      "date": "2020-01-01",
+      "date_precision": "year",
+      "event": "LockBit transitions to affiliate-based RaaS model",
+      "evidence_snippet": "Since January 2020, LockBit has functioned as an affiliate-based ransomware variant"
+    },
+    {
+      "date": "2023-03-01",
+      "date_precision": "month",
+      "event": "FBI investigations of LockBit 3.0 through March 2023",
+      "evidence_snippet": "IOCs and malware characteristics... current as of March 2023"
+    },
+    {
+      "date": "2023-03-16",
+      "date_precision": "day",
+      "event": "AA23-075A advisory published",
+      "evidence_snippet": "March 16, 2023"
+    }
+  ]
+}

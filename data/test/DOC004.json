@@ -1,0 +1,276 @@
+{
+  "report_metadata": {
+    "report_title": "AR25-261A Malicious Listener for Ivanti Endpoint Manager Mobile Systems",
+    "report_type": "incident"
+  },
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "82.132.235.212",
+        "evidence_snippet": "82.132.235.212",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "37.219.84.22",
+        "evidence_snippet": "37.219.84.22",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "88.194.29.21",
+        "evidence_snippet": "88.194.29.21",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "27.25.148.183",
+        "evidence_snippet": "27.25.148.183",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "83.229.126.234",
+        "evidence_snippet": "83.229.126.234",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "91.193.19.109",
+        "evidence_snippet": "91.193.19.109",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "47.120.74.19",
+        "evidence_snippet": "47.120.74.19",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "100.26.51.59",
+        "evidence_snippet": "100.26.51.59",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "150.241.71.231",
+        "evidence_snippet": "150.241.71.231",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "75.170.92.132",
+        "evidence_snippet": "75.170.92.132",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "5.181.159.149",
+        "evidence_snippet": "5.181.159.149",
+        "source_context": "detection_rule_only"
+      },
+      {
+        "value": "45.38.17.43",
+        "evidence_snippet": "45.38.17.43",
+        "source_context": "detection_rule_only"
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "e33103767524879293d1b576a8b6257d",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 e33103767524879293d1b576a8b6257d"
+      },
+      {
+        "value": "c2046523f1cb487a473b0a46a5a4a957f1b3200a",
+        "hash_type": "SHA1",
+        "evidence_snippet": "SHA1 c2046523f1cb487a473b0a46a5a4a957f1b3200a"
+      },
+      {
+        "value": "c1f60ca5a5f7b94ab7122718a44b46de16c69d22c2eb62ce2948cab14bc78d50",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 c1f60ca5a5f7b94ab7122718a44b46de16c69d22c2eb62ce2948cab14bc78d50"
+      },
+      {
+        "value": "6ec2169312feb9fde0b17e244b32c37d",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 6ec2169312feb9fde0b17e244b32c37d"
+      },
+      {
+        "value": "6d7e85862f925e83f6d0c29e291765548fac721a",
+        "hash_type": "SHA1",
+        "evidence_snippet": "SHA1 6d7e85862f925e83f6d0c29e291765548fac721a"
+      },
+      {
+        "value": "065c1c2fb17ba1c3f882bead409215df612673cd455698768ed71412f9190ba3",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 065c1c2fb17ba1c3f882bead409215df612673cd455698768ed71412f9190ba3"
+      },
+      {
+        "value": "5e9d283b483b8d5c637baf7cfdda0e08",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 5e9d283b483b8d5c637baf7cfdda0e08"
+      },
+      {
+        "value": "8b87a881f6f81afb596d3f98abef4225315e26bf",
+        "hash_type": "SHA1",
+        "evidence_snippet": "SHA1 8b87a881f6f81afb596d3f98abef4225315e26bf"
+      },
+      {
+        "value": "b1b1cf33b8d3da35293d6b74c378f0cd9452a4351e26d07c896c4d9a8257ef89",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 b1b1cf33b8d3da35293d6b74c378f0cd9452a4351e26d07c896c4d9a8257ef89"
+      },
+      {
+        "value": "32f5c3c1582a77c004b1511c77454678",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 32f5c3c1582a77c004b1511c77454678"
+      },
+      {
+        "value": "2a96ce17ed8a025dd72f3729c247dfdb5b0a19a4",
+        "hash_type": "SHA1",
+        "evidence_snippet": "SHA1 2a96ce17ed8a025dd72f3729c247dfdb5b0a19a4"
+      },
+      {
+        "value": "b618057de9a8bba95440f23b9cf6374cc66f2acd127b3d478684b22d8f11e00b",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 b618057de9a8bba95440f23b9cf6374cc66f2acd127b3d478684b22d8f11e00b"
+      },
+      {
+        "value": "8387a7ce9f2520d8956747fd247b19af",
+        "hash_type": "MD5",
+        "evidence_snippet": "MD5 8387a7ce9f2520d8956747fd247b19af"
+      },
+      {
+        "value": "9808ab3ddfb9ab4fe3af1b5d1f6a638bc03788e0",
+        "hash_type": "SHA1",
+        "evidence_snippet": "SHA1 9808ab3ddfb9ab4fe3af1b5d1f6a638bc03788e0"
+      },
+      {
+        "value": "df501b238854d6579cafebeba82581a728e89ed1f6cd0da54c79ef4eb6f4f9fd",
+        "hash_type": "SHA256",
+        "evidence_snippet": "SHA256 df501b238854d6579cafebeba82581a728e89ed1f6cd0da54c79ef4eb6f4f9fd"
+      }
+    ],
+    "urls": [
+      {
+        "value": "https://www.live.com/",
+        "evidence_snippet": "Header Value https://www.live.com."
+      }
+    ],
+    "http_paths": [
+      {
+        "value": "/mifs/rs/api/v2/",
+        "evidence_snippet": "The cyber threat actors targeted the /mifs/rs/api/v2/ endpoint with HTTP GET requests"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2025-4427",
+        "evidence_snippet": " cyber threat actors exploited CVE-2025-4427 [CWE-288: Authentication Bypass Using an Alternate Path or Channel]"
+      },
+      {
+        "value": "CVE-2025-4428",
+        "evidence_snippet": "and CVE-2025-4428 [CWE-‘Code Injection’] in Ivanti Endpoint Manager Mobile (Ivanti EPMM) deployments for initial access"
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [
+        {
+          "name": "CISA_25_112601_trojan_hides_artifacts",
+          "evidence_snippet": "rule CISA_25_112601_trojan_hides_artifacts... description Detects malicious jar filter samples"
+        },
+        {
+          "name": "CISA_25_112602_trojan",
+          "evidence_snippet": "rule CISA_25_112602_trojan... description Detects malicious servlet filter class loader samples"
+        },
+        {
+          "name": "CISA_25_112603_trojan_installs_other_components_exfiltrates_data",
+          "evidence_snippet": "rule CISA_25_112603_trojan_installs_other_components_exfiltrates_data... description Detects malicious servlet filter class samples"
+        },
+        {
+          "name": "CISA_25_112604_trojan_hides_artifacts",
+          "evidence_snippet": "rule CISA_25_112604_trojan_hides_artifacts... description Detects malicious jar Tomcat listener shell samples"
+        },
+        {
+          "name": "CISA_25_112605_trojan_installs_other_components_exfiltrates_data",
+          "evidence_snippet": "rule CISA_25_112605_trojan_installs_other_components_exfiltrates_data... description Detects malicious Tomcat listener shell class samples"
+        }
+      ],
+      "sigma_rules": [
+        {
+          "name": "Loader_Malware_for_Ivanti_Mobile_Management_Systems",
+          "evidence_snippet": "title Detects Artifacts Based on MAR-251126, Ivanti EPMM CVE-2025-4427 and CVE-2025-4428"
+        }
+      ]
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1027.004",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Compile After Delivery",
+      "evidence_snippet": "The cyber threat actors delivered malware in segments, splitting it into multiple Base64-encoded segments"
+    },
+    {
+      "mitre_id": "T1027.009",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Embedded Payloads",
+      "evidence_snippet": "Loader 1 contains ReflectUtil.class"
+    },
+    {
+      "mitre_id": "T1027.013",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+      "evidence_snippet": "WebAndroidAppInstaller.class AES encrypts and Base64 encodes a class output with a hard coded key"
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Loader 1 masquerades ReflectUtil.class as part of the org.apache.http package"
+    },
+    {
+      "mitre_id": "T1620",
+      "tactic": "Defense Evasion",
+      "technique": "Reflective Code Loading",
+      "evidence_snippet": "ReflectUtil.class reflectively loads code into Java processes to add a malicious listener to Apache Tomcat servers"
+    },
+    {
+      "mitre_id": "T1140",
+      "tactic": "Defense Evasion",
+      "technique": "Deobfuscate/Decode Files or Information",
+      "evidence_snippet": "ReflectUtil.class decodes and decompresses a class bytecode"
+    },
+    {
+      "mitre_id": "T1071.001",
+      "tactic": "Command and Control",
+      "technique": "Application Layer Protocol: Web Protocols",
+      "evidence_snippet": "SecurityHandlerWanListener.class intercepts HTTP requests"
+    },
+    {
+      "mitre_id": "T1573.001",
+      "tactic": "Command and Control",
+      "technique": "Encrypted Channel: Symmetric Cryptography",
+      "evidence_snippet": "WebAndroidAppInstaller.class decodes a Base64 password parameter value using an AES algorithm and hard-coded key"
+    }
+  ],
+  "summary": "CISA malware analysis of two malicious listener sets targeting Ivanti EPMM systems exploiting CVE-2025-4427 (authentication bypass) and CVE-2025-4428 (code injection). Around May 15, 2025, threat actors chained vulnerabilities via /mifs/rs/api/v2/ endpoint, deployed Base64-encoded JAR loaders (web-install.jar) containing malicious listeners (SecurityHandlerWanListener.class, WebAndroidAppInstaller.class) enabling arbitrary code execution, data exfiltration via HTTP interception, AES encryption with hard-coded keys. Includes YARA/SIGMA detection signatures.",
+  "timeline": [
+    {
+      "date": "2025-09-18",
+      "date_precision": "day",
+      "event": "Malware analysis report publication date",
+      "evidence_snippet": "Publication September 18, 2025"
+    },
+    {
+      "date": "2025-05-13",
+      "date_precision": "day",
+      "event": "Ivanti provided patch and disclosed CVE-2025-4427 and CVE-2025-4428",
+      "evidence_snippet": "Ivanti provided a patch and disclosed the vulnerabilities on May 13, 2025"
+    },
+    {
+      "date": "2025-05-15",
+      "date_precision": "approximate",
+      "event": "Cyber threat actors gained access following proof of concept publication",
+      "evidence_snippet": "Around May 15, 2025, following publication of a proof of concept, the cyber threat actors gained access"
+    },
+    {
+      "date": "2025-05-19",
+      "date_precision": "day",
+      "event": "CISA added CVE-2025-4427 and CVE-2025-4428 to KEV Catalog",
+      "evidence_snippet": "CISA added both vulnerabilities to its Known Exploited Vulnerabilities Catalog on May 19, 2025"
+    }
+  ]
+}

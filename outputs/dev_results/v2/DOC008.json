@@ -1,0 +1,55 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "CYBERSECURITY ADVISORY"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government",
+    "Critical Manufacturing",
+    "Information Technology",
+    "Education",
+    "Food and Agriculture"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [
+      {
+        "value": "CVE-2023-20269",
+        "evidence_snippet": "Update Nov. 13, 2025: CVE-2020-3580 [CWE-79: Improper Neutralization of Input During Web Page Generation (‘Cross-site Scripting’) <https://cwe.mitre.org/data/definitions/79.html>]  </news-events/cybersecurity-advisories/aa24-109a#note3>",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-28252",
+        "evidence_snippet": "CVE-2020-3580 [CWE-79: Improper Neutralization of Input During Web Page Generation (‘Cross-site Scripting’) <https://cwe.mitre.org/data/definitions/79.html>]  </news-events/cybersecurity-advisories/aa24-109a#note3>",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-37085",
+        "evidence_snippet": "and CVE-2024-40766 [CWE-284: Improper Access Control <https://cwe.mitre.org/data/definitions/284.html>].",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-27532",
+        "evidence_snippet": "Additionally, the authoring organizations observed Akira threat actors using these CVE exploits for initial access: CVE-2023-27532 [CWE-306: Missing Authentication for Critical Function <https://cwe.mitre.org/data/definitions/306.html>];",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

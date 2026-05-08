@@ -1,0 +1,152 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "DOC011"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Healthcare and Public Health (HPH) Sector",
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Qakbot",
+        "evidence_snippet": "According to cybersecurity researchers, affiliates have also used Qakbot during initial access."
+      },
+      {
+        "name": "BITSAdmin",
+        "evidence_snippet": "A command-line utility that manages downloads/uploads between a client and server by using the Background Intelligent Transfer Service (BITS) to perform asynchronous file transfers."
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "A penetration testing tool used by security professions to test the security of networks and systems. Black Basta affiliates have used it to assist with lateral movement and file execution."
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "A tool that allows users to view and save authentication credentials such as Kerberos tickets. Black Basta affiliates have used it to aid in privilege escalation."
+      },
+      {
+        "name": "PSExec",
+        "evidence_snippet": "A tool designed to run programs and execute commands on remote systems."
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "A cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework, which runs on Windows, Linux, and macOS."
+      },
+      {
+        "name": "RClone",
+        "evidence_snippet": "A command line program used to sync files with cloud storage services such as Mega."
+      },
+      {
+        "name": "SoftPerfect",
+        "evidence_snippet": "A network scanner (netscan.exe) used to ping computers, scan ports, discover shared folders, and retrieve information about network devices via Windows Management Instrumentation (WMI), Simple Network Management Protocol (SNMP), HTTP, Secure Shell (SSH) and PowerShell."
+      },
+      {
+        "name": "ScreenConnect",
+        "evidence_snippet": "Remote support, access, and meeting software that allows users to control devices remotely over the internet."
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": "Remote desktop software that allows remote access to devices for support, access, and collaboration."
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": "Windows Secure Copy is a free and open source SSH File Transfer Protocol, File Transfer Protocol, WebDAV, Amazon S3, and secure copy protocol client. Black Basta affiliates have used it to transfer data from a compromised network to actor-controlled accounts."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "Starting in February 2024, Black Basta affiliates began exploiting ConnectWise vulnerability CVE-2024-1709 to obtain initial access.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Black Basta affiliates have used spearphishing emails to obtain initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Black Basta affiliates have exploited ConnectWise vulnerability CVE-2024-1709 to obtain initial access.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1068",
+      "tactic": "Privilege Escalation",
+      "technique": "Exploitation for Privilege Escalation",
+      "evidence_snippet": "Black Basta affiliates have used credential scraping tools like Mimikatz, Zerologon, NoPac and PrintNightmare for privilege escalation.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Black Basta affiliates have conducted reconnaissance using utilities with innocuous file names, such as Intel or Dell, to evade detection.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Black Basta affiliates have deployed a tool called Backstab to disable endpoint detection and response (EDR) tooling.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Black Basta affiliates have used PowerShell to disable antivirus products.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Impact",
+      "technique": "Inhibit System Recovery",
+      "evidence_snippet": "Black Basta affiliates have used the vssadmin.exe program to delete shadow copies.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "Black Basta affiliates have used a public key to fully encrypt files.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory (CSA) provides information on Black Basta, a ransomware variant whose actors have encrypted and stolen data from at least 12 out of 16 critical infrastructure sectors.",
+  "timeline": []
+}

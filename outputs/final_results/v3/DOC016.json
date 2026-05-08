@@ -1,0 +1,119 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA24-109A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government",
+    "Critical Manufacturing",
+    "Information Technology",
+    "Food and Agriculture"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": "A command-line tool used to query and retrieve information from Active Directory [T1087.002]."
+      },
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Legitimate desktop support software used to obtain remote access to victim systems and for lateral movement, and support remote file transfer."
+      },
+      {
+        "name": "LaZagne",
+        "evidence_snippet": "An open source tool that enables users to recover stored passwords on Windows, Linux, and Mac OS X systems [T1555]."
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "A credential dumper that enables users to view and save authentication credentials, such as Kerberos tickets [T1550.002]."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2020-3259",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2020-3259 [Common Weakness Enumeration (CWE)-200: Exposure of Sensitive Information to an Unauthorized Actor];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-20269",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2023-20269 [CWE-288: Authentication Bypass Using an Alternate Path or Channel];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2020-3580",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2020-3580 [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-28252",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2023-28252 [CWE-122: Heap-based Buffer Overflow];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-37085",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2024-37085 [CWE-305: Authentication Bypass by Primary Weakness];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-27532",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2023-27532 [CWE-306: Missing Authentication for Critical Function];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-40711",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2024-40711 [CWE-502: Deserialization of Untrusted Data];",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-40766",
+        "evidence_snippet": "FBI and cybersecurity researchers observed Akira threat actors obtaining initial access to organizations through a virtual private network (VPN) service without multifactor authentication (MFA) configured, mostly using known Common Vulnerabilities and Exposures (CVEs), including: CVE-2024-40766 [CWE-284: Improper Access Control];",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1059",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "Akira threat actors use PowerShell to execute malicious scripts and Living Off the Land Binary (LOLBin) commands for execution, persistence, credential harvesting, lateral movement, and disabling security controls to evade detection.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Akira threat actors obfuscate or encrypt malware, scripts, and network payloads (e.g., packers, Base64/XOR encoding, script obfuscation, or custom encryption) to evade detection and slow forensic analysis.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Akira threat actors exploit vulnerabilities in internet-facing systems to gain access to systems.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders that detail various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

@@ -1,0 +1,28 @@
+{
+  "doc_id": "DOC007",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "The report highlights that attackers are focusing more on evasion in 2023, aiming to avoid detection technologies and maintain persistence on networks for as long as possible. Despite this, defenders are getting better at identifying compromises, with the global median dwell time decreasing from 16 days in 2022 to 10 days in 2023. Ransomware is a key factor driving down dwell time, but organizations are experiencing higher rates of success in detecting malicious behavior on their networks.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 6.36
+}

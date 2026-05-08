@@ -1,0 +1,21 @@
+{
+  "doc_id": "DOC027",
+  "steps": {
+    "step1_initial": {
+      "n_iocs": 1,
+      "n_ttps": 10,
+      "source": "pre-built V1"
+    },
+    "step2_verification": {
+      "n_questions": 11,
+      "n_supported": 11,
+      "n_not_supported": 0,
+      "qa_pairs": "1. [SUPPORTED] Q: Does the document describe \"BRICKSTORM\" as a tool, malware, or utility used BY the threat actor(s) in this report (not a defensive or victim tool)?\n   A: Yes.\n2. [SUPPORTED] Q: Does the document describe the technique \"T1505.003\" (Web Shell) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n3. [SUPPORTED] Q: Does the document describe the technique \"T1078\" (Valid Accounts) as being used specifically for \"Initial Access\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n4. [SUPPORTED] Q: Does the document describe the technique \"T1021.001\" (Remote Services) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n5. [SUPPORTED] Q: Does the document describe the technique \"T1003.003\" (System Network Configuration Discovery) as being used specifically for \"Persistence\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n6. [SUPPORTED] Q: Does the document describe the technique \"T1036\" (Windows Service Discovery) as being used specifically for \"Execution\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n7. [SUPPORTED] Q: Does the document describe the technique \"T1037\" (Boot or Logon Autostart Execution) as being used specifically for \"Persistence\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n8. [SUPPORTED] Q: Does the document describe the technique \"T1090.001\" (Proxy) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n9. [SUPPORTED] Q: Does the document describe the technique \"T1041\" (Exfiltration Over Command and Control Channel) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n10. [SUPPORTED] Q: Does the document describe the technique \"T1083\" (File and Directory Discovery) as being used specifically for \"Command and Control\" \u2014 not a different tactic or phase of the attack?\n   A: Yes.\n11. [SUPPORTED] Q: Does the document describe the technique \"T1574.007\" (System Environment Variable/Property Modification) as being used specifically for \"Persistence\" \u2014 not a different tactic or phase of the attack?\n   A: Yes."
+    },
+    "step3_deletion": {
+      "changed": false,
+      "deleted_items": []
+    }
+  },
+  "total_time_s": 9.17
+}

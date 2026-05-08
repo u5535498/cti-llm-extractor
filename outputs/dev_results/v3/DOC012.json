@@ -1,0 +1,89 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA23-352A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AdFind",
+        "evidence_snippet": "Play ransomware actors use tools like AdFind to run Active Directory queries [TA0007] and Grixba,1 an information-stealer, to enumerate network information [T1016] and scan for anti-virus software [T1518.001]."
+      },
+      {
+        "name": "Bloodhound",
+        "evidence_snippet": "Play ransomware actors use tools like AdFind to run Active Directory queries [TA0007] and Grixba,1 an information-stealer, to enumerate network information [T1016] and scan for anti-virus software [T1518.001]."
+      },
+      {
+        "name": "GMER",
+        "evidence_snippet": "Play ransomware actors use tools like GMER, IOBit, and PowerTool to disable antivirus software."
+      },
+      {
+        "name": "IOBit",
+        "evidence_snippet": "Play actors have accessed IOBit to disable antivirus software."
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": "Play ransomware actors use command and control (C2) applications, including Cobalt Strike and SystemBC, and tools like PsExec to assist with lateral movement and file execution."
+      },
+      {
+        "name": "PowerTool",
+        "evidence_snippet": "Play ransomware actors use tools like GMER, IOBit, and PowerTool to disable antivirus software."
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "In some instances, cybersecurity researchers have observed Play ransomware actors using PowerShell scripts to target Microsoft Defender."
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "Play ransomware actors use command and control (C2) applications, including Cobalt Strike and SystemBC, and tools like PsExec to assist with lateral movement and file execution."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2018-13379",
+        "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2020-12812",
+        "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2022-41040",
+        "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2022-41082",
+        "evidence_snippet": "Play ransomware actors exploit vulnerabilities in internet-facing systems to gain access to networks.",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2024-57727",
+        "evidence_snippet": "Multiple ransomware groups, including initial access brokers with ties to Play ransomware operators, exploited CVE-2024-57727 in remote monitoring and management (RMM) tool SimpleHelp [T1190] to conduct remote code execution [T1059.001] at many U.S.-based entities following the vulnerabilities’ disclosure on 16 January 2025.",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "No summary provided by model.",
+  "timeline": []
+}

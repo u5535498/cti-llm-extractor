@@ -1,0 +1,85 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "AA25-071A"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Financial Services",
+    "High Tech",
+    "Healthcare",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Ligolo",
+        "evidence_snippet": "A reverse tunneling tool often used to create secure connections between a compromised host and threat actor’s machine."
+      },
+      {
+        "name": "Cloudflared",
+        "evidence_snippet": "Used to securely expose applications, services, or servers to the internet via Cloudflare Tunnel without exposing them directly."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Medusa actors exploited unpatched software or n-day vulnerabilities through common vulnerabilities and exposures.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Medusa IABS used phishing campaigns as a primary method for delivering ransomware to victims.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Lateral Movement and Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Medusa actors used PowerShell, a powerful interactive command-line interface and scripting environment for ingress, network, and filesystem enumeration.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027.013",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information: Encrypted/Encoded File",
+      "evidence_snippet": "Medusa actors use a well-known evasion technique that executes a base64 encrypted command.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1027",
+      "tactic": "Defense Evasion",
+      "technique": "Obfuscated Files or Information",
+      "evidence_snippet": "Medusa actors obfuscated a string by slicing it into pieces and referencing it via a variable.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "This joint Cybersecurity Advisory is part of an ongoing #StopRansomware effort to publish advisories for network defenders detailing various ransomware variants and ransomware threat actors.",
+  "timeline": []
+}

@@ -1,0 +1,124 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Iran-based Cyber Actors Enabling Ransomware Attacks on US Organizations"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Education",
+    "Finance",
+    "Healthcare",
+    "Defense",
+    "Government"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "138.68.90[.]19",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date 138.68.90[.]19 January 2024 August 2024",
+        "source_context": null
+      },
+      {
+        "value": "167.99.202[.]130",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date 167.99.202[.]130 January 2024 August 2024",
+        "source_context": null
+      }
+    ],
+    "domains": [
+      {
+        "value": "api.gupdate[.]net",
+        "evidence_snippet": "Table 11. Indicators of Compromise – Historical Indicator First Seen Most Recently Observed Date api.gupdate[.]net September 2022 August 2024",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      },
+      {
+        "value": "githubapp[.]net",
+        "evidence_snippet": "Table 10. Indicators of Compromise – Recent Indicator First Seen Most Recently Observed Date githubapp[.]net February 2024 August 2024",
+        "source_context": null,
+        "masked": false,
+        "phishing_template": false
+      }
+    ],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "AnyDesk",
+        "evidence_snippet": "Table 9. Command and Control Technique Title ID Use or Assessed Use Remote Access Software T1219 Iranian cyber actors install “AnyDesk” remote access program."
+      },
+      {
+        "name": "Meshcentral",
+        "evidence_snippet": "Table 9. Command and Control Technique Title ID Use or Assessed Use Remote Access Software T1219 Iranian cyber actors deploy Meshcentral to connect with compromised servers for remote access."
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-3400",
+        "evidence_snippet": "Table 2. Initial Access Technique Title ID Use or Assessed Use Exploit Public-Facing Application T1190 Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519) F5 BIG-IP (CVE-2022-1388) Pulse Secure/Ivanti VPNs (CVE-2024-21887) PanOS firewalls (CVE-2024-3400)",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2022-1388",
+        "evidence_snippet": "Table 2. Initial Access Technique Title ID Use or Assessed Use Exploit Public-Facing Application T1190 Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519) F5 BIG-IP (CVE-2022-1388)",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2019-19781",
+        "evidence_snippet": "Table 2. Initial Access Technique Title ID Use or Assessed Use Exploit Public-Facing Application T1190 Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519)",
+        "source_context": null
+      },
+      {
+        "value": "CVE-2023-3519",
+        "evidence_snippet": "Table 2. Initial Access Technique Title ID Use or Assessed Use Exploit Public-Facing Application T1190 Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519)",
+        "source_context": null
+      }
+    ],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Table 2. Initial Access Technique Title ID Use or Assessed Use Exploit Public-Facing Application T1190 Iranian cyber actors scan and exploit public-facing networking devices, including the following devices and associated CVEs: Citrix Netscaler (CVEs-2019-19781 and CVE-2023-3519) F5 BIG-IP (CVE-2022-1388)",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "Table 7. Execution Technique Title ID Use or Assessed Use Command and Scripting T1059.001 Iranian cyber actors use an admin account to initiate a remote desktop session to start Microsoft Windows PowerShell ISE.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Table 9. Command and Control Technique Title ID Use or Assessed Use Remote Access Software T1219 Iranian cyber actors install “AnyDesk” remote access program.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    },
+    {
+      "mitre_id": "T1572",
+      "tactic": "Command and Control",
+      "technique": "Protocol Tunneling",
+      "evidence_snippet": "Table 9. Command and Control Technique Title ID Use or Assessed Use Protocol Tunneling T1572 Iranian cyber actors use ligolo / ligolo-ng for open source tunneling and ngrok[.]io NGROK to create outbound connections to a random subdomain.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Iran-based cyber actors continue to exploit U.S. organizations, targeting devices vulnerable to CVEs such as CVE-2024-3400, CVE-2022-1388, and CVE-2019-19781.",
+  "timeline": []
+}

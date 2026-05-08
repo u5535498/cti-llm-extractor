@@ -1,0 +1,904 @@
+{
+  "report_metadata": {
+    "report_title": "AA24-131A StopRansomware: Black Basta",
+    "report_type": "campaign"
+  },
+  "threat_actor": {
+    "name": "Black Basta",
+    "confidence": "high"
+  },
+  "target_sectors": [
+    "Healthcare and Public Health",
+    "Critical Manufacturing",
+    "Information Technology",
+    "Financial Services",
+    "Food and Agriculture",
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [
+      {
+        "value": "66.249.66.18",
+        "evidence_snippet": "66.249.66.18 - 0gpw.588027fa.dns.realbumblebee.net, dns.trailshop.net, dns.artspathgroupe.net"
+      },
+      {
+        "value": "95.181.173.227",
+        "evidence_snippet": "95.181.173.227 - adslsdfdsfmo.world"
+      },
+      {
+        "value": "207.126.152.242",
+        "evidence_snippet": "207.126.152.242 - xkpal.d6597fa.dns.blocktoday.net"
+      },
+      {
+        "value": "72.14.196.50",
+        "evidence_snippet": "72.14.196.50 - .rasapool.net, dns.trailshop.net"
+      },
+      {
+        "value": "72.14.196.192",
+        "evidence_snippet": "72.14.196.192 - .rasapool.net"
+      },
+      {
+        "value": "72.14.196.2",
+        "evidence_snippet": "72.14.196.2 - .rasapool.net"
+      },
+      {
+        "value": "72.14.196.226",
+        "evidence_snippet": "72.14.196.226 - .rasapool.net"
+      },
+      {
+        "value": "46.161.27.151",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "185.219.221.136",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "64.176.219.106",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "5.78.115.67",
+        "evidence_snippet": "5.78.115.67 - your-server.de"
+      },
+      {
+        "value": "185.7.214.79",
+        "evidence_snippet": "185.7.214.79 - VPN Server"
+      },
+      {
+        "value": "185.220.100.240",
+        "evidence_snippet": "185.220.100.240 - Tor exit node"
+      },
+      {
+        "value": "107.189.30.69",
+        "evidence_snippet": "107.189.30.69 - Tor exit node"
+      },
+      {
+        "value": "5.183.130.92",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "185.220.101.149",
+        "evidence_snippet": "185.220.101.149 - Tor exit node"
+      },
+      {
+        "value": "188.130.218.39",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "188.130.137.181",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "46.8.10.134",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "155.138.246.122",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "80.239.207.200",
+        "evidence_snippet": "80.239.207.200 - winklen.ch"
+      },
+      {
+        "value": "183.181.86.147",
+        "evidence_snippet": "183.181.86.147 - Xserver.jp"
+      },
+      {
+        "value": "34.149.120.3",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "104.21.40.72",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "34.250.161.149",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "88.198.198.90",
+        "evidence_snippet": "88.198.198.90 - your-server.de, literoved.ru"
+      },
+      {
+        "value": "151.101.130.159",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      },
+      {
+        "value": "46.8.16.77",
+        "evidence_snippet": "Network indicator from FBI investigations (Table 8)"
+      }
+    ],
+    "domains": [
+      {
+        "value": "trailshop.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "realbumblebee.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "recentbee.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "investrealtydom.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "webnubee.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "artspathgroup.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "buyblocknow.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "currentbee.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "modernbeem.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "startupbusiness24.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "magentoengineers.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "childrensdolls.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "myfinancialexperts.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "limitedtoday.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "kekeoamigo.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "nebraska-lawyers.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "tomlawcenter.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "thesmartcloudusa.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "rasapool.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "artspathgroupe.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "specialdrills.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "thetrailbig.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 5/8/2024"
+      },
+      {
+        "value": "consulheartinc.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/22/2024"
+      },
+      {
+        "value": "otxcosmeticscare.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "otxcarecosmetics.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "artstrailman.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "ontexcare.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "trackgroup.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "businessprofessionalllc.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/15/2024"
+      },
+      {
+        "value": "securecloudmanage.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/7/2024"
+      },
+      {
+        "value": "oneblackwood.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/7/2024"
+      },
+      {
+        "value": "buygreenstudio.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/7/2024"
+      },
+      {
+        "value": "startupbuss.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/7/2024"
+      },
+      {
+        "value": "onedogsclub.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "wipresolutions.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "recentbeelive.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "trailcocompany.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "trailcosolutions.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "artstrailreviews.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 3/4/2024"
+      },
+      {
+        "value": "usaglobalnews.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 2/15/2024"
+      },
+      {
+        "value": "topglobaltv.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 2/15/2024"
+      },
+      {
+        "value": "startupmartec.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 2/15/2024"
+      },
+      {
+        "value": "technologgies.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 1/2/2024"
+      },
+      {
+        "value": "jenshol.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 1/2/2024"
+      },
+      {
+        "value": "simorten.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 1/2/2024"
+      },
+      {
+        "value": "investmentgblog.net",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 1/2/2024"
+      },
+      {
+        "value": "protectionek.com",
+        "evidence_snippet": "Known Black Basta Cobalt Strike domain (Table 10), 1/2/2024"
+      },
+      {
+        "value": "airbusco.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "allcompanycenter.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "animalsfast.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "audsystemell.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "auuditoe.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "bluenetworking.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "brendonline.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "businesforhome.come",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "caspercan.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "clearsystemwo.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "cloudworldst.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "constrtionfirst.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "erihudeg.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "garbagemoval.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "ionoslaba.com",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "masterunix.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "softradar.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "stockinvestlab.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      },
+      {
+        "value": "blocktoday.net",
+        "evidence_snippet": "Suspected Black Basta domain (Table 11)"
+      }
+    ],
+    "file_hashes": [
+      {
+        "value": "0112e3b20872760dda5f658f6b546c85f126e803e27f0577b294f335ffa5a298",
+        "hash_type": "SHA256",
+        "evidence_snippet": "rclone.exe - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "d3683beca3a40574e5fd68d30451137e4a8bbaca8c428ebb781d565d6a70385e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Winscp.exe - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "88c8b472108e0d79d16a1634499c1b45048a10a38ee799054414613cc9dccccc",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "58ddbea084ce18cfb3439219ebcf2fc5c1605d2f6271610b1c7af77b8d0484bd",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "39939eacfbc20a2607064994497e3e886c90cd97b25926478434f46c95bd8ead",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "5b2178c7a0fd69ab00cef041f446e04098bbb397946eda3f6755f9d94d53c221",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "51eb749d6cbd08baf9d43c2f83abd9d4d86eb5206f62ba43b768251a98ce9d3e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "d15bfbc181aac8ce9faa05c2063ef4695c09b718596f43edc81ca02ef03110d1",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "5942143614d8ed34567ea472c2b819777edd25c00b3e1b13b1ae98d7f9e28d43",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "05ebae760340fe44362ab7c8f70b2d89d6c9ba9b9ee8a9f747b2f19d326c3431",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "a7b36482ba5bca7a143a795074c432ed627d6afa5bc64de97fa660faa852f1a6",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "86a4dd6be867846b251460d2a0874e6413589878d27f2c4482b54cec134cc737",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "07117c02a09410f47a326b52c7f17407e63ba5e6ff97277446efc75b862d2799",
+        "hash_type": "SHA256",
+        "evidence_snippet": "DLL - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "96339a7e87ffce6ced247feb9b4cb7c05b83ca315976a9522155bad726b8e5be",
+        "hash_type": "SHA256",
+        "evidence_snippet": "ELF - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "1c1b2d7f790750d60a14bd661dae5c5565f00c6ca7d03d062adcecda807e1779",
+        "hash_type": "SHA256",
+        "evidence_snippet": "ELF - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "360c9c8f0a62010d455f35588ef27817ad35c715a5f291e43449ce6cb1986b98",
+        "hash_type": "SHA256",
+        "evidence_snippet": "ELF - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "0554eb2ffa3582b000d558b6950ec60e876f1259c41acff2eac47ab78a53e94a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "9a55f55886285eef7ffabdd55c0232d1458175b1d868c03d3e304ce7d98980bc",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "62e63388953bb30669b403867a3ac2c8130332cf78133f7fd4a7f23cdc939087",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "7ad4324ea241782ea859af12094f89f9a182236542627e95b6416c8fb9757c59",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "350ba7fca67721c74385faff083914ecdd66ef107a765dfb7ac08b38d5c9c0bd",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "90ba27750a04d1308115fa6a90f36503398a8f528c974c5adc07ae8a6cd630e7",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "fafaff3d665b26b5c057e64b4238980589deb0dff0501497ac50be1bc91b3e08",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "acb60f0dd19a9a26aaaefd3326db8c28f546b6b0182ed2dcc23170bcb0af6d8f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "d73f6e240766ddd6c3c16eff8db50794ab8ab95c6a616d4ab2bc96780f13464d",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "f039eaaced72618eaba699d2985f9e10d252ac5fe85d609c217b45bc8c3614f4",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "723d1cf3d74fb3ce95a77ed9dff257a78c8af8e67a82963230dd073781074224",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "ae7c868713e1d02b4db60128c651eb1e3f6a33c02544cc4cb57c3aa6c6581b6e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "fff35c2da67eef6f1a10c585b427ac32e7f06f4e4460542207abcd62264e435f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "df5b004be71717362e6b1ad22072f9ee4113b95b5d78c496a90857977a9fb415",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "462bbb8fd7be98129aa73efa91e2d88fa9cafc7b47431b8227d1957f5d0c8ba7",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "3c50f6369f0938f42d47db29a1f398e754acb2a8d96fd4b366246ac2ccbe250a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "5d2204f3a20e163120f52a2e3595db19890050b2faa96c6cba6b094b0a52b0aa",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "37a5cd265f7f555f2fe320a68d70553b7aa9601981212921d1ac2c114e662004",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "3090a37e591554d7406107df87b3dc21bda059df0bc66244e8abef6a5678af35",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "17879ed48c2a2e324d4f5175112f51b75f4a8ab100b8833c82e6ddb7cd817f20",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "42f05f5d4a2617b7ae0bc601dd6c053bf974f9a337a8fcc51f9338b108811b78",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "882019d1024778e13841db975d5e60aaae1482fcf86ba669e819a68ce980d7d3",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "e28188e516db1bda9015c30de59a2e91996b67c2e2b44989a6b0f562577fd757",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "0a8297b274aeab986d6336b395b39b3af1bb00464cf5735d1ecdb506fef9098e",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "69192821f8ce4561cf9c9cb494a133584179116cb2e7409bea3e18901a1ca944",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "3337a7a9ccdd06acdd6e3cf4af40d871172d0a0e96fc48787b574ac93689622a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "17205c43189c22dfcb278f5cc45c2562f622b0b6280dcd43cc1d3c274095eb90",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "b32daf27aa392d26bdf5faafbaae6b21cd6c918d461ff59f548a73d447a96dd9",
+        "hash_type": "SHA256",
+        "evidence_snippet": "EXE - malicious file associated with Black Basta ransomware (Table 7)"
+      },
+      {
+        "value": "b6a4f4097367d9c124f51154d8750ea036a812d5badde0baf9c5f183bb53dd24",
+        "hash_type": "SHA256",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "8501e14ee6ee142122746333b936c9ab0fc541328f37b5612b6804e6cdc2c2c6",
+        "hash_type": "SHA256",
+        "evidence_snippet": "CUsr.sql - malicious file (Table 9)"
+      },
+      {
+        "value": "4c897334e6391e7a2fa3cbcbf773d5a4",
+        "hash_type": "MD5",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "2642ec377c0cee3235571832cb472870",
+        "hash_type": "MD5",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "b3fe23dd4701ed00d79c03043b0b952e",
+        "hash_type": "MD5",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "034b5fe047920b2ae9493451623633b14a85176f5eea0c7aadc110ea1730ee79",
+        "hash_type": "SHA256",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "8C68B2A794BA3D148CAE91BDF9C8D35728975 2A94118B5558418A36D95A5A45F",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Winx86.exe - alias for cmd.exe (Table 9)"
+      },
+      {
+        "value": "3c65da7f7bfdaf9acc6445abbedd9c4e927d37bb9e3629f34afc338058680407",
+        "hash_type": "SHA256",
+        "evidence_snippet": "C.exe - malicious file (Table 9)"
+      },
+      {
+        "value": "808c96cb90b7de7792a827c6946ff481238029596 35a23bf9d98478ae6a259f9",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      },
+      {
+        "value": "3a8fc07cadc08eeb8be342452636a754158403c3d4ebff379a4ae66f8298d9a6",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      },
+      {
+        "value": "4ac69411ed124da06ad66ee8bfbcea2f593b5b199a2c38496e1ee24f9d04f34a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      },
+      {
+        "value": "819cb9bcf62be7666db5666a693524070b0df589c58309b067191b30480b0c3a",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      },
+      {
+        "value": "c26a5cb62a78c467cc6b6867c7093fbb7b1a96d92121d4d6c3f0557ef9c881e0",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      },
+      {
+        "value": "d503090431fdd99c9df3451d9b73c5737c79eda6eb80c148b8dc71e84623401f",
+        "hash_type": "SHA256",
+        "evidence_snippet": "Cc1.dll - malicious file (Table 9)"
+      }
+    ],
+    "tools": [
+      {
+        "name": "BITSAdmin",
+        "evidence_snippet": "Black Basta affiliates use BITSAdmin for lateral movement"
+      },
+      {
+        "name": "Cobalt Strike",
+        "evidence_snippet": "Black Basta affiliates have used Cobalt Strike beacons to assist with remote access and lateral movement"
+      },
+      {
+        "name": "Mimikatz",
+        "evidence_snippet": "Black Basta affiliates use credential scraping tools like Mimikatz for privilege escalation"
+      },
+      {
+        "name": "PsExec",
+        "evidence_snippet": "Black Basta affiliates use PsExec for lateral movement"
+      },
+      {
+        "name": "PowerShell",
+        "evidence_snippet": "Black Basta affiliates use PowerShell to disable antivirus products"
+      },
+      {
+        "name": "RClone",
+        "evidence_snippet": "Black Basta affiliates use RClone to facilitate data exfiltration prior to encryption"
+      },
+      {
+        "name": "SoftPerfect",
+        "evidence_snippet": "Black Basta affiliates use SoftPerfect network scanner (netscan.exe) to conduct network scanning"
+      },
+      {
+        "name": "ScreenConnect",
+        "evidence_snippet": "Black Basta affiliates use ScreenConnect to assist with remote access and lateral movement"
+      },
+      {
+        "name": "Splashtop",
+        "evidence_snippet": "Black Basta affiliates use Splashtop to assist with remote access and lateral movement"
+      },
+      {
+        "name": "WinSCP",
+        "evidence_snippet": "Black Basta affiliates use WinSCP to transfer data from a compromised network to actor-controlled accounts"
+      },
+      {
+        "name": "Backstab",
+        "evidence_snippet": "Black Basta affiliates deploy Backstab, designed to disable endpoint detection and response (EDR) tooling"
+      },
+      {
+        "name": "Qakbot",
+        "evidence_snippet": "Black Basta affiliates have used Qakbot during initial access"
+      }
+    ],
+    "cves": [
+      {
+        "value": "CVE-2024-1709",
+        "evidence_snippet": "Black Basta affiliates exploiting ConnectWise vulnerability CVE-2024-1709 (CWE-288) starting February 2024"
+      },
+      {
+        "value": "CVE-2020-1472",
+        "evidence_snippet": "Black Basta affiliates exploited ZeroLogon CVE-2020-1472 (CWE-330) for privilege escalation"
+      },
+      {
+        "value": "CVE-2021-42278",
+        "evidence_snippet": "Black Basta affiliates exploited NoPac CVE-2021-42278 (CWE-20) for privilege escalation"
+      },
+      {
+        "value": "CVE-2021-42287",
+        "evidence_snippet": "Black Basta affiliates exploited NoPac CVE-2021-42287 (CWE-269) for privilege escalation"
+      },
+      {
+        "value": "CVE-2021-34527",
+        "evidence_snippet": "Black Basta affiliates exploited PrintNightmare CVE-2021-34527 (CWE-269) for privilege escalation"
+      }
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566",
+      "tactic": "Initial Access",
+      "technique": "Phishing",
+      "evidence_snippet": "Black Basta affiliates have used spearphishing emails to obtain initial access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1190",
+      "tactic": "Initial Access",
+      "technique": "Exploit Public-Facing Application",
+      "evidence_snippet": "Black Basta affiliates exploited ConnectWise vulnerability CVE-2024-1709 to obtain initial access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts",
+      "evidence_snippet": "In some instances, affiliates have been observed abusing valid credentials",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1068",
+      "tactic": "Privilege Escalation",
+      "technique": "Exploitation for Privilege Escalation",
+      "evidence_snippet": "Black Basta affiliates exploited ZeroLogon, NoPac, and PrintNightmare for local and Windows Active Domain privilege escalation",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1036",
+      "tactic": "Defense Evasion",
+      "technique": "Masquerading",
+      "evidence_snippet": "Affiliates conducted reconnaissance using utilities with innocuous file names such as Intel or Dell",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1562.001",
+      "tactic": "Defense Evasion",
+      "technique": "Impair Defenses: Disable or Modify Tools",
+      "evidence_snippet": "Black Basta affiliates deployed Backstab to disable EDR tooling and used PowerShell to disable antivirus products",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.001",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: PowerShell",
+      "evidence_snippet": "Black Basta affiliates have used PowerShell to disable antivirus products",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1046",
+      "tactic": "Discovery",
+      "technique": "Network Service Discovery",
+      "evidence_snippet": "Black Basta affiliates use SoftPerfect network scanner (netscan.exe) to conduct network scanning",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.001",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: Remote Desktop Protocol",
+      "evidence_snippet": "Black Basta affiliates use RDP for lateral movement",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1219",
+      "tactic": "Command and Control",
+      "technique": "Remote Access Software",
+      "evidence_snippet": "Black Basta affiliates use Splashtop, ScreenConnect, and Cobalt Strike beacons to assist with remote access",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1003",
+      "tactic": "Credential Access",
+      "technique": "OS Credential Dumping",
+      "evidence_snippet": "Black Basta affiliates use credential scraping tools like Mimikatz for privilege escalation",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1048",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Alternative Protocol",
+      "evidence_snippet": "Black Basta affiliates use WinSCP to transfer data from a compromised network to actor-controlled accounts",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1567",
+      "tactic": "Exfiltration",
+      "technique": "Exfiltration Over Web Service",
+      "evidence_snippet": "Black Basta affiliates use RClone to exfiltrate data to cloud services such as Mega",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1486",
+      "tactic": "Impact",
+      "technique": "Data Encrypted for Impact",
+      "evidence_snippet": "A ChaCha20 algorithm with an RSA-4096 public key fully encrypts files; .basta or random extension appended",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1490",
+      "tactic": "Impact",
+      "technique": "Inhibit System Recovery",
+      "evidence_snippet": "Black Basta affiliates use vssadmin.exe to delete volume shadow copies",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "CISA AA24-131A (May 10, 2024) StopRansomware advisory for Black Basta, a RaaS variant first identified April 2022. As of May 2024, affiliates have impacted over 500 organisations globally across North America, Europe, and Australia, hitting at least 12 of 16 critical infrastructure sectors with particular focus on Healthcare and Public Health. Initial access via spearphishing (T1566), exploitation of ConnectWise CVE-2024-1709 (from February 2024), and valid credentials. Privilege escalation via Mimikatz, ZeroLogon (CVE-2020-1472), NoPac (CVE-2021-42278/42287), and PrintNightmare (CVE-2021-34527). Lateral movement via RDP, PsExec, BITSAdmin, Splashtop, ScreenConnect, and Cobalt Strike beacons. Data exfiltrated via RClone/WinSCP before ChaCha20+RSA-4096 encryption; double-extortion model with Basta News TOR leak site. Ransom notes (readme.txt) provide unique code and .onion contact URL; 10–12 day payment window. IOCs include 28 IPs, 57 domains (47 Cobalt Strike C2 + 10 suspected), and 60 file hashes across Tables 7–11.",
+  "timeline": [
+    {
+      "date": "2022-04-01",
+      "date_precision": "month",
+      "event": "Black Basta ransomware variant first identified",
+      "evidence_snippet": "Black Basta is considered a ransomware-as-a-service (RaaS) variant and was first identified in April 2022"
+    },
+    {
+      "date": "2024-01-02",
+      "date_precision": "day",
+      "event": "Earliest Cobalt Strike C2 domains observed (technologgies.com, jenshol.com, simorten.com, investmentgblog.net, protectionek.com)",
+      "evidence_snippet": "Known Black Basta Cobalt Strike domains observed 1/2/2024 (Table 10)"
+    },
+    {
+      "date": "2024-02-01",
+      "date_precision": "month",
+      "event": "Black Basta affiliates begin exploiting ConnectWise vulnerability CVE-2024-1709",
+      "evidence_snippet": "Starting in February 2024, Black Basta affiliates began exploiting ConnectWise vulnerability CVE-2024-1709"
+    },
+    {
+      "date": "2024-03-04",
+      "date_precision": "day",
+      "event": "New batch of Cobalt Strike C2 domains observed (onedogsclub.com, wipresolutions.com, recentbeelive.com, etc.)",
+      "evidence_snippet": "Known Black Basta Cobalt Strike domains observed 3/4/2024 (Table 10)"
+    },
+    {
+      "date": "2024-05-10",
+      "date_precision": "day",
+      "event": "CISA AA24-131A advisory published; over 500 organisations globally impacted as of this date",
+      "evidence_snippet": "As of May 2024, Black Basta affiliates have impacted over 500 organizations globally. May 10, 2024: Initial version"
+    }
+  ]
+}

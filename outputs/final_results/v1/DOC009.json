@@ -1,0 +1,35 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "CYBERSECURITY ADVISORY"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Telecommunications",
+    "Government",
+    "Transportation",
+    "Lodging"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Custom SFTP client",
+        "evidence_snippet": "The APT actors also use a custom SFTP client, which is a Linux binary written in Golang, to transfer encrypted archives from one location to another."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [],
+  "summary": "This advisory details the tactics, techniques, and procedures (TTPs) leveraged by Chinese state-sponsored APT actors to compromise networks worldwide. The actors have been performing malicious operations globally since at least 2021.",
+  "timeline": []
+}

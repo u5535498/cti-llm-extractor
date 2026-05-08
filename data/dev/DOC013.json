@@ -1,0 +1,216 @@
+{
+  "report_metadata": {
+    "report_title": "H2 2025 Cloud Threat Horizons Report",
+    "report_type": "campaign",
+    "authors": [
+      "Google Cloud Threat Intelligence",
+      "Mandiant Consulting",
+      "Google Threat Intelligence Group (GTIG)",
+      "Google Cloud Office of the CISO"
+    ]
+  },
+  "target_sectors": [
+    "Cryptocurrency and Blockchain",
+    "Financial Services",
+    "Cloud Computing Providers",
+    "Software Development",
+    "Critical Infrastructure"
+  ],
+  "indicators_of_compromise": {
+    "tools": [
+      {
+        "name": "GLASSCANNON",
+        "evidence_snippet": "UNC4899 uses GLASSCANNON as a malicious Python script downloader"
+      },
+      {
+        "name": "PLOTTWIST",
+        "evidence_snippet": "UNC4899 backdoor used for foothold establishment and persistence"
+      },
+      {
+        "name": "MAZEWIRE",
+        "evidence_snippet": "UNC4899 backdoor used in AWS environment intrusions"
+      },
+      {
+        "name": "Mythic C2",
+        "evidence_snippet": "UNC4899 uses Mythic C2 for command and control"
+      },
+      {
+        "name": "HRsword",
+        "evidence_snippet": "Disables endpoint protection (cross-referenced from prior advisories)"
+      }
+    ]
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1566.002",
+      "tactic": "Initial Access",
+      "technique": "Phishing: Spearphishing Link",
+      "evidence_snippet": "Social Engineering (T1566.002, T1566.003)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1566.003",
+      "tactic": "Initial Access",
+      "technique": "Phishing: Spearphishing Attachment",
+      "evidence_snippet": "Social Engineering (T1566.002, T1566.003)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1204.003",
+      "tactic": "Execution",
+      "technique": "User Execution: Malicious File",
+      "evidence_snippet": "Malicious Docker container (T1204.003)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1133",
+      "tactic": "Execution",
+      "technique": "External Remote Services: Cloud Accounts",
+      "evidence_snippet": "gcloud CLI (T1133, T1078.004)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1059.006",
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter: Python",
+      "evidence_snippet": "Malicious Python Script Downloader (T1059.006)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.004",
+      "tactic": "Initial Access",
+      "technique": "Valid Accounts: Cloud Accounts",
+      "evidence_snippet": "gcloud CLI (T1133, T1078.004)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1550.004",
+      "tactic": "Defense Evasion",
+      "technique": "Use Alternate Authentication Material: Web Session Cookie",
+      "evidence_snippet": "Used stolen cookie to authenticate to cloud services (T1550.004) ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1556.006",
+      "tactic": "Defense Evasion",
+      "technique": "Modify Authentication Process: Multi-Factor Authentication",
+      "evidence_snippet": "gcloud CLI (T1078.004, T1059.009, T1556.006)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.002",
+      "tactic": "Lateral Movement",
+      "technique": "Valid Accounts: Domain Accounts",
+      "evidence_snippet": "PLOTTWIST (T1078.002, T1078.003)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1078.003",
+      "tactic": "Lateral Movement",
+      "technique": "Valid Accounts: Local Accounts",
+      "evidence_snippet": "PLOTTWIST (T1078.002, T1078.003)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.004",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: SSH",
+      "evidence_snippet": "SSH to other compute instances (T1021.004, T1021.007, T1078.002, T1078.004)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1021.007",
+      "tactic": "Lateral Movement",
+      "technique": "Remote Services: RDP",
+      "evidence_snippet": "SSH to other compute instances (T1021.004, T1021.007, T1078.002, T1078.004)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1010",
+      "tactic": "Discovery",
+      "technique": "Application Window Discovery",
+      "evidence_snippet": "Discovered user's installed applications (T1010)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1082",
+      "tactic": "Discovery",
+      "technique": "System Information Discovery",
+      "evidence_snippet": "Hands-on-keyboard host reconnaissance activities (T1010, T1518, T1082, T1083, T1124)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1526",
+      "tactic": "Discovery",
+      "technique": "Cloud Service Discovery",
+      "evidence_snippet": "Enumeration of AWS resources, configuration, etc. (T1580, T1526, T1619)",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1657",
+      "tactic": "Impact",
+      "technique": "Financial Theft",
+      "evidence_snippet": "Cryptocurrency theft (T1657) ",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1195.001",
+      "tactic": "Supply Chain Compromise",
+      "technique": "Supply Chain Compromise: Compromise Software Dependencies and Development Tools",
+      "evidence_snippet": "Uploaded malicious version of JavaScript files on target S3 (T1195.001 / 1565.001)",
+      "mapping_type": "inferred"
+    },
+    {
+      "mitre_id": "T1543.005",
+      "tactic": "Execution",
+      "technique": "Scheduled Task/Job",
+      "evidence_snippet": "Execution of payloads on EKS pods (T1105, T1543.005)",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "Google Cloud Threat Horizons Report H2 2025 analyzes evolving cloud threats: foundational hygiene gaps (47.1% weak/absent credentials, 29.4% misconfigs in H1 2025), backup targeting by ransomware (UNC2165/RANSOMHUB, UNC4393/BASTA, UNC2465/DARKSID/LOCKBIT), UNC4899 (North Korean, TraderTraitor) social engineering via Telegram/LinkedIn leading to Docker container execution (GLASSCANNON/PLOTTWIST/MAZEWIRE), MFA bypass via stolen cookies, gcloud/AWS CLI access, crypto theft (millions USD stolen Q3 2024-Q1 2025). Decoy PDF files (.desktop droppers) hosted on Google Drive/SharePoint/Dropbox/GitHub deceive users while background malware executes. Chrome Extension supply chain risks via OAuth phishing; mitigations include Verified CRX Upload. Recommends Cloud Isolated Recovery Environment (CIRE) with immutable vaults, IAM least privilege, leaked credential monitoring, VPC Service Controls.",
+  "timeline": [
+    {
+      "date": "2020-01-01",
+      "date_precision": "year",
+      "event": "UNC4899 (North Korean, TraderTraitor) active since at least 2020 targeting cryptocurrency/blockchain",
+      "evidence_snippet": "UNC4899 active since at least 2020, primarily targeting cryptocurrency and blockchain industries"
+    },
+    {
+      "date": "2024-08-01",
+      "date_precision": "quarter",
+      "event": "Mandiant responds to UNC4899 incidents at two organizations (Google Cloud and AWS environments)",
+      "evidence_snippet": "Between Q3 2024 and Q1 2025, Mandiant responded to two UNC4899 incidents"
+    },
+    {
+      "date": "2024-11-01",
+      "date_precision": "quarter",
+      "event": "Google Cloud CVR discovers critical Rsync vulnerabilities (RCE risk), coordinated disclosure Q1 2025",
+      "evidence_snippet": "Google Cloud CVR proactively discovered critical Rsync vulnerabilities in Q4 2024"
+    },
+    {
+      "date": "2025-01-01",
+      "date_precision": "quarter",
+      "event": "UNC4899 cryptocurrency thefts executed (millions USD stolen); Mandiant incident responses complete",
+      "evidence_snippet": "Between Q3 2024 and Q1 2025, Mandiant responded to two incidents attributed to UNC4899"
+    },
+    {
+      "date": "2025-01-16",
+      "date_precision": "day",
+      "event": "CVE-2024-57727 (SimpleHelp RMM) disclosed and exploited",
+      "evidence_snippet": "Cross-referenced from prior advisories"
+    },
+    {
+      "date": "2025-05-01",
+      "date_precision": "month",
+      "event": "Verified CRX Upload feature launched for Chrome Web Store (May 2025)",
+      "evidence_snippet": "Launched in May 2025, developers can opt-in to Verified CRX Upload"
+    },
+    {
+      "date": "2025-01-01",
+      "date_precision": "quarter",
+      "event": "Initial access vectors: 47.1% weak/absent credentials, 29.4% misconfigs, 11.8% API/UI compromise",
+      "evidence_snippet": "During the first half of 2025, weak or absent credentials were the predominant threat, accounting for 47.1% of incidents"
+    }
+  ]
+}

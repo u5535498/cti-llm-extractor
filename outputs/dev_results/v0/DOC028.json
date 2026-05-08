@@ -1,0 +1,56 @@
+{
+  "doc_id": "DOC028",
+  "variant": "v0",
+  "report_metadata": {
+    "report_type": "campaign"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "Logutil backdoor",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "AsyncRat",
+        "evidence_snippet": ""
+      },
+      {
+        "name": "CobaltStrike",
+        "evidence_snippet": ""
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": "T1480",
+      "tactic": "unknown",
+      "technique": "Execution",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    },
+    {
+      "mitre_id": "T1218",
+      "tactic": "unknown",
+      "technique": "Signed",
+      "evidence_snippet": "",
+      "mapping_type": "explicit"
+    }
+  ],
+  "summary": "The attackers used a custom malware tracked by Bitdefender as Logutil backdoor to compromise credentials and exfiltrate data from a company in the Technology/IT Services industry in East Asia. They employed various tactics such as DLL hijacking, side-loading legitimate software, and using Execution Guardrails for defense evasion.",
+  "timeline": [],
+  "parse_errors": [],
+  "inference_time_s": 4.62
+}

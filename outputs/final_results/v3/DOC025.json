@@ -1,0 +1,50 @@
+{
+  "report_metadata": {
+    "report_type": "incident",
+    "report_title": "Threat Intelligence"
+  },
+  "threat_actor": null,
+  "campaign_name": null,
+  "target_sectors": [
+    "Energy and Utilities"
+  ],
+  "indicators_of_compromise": {
+    "ip_addresses": [],
+    "domains": [],
+    "file_hashes": [],
+    "urls": [],
+    "http_paths": [],
+    "tools": [
+      {
+        "name": "COSMICENERGY",
+        "evidence_snippet": "Mandiant identified novel operational technology (OT) / industrial control system (ICS)-oriented malware, which we track as COSMICENERGY,"
+      },
+      {
+        "name": "PIEHOP",
+        "evidence_snippet": "PIEHOP is a disruption tool written in Python and packaged with PyInstaller that is capable of connecting to a user-supplied remote MSSQL server for uploading files and issuing remote commands to a RTU."
+      },
+      {
+        "name": "LIGHTWORK",
+        "evidence_snippet": "LIGHTWORK is a disruption tool written in C++ that implements the IEC-104 protocol to modify the state of RTUs over TCP."
+      }
+    ],
+    "cves": [],
+    "detection_signatures": {
+      "yara_rules": [],
+      "sigma_rules": []
+    }
+  },
+  "ttps": [
+    {
+      "mitre_id": null,
+      "tactic": "Execution",
+      "technique": "Command and Scripting Interpreter",
+      "evidence_snippet": "Adversaries may utilize command-line interfaces (CLIs) to interact with systems and execute commands.",
+      "mapping_type": "explicit",
+      "mitre_confidence": null,
+      "evidence_location": null
+    }
+  ],
+  "summary": "Mandiant identified novel operational technology (OT) / industrial control system (ICS)-oriented malware, which we track as COSMICENERGY. The malware is designed to cause electric power disruption by interacting with IEC 60870-5-104 devices.",
+  "timeline": []
+}
